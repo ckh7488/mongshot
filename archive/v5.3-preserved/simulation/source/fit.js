@@ -1,0 +1,15 @@
+/* v5 physical fit, cable voltage drop, and explicit DC connectivity. */
+(()=>{'use strict';const $=id=>document.getElementById(id),n=id=>Number($(id).value);
+function fit(){let fail=[];for(const [id,need,name]of [['fit-width',400,'폭'],['fit-upper',260,'상부'],['fit-lower',560,'하부'],['fit-depth',120,'깊이']]){const v=n(id);if(!Number.isFinite(v)||v<=0)fail.push(name+' 양수 입력');else if(v<need)fail.push(name+' '+(need-v)+'mm 부족');}
+for(const [id,max,name]of [['fit-rfid-w',160,'RFID 폭'],['fit-rfid-h',100,'RFID 높이'],['fit-rfid-d',65,'RFID 깊이'],['fit-amp-w',140,'홍싱 폭'],['fit-amp-h',90,'홍싱 높이'],['fit-amp-d',45,'홍싱 깊이']]){const v=n(id);if(!Number.isFinite(v)||v<=0)fail.push(name+' 양수 입력');else if(v>max)fail.push(name+' 몸체 가정 대비 '+(v-max)+'mm 큼: 배치 재검토');}
+$('fit-result').className='fit-result '+(fail.length?'bad':'conditional');$('fit-result').textContent=fail.length?fail.join(' / '):'입력한 외곽은 현재 확보 조건에 들어옴 · 방열/실측/관통구/도어 확인 전 설치 확정 아님';}
+document.querySelectorAll('.fit-inputs:not(.cable-inputs) input').forEach(e=>e.addEventListener('input',fit));fit();
+function cable(){const V=n('wire-voltage'),L=n('wire-length'),I=n('wire-current'),R=n('wire-resistance'),T=n('wire-temp'),P=n('wire-pairs'),C=n('wire-contact');
+if([V,L,I,R,T,P,C].some(x=>!Number.isFinite(x))||V<=0||L<=0||I<=0||R<=0||T<0||P<1||P>4||!Number.isInteger(P)||C<0){$('wire-result').textContent='양수 전압/길이/전류/저항, 온도0이상, 정수 페어1~4, 접촉저항0이상을 입력하세요.';$('wire-result').className='fit-result bad';$('wire-compare').textContent='';return;}
+const calc=p=>{const loop=2*L*R*(1+.00393*(T-20))/p+C,drop=I*loop;return {loop,drop,end:V-drop,loss:I*I*loop,percent:100*drop/V};},a=calc(P);
+$('wire-result').className='fit-result '+(a.end<=0||a.percent>5?'bad':'conditional');$('wire-result').textContent=`왕복 ${a.loop.toFixed(3)}Ω · 강하 ${a.drop.toFixed(3)}V (${a.percent.toFixed(1)}%) · 부하단 ${a.end.toFixed(3)}V · 배선/접속 손실 ${a.loss.toFixed(3)}W · 허용전류/온도 판정 아님`;
+$('wire-compare').innerHTML='<table><thead><tr><th>병렬 페어</th><th>심선 총수</th><th>전압강하</th><th>부하단 전압</th><th>총 손실</th></tr></thead><tbody>'+[1,2,4].map(p=>{let b=calc(p);return `<tr><td>${p}</td><td>${p*2}</td><td>${b.drop.toFixed(3)}V</td><td>${b.end.toFixed(3)}V</td><td>${b.loss.toFixed(3)}W</td></tr>`;}).join('')+'</tbody></table>';}
+document.querySelectorAll('.cable-inputs input').forEach(e=>e.addEventListener('input',cable));cable();
+const g=window.MONGSHOT_DESIGN.graph,adj=new Map(g.nodes.map(x=>[x,[]]));for(const [a,b] of g.dc_connections){adj.get(a).push(b);adj.get(b).push(a);}function connected(a,b){const seen=new Set([a]),q=[a];while(q.length){for(const v of adj.get(q.pop())||[])if(!seen.has(v)){seen.add(v);q.push(v);}}return seen.has(b);}
+const ok=connected('P0','G0')&&connected('G0','AMP_NEG')&&!connected('P0','PE')&&!connected('G0','PE');$('isolation-result').textContent=ok?'P0/G0는 제어 기준선으로 공통입니다. 자석−/모터/Arduino도 같은 GND입니다. 부하 전력 귀환은 별도 분기하며 PE는 별도입니다.':'설계 연결성 오류: 전원 영역과 홍싱 공통 GND 경로를 확인해야 합니다.';
+window.mongshotDesignChecks={connected,fit,cable};})();

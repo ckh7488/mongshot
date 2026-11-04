@@ -1,0 +1,19 @@
+﻿블록,포트,대상,선 라벨
+P0,IN,SMPS V−,TRK-0
+P0,1,자석1 −,M1-FIELD−
+P0,2,자석2 −,M2-FIELD−
+P0,3,자석3 −,M3-FIELD−
+P0,4,L298 GND,P0-MOTOR
+P0,5,강압기 입력GND,BUCK-IN−
+P0,6,RFID 전원− / 조건부,RFID-0
+P0,7,기타12V센서− / 조건부,기타12V센서-0
+P0,8~12,미사용 · G 직접 연결 금지,
+G,IN,강압기 출력GND,BUCK-G
+G,1,Arduino GND,UNO-PWR-G
+G,2,RY-A GND,CAB-RLY-G
+G,3,RY-B GND,CAB-RLY-B-G
+G,4,J7.2 도어GND,PANEL-G
+G,7,KT403A GND,CAB-MP3-G
+G,5,액자 리드 귀환,REED-D8-G
+G,6,책 리드 귀환,REED-D6-G
+G,8~12,미사용 · P0/L298 추가 연결 금지,

@@ -1,0 +1,24 @@
+﻿분배부,포트,연결 대상,선 라벨
+P0,IN,SMPS V−,P0-SOURCE
+P0,1,자석1−,M1-FIELD−
+P0,2,자석2−,M2-FIELD−
+P0,3,자석3−,M3-FIELD−
+P0,4,L298 GND,P0-MOTOR
+P0,5,비절연DC-D GND,P0-5D
+P0,6,절연DC-L INPUT−,P0-DDR
+P0,7,RFID 전원− (12V일 때),RFID-0
+P0,8,12V센서 전원−,SENS-0
+P0,9~12,미사용 / 지정 기준선 외 중복 연결 확인,
+G0,IN,절연DC-L OUTPUT−,G0-SOURCE
+G0,1,Arduino GND,G0-1
+G0,2,기존 액자 리드 귀환,REED-D8-0
+G0,3,KT403A GND,G0-3
+G0,4,L298 GND 공통 기준선,GND-MOTOR-REF
+G0,5,예비,
+G0,6,도어 LED/버튼,G0-6
+G0,7,예비 / 오디오는 기존 케이블 GND로 공통,
+G0,8,기존 책 리드 귀환,REED-D6-0
+G0,9~12,미사용 / 지정 기준선 외 중복 연결 확인,
+5D-return,분기,RY-A GND / RY-B GND,P0에서 DC-D의 단일 귀환으로
+홍싱,adapter−,기존 어댑터−. MP3 IN GND로 G0와 공통,AMP−
+PE,기존부,콘센트PE → SMPS FG / 외함 / 도어,DC 귀환 대용 아님

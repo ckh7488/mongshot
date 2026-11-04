@@ -1,0 +1,4436 @@
+{
+  "model": {
+    "revision": "v6-common-star-corrected",
+    "units": "mm",
+    "basis": "사진 기반 400×260 / 400×560 / 깊이120mm 가정. 실측·타공도 아님. v5.3 원본은 별도 보존.",
+    "planning": {
+      "usableWidth": 400,
+      "upperHeight": 260,
+      "lowerHeight": 560,
+      "usableDepth": 120
+    },
+    "photoEstimate": {
+      "outerWidth": [
+        450,
+        550
+      ],
+      "upperOpeningHeight": [
+        250,
+        350
+      ],
+      "lowerOpeningHeight": [
+        600,
+        750
+      ],
+      "depth": "사진으로 추정하지 않음"
+    },
+    "parts": [
+      {
+        "id": "ac",
+        "bay": "upper",
+        "x": 10,
+        "y": 10,
+        "reserveW": 45,
+        "reserveH": 110,
+        "bodyW": 36,
+        "bodyH": 80,
+        "bodyD": 70,
+        "name": "기존 차단기",
+        "basis": "기존 회로 보존; 정격/실물 대조",
+        "domain": "PE",
+        "bodyX": 14.5,
+        "bodyY": 14
+      },
+      {
+        "id": "smps",
+        "bay": "upper",
+        "x": 70,
+        "y": 10,
+        "reserveW": 240,
+        "reserveH": 145,
+        "bodyW": 215,
+        "bodyH": 115,
+        "bodyD": 30,
+        "name": "12V 메인 SMPS",
+        "basis": "LRS-200-12 후보; 17A 필요 확정 아님. 부하/가는 선에 맞춰 용량 재선정",
+        "domain": "P0",
+        "bodyX": 82.5,
+        "bodyY": 14
+      },
+      {
+        "id": "pe",
+        "bay": "upper",
+        "x": 325,
+        "y": 15,
+        "reserveW": 55,
+        "reserveH": 100,
+        "bodyW": 30,
+        "bodyH": 80,
+        "bodyD": 35,
+        "name": "기존 PE 접지부",
+        "basis": "금속 함체/도어/SMPS FG; DC 귀환에 사용하지 않음",
+        "domain": "PE",
+        "bodyX": 337.5,
+        "bodyY": 19
+      },
+      {
+        "id": "power-ground",
+        "bay": "lower",
+        "x": 25,
+        "y": 410,
+        "reserveW": 75,
+        "reserveH": 50,
+        "bodyW": 58.1,
+        "bodyH": 28.6,
+        "bodyD": 32.4,
+        "name": "★ P0 · 전력 0V",
+        "basis": "SMPS V−→P0.IN. 자석1~3·L298·강압기·조건부12V장치 귀환을 각각 별도 포트로. G 직접 연결 금지. 이상적인0Ω 점이 아니라 유한 임피던스가 있는 분배점.",
+        "domain": "P0",
+        "bodyX": 33.45,
+        "bodyY": 414
+      },
+      {
+        "id": "mag-power",
+        "bay": "lower",
+        "x": 25,
+        "y": 470,
+        "reserveW": 75,
+        "reserveH": 50,
+        "bodyW": 58.1,
+        "bodyH": 28.6,
+        "bodyD": 32.4,
+        "name": "P12 · 조건부 12V",
+        "basis": "상부SMPS에서 TRK-12P/TRK-0 페어만 하부로. P12.1~3 자석, .4 모터(U1), .5 강압기, .6/.7 조건부RFID/센서.",
+        "domain": "P0",
+        "bodyX": 33.45,
+        "bodyY": 474
+      },
+      {
+        "id": "amp-adapter",
+        "bay": "upper",
+        "x": 200,
+        "y": 175,
+        "reserveW": 110,
+        "reserveH": 65,
+        "bodyW": 90,
+        "bodyH": 45,
+        "bodyD": 35,
+        "name": "홍싱 기존 어댑터",
+        "basis": "기존 DC 어댑터 재사용; 90×45×35는 배치 가정",
+        "domain": "G0",
+        "bodyX": 210.0,
+        "bodyY": 179
+      },
+      {
+        "id": "rfidbox",
+        "bay": "lower",
+        "x": 25,
+        "y": 10,
+        "reserveW": 170,
+        "reserveH": 130,
+        "bodyW": 160,
+        "bodyH": 100,
+        "bodyD": 65,
+        "name": "RFID 제어함",
+        "basis": "소형화한 배치 가정 160×100×65; 확정 실측 아님",
+        "domain": "P0",
+        "bodyX": 30.0,
+        "bodyY": 14
+      },
+      {
+        "id": "amp",
+        "bay": "lower",
+        "x": 215,
+        "y": 10,
+        "reserveW": 160,
+        "reserveH": 110,
+        "bodyW": 140,
+        "bodyH": 90,
+        "bodyD": 45,
+        "name": "HONGXING",
+        "basis": "몸체140×90×45 배치가정. MP3를 바로 아래로 이동. 기존 라인출력/GND 직결",
+        "domain": "G0",
+        "bodyX": 225.0,
+        "bodyY": 14
+      },
+      {
+        "id": "mp3",
+        "bay": "lower",
+        "x": 235,
+        "y": 125,
+        "reserveW": 70,
+        "reserveH": 40,
+        "bodyW": 45,
+        "bodyH": 30,
+        "bodyD": 20,
+        "name": "KT403A MP3",
+        "basis": "홍싱 바로 아래. UART/라인 출력은G0, SPK±는 앰프 입력으로 쓰지 않음",
+        "domain": "G0",
+        "bodyX": 247.5,
+        "bodyY": 129
+      },
+      {
+        "id": "relayA",
+        "bay": "lower",
+        "x": 25,
+        "y": 200,
+        "reserveW": 90,
+        "reserveH": 75,
+        "bodyW": 80,
+        "bodyH": 60,
+        "bodyD": 30,
+        "name": "4CH 릴레이 A",
+        "basis": "기존 보드; 3자석+창문을 조건부 재배치",
+        "domain": "P0",
+        "bodyX": 30.0,
+        "bodyY": 204
+      },
+      {
+        "id": "relayB",
+        "bay": "lower",
+        "x": 125,
+        "y": 200,
+        "reserveW": 90,
+        "reserveH": 75,
+        "bodyW": 80,
+        "bodyH": 60,
+        "bodyD": 30,
+        "name": "4CH 릴레이 B",
+        "basis": "8채널 추적 전 철거/예비 단정 금지",
+        "domain": "P0",
+        "bodyX": 130.0,
+        "bodyY": 204
+      },
+      {
+        "id": "magdiodes",
+        "bay": "lower",
+        "x": 115,
+        "y": 200,
+        "reserveW": 10,
+        "reserveH": 65,
+        "bodyW": 6,
+        "bodyH": 50,
+        "bodyD": 6,
+        "name": "자석 다이오드 ×3 · 릴레이 옆",
+        "basis": "별도 PCB 없음. 3개와 절연 리드 고정공간6×50mm는 배치값. 자석선 +/−에 병렬, 접점 COM/NO 사이 아님",
+        "domain": "P0",
+        "bodyX": 117.0,
+        "bodyY": 204
+      },
+      {
+        "id": "l298",
+        "bay": "lower",
+        "x": 25,
+        "y": 315,
+        "reserveW": 90,
+        "reserveH": 75,
+        "bodyW": 60,
+        "bodyH": 60,
+        "bodyD": 55,
+        "name": "L298N E6",
+        "basis": "D4/D5/A2 직결 유지. GND는 P0.4 독립 귀환 한 가닥만. G→L298 추가선은 삭제. VMS는 모터 정격 미확인으로 공급 미확정. 5V-EN과 ENA는 별개 점퍼이며 실물 단자 방향 확인 전 변경 금지.",
+        "domain": "P0",
+        "bodyX": 40.0,
+        "bodyY": 319
+      },
+      {
+        "id": "buck",
+        "bay": "lower",
+        "x": 250,
+        "y": 315,
+        "reserveW": 60,
+        "reserveH": 65,
+        "bodyW": 25.4,
+        "bodyH": 25.4,
+        "bodyD": 9.5,
+        "name": "단일 5V 강압기",
+        "basis": "기존 후보 Pololu D36V50F5 #4091 한 대. VIN=P12.5, 입력 GND=P0.5, 출력5V/G. 입력−와 출력−는 내부 공통. 5.5A는36Vin 조건 표기이며12Vin·밀폐함 실측이 아님.",
+        "domain": "P0",
+        "bodyX": 267.3,
+        "bodyY": 319
+      },
+      {
+        "id": "gnd",
+        "bay": "lower",
+        "x": 145,
+        "y": 410,
+        "reserveW": 75,
+        "reserveH": 40,
+        "bodyW": 58.1,
+        "bodyH": 28.6,
+        "bodyD": 32.4,
+        "name": "G · 로직 0V",
+        "basis": "5V 강압기 출력 GND에서만 공급. P0와 전기적으로 공통이나 직접 점퍼·G→L298 선 없음. Arduino와 가장 가까운 몸체 간격 약42mm(도면상).",
+        "domain": "G0",
+        "bodyX": 153.45,
+        "bodyY": 414
+      },
+      {
+        "id": "logic-positive",
+        "bay": "lower",
+        "x": 220,
+        "y": 410,
+        "reserveW": 75,
+        "reserveH": 40,
+        "bodyW": 58.1,
+        "bodyH": 28.6,
+        "bodyD": 32.4,
+        "name": "5V · 통합 분배",
+        "basis": "5D/5L를 단일5V로 통합. Uno·릴레이A/B·KT403A·도어에 분기. 모터 VMS를5V로 선택하려면 별도 부하예산 확인. 다른5V 출력과 병렬 연결 금지.",
+        "domain": "G0",
+        "bodyX": 228.45,
+        "bodyY": 414
+      },
+      {
+        "id": "uno",
+        "bay": "lower",
+        "x": 125,
+        "y": 315,
+        "reserveW": 90,
+        "reserveH": 75,
+        "bodyW": 68.6,
+        "bodyH": 53.4,
+        "bodyD": 25,
+        "name": "Arduino Uno",
+        "basis": "5V.1/G.1에서 공급. G·5V 블록 몸체와50mm 이내 배치. L298 기준은 G→강압기GND→P0→L298의 짧은 공통 경로. A2=16은 Uno PWM 핀이 아니며 기존255는 HIGH와 동일.",
+        "domain": "G0",
+        "bodyX": 135.7,
+        "bodyY": 319
+      }
+    ],
+    "ducts": {
+      "upperVertical": [
+        [
+          380,
+          10,
+          20,
+          230
+        ]
+      ],
+      "lowerVertical": [
+        [
+          0,
+          0,
+          20,
+          550
+        ],
+        [
+          220,
+          170,
+          20,
+          220
+        ]
+      ],
+      "lowerHorizontal": [
+        [
+          25,
+          170,
+          350,
+          20
+        ],
+        [
+          25,
+          280,
+          350,
+          20
+        ]
+      ],
+      "groups": [
+        {
+          "bay": "lower",
+          "rect": [
+            0,
+            0,
+            20,
+            550
+          ],
+          "group": "power"
+        },
+        {
+          "bay": "lower",
+          "rect": [
+            220,
+            170,
+            20,
+            220
+          ],
+          "group": "signal"
+        },
+        {
+          "bay": "lower",
+          "rect": [
+            25,
+            170,
+            350,
+            20
+          ],
+          "group": "signal"
+        },
+        {
+          "bay": "lower",
+          "rect": [
+            25,
+            280,
+            350,
+            20
+          ],
+          "group": "signal"
+        }
+      ]
+    },
+    "doorPanel": {
+      "x": 25,
+      "y": 200,
+      "width": 180,
+      "height": 75,
+      "rearReserve": 45,
+      "oppositeBackplateDepth": 45,
+      "requiredGap": 15,
+      "depthNeed": 105,
+      "button": "OMRON A16-TAM-1"
+    },
+    "passage": {
+      "newHoleRequired": false,
+      "mainsCrossing": false,
+      "bundles": [
+        "TRK-12P/TRK-0: SMPS에서 P12/P0로 · 전원 한 쌍",
+        "홍싱 기존 어댑터 +/− 한 쌍",
+        "기존 현장 케이블: 신호/전력 그룹별 정리"
+      ],
+      "minimumConductors": 4,
+      "conditionalConductors": "센서 전원/공유선의 실제 수에 따라 추가"
+    },
+    "fitConditions": [
+      "유효 폭400/상부260/하부560/깊이120mm 이상",
+      "RFID160×100×65 및 앰프140×90×45는 임시 몸체값; 커넥터 포함 실측 대조",
+      "SMPS/DDR 제조사 방열 방향과 주변 열원 간격 별도 충족",
+      "관통구 위치/직경/기존 선 외경/굽힘을 실측",
+      "DIN 레일과 부품 고정부 설치높이 포함; 타공은 실물 홀 전사"
+    ],
+    "mounting": "각 유효 백플레이트 좌상단 원점. 예약 외곽은 케이블 여유를 포함. 몸체 치수와 나사홀은 별도 실측."
+  },
+  "wires": [
+    {
+      "label": "TRK-12P",
+      "start": "SMPS V+",
+      "end": "P12.IN",
+      "net": "+12V",
+      "cable": "TRK",
+      "group": "전력",
+      "note": "TRK-0과 밀착·동일 경로",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "TRK-0",
+      "labels": [
+        "TRK-12P / 시작",
+        "TRK-12P / 경로",
+        "TRK-12P / 끝"
+      ]
+    },
+    {
+      "label": "TRK-0",
+      "start": "SMPS V−",
+      "end": "P0.IN",
+      "net": "P0",
+      "cable": "TRK",
+      "group": "전력",
+      "note": "모든 부하 귀환의 상위 트렁크",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "TRK-12P",
+      "labels": [
+        "TRK-0 / 시작",
+        "TRK-0 / 경로",
+        "TRK-0 / 끝"
+      ]
+    },
+    {
+      "label": "M1-FEED",
+      "start": "P12.1",
+      "end": "RY-A CH1 COM",
+      "net": "+12V",
+      "cable": "MAG1",
+      "group": "전력",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "M1-FIELD−",
+      "labels": [
+        "M1-FEED / 시작",
+        "M1-FEED / 경로",
+        "M1-FEED / 끝"
+      ]
+    },
+    {
+      "label": "M1-FIELD+",
+      "start": "RY-A CH1 선택접점",
+      "end": "외부 자석1 +",
+      "net": "MAG1+",
+      "cable": "MAG1",
+      "group": "전력",
+      "note": "NO/NC는 기존 기능대로 추적. 다이오드 K(띠)는 이 선",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "M1-FIELD−",
+      "labels": [
+        "M1-FIELD+ / 시작",
+        "M1-FIELD+ / 경로",
+        "M1-FIELD+ / 끝"
+      ]
+    },
+    {
+      "label": "M1-FIELD−",
+      "start": "P0.1",
+      "end": "외부 자석1 −",
+      "net": "P0",
+      "cable": "MAG1",
+      "group": "전력",
+      "note": "원래 꼬임쌍 유지. 다이오드 A는 이 선",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "M1-FIELD+",
+      "labels": [
+        "M1-FIELD− / 시작",
+        "M1-FIELD− / 경로",
+        "M1-FIELD− / 끝"
+      ]
+    },
+    {
+      "label": "M2-FEED",
+      "start": "P12.2",
+      "end": "RY-A CH2 COM",
+      "net": "+12V",
+      "cable": "MAG2",
+      "group": "전력",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "M2-FIELD−",
+      "labels": [
+        "M2-FEED / 시작",
+        "M2-FEED / 경로",
+        "M2-FEED / 끝"
+      ]
+    },
+    {
+      "label": "M2-FIELD+",
+      "start": "RY-A CH2 선택접점",
+      "end": "외부 자석2 +",
+      "net": "MAG2+",
+      "cable": "MAG2",
+      "group": "전력",
+      "note": "NO/NC는 기존 기능대로 추적. 다이오드 K(띠)는 이 선",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "M2-FIELD−",
+      "labels": [
+        "M2-FIELD+ / 시작",
+        "M2-FIELD+ / 경로",
+        "M2-FIELD+ / 끝"
+      ]
+    },
+    {
+      "label": "M2-FIELD−",
+      "start": "P0.2",
+      "end": "외부 자석2 −",
+      "net": "P0",
+      "cable": "MAG2",
+      "group": "전력",
+      "note": "원래 꼬임쌍 유지. 다이오드 A는 이 선",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "M2-FIELD+",
+      "labels": [
+        "M2-FIELD− / 시작",
+        "M2-FIELD− / 경로",
+        "M2-FIELD− / 끝"
+      ]
+    },
+    {
+      "label": "M3-FEED",
+      "start": "P12.3",
+      "end": "RY-A CH3 COM",
+      "net": "+12V",
+      "cable": "MAG3",
+      "group": "전력",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "M3-FIELD−",
+      "labels": [
+        "M3-FEED / 시작",
+        "M3-FEED / 경로",
+        "M3-FEED / 끝"
+      ]
+    },
+    {
+      "label": "M3-FIELD+",
+      "start": "RY-A CH3 선택접점",
+      "end": "외부 자석3 +",
+      "net": "MAG3+",
+      "cable": "MAG3",
+      "group": "전력",
+      "note": "NO/NC는 기존 기능대로 추적. 다이오드 K(띠)는 이 선",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "M3-FIELD−",
+      "labels": [
+        "M3-FIELD+ / 시작",
+        "M3-FIELD+ / 경로",
+        "M3-FIELD+ / 끝"
+      ]
+    },
+    {
+      "label": "M3-FIELD−",
+      "start": "P0.3",
+      "end": "외부 자석3 −",
+      "net": "P0",
+      "cable": "MAG3",
+      "group": "전력",
+      "note": "원래 꼬임쌍 유지. 다이오드 A는 이 선",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "M3-FIELD+",
+      "labels": [
+        "M3-FIELD− / 시작",
+        "M3-FIELD− / 경로",
+        "M3-FIELD− / 끝"
+      ]
+    },
+    {
+      "label": "MOTOR-VMS-12",
+      "start": "P12.4",
+      "end": "L298 VMS",
+      "net": "+12V",
+      "cable": "MOT-PWR",
+      "group": "전력",
+      "note": "5V 대안과 동시 연결 금지",
+      "condition": "U1: 모터 정격12V와 실제 기존 전압 확인 후에만",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "P0-MOTOR",
+      "labels": [
+        "MOTOR-VMS-12 / 시작",
+        "MOTOR-VMS-12 / 경로",
+        "MOTOR-VMS-12 / 끝"
+      ]
+    },
+    {
+      "label": "MOTOR-VMS-5",
+      "start": "5V.6",
+      "end": "L298 VMS",
+      "net": "+5V",
+      "cable": "MOT-PWR-ALT",
+      "group": "전력",
+      "note": "12V 대안과 택1. 모터 기동/스톨전류까지 강압기 예산에 추가",
+      "condition": "U1: 실제5V 모터·강압기 여유 확인 후에만",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "P0-MOTOR",
+      "labels": [
+        "MOTOR-VMS-5 / 시작",
+        "MOTOR-VMS-5 / 경로",
+        "MOTOR-VMS-5 / 끝"
+      ]
+    },
+    {
+      "label": "P0-MOTOR",
+      "start": "P0.4",
+      "end": "L298 GND",
+      "net": "P0",
+      "cable": "MOT-PWR",
+      "group": "전력",
+      "note": "독립 전력 귀환. G판에 추가 선을 연결하지 않음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "MOTOR-VMS-12",
+      "labels": [
+        "P0-MOTOR / 시작",
+        "P0-MOTOR / 경로",
+        "P0-MOTOR / 끝"
+      ]
+    },
+    {
+      "label": "BUCK-IN+",
+      "start": "P12.5",
+      "end": "강압기 VIN",
+      "net": "+12V",
+      "cable": "BUCK-IN",
+      "group": "전력",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "BUCK-IN−",
+      "labels": [
+        "BUCK-IN+ / 시작",
+        "BUCK-IN+ / 경로",
+        "BUCK-IN+ / 끝"
+      ]
+    },
+    {
+      "label": "BUCK-IN−",
+      "start": "P0.5",
+      "end": "강압기 입력GND",
+      "net": "P0",
+      "cable": "BUCK-IN",
+      "group": "전력",
+      "note": "G와 P0 사이의 유일한 계획 연결 경로",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "BUCK-IN+",
+      "labels": [
+        "BUCK-IN− / 시작",
+        "BUCK-IN− / 경로",
+        "BUCK-IN− / 끝"
+      ]
+    },
+    {
+      "label": "BUCK-5V",
+      "start": "강압기 VOUT",
+      "end": "5V.IN",
+      "net": "+5V",
+      "cable": "BUCK-OUT",
+      "group": "신호",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "BUCK-G",
+      "labels": [
+        "BUCK-5V / 시작",
+        "BUCK-5V / 경로",
+        "BUCK-5V / 끝"
+      ]
+    },
+    {
+      "label": "BUCK-G",
+      "start": "강압기 출력GND",
+      "end": "G.IN",
+      "net": "G",
+      "cable": "BUCK-OUT",
+      "group": "신호",
+      "note": "입력−=출력− 내부 공통",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "BUCK-5V",
+      "labels": [
+        "BUCK-G / 시작",
+        "BUCK-G / 경로",
+        "BUCK-G / 끝"
+      ]
+    },
+    {
+      "label": "RFID-V+",
+      "start": "P12.6",
+      "end": "RFID +12V",
+      "net": "+12V",
+      "cable": "RFID-PWR",
+      "group": "전력",
+      "note": "실제 정격과 기존 공급 전압 확인",
+      "condition": "U2: RFID 정격12V 확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "RFID-0",
+      "labels": [
+        "RFID-V+ / 시작",
+        "RFID-V+ / 경로",
+        "RFID-V+ / 끝"
+      ]
+    },
+    {
+      "label": "RFID-0",
+      "start": "P0.6",
+      "end": "RFID 전원−",
+      "net": "P0",
+      "cable": "RFID-PWR",
+      "group": "전력",
+      "note": "신호 귀환과 임의 합치지 않음",
+      "condition": "U2: RFID 전원 방식 확인",
+      "status": "미확인",
+      "returnWire": true,
+      "pair": "RFID-V+",
+      "labels": [
+        "RFID-0 / 시작",
+        "RFID-0 / 경로",
+        "RFID-0 / 끝"
+      ]
+    },
+    {
+      "label": "기타12V센서-V+",
+      "start": "P12.7",
+      "end": "기타12V센서 +12V",
+      "net": "+12V",
+      "cable": "기타12V센서-PWR",
+      "group": "전력",
+      "note": "실제 정격과 기존 공급 전압 확인",
+      "condition": "U2: 기타12V센서 정격12V 확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "기타12V센서-0",
+      "labels": [
+        "기타12V센서-V+ / 시작",
+        "기타12V센서-V+ / 경로",
+        "기타12V센서-V+ / 끝"
+      ]
+    },
+    {
+      "label": "기타12V센서-0",
+      "start": "P0.7",
+      "end": "기타12V센서 전원−",
+      "net": "P0",
+      "cable": "기타12V센서-PWR",
+      "group": "전력",
+      "note": "신호 귀환과 임의 합치지 않음",
+      "condition": "U2: 기타12V센서 전원 방식 확인",
+      "status": "미확인",
+      "returnWire": true,
+      "pair": "기타12V센서-V+",
+      "labels": [
+        "기타12V센서-0 / 시작",
+        "기타12V센서-0 / 경로",
+        "기타12V센서-0 / 끝"
+      ]
+    },
+    {
+      "label": "UNO-PWR-5V",
+      "start": "5V.1",
+      "end": "Arduino 5V",
+      "net": "+5V",
+      "cable": "UNO-PWR",
+      "group": "신호",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "UNO-PWR-G",
+      "labels": [
+        "UNO-PWR-5V / 시작",
+        "UNO-PWR-5V / 경로",
+        "UNO-PWR-5V / 끝"
+      ]
+    },
+    {
+      "label": "UNO-PWR-G",
+      "start": "G.1",
+      "end": "Arduino GND",
+      "net": "G",
+      "cable": "UNO-PWR",
+      "group": "신호",
+      "note": "부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "UNO-PWR-5V",
+      "labels": [
+        "UNO-PWR-G / 시작",
+        "UNO-PWR-G / 경로",
+        "UNO-PWR-G / 끝"
+      ]
+    },
+    {
+      "label": "CAB-RLY-5V",
+      "start": "5V.2",
+      "end": "RY-A VCC",
+      "net": "+5V",
+      "cable": "CAB-RLY",
+      "group": "신호",
+      "note": "VCC/JD-VCC 상태는 실물대로 확인",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "CAB-RLY-G",
+      "labels": [
+        "CAB-RLY-5V / 시작",
+        "CAB-RLY-5V / 경로",
+        "CAB-RLY-5V / 끝"
+      ]
+    },
+    {
+      "label": "CAB-RLY-G",
+      "start": "G.2",
+      "end": "RY-A GND",
+      "net": "G",
+      "cable": "CAB-RLY",
+      "group": "신호",
+      "note": "부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "CAB-RLY-5V",
+      "labels": [
+        "CAB-RLY-G / 시작",
+        "CAB-RLY-G / 경로",
+        "CAB-RLY-G / 끝"
+      ]
+    },
+    {
+      "label": "CAB-RLY-B-5V",
+      "start": "5V.3",
+      "end": "RY-B VCC",
+      "net": "+5V",
+      "cable": "CAB-RLY-B",
+      "group": "신호",
+      "note": "VCC/JD-VCC 상태는 실물대로 확인",
+      "condition": "U5: RY-B 기존4채널/전체8채널·JD-VCC 추적 후",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "CAB-RLY-B-G",
+      "labels": [
+        "CAB-RLY-B-5V / 시작",
+        "CAB-RLY-B-5V / 경로",
+        "CAB-RLY-B-5V / 끝"
+      ]
+    },
+    {
+      "label": "CAB-RLY-B-G",
+      "start": "G.3",
+      "end": "RY-B GND",
+      "net": "G",
+      "cable": "CAB-RLY-B",
+      "group": "신호",
+      "note": "부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음",
+      "condition": "U5: RY-B 기존4채널/전체8채널·JD-VCC 추적 후",
+      "status": "미확인",
+      "returnWire": true,
+      "pair": "CAB-RLY-B-5V",
+      "labels": [
+        "CAB-RLY-B-G / 시작",
+        "CAB-RLY-B-G / 경로",
+        "CAB-RLY-B-G / 끝"
+      ]
+    },
+    {
+      "label": "PANEL-5V",
+      "start": "5V.4",
+      "end": "J7.1 도어VCC",
+      "net": "+5V",
+      "cable": "PANEL",
+      "group": "신호",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "PANEL-G",
+      "labels": [
+        "PANEL-5V / 시작",
+        "PANEL-5V / 경로",
+        "PANEL-5V / 끝"
+      ]
+    },
+    {
+      "label": "PANEL-G",
+      "start": "G.4",
+      "end": "J7.2 도어GND",
+      "net": "G",
+      "cable": "PANEL",
+      "group": "신호",
+      "note": "부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "PANEL-5V",
+      "labels": [
+        "PANEL-G / 시작",
+        "PANEL-G / 경로",
+        "PANEL-G / 끝"
+      ]
+    },
+    {
+      "label": "CAB-MP3-5V",
+      "start": "5V.5",
+      "end": "KT403A VCC",
+      "net": "+5V",
+      "cable": "CAB-MP3",
+      "group": "신호",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "CAB-MP3-G",
+      "labels": [
+        "CAB-MP3-5V / 시작",
+        "CAB-MP3-5V / 경로",
+        "CAB-MP3-5V / 끝"
+      ]
+    },
+    {
+      "label": "CAB-MP3-G",
+      "start": "G.7",
+      "end": "KT403A GND",
+      "net": "G",
+      "cable": "CAB-MP3",
+      "group": "신호",
+      "note": "부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "CAB-MP3-5V",
+      "labels": [
+        "CAB-MP3-G / 시작",
+        "CAB-MP3-G / 경로",
+        "CAB-MP3-G / 끝"
+      ]
+    },
+    {
+      "label": "OUT-D12",
+      "start": "Arduino D12",
+      "end": "RY-A IN1",
+      "net": "D12",
+      "cable": "CAB-RLY",
+      "group": "신호",
+      "note": "기존 active LOW/리셋 동작 확인",
+      "condition": "U5: 입력극성·JD-VCC 실물 확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "CAB-RLY-G",
+      "labels": [
+        "OUT-D12 / 시작",
+        "OUT-D12 / 경로",
+        "OUT-D12 / 끝"
+      ]
+    },
+    {
+      "label": "OUT-D10",
+      "start": "Arduino D10",
+      "end": "RY-A IN2",
+      "net": "D10",
+      "cable": "CAB-RLY",
+      "group": "신호",
+      "note": "기존 active LOW/리셋 동작 확인",
+      "condition": "U5: 입력극성·JD-VCC 실물 확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "CAB-RLY-G",
+      "labels": [
+        "OUT-D10 / 시작",
+        "OUT-D10 / 경로",
+        "OUT-D10 / 끝"
+      ]
+    },
+    {
+      "label": "OUT-D9",
+      "start": "Arduino D9",
+      "end": "RY-A IN3",
+      "net": "D9",
+      "cable": "CAB-RLY",
+      "group": "신호",
+      "note": "기존 active LOW/리셋 동작 확인",
+      "condition": "U5: 입력극성·JD-VCC 실물 확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "CAB-RLY-G",
+      "labels": [
+        "OUT-D9 / 시작",
+        "OUT-D9 / 경로",
+        "OUT-D9 / 끝"
+      ]
+    },
+    {
+      "label": "OUT-A4",
+      "start": "Arduino A4",
+      "end": "RY-A IN4",
+      "net": "A4",
+      "cable": "CAB-RLY",
+      "group": "신호",
+      "note": "기존 active LOW/리셋 동작 확인",
+      "condition": "U5: 입력극성·JD-VCC 실물 확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "CAB-RLY-G",
+      "labels": [
+        "OUT-A4 / 시작",
+        "OUT-A4 / 경로",
+        "OUT-A4 / 끝"
+      ]
+    },
+    {
+      "label": "MOT-D4",
+      "start": "Arduino D4",
+      "end": "L298 IN1",
+      "net": "D4",
+      "cable": "CAB-MOT",
+      "group": "신호",
+      "note": "추가 G→L298 선 없음. 기준 경로는 G→강압기→P0→L298. 제어선은 Arduino/L298 근접 배치로 짧게 정리. 별도 G 동봉 없음. ENA 상시ON 점퍼와5V-EN은 구분",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "공유 기준: BUCK-G / BUCK-IN− / P0-MOTOR",
+      "labels": [
+        "MOT-D4 / 시작",
+        "MOT-D4 / 경로",
+        "MOT-D4 / 끝"
+      ]
+    },
+    {
+      "label": "MOT-D5",
+      "start": "Arduino D5",
+      "end": "L298 IN2",
+      "net": "D5",
+      "cable": "CAB-MOT",
+      "group": "신호",
+      "note": "추가 G→L298 선 없음. 기준 경로는 G→강압기→P0→L298. 제어선은 Arduino/L298 근접 배치로 짧게 정리. 별도 G 동봉 없음. ENA 상시ON 점퍼와5V-EN은 구분",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "공유 기준: BUCK-G / BUCK-IN− / P0-MOTOR",
+      "labels": [
+        "MOT-D5 / 시작",
+        "MOT-D5 / 경로",
+        "MOT-D5 / 끝"
+      ]
+    },
+    {
+      "label": "MOT-A2",
+      "start": "Arduino A2",
+      "end": "L298 ENA",
+      "net": "A2",
+      "cable": "CAB-MOT",
+      "group": "신호",
+      "note": "추가 G→L298 선 없음. 기준 경로는 G→강압기→P0→L298. 제어선은 Arduino/L298 근접 배치로 짧게 정리. 별도 G 동봉 없음. ENA 상시ON 점퍼와5V-EN은 구분",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "공유 기준: BUCK-G / BUCK-IN− / P0-MOTOR",
+      "labels": [
+        "MOT-A2 / 시작",
+        "MOT-A2 / 경로",
+        "MOT-A2 / 끝"
+      ]
+    },
+    {
+      "label": "L298-VSS-5",
+      "start": "5V.7",
+      "end": "L298 5V/Vss",
+      "net": "+5V",
+      "cable": "MOT-LOGIC",
+      "group": "신호",
+      "note": "5V-EN 제거 후 5V단자가 입력인 실물 모듈에서만. GND는 P0.4 기존 귀환 사용",
+      "condition": "U1: 5V단자 입출력/온보드레귤레이터 점퍼 확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "L298-VSS-5 / 시작",
+        "L298-VSS-5 / 경로",
+        "L298-VSS-5 / 끝"
+      ]
+    },
+    {
+      "label": "MP3-D2",
+      "start": "Arduino D2",
+      "end": "KT403A TX",
+      "net": "D2",
+      "cable": "CAB-MP3",
+      "group": "신호",
+      "note": "D2는 수신, D3는 송신. 기존 UART 전압·저항 대조",
+      "condition": "U7: KT403A UART 전압범위",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "CAB-MP3-G",
+      "labels": [
+        "MP3-D2 / 시작",
+        "MP3-D2 / 경로",
+        "MP3-D2 / 끝"
+      ]
+    },
+    {
+      "label": "MP3-D3",
+      "start": "Arduino D3",
+      "end": "KT403A RX",
+      "net": "D3",
+      "cable": "CAB-MP3",
+      "group": "신호",
+      "note": "D2는 수신, D3는 송신. 기존 UART 전압·저항 대조",
+      "condition": "U7: KT403A UART 전압범위",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "CAB-MP3-G",
+      "labels": [
+        "MP3-D3 / 시작",
+        "MP3-D3 / 경로",
+        "MP3-D3 / 끝"
+      ]
+    },
+    {
+      "label": "IN-D8",
+      "start": "외부 액자 리드 S",
+      "end": "Arduino D8",
+      "net": "D8",
+      "cable": "REED-D8",
+      "group": "신호",
+      "note": "원래 꼬임쌍. 책 D6 기존100Ω 보존",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "REED-D8-G",
+      "labels": [
+        "IN-D8 / 시작",
+        "IN-D8 / 경로",
+        "IN-D8 / 끝"
+      ]
+    },
+    {
+      "label": "REED-D8-G",
+      "start": "G.5",
+      "end": "외부 액자 리드 귀환",
+      "net": "G",
+      "cable": "REED-D8",
+      "group": "신호",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "IN-D8",
+      "labels": [
+        "REED-D8-G / 시작",
+        "REED-D8-G / 경로",
+        "REED-D8-G / 끝"
+      ]
+    },
+    {
+      "label": "IN-D6",
+      "start": "외부 책 리드 S",
+      "end": "Arduino D6",
+      "net": "D6",
+      "cable": "REED-D6",
+      "group": "신호",
+      "note": "원래 꼬임쌍. 책 D6 기존100Ω 보존",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "REED-D6-G",
+      "labels": [
+        "IN-D6 / 시작",
+        "IN-D6 / 경로",
+        "IN-D6 / 끝"
+      ]
+    },
+    {
+      "label": "REED-D6-G",
+      "start": "G.6",
+      "end": "외부 책 리드 귀환",
+      "net": "G",
+      "cable": "REED-D6",
+      "group": "신호",
+      "note": "",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "IN-D6",
+      "labels": [
+        "REED-D6-G / 시작",
+        "REED-D6-G / 경로",
+        "REED-D6-G / 끝"
+      ]
+    },
+    {
+      "label": "IN-A0",
+      "start": "기존 조명 신호",
+      "end": "Arduino A0",
+      "net": "A0",
+      "cable": "FIELD-A0",
+      "group": "신호",
+      "note": "무전압 접점이면 신호/G 같은 페어. 전압출력이면 범위·기준 확인 전 연결 확정 금지",
+      "condition": "U2: 출력형식·실제0~5V범위 미확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "IN-A0 / 시작",
+        "IN-A0 / 경로",
+        "IN-A0 / 끝"
+      ]
+    },
+    {
+      "label": "IN-A1",
+      "start": "기존 열쇠 신호",
+      "end": "Arduino A1",
+      "net": "A1",
+      "cable": "FIELD-A1",
+      "group": "신호",
+      "note": "무전압 접점이면 신호/G 같은 페어. 전압출력이면 범위·기준 확인 전 연결 확정 금지",
+      "condition": "U2: 출력형식·실제0~5V범위 미확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "IN-A1 / 시작",
+        "IN-A1 / 경로",
+        "IN-A1 / 끝"
+      ]
+    },
+    {
+      "label": "IN-A5",
+      "start": "기존 RFID 신호",
+      "end": "Arduino A5",
+      "net": "A5",
+      "cable": "FIELD-A5",
+      "group": "신호",
+      "note": "무전압 접점이면 신호/G 같은 페어. 전압출력이면 범위·기준 확인 전 연결 확정 금지",
+      "condition": "U2: 출력형식·실제0~5V범위 미확인",
+      "status": "미확인",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "IN-A5 / 시작",
+        "IN-A5 / 경로",
+        "IN-A5 / 끝"
+      ]
+    },
+    {
+      "label": "PANEL-D11",
+      "start": "Arduino D11",
+      "end": "J7.3 595 SER",
+      "net": "D11",
+      "cable": "PANEL",
+      "group": "신호",
+      "note": "기존 Gun/Hint 배선 철거 후 핀 재사용",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "PANEL-G",
+      "labels": [
+        "PANEL-D11 / 시작",
+        "PANEL-D11 / 경로",
+        "PANEL-D11 / 끝"
+      ]
+    },
+    {
+      "label": "PANEL-D13",
+      "start": "Arduino D13",
+      "end": "J7.4 595 SRCLK",
+      "net": "D13",
+      "cable": "PANEL",
+      "group": "신호",
+      "note": "기존 Gun/Hint 배선 철거 후 핀 재사용",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "PANEL-G",
+      "labels": [
+        "PANEL-D13 / 시작",
+        "PANEL-D13 / 경로",
+        "PANEL-D13 / 끝"
+      ]
+    },
+    {
+      "label": "PANEL-D7",
+      "start": "Arduino D7",
+      "end": "J7.5 595 RCLK",
+      "net": "D7",
+      "cable": "PANEL",
+      "group": "신호",
+      "note": "기존 Gun/Hint 배선 철거 후 핀 재사용",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "PANEL-G",
+      "labels": [
+        "PANEL-D7 / 시작",
+        "PANEL-D7 / 경로",
+        "PANEL-D7 / 끝"
+      ]
+    },
+    {
+      "label": "PANEL-A3",
+      "start": "Arduino A3",
+      "end": "J7.6 진행 버튼",
+      "net": "A3",
+      "cable": "PANEL",
+      "group": "신호",
+      "note": "기존 Gun/Hint 배선 철거 후 핀 재사용",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "PANEL-G",
+      "labels": [
+        "PANEL-A3 / 시작",
+        "PANEL-A3 / 경로",
+        "PANEL-A3 / 끝"
+      ]
+    },
+    {
+      "label": "AUD-L",
+      "start": "KT403A DAC_L",
+      "end": "HONGXING MP3 IN L",
+      "net": "AUDIO",
+      "cable": "AUD",
+      "group": "오디오",
+      "note": "SPK±는 라인입력에 연결하지 않음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "AUD-GND",
+      "labels": [
+        "AUD-L / 시작",
+        "AUD-L / 경로",
+        "AUD-L / 끝"
+      ]
+    },
+    {
+      "label": "AUD-R",
+      "start": "KT403A DAC_R",
+      "end": "HONGXING MP3 IN R",
+      "net": "AUDIO",
+      "cable": "AUD",
+      "group": "오디오",
+      "note": "SPK±는 라인입력에 연결하지 않음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "AUD-GND",
+      "labels": [
+        "AUD-R / 시작",
+        "AUD-R / 경로",
+        "AUD-R / 끝"
+      ]
+    },
+    {
+      "label": "AUD-GND",
+      "start": "KT403A GND",
+      "end": "HONGXING MP3 IN GND",
+      "net": "G",
+      "cable": "AUD",
+      "group": "오디오",
+      "note": "전원− 공통 구조는 실물 도통 대조. 별도 P0/G 선 추가 없음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "AUD-L / AUD-R",
+      "labels": [
+        "AUD-GND / 시작",
+        "AUD-GND / 경로",
+        "AUD-GND / 끝"
+      ]
+    },
+    {
+      "label": "AMP+",
+      "start": "기존 어댑터 +",
+      "end": "HONGXING DC+",
+      "net": "AMP+",
+      "cable": "AMP-PWR",
+      "group": "오디오",
+      "note": "어댑터 기존 전압 유지. 5V판과 합치지 않음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "AMP−",
+      "labels": [
+        "AMP+ / 시작",
+        "AMP+ / 경로",
+        "AMP+ / 끝"
+      ]
+    },
+    {
+      "label": "AMP−",
+      "start": "기존 어댑터 −",
+      "end": "HONGXING DC−",
+      "net": "AMP−",
+      "cable": "AMP-PWR",
+      "group": "오디오",
+      "note": "오디오GND 경로 외 P0/G 직접 연결 없음",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": true,
+      "pair": "AMP+",
+      "labels": [
+        "AMP− / 시작",
+        "AMP− / 경로",
+        "AMP− / 끝"
+      ]
+    },
+    {
+      "label": "MOTOR-OUT-A",
+      "start": "L298 OUT1",
+      "end": "외부 모터 A",
+      "net": "MOTOR-OUT",
+      "cable": "MOTOR-OUT",
+      "group": "전력",
+      "note": "두 선 모두 H브리지 출력. 어느 쪽도 P0/G 고정 금지",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "MOTOR-OUT-B",
+      "labels": [
+        "MOTOR-OUT-A / 시작",
+        "MOTOR-OUT-A / 경로",
+        "MOTOR-OUT-A / 끝"
+      ]
+    },
+    {
+      "label": "MOTOR-OUT-B",
+      "start": "L298 OUT2",
+      "end": "외부 모터 B",
+      "net": "MOTOR-OUT",
+      "cable": "MOTOR-OUT",
+      "group": "전력",
+      "note": "두 선 모두 H브리지 출력. 어느 쪽도 P0/G 고정 금지",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "MOTOR-OUT-A",
+      "labels": [
+        "MOTOR-OUT-B / 시작",
+        "MOTOR-OUT-B / 경로",
+        "MOTOR-OUT-B / 끝"
+      ]
+    },
+    {
+      "label": "WIN-COM",
+      "start": "RY-A CH4 COM",
+      "end": "외부 창문 기존 COM",
+      "net": "W0",
+      "cable": "WINDOW",
+      "group": "전력",
+      "note": "기존 SELV 접점회로. P0/G 연결 없음; NO/NC 추적",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "WIN-COM / 시작",
+        "WIN-COM / 경로",
+        "WIN-COM / 끝"
+      ]
+    },
+    {
+      "label": "WIN-선택접점",
+      "start": "RY-A CH4 선택접점",
+      "end": "외부 창문 기존 선택접점",
+      "net": "W0",
+      "cable": "WINDOW",
+      "group": "전력",
+      "note": "기존 SELV 접점회로. P0/G 연결 없음; NO/NC 추적",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "WIN-선택접점 / 시작",
+        "WIN-선택접점 / 경로",
+        "WIN-선택접점 / 끝"
+      ]
+    },
+    {
+      "label": "AC-L",
+      "start": "기존 차단기 부하측 L",
+      "end": "SMPS L",
+      "net": "AC",
+      "cable": "AC-IN",
+      "group": "AC",
+      "note": "기존 AC 회로 보존. 현장 랜심선 사용 금지",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "AC-L / 시작",
+        "AC-L / 경로",
+        "AC-L / 끝"
+      ]
+    },
+    {
+      "label": "AC-N",
+      "start": "기존 N 분배",
+      "end": "SMPS N",
+      "net": "AC",
+      "cable": "AC-IN",
+      "group": "AC",
+      "note": "기존 AC 회로 보존. 현장 랜심선 사용 금지",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "AC-N / 시작",
+        "AC-N / 경로",
+        "AC-N / 끝"
+      ]
+    },
+    {
+      "label": "PE-87",
+      "start": "기존 PE 접지부",
+      "end": "SMPS FG",
+      "net": "PE",
+      "cable": "PE",
+      "group": "PE",
+      "note": "보호접지. DC 귀환에 사용 금지",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "PE-87 / 시작",
+        "PE-87 / 경로",
+        "PE-87 / 끝"
+      ]
+    },
+    {
+      "label": "PE-88",
+      "start": "기존 PE 접지부",
+      "end": "금속 함체",
+      "net": "PE",
+      "cable": "PE",
+      "group": "PE",
+      "note": "보호접지. DC 귀환에 사용 금지",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "PE-88 / 시작",
+        "PE-88 / 경로",
+        "PE-88 / 끝"
+      ]
+    },
+    {
+      "label": "PE-89",
+      "start": "기존 PE 접지부",
+      "end": "금속 도어",
+      "net": "PE",
+      "cable": "PE",
+      "group": "PE",
+      "note": "보호접지. DC 귀환에 사용 금지",
+      "condition": "",
+      "status": "도면 계획",
+      "returnWire": false,
+      "pair": "",
+      "labels": [
+        "PE-89 / 시작",
+        "PE-89 / 경로",
+        "PE-89 / 끝"
+      ]
+    }
+  ],
+  "groundPorts": [
+    [
+      "P0",
+      "IN",
+      "SMPS V−",
+      "TRK-0"
+    ],
+    [
+      "P0",
+      "1",
+      "자석1 −",
+      "M1-FIELD−"
+    ],
+    [
+      "P0",
+      "2",
+      "자석2 −",
+      "M2-FIELD−"
+    ],
+    [
+      "P0",
+      "3",
+      "자석3 −",
+      "M3-FIELD−"
+    ],
+    [
+      "P0",
+      "4",
+      "L298 GND",
+      "P0-MOTOR"
+    ],
+    [
+      "P0",
+      "5",
+      "강압기 입력GND",
+      "BUCK-IN−"
+    ],
+    [
+      "P0",
+      "6",
+      "RFID 전원− / 조건부",
+      "RFID-0"
+    ],
+    [
+      "P0",
+      "7",
+      "기타12V센서− / 조건부",
+      "기타12V센서-0"
+    ],
+    [
+      "P0",
+      "8~12",
+      "미사용 · G 직접 연결 금지",
+      ""
+    ],
+    [
+      "G",
+      "IN",
+      "강압기 출력GND",
+      "BUCK-G"
+    ],
+    [
+      "G",
+      "1",
+      "Arduino GND",
+      "UNO-PWR-G"
+    ],
+    [
+      "G",
+      "2",
+      "RY-A GND",
+      "CAB-RLY-G"
+    ],
+    [
+      "G",
+      "3",
+      "RY-B GND",
+      "CAB-RLY-B-G"
+    ],
+    [
+      "G",
+      "4",
+      "J7.2 도어GND",
+      "PANEL-G"
+    ],
+    [
+      "G",
+      "7",
+      "KT403A GND",
+      "CAB-MP3-G"
+    ],
+    [
+      "G",
+      "5",
+      "액자 리드 귀환",
+      "REED-D8-G"
+    ],
+    [
+      "G",
+      "6",
+      "책 리드 귀환",
+      "REED-D6-G"
+    ],
+    [
+      "G",
+      "8~12",
+      "미사용 · P0/L298 추가 연결 금지",
+      ""
+    ]
+  ],
+  "positivePorts": [
+    [
+      "P12",
+      "IN",
+      "SMPS V+",
+      "TRK-12P"
+    ],
+    [
+      "P12",
+      "1",
+      "RY-A CH1 COM",
+      "M1-FEED"
+    ],
+    [
+      "P12",
+      "2",
+      "RY-A CH2 COM",
+      "M2-FEED"
+    ],
+    [
+      "P12",
+      "3",
+      "RY-A CH3 COM",
+      "M3-FEED"
+    ],
+    [
+      "P12",
+      "4",
+      "L298 VMS / U1 조건부",
+      "MOTOR-VMS-12"
+    ],
+    [
+      "P12",
+      "5",
+      "강압기 VIN",
+      "BUCK-IN+"
+    ],
+    [
+      "P12",
+      "6",
+      "RFID +12V / 조건부",
+      "RFID-V+"
+    ],
+    [
+      "P12",
+      "7",
+      "기타12V센서 + / 조건부",
+      "기타12V센서-V+"
+    ],
+    [
+      "5V",
+      "IN",
+      "강압기 VOUT",
+      "BUCK-5V"
+    ],
+    [
+      "5V",
+      "1",
+      "Arduino 5V",
+      "UNO-PWR-5V"
+    ],
+    [
+      "5V",
+      "2",
+      "RY-A VCC",
+      "CAB-RLY-5V"
+    ],
+    [
+      "5V",
+      "3",
+      "RY-B VCC",
+      "CAB-RLY-B-5V"
+    ],
+    [
+      "5V",
+      "4",
+      "J7.1 도어VCC",
+      "PANEL-5V"
+    ],
+    [
+      "5V",
+      "5",
+      "KT403A VCC",
+      "CAB-MP3-5V"
+    ],
+    [
+      "5V",
+      "6",
+      "VMS=5V 대안 / U1 조건부",
+      "MOTOR-VMS-5"
+    ],
+    [
+      "5V",
+      "7",
+      "L298 Vss / 점퍼 확인 후",
+      "L298-VSS-5"
+    ]
+  ],
+  "graph": {
+    "revision": "v6-common-star-corrected",
+    "systemGalvanicIsolation": false,
+    "edges": [
+      {
+        "a": "P0",
+        "b": "SMPS−",
+        "label": "TRK-0"
+      },
+      {
+        "a": "P0",
+        "b": "MAG1−",
+        "label": "M1-FIELD−"
+      },
+      {
+        "a": "P0",
+        "b": "MAG2−",
+        "label": "M2-FIELD−"
+      },
+      {
+        "a": "P0",
+        "b": "MAG3−",
+        "label": "M3-FIELD−"
+      },
+      {
+        "a": "P0",
+        "b": "L298_GND",
+        "label": "P0-MOTOR"
+      },
+      {
+        "a": "P0",
+        "b": "BUCK_IN_GND",
+        "label": "BUCK-IN−"
+      },
+      {
+        "a": "BUCK_IN_GND",
+        "b": "BUCK_OUT_GND",
+        "label": "BUCK-INTERNAL-GND"
+      },
+      {
+        "a": "BUCK_OUT_GND",
+        "b": "G",
+        "label": "BUCK-G"
+      },
+      {
+        "a": "P0",
+        "b": "RFID 전원−",
+        "label": "RFID-0"
+      },
+      {
+        "a": "P0",
+        "b": "기타12V센서 전원−",
+        "label": "기타12V센서-0"
+      },
+      {
+        "a": "G",
+        "b": "Arduino GND",
+        "label": "UNO-PWR-G"
+      },
+      {
+        "a": "G",
+        "b": "RY-A GND",
+        "label": "CAB-RLY-G"
+      },
+      {
+        "a": "G",
+        "b": "RY-B GND",
+        "label": "CAB-RLY-B-G"
+      },
+      {
+        "a": "G",
+        "b": "J7.2 도어GND",
+        "label": "PANEL-G"
+      },
+      {
+        "a": "G",
+        "b": "KT403A GND",
+        "label": "CAB-MP3-G"
+      },
+      {
+        "a": "G",
+        "b": "REED_D8_G",
+        "label": "REED-D8-G"
+      },
+      {
+        "a": "G",
+        "b": "REED_D6_G",
+        "label": "REED-D6-G"
+      },
+      {
+        "a": "KT403A GND",
+        "b": "AMP_LINE_GND",
+        "label": "AUD-GND"
+      },
+      {
+        "a": "AMP_LINE_GND",
+        "b": "AMP_DC_NEG",
+        "label": "AMP-INTERNAL-GND"
+      },
+      {
+        "a": "AMP_DC_NEG",
+        "b": "ADAPTER_NEG",
+        "label": "AMP−"
+      },
+      {
+        "a": "PE",
+        "b": "SMPS_FG",
+        "label": "PE-87"
+      },
+      {
+        "a": "PE",
+        "b": "CABINET",
+        "label": "PE-88"
+      },
+      {
+        "a": "PE",
+        "b": "DOOR",
+        "label": "PE-89"
+      }
+    ],
+    "originalInstructionEdges": [
+      {
+        "a": "P0",
+        "b": "SMPS−",
+        "label": "TRK-0"
+      },
+      {
+        "a": "P0",
+        "b": "MAG1−",
+        "label": "M1-FIELD−"
+      },
+      {
+        "a": "P0",
+        "b": "MAG2−",
+        "label": "M2-FIELD−"
+      },
+      {
+        "a": "P0",
+        "b": "MAG3−",
+        "label": "M3-FIELD−"
+      },
+      {
+        "a": "P0",
+        "b": "L298_GND",
+        "label": "P0-MOTOR"
+      },
+      {
+        "a": "P0",
+        "b": "BUCK_IN_GND",
+        "label": "BUCK-IN−"
+      },
+      {
+        "a": "BUCK_IN_GND",
+        "b": "BUCK_OUT_GND",
+        "label": "BUCK-INTERNAL-GND"
+      },
+      {
+        "a": "BUCK_OUT_GND",
+        "b": "G",
+        "label": "BUCK-G"
+      },
+      {
+        "a": "P0",
+        "b": "RFID 전원−",
+        "label": "RFID-0"
+      },
+      {
+        "a": "P0",
+        "b": "기타12V센서 전원−",
+        "label": "기타12V센서-0"
+      },
+      {
+        "a": "G",
+        "b": "Arduino GND",
+        "label": "UNO-PWR-G"
+      },
+      {
+        "a": "G",
+        "b": "RY-A GND",
+        "label": "CAB-RLY-G"
+      },
+      {
+        "a": "G",
+        "b": "RY-B GND",
+        "label": "CAB-RLY-B-G"
+      },
+      {
+        "a": "G",
+        "b": "J7.2 도어GND",
+        "label": "PANEL-G"
+      },
+      {
+        "a": "G",
+        "b": "KT403A GND",
+        "label": "CAB-MP3-G"
+      },
+      {
+        "a": "G",
+        "b": "REED_D8_G",
+        "label": "REED-D8-G"
+      },
+      {
+        "a": "G",
+        "b": "REED_D6_G",
+        "label": "REED-D6-G"
+      },
+      {
+        "a": "KT403A GND",
+        "b": "AMP_LINE_GND",
+        "label": "AUD-GND"
+      },
+      {
+        "a": "AMP_LINE_GND",
+        "b": "AMP_DC_NEG",
+        "label": "AMP-INTERNAL-GND"
+      },
+      {
+        "a": "AMP_DC_NEG",
+        "b": "ADAPTER_NEG",
+        "label": "AMP−"
+      },
+      {
+        "a": "PE",
+        "b": "SMPS_FG",
+        "label": "PE-87"
+      },
+      {
+        "a": "PE",
+        "b": "CABINET",
+        "label": "PE-88"
+      },
+      {
+        "a": "PE",
+        "b": "DOOR",
+        "label": "PE-89"
+      },
+      {
+        "a": "G",
+        "b": "L298_GND",
+        "label": "원 지시서 CAB-MOT G.8→L298 GND"
+      }
+    ],
+    "originalInstructionPaths": [
+      [
+        "P0-MOTOR",
+        "원 지시서 CAB-MOT G.8→L298 GND"
+      ],
+      [
+        "BUCK-IN−",
+        "BUCK-INTERNAL-GND",
+        "BUCK-G"
+      ]
+    ],
+    "correctedPaths": [
+      [
+        "BUCK-IN−",
+        "BUCK-INTERNAL-GND",
+        "BUCK-G"
+      ]
+    ],
+    "unknownBonds": [
+      "U2: A0/A1/A5 센서 전원−와 신호 기준",
+      "U4: L298 탭/방열판·홍싱 외함과 PE",
+      "U6: USB/계측기 접지",
+      "U5: 릴레이 보드 실제 GND/JD-VCC"
+    ]
+  },
+  "corrections": [
+    {
+      "id": "C1",
+      "title": "지시서의 G→L298 선 삭제",
+      "reason": "강압기 GND 외에 P0→L298 GND→G 경로가 하나 더 생깁니다. 모터 전류가 두 경로로 분류하므로 기준선에는 전류가 안 흐른다는 보장이 없습니다.",
+      "action": "L298 GND는 P0.4 귀환 한 가닥만. 제어선은 Arduino/L298 근접 배치로118mm 도면경로로 줄임. CAB-MOT의 별도 GND 도체 요구는 이 안에서 제외.",
+      "tradeoff": "긴 제어선·접지차 허용 여부는 실측 필요. 모터와 로직의 완전 절연이 필요한 안이 아닙니다."
+    },
+    {
+      "id": "C2",
+      "title": "현재 v5.3을 절연안으로 부르지 않음",
+      "reason": "지시서의 v5 설명은 옛 상태입니다. 현재 보존본 v5.3도 L298 직결 기준선 때문에 P0/G0 공통입니다.",
+      "action": "실제 v5.3 HTML·데이터를 그대로 보존하고 v6만 별도 생성."
+    },
+    {
+      "id": "C3",
+      "title": "L298 점퍼·모터 전압은 자동 확정하지 않음",
+      "reason": "모터 정격과 L298 모듈 회로를 모릅니다. IC 사양만으로 모듈의 5V 단자가 입력인지 출력인지 결정할 수 없습니다.",
+      "action": "VMS12V/5V는 서로 배타적인 조건부 항목. Vss 외부5V도 실물5V-EN 확인 후. ENA 점퍼는 별개."
+    },
+    {
+      "id": "C4",
+      "title": "모든 미확인 항목은 도면 검사와 분리",
+      "reason": "센서·섀시·USB를 실제 측정하지 않은 그래프는 실제 단일 경로를 증명하지 못합니다.",
+      "action": "검사는 계획 그래프만 판정. U1~U7은 모두 미확인. 새 절연 모터드라이버는 채택하지 않음."
+    },
+    {
+      "id": "C5",
+      "title": "규격이 다른 두 선의 트윈 페룰을 자동 지정하지 않음",
+      "reason": "트윈 페룰과 단자는 허용 도체 수·규격이 맞아야 합니다. 이번 수정안은 L298 GND 이중 삽입 자체를 없앱니다.",
+      "action": "한 포트 한 선 원칙. 다이오드 리드는 정격 접속·절연·고정을 실물 대조."
+    }
+  ],
+  "unknowns": [
+    [
+      "U1",
+      "모터 / L298",
+      "정격전압·실제 기존 VMS·기동/스톨전류·5V단자·5V-EN/ENA 점퍼",
+      "12V/5V 급전 확정 보류. 5V 모터에12V 금지. L298 전압강하는 전류에 따라 달라짐."
+    ],
+    [
+      "U2",
+      "기존 센서",
+      "A0/A1/A5 접점/PNP/NPN/아날로그 및 입력 범위·신호귀환",
+      "무전압 접점만 G 페어로. 전원12V만 보고 출력12V로 단정하지 않음."
+    ],
+    [
+      "U3",
+      "현장 랜케이블",
+      "Cu/CCA·AWG·편도길이·자석전류·가용 페어·접속/온도",
+      "가정 계산과 실물 허용전류 판정 구별."
+    ],
+    [
+      "U4",
+      "섀시 경유 우회",
+      "L298 탭/방열판·금속 고정물·홍싱 외함과 PE/DC−의 도통",
+      "DC 전원 차단 상태에서 장치별·USB 분리 후 경로 확인. PE 제거로 해결하지 않음."
+    ],
+    [
+      "U5",
+      "릴레이A/B",
+      "active LOW·코일정격·JD-VCC 점퍼·RY-B4개 포함 총8채널",
+      "기존 접점·리셋 동작 추적 후 재결선. B를 예비로 단정하지 않음."
+    ],
+    [
+      "U6",
+      "Uno / USB",
+      "외부5V 공급 중 USB VBUS 중복 및 PC/계측기 접지",
+      "외부5V와 USB의 동시 급전을 피하는 작업 순서 기록."
+    ],
+    [
+      "U7",
+      "KT403A UART",
+      "RX 입력전압·TX 전압·직렬저항·실제 라이브러리 호환",
+      "DAC 라인오디오는 유지. SPK±는 홍싱 MP3 IN에 연결하지 않음."
+    ]
+  ],
+  "checks": [
+    {
+      "id": "one-path",
+      "title": "P0–G 연결은 강압기 경유 한 경로",
+      "detail": "BUCK-IN− → BUCK-INTERNAL-GND → BUCK-G",
+      "pass": true
+    },
+    {
+      "id": "load-returns",
+      "title": "자석·L298 전력 귀환은 P0에만",
+      "detail": "G→L298 추가선 없음. 자석1~3 각각 P0.1~3, 모터 P0.4.",
+      "pass": true
+    },
+    {
+      "id": "signal-ref",
+      "title": "제어 케이블·리드 기준 경로 명시",
+      "detail": "CAB-RLY/MP3와 리드는 G 동봉. CAB-MOT는 중복 경로를 피하려고 별도 G선을 제외한 명시적 예외.",
+      "pass": true
+    },
+    {
+      "id": "audio",
+      "title": "홍싱 전원−의 로직 연결은 AUD-GND 한 곳",
+      "detail": "어댑터−→홍싱 내부→오디오GND→KT403A→G. 외함 실제 도통은 U4.",
+      "pass": true
+    },
+    {
+      "id": "pe",
+      "title": "계획 그래프에서 PE와 DC 귀환 분리",
+      "detail": "SMPS FG/함체/도어 보호접지 보존. 실제 섀시/USB 우회는 미측정.",
+      "pass": true
+    },
+    {
+      "id": "unknown",
+      "title": "U1~U7 미확인 / 조건부 급전 표시",
+      "detail": "급전 대안 둘을 동시에 시공하도록 표시하지 않음.",
+      "pass": true
+    },
+    {
+      "id": "instruction-rejected",
+      "title": "원 지시서의 중복 경로를 검사기가 검출",
+      "detail": "원문 연결대로는 P0–G 경로2개. 전부 합격으로 숨기지 않음.",
+      "pass": true
+    }
+  ],
+  "bom": {
+    "revision": "v6-common-star-corrected",
+    "checkedOn": "2026-11-04",
+    "items": [
+      {
+        "id": "DUCT",
+        "name": "덕트 본체",
+        "maker": "Panduit",
+        "part": "G.5X1LG6",
+        "qty": 2,
+        "location": "상하 배선 경로",
+        "size": "외형 폭17.5×높이26.9mm / 길이1.8288m",
+        "condition": "호칭0.5인치와 외폭은 다름. 계획20mm 채널에 대조. 실제 선 외경·충전량은 현장 검토.",
+        "url": "https://www.panduit.com/content/dam/panduit/en/products/media/4/34/334/2334/74122334.pdf",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "DUCT-C",
+        "name": "덕트 커버",
+        "maker": "Panduit",
+        "part": "C.5LG6",
+        "qty": 2,
+        "location": "위 덕트 전 길이",
+        "size": "본체와 별매 / 길이1.8288m",
+        "condition": "덕트 높이26.9mm는 커버 포함. 실제 절단 길이 합과 여유를 대조.",
+        "url": "https://www.panduit.com/content/dam/panduit/en/products/media/4/34/334/2334/74122334.pdf",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "U1",
+        "name": "LED 직렬 출력 IC",
+        "maker": "Texas Instruments",
+        "part": "SN74HC595N",
+        "qty": 1,
+        "location": "도어 PCB",
+        "size": "PDIP16",
+        "condition": "5V, QA~QF 사용. /OE=0V, /SRCLR=5V. 595 옆100nF.",
+        "url": "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "LED1~6",
+        "name": "저전류 녹색 LED",
+        "maker": "Kingbright",
+        "part": "WP7113LGD",
+        "qty": 6,
+        "location": "도어 2행×3열",
+        "size": "5mm 관통형",
+        "condition": "2mA 특성 제품. 각 LED1.5kΩ, 음극0V-L. 12V 패널 램프로 치환 금지.",
+        "url": "https://www.kingbrightusa.com/product.asp?catalog_name=LED&product_id=WP7113LGD",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "SW1",
+        "name": "진행 순간 버튼",
+        "maker": "OMRON",
+        "part": "A16-TAM-1",
+        "qty": 1,
+        "location": "하부 도어 (25,200) / 180×75mm",
+        "size": "16mm형 / 패널 뒤28.5mm급, 단자 여유 별도",
+        "condition": "비조광·청색·momentary SPDT의 COM/NO만 사용. 최소1mA@5V이므로 외부4.7k 풀업 적용.",
+        "url": "https://www.ia.omron.com/product/item/13731/",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "RLED",
+        "name": "LED 저항",
+        "maker": "YAGEO",
+        "part": "MFR-25FBF52-1K5",
+        "qty": 6,
+        "location": "도어 PCB",
+        "size": "6.3×Ø2.4mm급",
+        "condition": "1.5kΩ,1%,0.25W. 포장 대체는 동일 전기/기구 사양으로만.",
+        "url": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "RPULL",
+        "name": "버튼 풀업",
+        "maker": "YAGEO",
+        "part": "MFR-25FBF52-4K7",
+        "qty": 1,
+        "location": "도어 PCB",
+        "size": "6.3×Ø2.4mm급",
+        "condition": "4.7kΩ,1%,0.25W. 약1.06mA@5V를 접점으로 공급.",
+        "url": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "RSER",
+        "name": "버튼 직렬 저항",
+        "maker": "YAGEO",
+        "part": "MFR-25FBF52-1K",
+        "qty": 1,
+        "location": "A3 입력 경로",
+        "size": "6.3×Ø2.4mm급",
+        "condition": "1kΩ,1%,0.25W. LED 저항1.5k와 구별.",
+        "url": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "C1/C2",
+        "name": "필터/디커플링",
+        "maker": "KEMET",
+        "part": "C315C104K5R5TA",
+        "qty": 2,
+        "location": "595 옆 / 버튼 노드",
+        "size": "100nF50V radial",
+        "condition": "595 VCC-GND 바로 옆1개, 버튼 RC1개.",
+        "url": "https://search.kemet.com/component-documentation/download/specsheet/C315C104K5R5TA",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "PCB",
+        "name": "납땜식 조작부 PCB",
+        "maker": "Adafruit",
+        "part": "Perma-Proto Half-sized / #1609",
+        "qty": 1,
+        "location": "도어 표시판 뒤",
+        "size": "81×51mm",
+        "condition": "무납땜 브레드보드로 운영하지 않음. 기존5-hole/전원 버스 패턴을 확인하고 절단/점퍼 후 조립. LED 패널 고정 위치는 실물 전사.",
+        "url": "https://www.adafruit.com/product/1609",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "J7-F",
+        "name": "도어 잠금식 하네스",
+        "maker": "Molex",
+        "part": "430250600",
+        "qty": 1,
+        "location": "하부 J7 / 도어 연결",
+        "size": "6극 receptacle",
+        "condition": "Micro-Fit3.0 2×3. 제조사 정면도 기준핀1 표시. 본문 J7.1~6은 전기적 번호이므로 하우징 실제 캐비티 번호와 1:1 확인.",
+        "url": "https://www.molex.com/en-us/products/part-detail/430250600",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "J7-M",
+        "name": "도어 잠금식 하네스",
+        "maker": "Molex",
+        "part": "430200600",
+        "qty": 1,
+        "location": "하부 J7 / 도어 연결",
+        "size": "6극 plug",
+        "condition": "Micro-Fit3.0 2×3. 제조사 정면도 기준핀1 표시. 본문 J7.1~6은 전기적 번호이므로 하우징 실제 캐비티 번호와 1:1 확인.",
+        "url": "https://www.molex.com/en-us/products/part-detail/430200600",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "J7-FC",
+        "name": "도어 잠금식 하네스",
+        "maker": "Molex",
+        "part": "430300007",
+        "qty": 6,
+        "location": "하부 J7 / 도어 연결",
+        "size": "24~20AWG female contact",
+        "condition": "Micro-Fit3.0 2×3. 제조사 정면도 기준핀1 표시. 본문 J7.1~6은 전기적 번호이므로 하우징 실제 캐비티 번호와 1:1 확인.",
+        "url": "https://www.molex.com/en-us/products/part-detail/430300007",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "J7-MC",
+        "name": "도어 잠금식 하네스",
+        "maker": "Molex",
+        "part": "430310007",
+        "qty": 6,
+        "location": "하부 J7 / 도어 연결",
+        "size": "24~20AWG male contact",
+        "condition": "Micro-Fit3.0 2×3. 제조사 정면도 기준핀1 표시. 본문 J7.1~6은 전기적 번호이므로 하우징 실제 캐비티 번호와 1:1 확인.",
+        "url": "https://www.molex.com/en-us/products/part-detail/430310007",
+        "status": "제품 선정 / 설치 조건 대조"
+      },
+      {
+        "id": "PS1",
+        "name": "12V 메인 SMPS",
+        "maker": "MEAN WELL",
+        "part": "LRS-200-12",
+        "qty": 1,
+        "location": "상부",
+        "size": "215×115×30mm",
+        "condition": "기존 후보 보존. 17A가 필요하다는 확정 아님; 얇은 현장선 허용 전류를 의미하지 않음",
+        "url": "https://www.meanwell.com/Upload/PDF/LRS-200/LRS-200-SPEC.PDF",
+        "status": "용량 재검토 / 신규 구매 보류"
+      },
+      {
+        "id": "DC-D",
+        "name": "통합5V 강압기",
+        "maker": "Pololu",
+        "part": "D36V50F5 / #4091",
+        "qty": 1,
+        "location": "하부 (250,315)",
+        "size": "25.4×25.4×9.5mm",
+        "condition": "5V/G 단일 분배. Uno+릴레이8코일+MP3+패널 잠정합계 약1.8A(실측 아님). 5.5A 표기는36Vin 조건이며12Vin 밀폐함에서 연속보장값 아님. 모터5V 급전은 별도 예산.",
+        "url": "https://www.pololu.com/product/4091",
+        "status": "제품 확인 / 적용 조건 확인"
+      },
+      {
+        "id": "D-M1~3",
+        "name": "자석 역기전력 억제",
+        "maker": "Vishay",
+        "part": "1N5408-E3/54",
+        "qty": 3,
+        "location": "릴레이 A 근처 자석선 +/− 사이",
+        "size": "DO-201AD",
+        "condition": "3A/1000V 소자 후보. 줄(K)=자석+, A=자석−. 코일전류/열/반복률/해제시간 확인. 3A는 케이블 허용 전류가 아님",
+        "url": "https://www.vishay.com/docs/88516/1n5400.pdf",
+        "status": "코일/해제시간 대조 전 적용 확정 아님"
+      },
+      {
+        "id": "G-P/G-L",
+        "name": "전력/로직 귀환 분배",
+        "maker": "Phoenix Contact",
+        "part": "PTFIX 6/12X2,5-NS35 BU / 3273090",
+        "qty": 2,
+        "location": "하부 P0(25,410) / G(145,410)",
+        "size": "58.1×28.6×32.4mm",
+        "condition": "같은0V 전위. G↔P0 계획 경로는 강압기 입력/출력GND 한 곳뿐. P0/G 직접 점퍼·G→L298 추가선 금지.",
+        "url": "https://www.phoenixcontact.com/en-nl/products/distribution-block-ptfix-6-12x25-ns35-bu-3273090",
+        "status": "제품 확인 / 적용 조건 확인"
+      },
+      {
+        "id": "P12/5L",
+        "name": "12V / 통합5V 분배",
+        "maker": "Phoenix Contact",
+        "part": "PTFIX 6/12X2,5-NS35 RD / 3273092",
+        "qty": 2,
+        "location": "하부 P12(25,470) / 5V(220,410)",
+        "size": "58.1×28.6×32.4mm",
+        "condition": "기존 두 블록 재사용. 5D/5L 구분 없음. 다른 전원 출력과 병렬 연결 금지.",
+        "url": "https://www.phoenixcontact.com/en-fr/products/distribution-block-ptfix-6-12x25-ns35-rd-3273092",
+        "status": "제품 확인 / 적용 조건 확인"
+      }
+    ],
+    "unselected": [
+      {
+        "id": "FIELD-WIRE",
+        "name": "기존 이더넷 심선",
+        "reason": "Cu/CCA,24/26/28AWG, 길이, 코일전류, 사용가능 페어, 접속상태/온도 미측정. 허용전류 확정 불가"
+      },
+      {
+        "id": "SENSOR-CHECK",
+        "name": "기존 센서 신호 확인",
+        "reason": "새 센서판은 제거. 기존 접점/신호 결선을 보존하고 A0/A1/A5 출력형식과 실제 전압을 기록. 12V 전원 사용만으로 신호도12V라고 판단하지 않음"
+      },
+      {
+        "id": "LEGACY",
+        "name": "기존 보드/어댑터/센서",
+        "reason": "RFID/홍싱 외곽, 센서 출력형식, 릴레이8채널/active LOW, L298 전원점퍼 실물 대조"
+      },
+      {
+        "id": "MECH",
+        "name": "레일·스탠드오프·부싱·체결재",
+        "reason": "실물 홀/판두께/나사방향에 맞춰 선정; 범용 큰 단자열을 추가하지 않음"
+      }
+    ],
+    "removed": [
+      "FU0",
+      "F1~F7",
+      "F5L",
+      "PT2.5×24",
+      "D-ST2.5×2",
+      "필드/퓨즈용 CLIPFIX",
+      "0V-LINK",
+      "센서PCB/옵토일괄회로",
+      "자석접속PCB",
+      "MPT1725656×10",
+      "NTE1×2/오디오절연PCB/추가감쇠부품",
+      "ISO-M/ISO-R/고정캐리어/전용저항14개",
+      "DC-L DDR-15G-5 (v6만)"
+    ],
+    "scope": "v5.3 품목에서 DDR 한 대 삭제. 신규 부품·단자열·퓨즈·절연 드라이버 추가 없음."
+  },
+  "routes": [
+    {
+      "id": "TRK-P",
+      "labels": [
+        "TRK-12P"
+      ],
+      "points": [
+        [
+          193.0,
+          129.0
+        ],
+        [
+          190,
+          158
+        ],
+        [
+          9,
+          158
+        ],
+        [
+          9,
+          252
+        ],
+        [
+          100,
+          252
+        ],
+        [
+          100,
+          332
+        ],
+        [
+          9,
+          332
+        ],
+        [
+          9,
+          818.3
+        ],
+        [
+          33.45,
+          818.3
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "TRK · SMPS→하부 P12 / 12V+",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 1076.9,
+      "labelAt": [
+        108,
+        255
+      ]
+    },
+    {
+      "id": "TRK-N",
+      "labels": [
+        "TRK-0"
+      ],
+      "points": [
+        [
+          189.0,
+          129.0
+        ],
+        [
+          186,
+          162
+        ],
+        [
+          13,
+          162
+        ],
+        [
+          13,
+          256
+        ],
+        [
+          104,
+          256
+        ],
+        [
+          104,
+          336
+        ],
+        [
+          13,
+          336
+        ],
+        [
+          13,
+          758.3
+        ],
+        [
+          33.45,
+          758.3
+        ]
+      ],
+      "color": "#204c8b",
+      "kind": "P0",
+      "title": "TRK · SMPS→하부 P0 / 0V",
+      "group": "전력",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 1004.9,
+      "labelAt": [
+        108,
+        268
+      ]
+    },
+    {
+      "id": "BUCK-IN-P",
+      "labels": [
+        "BUCK-IN+"
+      ],
+      "points": [
+        [
+          91.55,
+          816.3
+        ],
+        [
+          107,
+          816.3
+        ],
+        [
+          107,
+          714
+        ],
+        [
+          251,
+          714
+        ],
+        [
+          251,
+          659.7
+        ],
+        [
+          267.3,
+          659.7
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "BUCK-IN · P12.5→VIN",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 332.3,
+      "labelAt": [
+        117,
+        709
+      ]
+    },
+    {
+      "id": "BUCK-IN-N",
+      "labels": [
+        "BUCK-IN−"
+      ],
+      "points": [
+        [
+          91.55,
+          760.3
+        ],
+        [
+          111,
+          760.3
+        ],
+        [
+          111,
+          718
+        ],
+        [
+          255,
+          718
+        ],
+        [
+          255,
+          663.7
+        ],
+        [
+          267.3,
+          663.7
+        ]
+      ],
+      "color": "#204c8b",
+      "kind": "P0",
+      "title": "BUCK-IN · P0.5→GND",
+      "group": "전력",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 272.3,
+      "labelAt": [
+        117,
+        725
+      ]
+    },
+    {
+      "id": "BUCK-OUT-P",
+      "labels": [
+        "BUCK-5V"
+      ],
+      "points": [
+        [
+          282.0,
+          674.4
+        ],
+        [
+          282,
+          734
+        ],
+        [
+          257.5,
+          734
+        ],
+        [
+          257.5,
+          744.0
+        ]
+      ],
+      "color": "#b68a20",
+      "kind": "5",
+      "title": "단일 강압기→5V판",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 94.1,
+      "labelAt": [
+        286,
+        706
+      ]
+    },
+    {
+      "id": "BUCK-OUT-N",
+      "labels": [
+        "BUCK-G"
+      ],
+      "points": [
+        [
+          278.0,
+          674.4
+        ],
+        [
+          278,
+          730
+        ],
+        [
+          182.5,
+          730
+        ],
+        [
+          182.5,
+          744.0
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "단일 강압기→G판",
+      "group": "신호",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 165.1,
+      "labelAt": [
+        286,
+        689
+      ]
+    },
+    {
+      "id": "MOTOR-P",
+      "labels": [
+        "MOTOR-VMS-12"
+      ],
+      "points": [
+        [
+          33.45,
+          814.3
+        ],
+        [
+          6,
+          814.3
+        ],
+        [
+          6,
+          716
+        ],
+        [
+          66,
+          716
+        ],
+        [
+          66.0,
+          709.0
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "MOT-PWR · VMS12V 조건부",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": true,
+      "planLengthMm": 192.7,
+      "labelAt": [
+        24,
+        704
+      ]
+    },
+    {
+      "id": "MOTOR-N",
+      "labels": [
+        "P0-MOTOR"
+      ],
+      "points": [
+        [
+          66.5,
+          744.0
+        ],
+        [
+          66.5,
+          724
+        ],
+        [
+          74,
+          724
+        ],
+        [
+          74.0,
+          709.0
+        ]
+      ],
+      "color": "#204c8b",
+      "kind": "P0",
+      "title": "P0.4→L298 GND · 독립 귀환",
+      "group": "전력",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 42.5,
+      "labelAt": [
+        39,
+        733
+      ]
+    },
+    {
+      "id": "MOTOR-5ALT",
+      "labels": [
+        "MOTOR-VMS-5"
+      ],
+      "points": [
+        [
+          261.5,
+          744.0
+        ],
+        [
+          261.5,
+          738
+        ],
+        [
+          78,
+          738
+        ],
+        [
+          78.0,
+          709.0
+        ]
+      ],
+      "color": "#b68a20",
+      "kind": "5",
+      "title": "VMS5V 대안 · 12V와 택1",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": true,
+      "planLengthMm": 218.5
+    },
+    {
+      "id": "MOTOR-VSS",
+      "labels": [
+        "L298-VSS-5"
+      ],
+      "points": [
+        [
+          265.5,
+          744.0
+        ],
+        [
+          265.5,
+          742
+        ],
+        [
+          115,
+          742
+        ],
+        [
+          115,
+          722
+        ],
+        [
+          82,
+          722
+        ],
+        [
+          82.0,
+          709.0
+        ]
+      ],
+      "color": "#b68a20",
+      "kind": "5",
+      "title": "L298 Vss · 점퍼 확인 후",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": true,
+      "planLengthMm": 218.5
+    },
+    {
+      "id": "UNO-P",
+      "labels": [
+        "UNO-PWR-5V"
+      ],
+      "points": [
+        [
+          253.5,
+          744.0
+        ],
+        [
+          253.5,
+          726
+        ],
+        [
+          174,
+          726
+        ],
+        [
+          174.0,
+          702.4
+        ]
+      ],
+      "color": "#b68a20",
+      "kind": "5",
+      "title": "5V.1→Uno 5V",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 121.1,
+      "labelAt": [
+        184,
+        711
+      ]
+    },
+    {
+      "id": "UNO-N",
+      "labels": [
+        "UNO-PWR-G"
+      ],
+      "points": [
+        [
+          178.5,
+          744.0
+        ],
+        [
+          178.5,
+          722
+        ],
+        [
+          166,
+          722
+        ],
+        [
+          166.0,
+          702.4
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "G.1→Uno GND",
+      "group": "신호",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 54.1,
+      "labelAt": [
+        122,
+        711
+      ]
+    },
+    {
+      "id": "CAB-MOT",
+      "labels": [
+        "MOT-D4",
+        "MOT-D5",
+        "MOT-A2"
+      ],
+      "points": [
+        [
+          162.0,
+          649.0
+        ],
+        [
+          162,
+          636
+        ],
+        [
+          70,
+          636
+        ],
+        [
+          70.0,
+          649.0
+        ]
+      ],
+      "color": "#d25391",
+      "kind": "CTL",
+      "title": "CAB-MOT · D4 / D5 / A2 · 짧은 직결",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 118.0,
+      "labelAt": [
+        105,
+        631
+      ]
+    },
+    {
+      "id": "CAB-RLY",
+      "labels": [
+        "OUT-D12",
+        "OUT-D10",
+        "OUT-D9",
+        "OUT-A4"
+      ],
+      "points": [
+        [
+          178.0,
+          649.0
+        ],
+        [
+          178,
+          620
+        ],
+        [
+          70,
+          620
+        ],
+        [
+          70.0,
+          594.0
+        ]
+      ],
+      "color": "#d25391",
+      "kind": "CTL",
+      "title": "CAB-RLY · D12 / D10 / D9 / A4",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 163.0,
+      "labelAt": [
+        100,
+        615
+      ]
+    },
+    {
+      "id": "CAB-RLY-P",
+      "labels": [
+        "CAB-RLY-5V"
+      ],
+      "points": [
+        [
+          261.5,
+          744.0
+        ],
+        [
+          261.5,
+          738
+        ],
+        [
+          234,
+          738
+        ],
+        [
+          234,
+          628
+        ],
+        [
+          74.0,
+          628
+        ],
+        [
+          74.0,
+          594.0
+        ]
+      ],
+      "color": "#b68a20",
+      "kind": "5",
+      "title": "CAB-RLY · 5V",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 337.5
+    },
+    {
+      "id": "CAB-RLY-G",
+      "labels": [
+        "CAB-RLY-G"
+      ],
+      "points": [
+        [
+          182.5,
+          744.0
+        ],
+        [
+          182.5,
+          734
+        ],
+        [
+          230,
+          734
+        ],
+        [
+          230,
+          624
+        ],
+        [
+          70.0,
+          624
+        ],
+        [
+          70.0,
+          594.0
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "CAB-RLY · G 기준",
+      "group": "신호",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 357.5
+    },
+    {
+      "id": "CAB-RLY-B-P",
+      "labels": [
+        "CAB-RLY-B-5V"
+      ],
+      "points": [
+        [
+          261.5,
+          744.0
+        ],
+        [
+          261.5,
+          738
+        ],
+        [
+          234,
+          738
+        ],
+        [
+          234,
+          620
+        ],
+        [
+          174.0,
+          620
+        ],
+        [
+          174.0,
+          594.0
+        ]
+      ],
+      "color": "#b68a20",
+      "kind": "5",
+      "title": "CAB-RLY-B · 5V",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": true,
+      "planLengthMm": 237.5
+    },
+    {
+      "id": "CAB-RLY-B-G",
+      "labels": [
+        "CAB-RLY-B-G"
+      ],
+      "points": [
+        [
+          182.5,
+          744.0
+        ],
+        [
+          182.5,
+          734
+        ],
+        [
+          230,
+          734
+        ],
+        [
+          230,
+          616
+        ],
+        [
+          170.0,
+          616
+        ],
+        [
+          170.0,
+          594.0
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "CAB-RLY-B · G 기준",
+      "group": "신호",
+      "returnWire": true,
+      "conditional": true,
+      "planLengthMm": 257.5
+    },
+    {
+      "id": "CAB-MP3-P",
+      "labels": [
+        "CAB-MP3-5V"
+      ],
+      "points": [
+        [
+          261.5,
+          744.0
+        ],
+        [
+          261.5,
+          738
+        ],
+        [
+          234,
+          738
+        ],
+        [
+          234,
+          510
+        ],
+        [
+          274.0,
+          510
+        ],
+        [
+          274.0,
+          489.0
+        ]
+      ],
+      "color": "#b68a20",
+      "kind": "5",
+      "title": "CAB-MP3 · 5V",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 322.5
+    },
+    {
+      "id": "CAB-MP3-G",
+      "labels": [
+        "CAB-MP3-G"
+      ],
+      "points": [
+        [
+          182.5,
+          744.0
+        ],
+        [
+          182.5,
+          734
+        ],
+        [
+          230,
+          734
+        ],
+        [
+          230,
+          506
+        ],
+        [
+          270.0,
+          506
+        ],
+        [
+          270.0,
+          489.0
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "CAB-MP3 · G 기준",
+      "group": "신호",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 342.5
+    },
+    {
+      "id": "CAB-MP3-SIG",
+      "labels": [
+        "MP3-D2",
+        "MP3-D3"
+      ],
+      "points": [
+        [
+          182.0,
+          649.0
+        ],
+        [
+          182,
+          632
+        ],
+        [
+          226,
+          632
+        ],
+        [
+          226,
+          502
+        ],
+        [
+          266,
+          502
+        ],
+        [
+          266.0,
+          489.0
+        ]
+      ],
+      "color": "#d25391",
+      "kind": "CTL",
+      "title": "CAB-MP3 · D2 / D3",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": true,
+      "planLengthMm": 244.0,
+      "labelAt": [
+        231,
+        501
+      ]
+    },
+    {
+      "id": "PANEL-SIG",
+      "labels": [
+        "PANEL-D11",
+        "PANEL-D13",
+        "PANEL-D7",
+        "PANEL-A3"
+      ],
+      "points": [
+        [
+          186.0,
+          649.0
+        ],
+        [
+          186,
+          640
+        ],
+        [
+          238,
+          640
+        ],
+        [
+          238,
+          690
+        ],
+        [
+          425,
+          690
+        ]
+      ],
+      "color": "#d25391",
+      "kind": "CTL",
+      "title": "PANEL · J7.3~6 · 도어",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 298.0
+    },
+    {
+      "id": "PANEL-P",
+      "labels": [
+        "PANEL-5V"
+      ],
+      "points": [
+        [
+          269.5,
+          744.0
+        ],
+        [
+          269.5,
+          740
+        ],
+        [
+          242,
+          740
+        ],
+        [
+          242,
+          694
+        ],
+        [
+          425,
+          694
+        ]
+      ],
+      "color": "#b68a20",
+      "kind": "5",
+      "title": "PANEL · J7.1 5V",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 260.5
+    },
+    {
+      "id": "PANEL-G",
+      "labels": [
+        "PANEL-G"
+      ],
+      "points": [
+        [
+          190.5,
+          744.0
+        ],
+        [
+          190.5,
+          736
+        ],
+        [
+          246,
+          736
+        ],
+        [
+          246,
+          698
+        ],
+        [
+          425,
+          698
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "PANEL · J7.2 G",
+      "group": "신호",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 280.5
+    },
+    {
+      "id": "MAG1-FEED",
+      "labels": [
+        "M1-FEED"
+      ],
+      "points": [
+        [
+          33.45,
+          821.3
+        ],
+        [
+          6,
+          821.3
+        ],
+        [
+          6,
+          519
+        ],
+        [
+          42,
+          519
+        ],
+        [
+          42,
+          534
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "MAG1 · P12.1→COM1",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 380.7
+    },
+    {
+      "id": "MAG1-POS",
+      "labels": [
+        "M1-FIELD+"
+      ],
+      "points": [
+        [
+          47,
+          534
+        ],
+        [
+          47,
+          525
+        ],
+        [
+          21,
+          525
+        ],
+        [
+          21,
+          535
+        ],
+        [
+          -25,
+          535
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "외부 자석1 + / 다이오드 K",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 91.0
+    },
+    {
+      "id": "MAG1-NEG",
+      "labels": [
+        "M1-FIELD−"
+      ],
+      "points": [
+        [
+          33.45,
+          761.3
+        ],
+        [
+          14,
+          761.3
+        ],
+        [
+          14,
+          539
+        ],
+        [
+          -25,
+          539
+        ]
+      ],
+      "color": "#204c8b",
+      "kind": "P0",
+      "title": "외부 자석1 − / 다이오드 A",
+      "group": "전력",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 280.7
+    },
+    {
+      "id": "MAG2-FEED",
+      "labels": [
+        "M2-FEED"
+      ],
+      "points": [
+        [
+          33.45,
+          824.3
+        ],
+        [
+          7,
+          824.3
+        ],
+        [
+          7,
+          516
+        ],
+        [
+          60,
+          516
+        ],
+        [
+          60,
+          534
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "MAG2 · P12.2→COM2",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 405.7
+    },
+    {
+      "id": "MAG2-POS",
+      "labels": [
+        "M2-FIELD+"
+      ],
+      "points": [
+        [
+          65,
+          534
+        ],
+        [
+          65,
+          524
+        ],
+        [
+          21,
+          524
+        ],
+        [
+          21,
+          556
+        ],
+        [
+          -25,
+          556
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "외부 자석2 + / 다이오드 K",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 132.0
+    },
+    {
+      "id": "MAG2-NEG",
+      "labels": [
+        "M2-FIELD−"
+      ],
+      "points": [
+        [
+          33.45,
+          764.3
+        ],
+        [
+          15,
+          764.3
+        ],
+        [
+          15,
+          560
+        ],
+        [
+          -25,
+          560
+        ]
+      ],
+      "color": "#204c8b",
+      "kind": "P0",
+      "title": "외부 자석2 − / 다이오드 A",
+      "group": "전력",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 262.7
+    },
+    {
+      "id": "MAG3-FEED",
+      "labels": [
+        "M3-FEED"
+      ],
+      "points": [
+        [
+          33.45,
+          827.3
+        ],
+        [
+          8,
+          827.3
+        ],
+        [
+          8,
+          513
+        ],
+        [
+          78,
+          513
+        ],
+        [
+          78,
+          534
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "MAG3 · P12.3→COM3",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 430.7
+    },
+    {
+      "id": "MAG3-POS",
+      "labels": [
+        "M3-FIELD+"
+      ],
+      "points": [
+        [
+          83,
+          534
+        ],
+        [
+          83,
+          523
+        ],
+        [
+          21,
+          523
+        ],
+        [
+          21,
+          577
+        ],
+        [
+          -25,
+          577
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "외부 자석3 + / 다이오드 K",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 173.0
+    },
+    {
+      "id": "MAG3-NEG",
+      "labels": [
+        "M3-FIELD−"
+      ],
+      "points": [
+        [
+          33.45,
+          767.3
+        ],
+        [
+          16,
+          767.3
+        ],
+        [
+          16,
+          581
+        ],
+        [
+          -25,
+          581
+        ]
+      ],
+      "color": "#204c8b",
+      "kind": "P0",
+      "title": "외부 자석3 − / 다이오드 A",
+      "group": "전력",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 244.7
+    },
+    {
+      "id": "REED-D8",
+      "labels": [
+        "IN-D8"
+      ],
+      "points": [
+        [
+          425,
+          708
+        ],
+        [
+          238,
+          708
+        ],
+        [
+          238,
+          644
+        ],
+        [
+          154,
+          644
+        ],
+        [
+          154.0,
+          649.0
+        ]
+      ],
+      "color": "#d25391",
+      "kind": "CTL",
+      "title": "외부 D8 리드 신호",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 340.0
+    },
+    {
+      "id": "REED-D8-G",
+      "labels": [
+        "REED-D8-G"
+      ],
+      "points": [
+        [
+          194.5,
+          744.0
+        ],
+        [
+          194.5,
+          738
+        ],
+        [
+          242,
+          738
+        ],
+        [
+          242,
+          712
+        ],
+        [
+          425,
+          712
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "외부 D8 리드 G · 같은 페어",
+      "group": "신호",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 262.5
+    },
+    {
+      "id": "REED-D6",
+      "labels": [
+        "IN-D6"
+      ],
+      "points": [
+        [
+          425,
+          718
+        ],
+        [
+          242,
+          718
+        ],
+        [
+          242,
+          640
+        ],
+        [
+          158,
+          640
+        ],
+        [
+          158.0,
+          649.0
+        ]
+      ],
+      "color": "#d25391",
+      "kind": "CTL",
+      "title": "외부 D6 리드 신호",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 354.0
+    },
+    {
+      "id": "REED-D6-G",
+      "labels": [
+        "REED-D6-G"
+      ],
+      "points": [
+        [
+          198.5,
+          744.0
+        ],
+        [
+          198.5,
+          740
+        ],
+        [
+          246,
+          740
+        ],
+        [
+          246,
+          722
+        ],
+        [
+          425,
+          722
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "외부 D6 리드 G · 같은 페어",
+      "group": "신호",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 248.5
+    },
+    {
+      "id": "FIELD-SENSOR",
+      "labels": [
+        "IN-A0",
+        "IN-A1",
+        "IN-A5"
+      ],
+      "points": [
+        [
+          150.0,
+          649.0
+        ],
+        [
+          150,
+          642
+        ],
+        [
+          250,
+          642
+        ],
+        [
+          250,
+          704
+        ],
+        [
+          425,
+          704
+        ]
+      ],
+      "color": "#d25391",
+      "kind": "CTL",
+      "title": "외부 A0/A1/A5 · 출력형식 미확인",
+      "group": "신호",
+      "returnWire": false,
+      "conditional": true,
+      "planLengthMm": 344.0
+    },
+    {
+      "id": "MOTOR-OUT",
+      "labels": [
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B"
+      ],
+      "points": [
+        [
+          40.0,
+          679.0
+        ],
+        [
+          24,
+          679
+        ],
+        [
+          -25,
+          679
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "외부 모터 OUT1/2 · GND 아님",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 65.0
+    },
+    {
+      "id": "WINDOW",
+      "labels": [
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "points": [
+        [
+          30.0,
+          576.0
+        ],
+        [
+          25,
+          576
+        ],
+        [
+          25,
+          600
+        ],
+        [
+          -25,
+          600
+        ]
+      ],
+      "color": "#8260b4",
+      "kind": "AUD",
+      "title": "외부 창문 W0 · 기존 SELV",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 79.0
+    },
+    {
+      "id": "RFID-V+",
+      "labels": [
+        "RFID-V+"
+      ],
+      "points": [
+        [
+          33.45,
+          820.3
+        ],
+        [
+          14,
+          820.3
+        ],
+        [
+          14,
+          394.0
+        ],
+        [
+          30.0,
+          394.0
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "RFID 전원 · 정격 확인 후",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": true,
+      "planLengthMm": 461.7
+    },
+    {
+      "id": "RFID-0",
+      "labels": [
+        "RFID-0"
+      ],
+      "points": [
+        [
+          33.45,
+          764.3
+        ],
+        [
+          18,
+          764.3
+        ],
+        [
+          18,
+          398.0
+        ],
+        [
+          30.0,
+          398.0
+        ]
+      ],
+      "color": "#204c8b",
+      "kind": "P0",
+      "title": "RFID 전원 · 정격 확인 후",
+      "group": "전력",
+      "returnWire": true,
+      "conditional": true,
+      "planLengthMm": 393.7
+    },
+    {
+      "id": "FIELD-12P",
+      "labels": [
+        "기타12V센서-V+"
+      ],
+      "points": [
+        [
+          33.45,
+          810.3
+        ],
+        [
+          20,
+          810.3
+        ],
+        [
+          20,
+          853
+        ],
+        [
+          -25,
+          853
+        ]
+      ],
+      "color": "#e96836",
+      "kind": "12",
+      "title": "외부 기타12V 센서 · 조건부",
+      "group": "전력",
+      "returnWire": false,
+      "conditional": true,
+      "planLengthMm": 101.2
+    },
+    {
+      "id": "FIELD-12N",
+      "labels": [
+        "기타12V센서-0"
+      ],
+      "points": [
+        [
+          33.45,
+          754.3
+        ],
+        [
+          24,
+          754.3
+        ],
+        [
+          24,
+          857
+        ],
+        [
+          -25,
+          857
+        ]
+      ],
+      "color": "#204c8b",
+      "kind": "P0",
+      "title": "외부 기타12V 센서 · 조건부",
+      "group": "전력",
+      "returnWire": true,
+      "conditional": true,
+      "planLengthMm": 161.2
+    },
+    {
+      "id": "AUD-SIG",
+      "labels": [
+        "AUD-L",
+        "AUD-R"
+      ],
+      "points": [
+        [
+          268.0,
+          459.0
+        ],
+        [
+          268,
+          450
+        ],
+        [
+          293,
+          450
+        ],
+        [
+          293.0,
+          434.0
+        ]
+      ],
+      "color": "#8260b4",
+      "kind": "AUD",
+      "title": "AUD · DAC L/R→MP3 IN",
+      "group": "오디오",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 50.0
+    },
+    {
+      "id": "AUD-GND",
+      "labels": [
+        "AUD-GND"
+      ],
+      "points": [
+        [
+          272.0,
+          459.0
+        ],
+        [
+          272,
+          446
+        ],
+        [
+          297,
+          446
+        ],
+        [
+          297.0,
+          434.0
+        ]
+      ],
+      "color": "#0d9690",
+      "kind": "G",
+      "title": "AUD-GND · 홍싱의 유일한 로직 연결",
+      "group": "오디오",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 50.0
+    },
+    {
+      "id": "AMP-P",
+      "labels": [
+        "AMP+"
+      ],
+      "points": [
+        [
+          253.0,
+          224.0
+        ],
+        [
+          248,
+          245
+        ],
+        [
+          280,
+          245
+        ],
+        [
+          280,
+          332
+        ],
+        [
+          293,
+          332
+        ],
+        [
+          293.0,
+          344.0
+        ]
+      ],
+      "color": "#8260b4",
+      "kind": "AUD",
+      "title": "홍싱 기존 DC +",
+      "group": "오디오",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 165.6
+    },
+    {
+      "id": "AMP-N",
+      "labels": [
+        "AMP−"
+      ],
+      "points": [
+        [
+          257.0,
+          224.0
+        ],
+        [
+          252,
+          249
+        ],
+        [
+          284,
+          249
+        ],
+        [
+          284,
+          328
+        ],
+        [
+          297,
+          328
+        ],
+        [
+          297.0,
+          344.0
+        ]
+      ],
+      "color": "#8260b4",
+      "kind": "AUD",
+      "title": "홍싱 기존 DC −",
+      "group": "오디오",
+      "returnWire": true,
+      "conditional": false,
+      "planLengthMm": 165.5
+    },
+    {
+      "id": "PE-87",
+      "labels": [
+        "PE-87"
+      ],
+      "points": [
+        [
+          337.5,
+          58.0
+        ],
+        [
+          318,
+          58.0
+        ],
+        [
+          318,
+          71.5
+        ],
+        [
+          297.5,
+          71.5
+        ]
+      ],
+      "color": "#7b8591",
+      "kind": "PE",
+      "title": "PE · SMPS FG",
+      "group": "PE",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 53.5
+    },
+    {
+      "id": "PE-88",
+      "labels": [
+        "PE-88"
+      ],
+      "points": [
+        [
+          367.5,
+          59.0
+        ],
+        [
+          411,
+          59.0
+        ],
+        [
+          411,
+          280
+        ],
+        [
+          409,
+          280
+        ]
+      ],
+      "color": "#7b8591",
+      "kind": "PE",
+      "title": "PE · 함체",
+      "group": "PE",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 266.5
+    },
+    {
+      "id": "PE-89",
+      "labels": [
+        "PE-89"
+      ],
+      "points": [
+        [
+          367.5,
+          60.0
+        ],
+        [
+          412,
+          60.0
+        ],
+        [
+          412,
+          670
+        ],
+        [
+          425,
+          670
+        ]
+      ],
+      "color": "#7b8591",
+      "kind": "PE",
+      "title": "PE · 도어",
+      "group": "PE",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 667.5
+    },
+    {
+      "id": "AC-L",
+      "labels": [
+        "AC-L"
+      ],
+      "points": [
+        [
+          32.5,
+          94.0
+        ],
+        [
+          35,
+          145
+        ],
+        [
+          65,
+          145
+        ],
+        [
+          65,
+          77.5
+        ],
+        [
+          82.5,
+          77.5
+        ]
+      ],
+      "color": "#626b74",
+      "kind": "AC",
+      "title": "기존 L→SMPS",
+      "group": "AC",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 166.1
+    },
+    {
+      "id": "AC-N",
+      "labels": [
+        "AC-N"
+      ],
+      "points": [
+        [
+          36.5,
+          94.0
+        ],
+        [
+          39,
+          149
+        ],
+        [
+          61,
+          149
+        ],
+        [
+          61,
+          81.5
+        ],
+        [
+          82.5,
+          81.5
+        ]
+      ],
+      "color": "#626b74",
+      "kind": "AC",
+      "title": "기존 N→SMPS",
+      "group": "AC",
+      "returnWire": false,
+      "conditional": false,
+      "planLengthMm": 166.1
+    }
+  ],
+  "version": "v6.0",
+  "planningOnly": true,
+  "stats": {
+    "parts": 17,
+    "wires": 67,
+    "labels": 201,
+    "bomRows": 19,
+    "newParts": 0,
+    "removedConverter": 1
+  },
+  "sources": [
+    {
+      "title": "Pololu #4091 공식 사양",
+      "url": "https://www.pololu.com/product/4091"
+    },
+    {
+      "title": "ST L298 공식 데이터시트",
+      "url": "https://www.st.com/resource/en/datasheet/l298.pdf"
+    }
+  ],
+  "routeComparison": [
+    {
+      "id": "CAB-MOT",
+      "beforeMm": 370.8,
+      "afterMm": 118.0
+    },
+    {
+      "id": "CAB-RLY",
+      "beforeMm": 682.4,
+      "afterMm": 163.0
+    },
+    {
+      "id": "CAB-MP3-SIG",
+      "beforeMm": 382.0,
+      "afterMm": 244.0
+    }
+  ]
+}

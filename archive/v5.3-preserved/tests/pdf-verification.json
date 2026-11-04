@@ -1,0 +1,7 @@
+{
+  "revision": "v5.3-direct-control",
+  "pages": 5,
+  "rendered": true,
+  "scope": "reserve envelopes; removed GPIO carrier; common ground legend",
+  "notClaimed": "survey or drilling-hole template"
+}

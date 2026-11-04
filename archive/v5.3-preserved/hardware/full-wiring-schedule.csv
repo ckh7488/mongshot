@@ -1,0 +1,74 @@
+﻿양쪽 선 라벨,시작,끝,전원 영역,시공 조건
+P12-SOURCE,SMPS V+,P12.IN,P0,
+P0-SOURCE,SMPS V−,P0.IN,P0,
+DDR-IN+,P12.6,DC-L IN+,P0,
+P0-DDR,P0.6,DC-L IN−,P0,
+5L-SOURCE,DC-L OUT+,5L.IN,G0,
+G0-SOURCE,DC-L OUT−,G0.IN,G0,
+BUCK-IN+,P12.5,DC-D VIN,P0,
+P0-5D,P0.5,DC-D GND,P0,
+5D-OUT,DC-D VOUT,5D 분기접속 +,P0,
+5L-1,5L.1,Arduino 5V,G0,
+G0-1,G0.1,Arduino GND,G0,
+5L-2,5L.2,KT403A VCC,G0,
+G0-3,G0.3,KT403A GND,G0,
+5L-6,5L.6,도어PCB VCC,G0,
+G0-6,G0.6,도어PCB GND,G0,
+5D-1,5D 분기접속 +,RY-A VCC/JD-VCC,P0,
+P0-5D-1,5D 분기접속 0V,RY-A GND,P0,
+5D-2,5D 분기접속 +,RY-B VCC/JD-VCC,P0,RY-B는 기존 채널 추적 후에만 연결
+P0-5D-2,5D 분기접속 0V,RY-B GND,P0,RY-B는 기존 채널 추적 후에만 연결
+5D-3,5D 분기접속 +,L298 Vss (5V),P0,
+P0-5D-RETURN,DC-D GND / P0측,5D 분기접속 0V,P0,부하 전력 귀환을 로직 장치에 직렬로 통과시키지 않음
+OUT-D12,Arduino D12,RY-A IN1,공통0V,몰딩 / 기존 입력회로와 active LOW/리셋 상태 유지. 외부 절연모듈 없음
+OUT-D10,Arduino D10,RY-A IN2,공통0V,슬라이드 / 기존 입력회로와 active LOW/리셋 상태 유지. 외부 절연모듈 없음
+OUT-D9,Arduino D9,RY-A IN3,공통0V,책 / 기존 입력회로와 active LOW/리셋 상태 유지. 외부 절연모듈 없음
+OUT-A4,Arduino A4,RY-A IN4,공통0V,창문 / 기존 입력회로와 active LOW/리셋 상태 유지. 외부 절연모듈 없음
+MOT-D4,Arduino D4,L298 IN1,공통0V,기존 제어선 직결. ENA 점퍼/리셋상태는 기존 동작에 대조
+MOT-D5,Arduino D5,L298 IN2,공통0V,기존 제어선 직결. ENA 점퍼/리셋상태는 기존 동작에 대조
+MOT-A2,Arduino A2,L298 ENA,공통0V,기존 제어선 직결. ENA 점퍼/리셋상태는 기존 동작에 대조
+GND-MOTOR-REF,G0.4,L298 GND,공통0V,제어 신호기준 공통선. 모터 전력 귀환 P0-MOTOR는 별도 유지. 실제 단자 허용 선 수/굵기에 맞춰 분기하고 다른 굵기 선을 한 구멍에 억지로 끼우지 않음
+M1-FEED,P12.1,RY-A CH1 COM,P0,
+M1-FIELD+,RY-A CH1 선택접점,자석1 +,P0,릴레이 근처 이 선과 음극 귀환 사이에 다이오드K/A 병렬. 다른 굵기 리드와 한 나사에 억지로 몰아넣지 않고 절연 분기/고정
+M1-FIELD−,P0.1,자석1 −,P0,위 +선과 원래의 꼬임쌍 유지. 릴레이 근처에서 다이오드A를 이 귀환선에 연결
+M2-FEED,P12.2,RY-A CH2 COM,P0,
+M2-FIELD+,RY-A CH2 선택접점,자석2 +,P0,릴레이 근처 이 선과 음극 귀환 사이에 다이오드K/A 병렬. 다른 굵기 리드와 한 나사에 억지로 몰아넣지 않고 절연 분기/고정
+M2-FIELD−,P0.2,자석2 −,P0,위 +선과 원래의 꼬임쌍 유지. 릴레이 근처에서 다이오드A를 이 귀환선에 연결
+M3-FEED,P12.3,RY-A CH3 COM,P0,
+M3-FIELD+,RY-A CH3 선택접점,자석3 +,P0,릴레이 근처 이 선과 음극 귀환 사이에 다이오드K/A 병렬. 다른 굵기 리드와 한 나사에 억지로 몰아넣지 않고 절연 분기/고정
+M3-FIELD−,P0.3,자석3 −,P0,위 +선과 원래의 꼬임쌍 유지. 릴레이 근처에서 다이오드A를 이 귀환선에 연결
+MOTOR-VS,P12.4,L298 Vs,P0,
+P0-MOTOR,P0.4,L298 GND,P0,굵은 독립 귀환; G0 연결 금지
+MOTOR-A-FIELD,L298 OUT1,모터 A,P0,기존 모듈 출력 단자 사용. 둘 다 모터 출력이며 GND에 고정하지 않음
+MOTOR-B-FIELD,L298 OUT2,모터 B,P0,기존 모듈 출력 단자 사용. 둘 다 모터 출력이며 GND에 고정하지 않음
+WIN-C-FIELD,RY-A CH4 COM,창문 기존회로 C,W0,기존 SELV 접점회로 보존. P0/G0 임의 연결 금지
+WIN-SW-FIELD,RY-A CH4 선택접점,창문 기존회로 SW,W0,NO/NC는 기존 동작 추적. Ethernet에 AC220V 인가 금지
+IN-D8,기존 액자 리드 S,Arduino D8,G0,새 센서판/RC 일괄 추가 없음. D6 기존100Ω 보존
+REED-D8-0,G0.2,기존 액자 리드 귀환,G0,신호/G0를 원래 꼬임쌍으로 회수. 전원 구동부 귀환과 합치지 않음
+IN-D6,기존 책 리드 S,Arduino D6,G0,새 센서판/RC 일괄 추가 없음. D6 기존100Ω 보존
+REED-D6-0,G0.8,기존 책 리드 귀환,G0,신호/G0를 원래 꼬임쌍으로 회수. 전원 구동부 귀환과 합치지 않음
+IN-A0,기존 조명 신호선,Arduino A0,기존입력/실물대조,기존 접속/ADC 동작 보존. 0~5V 입력범위와 실제 출력형식 대조;12V 신호 직결 금지. 새 센서PCB 없음
+IN-A1,기존 열쇠 신호선,Arduino A1,기존입력/실물대조,기존 접속/ADC 동작 보존. 0~5V 입력범위와 실제 출력형식 대조;12V 신호 직결 금지. 새 센서PCB 없음
+IN-A5,기존 RFID 신호선,Arduino A5,기존입력/실물대조,기존 접속/ADC 동작 보존. 0~5V 입력범위와 실제 출력형식 대조;12V 신호 직결 금지. 새 센서PCB 없음
+RFID-V+,P12.7,RFID 정격+12V,P0,전원 정격/출력형식 확인 후 연결
+RFID-0,P0.7,RFID 전원−,P0,전원 정격/출력형식 확인 후 연결
+SENS-V+,P12.8,기타 정격12V센서 +,P0,전원 정격/출력형식 확인 후 연결
+SENS-0,P0.8,기타 정격12V센서 −,P0,전원 정격/출력형식 확인 후 연결
+MP3-RX,KT403A TX,Arduino D2,G0,
+MP3-TX,Arduino D3,KT403A RX,G0,
+AMP+,홍싱 기존 어댑터 +,HONGXING DC+,G0 / 홍싱은 별도 전압,홍싱 기존 어댑터 사용. +를 로직5L에 합치지 않음. 음극은 MP3 IN GND를 통해 G0와 공통
+AMP−,홍싱 기존 어댑터 −,HONGXING DC−,G0 / 홍싱은 별도 전압,홍싱 기존 어댑터 사용. +를 로직5L에 합치지 않음. 음극은 MP3 IN GND를 통해 G0와 공통
+AUD-L,KT403A DAC_L,HONGXING MP3 IN L,G0,기존 라인오디오 직결; SPK± 출력과 구별
+AUD-R,KT403A DAC_R,HONGXING MP3 IN R,G0,기존 라인오디오 직결; SPK± 출력과 구별
+AUD-GND,KT403A GND,HONGXING MP3 IN GND,G0,기존 오디오선 GND. 홍싱 전원−와 공통인 구조이며 P0에는 연결하지 않음
+PANEL-5V,5L.6,J7.1 → 도어 VCC,G0,기존 Gun/Hint 선 철거 후 재사용
+PANEL-0V,G0.6,J7.2 → 도어 GND,G0,기존 Gun/Hint 선 철거 후 재사용
+PANEL-DATA,Arduino D11,J7.3 → 595 SER pin14,G0,기존 Gun/Hint 선 철거 후 재사용
+PANEL-CLK,Arduino D13,J7.4 → 595 SRCLK pin11,G0,기존 Gun/Hint 선 철거 후 재사용
+PANEL-LATCH,Arduino D7,J7.5 → 595 RCLK pin12,G0,기존 Gun/Hint 선 철거 후 재사용
+BTN-NEXT,Arduino A3,J7.6 → 도어 버튼 COM/NO,G0,기존 Gun/Hint 선 철거 후 재사용
+AC-L,기존 차단기 부하측 L,SMPS L,AC,기존 AC 회로와 정격 보존. Ethernet 심선 사용 금지
+AC-N,기존 N 분배,SMPS N,AC,PE나 DC 0V와 연결하지 않음
+PE-70,기존 PE 접지부,SMPS FG,PE,보호접지 연속성 보존; Ethernet 심선으로 PE 구성 금지
+PE-71,기존 PE 접지부,금속 함체,PE,보호접지 연속성 보존; Ethernet 심선으로 PE 구성 금지
+PE-72,기존 PE 접지부,금속 도어,PE,보호접지 연속성 보존; Ethernet 심선으로 PE 구성 금지

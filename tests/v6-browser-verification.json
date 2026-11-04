@@ -1,0 +1,35 @@
+{
+  "revision": "v6.1-harness-first",
+  "htmlSha256": "a7777b1c3eeac0801e4b4d4421bc268dea419381c4f82ef88f03fa3f36c6f10b",
+  "browser": "ChatGPT in-app browser / existing localhost tab",
+  "threeReady": true,
+  "partLabels": 17,
+  "modes": [
+    "bundle",
+    "individual conductors",
+    "ground returns"
+  ],
+  "relaySelectionIncludesPowerAndGround": true,
+  "h1ZoneCables": [
+    "MAG1",
+    "MAG2",
+    "MAG3",
+    "WINDOW"
+  ],
+  "checksPassed": 9,
+  "checksFailed": 0,
+  "v5PreservedHeadingVisible": true,
+  "twoDBundleDisplayed": true,
+  "consoleErrors": [],
+  "finalView": "lower cabinet / bundle / full screen",
+  "screenshots": [
+    "review/v61/3d-harness.png",
+    "review/v61/3d-cores.png",
+    "review/v61/3d-returns.png",
+    "review/v61/relay-six-wires.png",
+    "review/v61/2d-harness.png",
+    "review/v61/checks.png"
+  ],
+  "physicalHardwareVerified": false,
+  "pass": true
+}

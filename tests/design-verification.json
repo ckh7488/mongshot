@@ -1,0 +1,22 @@
+{
+  "pass": true,
+  "revision": "v5.3-direct-control",
+  "scope": "direct GPIO with common DC reference; physical hardware remains unmeasured",
+  "checks": [
+    "P0/G0 intentionally common; magnet negative shares reference; PE separate",
+    "GPIO modules/carrier/pull-resistor assembly removed",
+    "direct motor and relay control wiring",
+    "independent motor power return and common signal-reference wire",
+    "ground bus port numbers match wire endpoints",
+    "added fuses and 24-DIN field row removed",
+    "mounting/duct envelopes in bounds without overlaps",
+    "unique physical wire labels",
+    "original sketches preserved byte-for-byte",
+    "document links resolve",
+    "valid SVG XML"
+  ],
+  "wireSegments": 73,
+  "endLabels": 146,
+  "mountingParts": 18,
+  "bomRows": 20
+}

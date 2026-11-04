@@ -1,0 +1,283 @@
+{
+  "revision": "v5.3-direct-control",
+  "checkedOn": "2026-11-04",
+  "items": [
+    {
+      "id": "DUCT",
+      "name": "덕트 본체",
+      "maker": "Panduit",
+      "part": "G.5X1LG6",
+      "qty": 2,
+      "location": "상하 배선 경로",
+      "size": "외형 폭17.5×높이26.9mm / 길이1.8288m",
+      "condition": "호칭0.5인치와 외폭은 다름. 계획20mm 채널에 대조. 실제 선 외경·충전량은 현장 검토.",
+      "url": "https://www.panduit.com/content/dam/panduit/en/products/media/4/34/334/2334/74122334.pdf",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "DUCT-C",
+      "name": "덕트 커버",
+      "maker": "Panduit",
+      "part": "C.5LG6",
+      "qty": 2,
+      "location": "위 덕트 전 길이",
+      "size": "본체와 별매 / 길이1.8288m",
+      "condition": "덕트 높이26.9mm는 커버 포함. 실제 절단 길이 합과 여유를 대조.",
+      "url": "https://www.panduit.com/content/dam/panduit/en/products/media/4/34/334/2334/74122334.pdf",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "U1",
+      "name": "LED 직렬 출력 IC",
+      "maker": "Texas Instruments",
+      "part": "SN74HC595N",
+      "qty": 1,
+      "location": "도어 PCB",
+      "size": "PDIP16",
+      "condition": "5V, QA~QF 사용. /OE=0V, /SRCLR=5V. 595 옆100nF.",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "LED1~6",
+      "name": "저전류 녹색 LED",
+      "maker": "Kingbright",
+      "part": "WP7113LGD",
+      "qty": 6,
+      "location": "도어 2행×3열",
+      "size": "5mm 관통형",
+      "condition": "2mA 특성 제품. 각 LED1.5kΩ, 음극0V-L. 12V 패널 램프로 치환 금지.",
+      "url": "https://www.kingbrightusa.com/product.asp?catalog_name=LED&product_id=WP7113LGD",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "SW1",
+      "name": "진행 순간 버튼",
+      "maker": "OMRON",
+      "part": "A16-TAM-1",
+      "qty": 1,
+      "location": "하부 도어 (25,200) / 180×75mm",
+      "size": "16mm형 / 패널 뒤28.5mm급, 단자 여유 별도",
+      "condition": "비조광·청색·momentary SPDT의 COM/NO만 사용. 최소1mA@5V이므로 외부4.7k 풀업 적용.",
+      "url": "https://www.ia.omron.com/product/item/13731/",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "RLED",
+      "name": "LED 저항",
+      "maker": "YAGEO",
+      "part": "MFR-25FBF52-1K5",
+      "qty": 6,
+      "location": "도어 PCB",
+      "size": "6.3×Ø2.4mm급",
+      "condition": "1.5kΩ,1%,0.25W. 포장 대체는 동일 전기/기구 사양으로만.",
+      "url": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "RPULL",
+      "name": "버튼 풀업",
+      "maker": "YAGEO",
+      "part": "MFR-25FBF52-4K7",
+      "qty": 1,
+      "location": "도어 PCB",
+      "size": "6.3×Ø2.4mm급",
+      "condition": "4.7kΩ,1%,0.25W. 약1.06mA@5V를 접점으로 공급.",
+      "url": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "RSER",
+      "name": "버튼 직렬 저항",
+      "maker": "YAGEO",
+      "part": "MFR-25FBF52-1K",
+      "qty": 1,
+      "location": "A3 입력 경로",
+      "size": "6.3×Ø2.4mm급",
+      "condition": "1kΩ,1%,0.25W. LED 저항1.5k와 구별.",
+      "url": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "C1/C2",
+      "name": "필터/디커플링",
+      "maker": "KEMET",
+      "part": "C315C104K5R5TA",
+      "qty": 2,
+      "location": "595 옆 / 버튼 노드",
+      "size": "100nF50V radial",
+      "condition": "595 VCC-GND 바로 옆1개, 버튼 RC1개.",
+      "url": "https://search.kemet.com/component-documentation/download/specsheet/C315C104K5R5TA",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "PCB",
+      "name": "납땜식 조작부 PCB",
+      "maker": "Adafruit",
+      "part": "Perma-Proto Half-sized / #1609",
+      "qty": 1,
+      "location": "도어 표시판 뒤",
+      "size": "81×51mm",
+      "condition": "무납땜 브레드보드로 운영하지 않음. 기존5-hole/전원 버스 패턴을 확인하고 절단/점퍼 후 조립. LED 패널 고정 위치는 실물 전사.",
+      "url": "https://www.adafruit.com/product/1609",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "J7-F",
+      "name": "도어 잠금식 하네스",
+      "maker": "Molex",
+      "part": "430250600",
+      "qty": 1,
+      "location": "하부 J7 / 도어 연결",
+      "size": "6극 receptacle",
+      "condition": "Micro-Fit3.0 2×3. 제조사 정면도 기준핀1 표시. 본문 J7.1~6은 전기적 번호이므로 하우징 실제 캐비티 번호와 1:1 확인.",
+      "url": "https://www.molex.com/en-us/products/part-detail/430250600",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "J7-M",
+      "name": "도어 잠금식 하네스",
+      "maker": "Molex",
+      "part": "430200600",
+      "qty": 1,
+      "location": "하부 J7 / 도어 연결",
+      "size": "6극 plug",
+      "condition": "Micro-Fit3.0 2×3. 제조사 정면도 기준핀1 표시. 본문 J7.1~6은 전기적 번호이므로 하우징 실제 캐비티 번호와 1:1 확인.",
+      "url": "https://www.molex.com/en-us/products/part-detail/430200600",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "J7-FC",
+      "name": "도어 잠금식 하네스",
+      "maker": "Molex",
+      "part": "430300007",
+      "qty": 6,
+      "location": "하부 J7 / 도어 연결",
+      "size": "24~20AWG female contact",
+      "condition": "Micro-Fit3.0 2×3. 제조사 정면도 기준핀1 표시. 본문 J7.1~6은 전기적 번호이므로 하우징 실제 캐비티 번호와 1:1 확인.",
+      "url": "https://www.molex.com/en-us/products/part-detail/430300007",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "J7-MC",
+      "name": "도어 잠금식 하네스",
+      "maker": "Molex",
+      "part": "430310007",
+      "qty": 6,
+      "location": "하부 J7 / 도어 연결",
+      "size": "24~20AWG male contact",
+      "condition": "Micro-Fit3.0 2×3. 제조사 정면도 기준핀1 표시. 본문 J7.1~6은 전기적 번호이므로 하우징 실제 캐비티 번호와 1:1 확인.",
+      "url": "https://www.molex.com/en-us/products/part-detail/430310007",
+      "status": "제품 선정 / 설치 조건 대조"
+    },
+    {
+      "id": "PS1",
+      "name": "12V 메인 SMPS",
+      "maker": "MEAN WELL",
+      "part": "LRS-200-12",
+      "qty": 1,
+      "location": "상부",
+      "size": "215×115×30mm",
+      "condition": "기존 후보 보존. 17A가 필요하다는 확정 아님; 얇은 현장선 허용 전류를 의미하지 않음",
+      "url": "https://www.meanwell.com/Upload/PDF/LRS-200/LRS-200-SPEC.PDF",
+      "status": "용량 재검토 / 신규 구매 보류"
+    },
+    {
+      "id": "DC-L",
+      "name": "절연 로직5V",
+      "maker": "MEAN WELL",
+      "part": "DDR-15G-5",
+      "qty": 1,
+      "location": "하부 확보(100,405), 몸체(113.75,445)",
+      "size": "17.5×90×54.5mm",
+      "condition": "입력P12/P0, 출력5L/G0. 5V3A(입력12~36V), 9~12V에서는2.7A. 위40/아래20/좌우5mm 확보. 내부 입력/출력 간선은0.8mm² 이상 동선으로 분배블록까지 연결. 로직예산1.2A는 실측 아님. GPIO직결 공통GND 안에서는 절연형이 필수 아님; 이번 변경은 전원부 선택을 자동 변경하지 않음",
+      "url": "https://www.meanwell.com/Upload/PDF/DDR-15/DDR-15-spec.pdf",
+      "status": "제품 확인 / 적용 조건 확인"
+    },
+    {
+      "id": "DC-D",
+      "name": "부하측5V",
+      "maker": "Pololu",
+      "part": "D36V50F5 / #4091",
+      "qty": 1,
+      "location": "하부 (25,430)",
+      "size": "25.4×25.4×9.5mm",
+      "condition": "5D/P0: 릴레이코일 및 L298 Vss. 5L과5D의 양극끼리 연결 금지. GND는 제어 기준선으로 공통",
+      "url": "https://www.pololu.com/product/4091",
+      "status": "제품 확인 / 적용 조건 확인"
+    },
+    {
+      "id": "D-M1~3",
+      "name": "자석 역기전력 억제",
+      "maker": "Vishay",
+      "part": "1N5408-E3/54",
+      "qty": 3,
+      "location": "릴레이 A 근처 자석선 +/− 사이",
+      "size": "DO-201AD",
+      "condition": "3A/1000V 소자 후보. 줄(K)=자석+, A=자석−. 코일전류/열/반복률/해제시간 확인. 3A는 케이블 허용 전류가 아님",
+      "url": "https://www.vishay.com/docs/88516/1n5400.pdf",
+      "status": "코일/해제시간 대조 전 적용 확정 아님"
+    },
+    {
+      "id": "G-P/G-L",
+      "name": "부하/로직 귀환 분배",
+      "maker": "Phoenix Contact",
+      "part": "PTFIX 6/12X2,5-NS35 BU / 3273090",
+      "qty": 2,
+      "location": "상부P0 / 하부G0",
+      "size": "58.1×28.6×32.4mm",
+      "condition": "두 블록은 귀환 분기용이며 GND-MOTOR-REF로 전기적 공통. 절연 경계 아님. 가는 단선은 주황 버튼을 눌러 삽입",
+      "url": "https://www.phoenixcontact.com/en-nl/products/distribution-block-ptfix-6-12x25-ns35-bu-3273090",
+      "status": "제품 확인 / 적용 조건 확인"
+    },
+    {
+      "id": "P12/5L",
+      "name": "양극 분배",
+      "maker": "Phoenix Contact",
+      "part": "PTFIX 6/12X2,5-NS35 RD / 3273092",
+      "qty": 2,
+      "location": "상부12V / 하부로직5V",
+      "size": "58.1×28.6×32.4mm",
+      "condition": "전위가 다른 블록 두 개. 5D는 기존 릴레이/L298 전원선의 분기접속으로 공급",
+      "url": "https://www.phoenixcontact.com/en-fr/products/distribution-block-ptfix-6-12x25-ns35-rd-3273092",
+      "status": "제품 확인 / 적용 조건 확인"
+    }
+  ],
+  "unselected": [
+    {
+      "id": "FIELD-WIRE",
+      "name": "기존 이더넷 심선",
+      "reason": "Cu/CCA,24/26/28AWG, 길이, 코일전류, 사용가능 페어, 접속상태/온도 미측정. 허용전류 확정 불가"
+    },
+    {
+      "id": "SENSOR-CHECK",
+      "name": "기존 센서 신호 확인",
+      "reason": "새 센서판은 제거. 기존 접점/신호 결선을 보존하고 A0/A1/A5 출력형식과 실제 전압을 기록. 12V 전원 사용만으로 신호도12V라고 판단하지 않음"
+    },
+    {
+      "id": "LEGACY",
+      "name": "기존 보드/어댑터/센서",
+      "reason": "RFID/홍싱 외곽, 센서 출력형식, 릴레이8채널/active LOW, L298 전원점퍼 실물 대조"
+    },
+    {
+      "id": "MECH",
+      "name": "레일·스탠드오프·부싱·체결재",
+      "reason": "실물 홀/판두께/나사방향에 맞춰 선정; 범용 큰 단자열을 추가하지 않음"
+    }
+  ],
+  "removed": [
+    "FU0",
+    "F1~F7",
+    "F5L",
+    "PT2.5×24",
+    "D-ST2.5×2",
+    "필드/퓨즈용 CLIPFIX",
+    "0V-LINK",
+    "센서PCB/옵토일괄회로",
+    "자석접속PCB",
+    "MPT1725656×10",
+    "NTE1×2/오디오절연PCB/추가감쇠부품",
+    "ISO-M/ISO-R/고정캐리어/전용저항14개"
+  ],
+  "scope": "품번 지정안 + 명시적 제작물/미확정 항목; 설치 승인 또는 완성 발주서 아님"
+}

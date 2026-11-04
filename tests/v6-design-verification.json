@@ -1,0 +1,31 @@
+{
+  "revision": "v6.1-harness-first",
+  "scope": "plan only; no physical measurements",
+  "checks": [
+    "single planned P0/G path",
+    "motor-reference/direct-jumper/chassis-loop fault injection",
+    "amp bypass fault injection",
+    "PE separate in planned graph",
+    "wire/port/route cross references",
+    "conditional VMS alternatives",
+    "paired control references with explicit CAB-MOT exception",
+    "part/duct fit and50mm proximity",
+    "BOM subset with only DDR removed",
+    "v5 snapshot hash integrity",
+    "original firmware byte preservation",
+    "offline entry page"
+  ],
+  "stats": {
+    "parts": 17,
+    "wires": 67,
+    "labels": 201,
+    "bomRows": 19,
+    "newParts": 0,
+    "removedConverter": 1
+  },
+  "bodyGapMm": {
+    "gnd": 46.6,
+    "logic-positive": 46.6
+  },
+  "pass": true
+}

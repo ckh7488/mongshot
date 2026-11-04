@@ -1,0 +1,68 @@
+﻿라벨,시작,끝,넷,경로(덕트 그룹),케이블 이름,짝/기준 경로,상태,조건,시공 메모
+TRK-12P,SMPS V+,P12.IN,+12V,전력,TRK,TRK-0,도면 계획,,TRK-0과 밀착·동일 경로
+TRK-0,SMPS V−,P0.IN,P0,전력,TRK,TRK-12P,도면 계획,,모든 부하 귀환의 상위 트렁크
+M1-FEED,P12.1,RY-A CH1 COM,+12V,전력,MAG1,M1-FIELD−,도면 계획,,
+M1-FIELD+,RY-A CH1 선택접점,외부 자석1 +,MAG1+,전력,MAG1,M1-FIELD−,도면 계획,,NO/NC는 기존 기능대로 추적. 다이오드 K(띠)는 이 선
+M1-FIELD−,P0.1,외부 자석1 −,P0,전력,MAG1,M1-FIELD+,도면 계획,,원래 꼬임쌍 유지. 다이오드 A는 이 선
+M2-FEED,P12.2,RY-A CH2 COM,+12V,전력,MAG2,M2-FIELD−,도면 계획,,
+M2-FIELD+,RY-A CH2 선택접점,외부 자석2 +,MAG2+,전력,MAG2,M2-FIELD−,도면 계획,,NO/NC는 기존 기능대로 추적. 다이오드 K(띠)는 이 선
+M2-FIELD−,P0.2,외부 자석2 −,P0,전력,MAG2,M2-FIELD+,도면 계획,,원래 꼬임쌍 유지. 다이오드 A는 이 선
+M3-FEED,P12.3,RY-A CH3 COM,+12V,전력,MAG3,M3-FIELD−,도면 계획,,
+M3-FIELD+,RY-A CH3 선택접점,외부 자석3 +,MAG3+,전력,MAG3,M3-FIELD−,도면 계획,,NO/NC는 기존 기능대로 추적. 다이오드 K(띠)는 이 선
+M3-FIELD−,P0.3,외부 자석3 −,P0,전력,MAG3,M3-FIELD+,도면 계획,,원래 꼬임쌍 유지. 다이오드 A는 이 선
+MOTOR-VMS-12,P12.4,L298 VMS,+12V,전력,MOT-PWR,P0-MOTOR,미확인,U1: 모터 정격12V와 실제 기존 전압 확인 후에만,5V 대안과 동시 연결 금지
+MOTOR-VMS-5,5V.6,L298 VMS,+5V,전력,MOT-PWR-ALT,P0-MOTOR,미확인,U1: 실제5V 모터·강압기 여유 확인 후에만,12V 대안과 택1. 모터 기동/스톨전류까지 강압기 예산에 추가
+P0-MOTOR,P0.4,L298 GND,P0,전력,MOT-PWR,MOTOR-VMS-12,도면 계획,,독립 전력 귀환. G판에 추가 선을 연결하지 않음
+BUCK-IN+,P12.5,강압기 VIN,+12V,전력,BUCK-IN,BUCK-IN−,도면 계획,,
+BUCK-IN−,P0.5,강압기 입력GND,P0,전력,BUCK-IN,BUCK-IN+,도면 계획,,G와 P0 사이의 유일한 계획 연결 경로
+BUCK-5V,강압기 VOUT,5V.IN,+5V,신호,BUCK-OUT,BUCK-G,도면 계획,,
+BUCK-G,강압기 출력GND,G.IN,G,신호,BUCK-OUT,BUCK-5V,도면 계획,,입력−=출력− 내부 공통
+RFID-V+,P12.6,RFID +12V,+12V,전력,RFID-PWR,RFID-0,미확인,U2: RFID 정격12V 확인,실제 정격과 기존 공급 전압 확인
+RFID-0,P0.6,RFID 전원−,P0,전력,RFID-PWR,RFID-V+,미확인,U2: RFID 전원 방식 확인,신호 귀환과 임의 합치지 않음
+기타12V센서-V+,P12.7,기타12V센서 +12V,+12V,전력,기타12V센서-PWR,기타12V센서-0,미확인,U2: 기타12V센서 정격12V 확인,실제 정격과 기존 공급 전압 확인
+기타12V센서-0,P0.7,기타12V센서 전원−,P0,전력,기타12V센서-PWR,기타12V센서-V+,미확인,U2: 기타12V센서 전원 방식 확인,신호 귀환과 임의 합치지 않음
+UNO-PWR-5V,5V.1,Arduino 5V,+5V,신호,UNO-PWR,UNO-PWR-G,도면 계획,,
+UNO-PWR-G,G.1,Arduino GND,G,신호,UNO-PWR,UNO-PWR-5V,도면 계획,,부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음
+CAB-RLY-5V,5V.2,RY-A VCC,+5V,신호,CAB-RLY,CAB-RLY-G,도면 계획,,VCC/JD-VCC 상태는 실물대로 확인
+CAB-RLY-G,G.2,RY-A GND,G,신호,CAB-RLY,CAB-RLY-5V,도면 계획,,부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음
+CAB-RLY-B-5V,5V.3,RY-B VCC,+5V,신호,CAB-RLY-B,CAB-RLY-B-G,미확인,U5: RY-B 기존4채널/전체8채널·JD-VCC 추적 후,VCC/JD-VCC 상태는 실물대로 확인
+CAB-RLY-B-G,G.3,RY-B GND,G,신호,CAB-RLY-B,CAB-RLY-B-5V,미확인,U5: RY-B 기존4채널/전체8채널·JD-VCC 추적 후,부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음
+PANEL-5V,5V.4,J7.1 도어VCC,+5V,신호,PANEL,PANEL-G,도면 계획,,
+PANEL-G,G.4,J7.2 도어GND,G,신호,PANEL,PANEL-5V,도면 계획,,부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음
+CAB-MP3-5V,5V.5,KT403A VCC,+5V,신호,CAB-MP3,CAB-MP3-G,도면 계획,,
+CAB-MP3-G,G.7,KT403A GND,G,신호,CAB-MP3,CAB-MP3-5V,도면 계획,,부하 전류를 Uno GND 핀으로 직렬 통과시키지 않음
+OUT-D12,Arduino D12,RY-A IN1,D12,신호,CAB-RLY,CAB-RLY-G,미확인,U5: 입력극성·JD-VCC 실물 확인,기존 active LOW/리셋 동작 확인
+OUT-D10,Arduino D10,RY-A IN2,D10,신호,CAB-RLY,CAB-RLY-G,미확인,U5: 입력극성·JD-VCC 실물 확인,기존 active LOW/리셋 동작 확인
+OUT-D9,Arduino D9,RY-A IN3,D9,신호,CAB-RLY,CAB-RLY-G,미확인,U5: 입력극성·JD-VCC 실물 확인,기존 active LOW/리셋 동작 확인
+OUT-A4,Arduino A4,RY-A IN4,A4,신호,CAB-RLY,CAB-RLY-G,미확인,U5: 입력극성·JD-VCC 실물 확인,기존 active LOW/리셋 동작 확인
+MOT-D4,Arduino D4,L298 IN1,D4,신호,CAB-MOT,공유 기준: BUCK-G / BUCK-IN− / P0-MOTOR,도면 계획,,추가 G→L298 선 없음. 기준 경로는 G→강압기→P0→L298. 제어선은 Arduino/L298 근접 배치로 짧게 정리. 별도 G 동봉 없음. ENA 상시ON 점퍼와5V-EN은 구분
+MOT-D5,Arduino D5,L298 IN2,D5,신호,CAB-MOT,공유 기준: BUCK-G / BUCK-IN− / P0-MOTOR,도면 계획,,추가 G→L298 선 없음. 기준 경로는 G→강압기→P0→L298. 제어선은 Arduino/L298 근접 배치로 짧게 정리. 별도 G 동봉 없음. ENA 상시ON 점퍼와5V-EN은 구분
+MOT-A2,Arduino A2,L298 ENA,A2,신호,CAB-MOT,공유 기준: BUCK-G / BUCK-IN− / P0-MOTOR,도면 계획,,추가 G→L298 선 없음. 기준 경로는 G→강압기→P0→L298. 제어선은 Arduino/L298 근접 배치로 짧게 정리. 별도 G 동봉 없음. ENA 상시ON 점퍼와5V-EN은 구분
+L298-VSS-5,5V.7,L298 5V/Vss,+5V,신호,MOT-LOGIC,,미확인,U1: 5V단자 입출력/온보드레귤레이터 점퍼 확인,5V-EN 제거 후 5V단자가 입력인 실물 모듈에서만. GND는 P0.4 기존 귀환 사용
+MP3-D2,Arduino D2,KT403A TX,D2,신호,CAB-MP3,CAB-MP3-G,미확인,U7: KT403A UART 전압범위,"D2는 수신, D3는 송신. 기존 UART 전압·저항 대조"
+MP3-D3,Arduino D3,KT403A RX,D3,신호,CAB-MP3,CAB-MP3-G,미확인,U7: KT403A UART 전압범위,"D2는 수신, D3는 송신. 기존 UART 전압·저항 대조"
+IN-D8,외부 액자 리드 S,Arduino D8,D8,신호,REED-D8,REED-D8-G,도면 계획,,원래 꼬임쌍. 책 D6 기존100Ω 보존
+REED-D8-G,G.5,외부 액자 리드 귀환,G,신호,REED-D8,IN-D8,도면 계획,,
+IN-D6,외부 책 리드 S,Arduino D6,D6,신호,REED-D6,REED-D6-G,도면 계획,,원래 꼬임쌍. 책 D6 기존100Ω 보존
+REED-D6-G,G.6,외부 책 리드 귀환,G,신호,REED-D6,IN-D6,도면 계획,,
+IN-A0,기존 조명 신호,Arduino A0,A0,신호,FIELD-A0,,미확인,U2: 출력형식·실제0~5V범위 미확인,무전압 접점이면 신호/G 같은 페어. 전압출력이면 범위·기준 확인 전 연결 확정 금지
+IN-A1,기존 열쇠 신호,Arduino A1,A1,신호,FIELD-A1,,미확인,U2: 출력형식·실제0~5V범위 미확인,무전압 접점이면 신호/G 같은 페어. 전압출력이면 범위·기준 확인 전 연결 확정 금지
+IN-A5,기존 RFID 신호,Arduino A5,A5,신호,FIELD-A5,,미확인,U2: 출력형식·실제0~5V범위 미확인,무전압 접점이면 신호/G 같은 페어. 전압출력이면 범위·기준 확인 전 연결 확정 금지
+PANEL-D11,Arduino D11,J7.3 595 SER,D11,신호,PANEL,PANEL-G,도면 계획,,기존 Gun/Hint 배선 철거 후 핀 재사용
+PANEL-D13,Arduino D13,J7.4 595 SRCLK,D13,신호,PANEL,PANEL-G,도면 계획,,기존 Gun/Hint 배선 철거 후 핀 재사용
+PANEL-D7,Arduino D7,J7.5 595 RCLK,D7,신호,PANEL,PANEL-G,도면 계획,,기존 Gun/Hint 배선 철거 후 핀 재사용
+PANEL-A3,Arduino A3,J7.6 진행 버튼,A3,신호,PANEL,PANEL-G,도면 계획,,기존 Gun/Hint 배선 철거 후 핀 재사용
+AUD-L,KT403A DAC_L,HONGXING MP3 IN L,AUDIO,오디오,AUD,AUD-GND,도면 계획,,SPK±는 라인입력에 연결하지 않음
+AUD-R,KT403A DAC_R,HONGXING MP3 IN R,AUDIO,오디오,AUD,AUD-GND,도면 계획,,SPK±는 라인입력에 연결하지 않음
+AUD-GND,KT403A GND,HONGXING MP3 IN GND,G,오디오,AUD,AUD-L / AUD-R,도면 계획,,전원− 공통 구조는 실물 도통 대조. 별도 P0/G 선 추가 없음
+AMP+,기존 어댑터 +,HONGXING DC+,AMP+,오디오,AMP-PWR,AMP−,도면 계획,,어댑터 기존 전압 유지. 5V판과 합치지 않음
+AMP−,기존 어댑터 −,HONGXING DC−,AMP−,오디오,AMP-PWR,AMP+,도면 계획,,오디오GND 경로 외 P0/G 직접 연결 없음
+MOTOR-OUT-A,L298 OUT1,외부 모터 A,MOTOR-OUT,전력,MOTOR-OUT,MOTOR-OUT-B,도면 계획,,두 선 모두 H브리지 출력. 어느 쪽도 P0/G 고정 금지
+MOTOR-OUT-B,L298 OUT2,외부 모터 B,MOTOR-OUT,전력,MOTOR-OUT,MOTOR-OUT-A,도면 계획,,두 선 모두 H브리지 출력. 어느 쪽도 P0/G 고정 금지
+WIN-COM,RY-A CH4 COM,외부 창문 기존 COM,W0,전력,WINDOW,,도면 계획,,기존 SELV 접점회로. P0/G 연결 없음; NO/NC 추적
+WIN-선택접점,RY-A CH4 선택접점,외부 창문 기존 선택접점,W0,전력,WINDOW,,도면 계획,,기존 SELV 접점회로. P0/G 연결 없음; NO/NC 추적
+AC-L,기존 차단기 부하측 L,SMPS L,AC,AC,AC-IN,,도면 계획,,기존 AC 회로 보존. 현장 랜심선 사용 금지
+AC-N,기존 N 분배,SMPS N,AC,AC,AC-IN,,도면 계획,,기존 AC 회로 보존. 현장 랜심선 사용 금지
+PE-87,기존 PE 접지부,SMPS FG,PE,PE,PE,,도면 계획,,보호접지. DC 귀환에 사용 금지
+PE-88,기존 PE 접지부,금속 함체,PE,PE,PE,,도면 계획,,보호접지. DC 귀환에 사용 금지
+PE-89,기존 PE 접지부,금속 도어,PE,PE,PE,,도면 계획,,보호접지. DC 귀환에 사용 금지

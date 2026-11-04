@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "method": "CUA visible DOM and screenshot inspection",
+  "url": "http://127.0.0.1:8766/",
+  "checkedOn": "2026-11-03",
+  "checks": [
+    "current product BOM tab and manufacturer candidates",
+    "dimension gate: lower600 reports50mm shortage;650 conditional pass",
+    "actual AVR manual press: count1, stage light, actual595 LED1 on",
+    "GND physical port table visible",
+    "physical wire segment table visible",
+    "lower bay actual modules/RFID/terminal groups displayed",
+    "no captured console errors"
+  ],
+  "notChecked": [
+    "new revision mobile viewport",
+    "real hardware electrical performance"
+  ]
+}

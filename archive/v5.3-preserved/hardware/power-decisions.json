@@ -1,0 +1,28 @@
+{
+  "revision": "v5.3-direct-control",
+  "primary": "12V SMPS1대 + DDR-15G-5 절연로직5V + 4091 부하측5V",
+  "pairing": {
+    "P12": "P0",
+    "5D": "P0",
+    "5L": "G0"
+  },
+  "logicBudgetA": 1.2,
+  "logicConverterRatedA": 3,
+  "logicConverterRatedW": 15,
+  "logicConverterDerating": "입력9~12V에서는 최대2.7A; 12~36V에서3A. 온도 경감 별도",
+  "inputExample": "5V1A=5W / 효율84% / 12V입력 약0.50A. 5V3A full load면 약1.49A. 설명 계산이며 실측 아님.",
+  "reason": "앞선 SMPS1대 조건 및 하부AC배선 추가 회피. GPIO 절연모듈을 제거하여 GND는 공통. DDR는 별도5V 분기 후보로 남겼지만 전체 갈바닉 절연은 제공하지 않음. 12V 급락/정전 시 로직도 영향받는 한계.",
+  "alternative": {
+    "maker": "MEAN WELL",
+    "part": "HDR-30-5",
+    "output": "5V3A15W",
+    "sizeMm": [
+      35,
+      90,
+      54.5
+    ],
+    "clearance": "HDR 매뉴얼: 위40/아래20/좌우5mm 확보. 현재45×150mm 확보영역에 외곽상 들어가지만 AC단자 보호와 AC/DC 배선 분리를 재검토해야 함.",
+    "url": "https://www.meanwell.com/Upload/PDF/HDR-30/HDR-30-SPEC.PDF",
+    "status": "비교 대안; 현재 배치/구매수량에 포함하지 않음"
+  }
+}

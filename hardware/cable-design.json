@@ -1,0 +1,10 @@
+{
+  "revision": "v5.3-direct-control",
+  "reference": "Belden 1583A 24AWG Cu를 설명용으로만 사용. 설치 케이블의 품질/정격 보증 아님.",
+  "referenceOhmPerM": 0.0938,
+  "temperatureCoefficient": 0.00393,
+  "formula": "Rloop=2*L*R20*(1+0.00393*(T-20))/parallelPairs; Vdrop=I*Rloop; Ploss=I*I*Rloop",
+  "parallelRule": "가용 페어 전체의 +/−를 양끝에서 동일하게 병렬. 각 원래 페어 안에서 +와−를 구성. 한쪽만 병렬 금지.",
+  "status": "전압강하 계산은 허용전류/온도/단락보호 적합 판정이 아님",
+  "extraFuseDecision": "사용자 결정으로 추가 메인/분기 퓨즈 제외. 기존 차단기/PE 보존. SMPS 과전류 보호는 가는 심선의 개별 보호를 대체하지 않음."
+}

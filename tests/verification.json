@@ -1,0 +1,28 @@
+{
+  "engine": "avr8js@0.21.1",
+  "target": "ATmega328P / 16MHz",
+  "core": "arduino:avr@1.8.8",
+  "mp3": "stubbed; not validated",
+  "results": [
+    {
+      "name": "Original 2ms accepts a 20ms frame pulse",
+      "pass": true,
+      "wallMs": 723
+    },
+    {
+      "name": "Candidate 10ms rejects a 20ms pulse, accepts a sustained input",
+      "pass": true,
+      "wallMs": 665
+    },
+    {
+      "name": "Approved D11/D17 removal leaves input pins; original drives them",
+      "pass": true,
+      "wallMs": 1152
+    },
+    {
+      "name": "Real firmware completes all five puzzle stages and preserves delays",
+      "pass": true,
+      "wallMs": 16958
+    }
+  ]
+}

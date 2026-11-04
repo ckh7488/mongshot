@@ -1,0 +1,9 @@
+{
+  "javascriptSyntax": true,
+  "svgXml": true,
+  "servedPageMatchesBuild": true,
+  "htmlSha256": "a7777b1c3eeac0801e4b4d4421bc268dea419381c4f82ef88f03fa3f36c6f10b",
+  "physicalHardwareVerified": false,
+  "browserFinalVisualCheck": true,
+  "browserNote": "Current in-app page verified in bundle, conductor and ground-return modes."
+}

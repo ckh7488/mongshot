@@ -1,0 +1,140 @@
+{
+  "revision": "v5.3-direct-control",
+  "nodes": [
+    "AMP_LINE_GND",
+    "AMP_NEG",
+    "ARD_GND",
+    "BUCK_D_NEG",
+    "CABINET",
+    "DDR_INPUT_NEG",
+    "DDR_OUTPUT_NEG",
+    "DOOR",
+    "G0",
+    "L298_GND",
+    "MAG1_NEG",
+    "MAG2_NEG",
+    "MAG3_NEG",
+    "MP3_GND",
+    "P0",
+    "PANEL_GND",
+    "PE",
+    "RELAY_A_GND",
+    "RELAY_B_GND",
+    "RFID_POWER_NEG",
+    "SENSOR_12V_NEG",
+    "SENSOR_CONTACT_RETURN",
+    "SMPS_FG",
+    "SMPS_NEG"
+  ],
+  "dc_connections": [
+    [
+      "P0",
+      "SMPS_NEG"
+    ],
+    [
+      "P0",
+      "MAG1_NEG"
+    ],
+    [
+      "P0",
+      "MAG2_NEG"
+    ],
+    [
+      "P0",
+      "MAG3_NEG"
+    ],
+    [
+      "P0",
+      "L298_GND"
+    ],
+    [
+      "P0",
+      "BUCK_D_NEG"
+    ],
+    [
+      "P0",
+      "DDR_INPUT_NEG"
+    ],
+    [
+      "P0",
+      "RFID_POWER_NEG"
+    ],
+    [
+      "P0",
+      "SENSOR_12V_NEG"
+    ],
+    [
+      "P0",
+      "RELAY_A_GND"
+    ],
+    [
+      "P0",
+      "RELAY_B_GND"
+    ],
+    [
+      "G0",
+      "L298_GND"
+    ],
+    [
+      "G0",
+      "DDR_OUTPUT_NEG"
+    ],
+    [
+      "G0",
+      "ARD_GND"
+    ],
+    [
+      "G0",
+      "SENSOR_CONTACT_RETURN"
+    ],
+    [
+      "G0",
+      "MP3_GND"
+    ],
+    [
+      "G0",
+      "PANEL_GND"
+    ],
+    [
+      "G0",
+      "AMP_NEG"
+    ],
+    [
+      "G0",
+      "AMP_LINE_GND"
+    ],
+    [
+      "PE",
+      "SMPS_FG"
+    ],
+    [
+      "PE",
+      "CABINET"
+    ],
+    [
+      "PE",
+      "DOOR"
+    ]
+  ],
+  "barriers": [
+    {
+      "name": "DC-L",
+      "a": "DDR_INPUT_NEG",
+      "b": "DDR_OUTPUT_NEG",
+      "type": "converter internal isolation; system bypassed by common reference"
+    }
+  ],
+  "groundPolicy": "common-reference",
+  "systemGalvanicIsolation": false,
+  "referenceBond": {
+    "label": "GND-MOTOR-REF",
+    "start": "G0.4",
+    "end": "L298 GND"
+  },
+  "unresolvedSignalInterfaces": [
+    "A0",
+    "A1",
+    "A5"
+  ],
+  "note": "기존 제어선 직결을 위해 P0/G0는 공통이다. 자석−도 같은 전위이며 갈바닉 절연이 아니다. 부하 전류는 독립 귀환배선으로 분기한다. DDR 소자 자체의 절연을 시스템 절연으로 표시하지 않는다. 실제 센서/USB/PE 우회 연결과 노이즈는 현장에서 별도 대조."
+}

@@ -1,0 +1,1801 @@
+{
+  "snapshot_at": "2026-11-04T09:12:16.004826+00:00",
+  "files": [
+    {
+      "path": ".gitignore",
+      "source": "D:\\RCM\\mongshot\\.gitignore",
+      "source_sha256": "4a9df3373852e76908c58de0ac768dde0bcab630f06396233ea846cf70400368",
+      "bytes": 40
+    },
+    {
+      "path": "MANIFEST.csv",
+      "source": "D:\\RCM\\mongshot\\MANIFEST.csv",
+      "source_sha256": "537d1e54ab48d40f57d17ad128d69d309cc3319a47b15685696d1cc936b5fc44",
+      "bytes": 33596
+    },
+    {
+      "path": "OPEN_MONGSHOT.cmd",
+      "source": "D:\\RCM\\mongshot\\OPEN_MONGSHOT.cmd",
+      "source_sha256": "dd4f46e486c46900d1d91612e3bd9eee8b61ed814f2936dfdcfca9daccf0186d",
+      "bytes": 50
+    },
+    {
+      "path": "README.md",
+      "source": "D:\\RCM\\mongshot\\README.md",
+      "source_sha256": "8ac24264b60795fa6257aeddf76712e4cad888b9b7bdb5ad4666e58642696b71",
+      "bytes": 4143
+    },
+    {
+      "path": "package.json",
+      "source": "D:\\RCM\\mongshot\\package.json",
+      "source_sha256": "479ca00c3e209c35ce47748571d3a918addd2a992e8ab598255481cad1068dd1",
+      "bytes": 326
+    },
+    {
+      "path": "archive/v2-browser-verification.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v2-browser-verification.json",
+      "source_sha256": "2f478c666312aaa57a81c8603a8d9fe97d9b2b4e46fbd392196927540e7c6195",
+      "bytes": 321
+    },
+    {
+      "path": "archive/v6-first-routing.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v6-first-routing.json",
+      "source_sha256": "6f3aefdb4b137b4efa06e29d8c79ac50318856d17bb511e7b5ea82959fe1e53e",
+      "bytes": 31329
+    },
+    {
+      "path": "archive/superseded-tools/README.md",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\README.md",
+      "source_sha256": "169c715fc7162317a27a7d922efad616aee7f4c7d056cd4ad4f80c471e44fb34",
+      "bytes": 386
+    },
+    {
+      "path": "archive/superseded-tools/build_field_records.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\build_field_records.py",
+      "source_sha256": "6bc74aec3fac5e3c649764c2ee563ed92c1e259a75af208cb5420533773baa34",
+      "bytes": 9603
+    },
+    {
+      "path": "archive/superseded-tools/draw_ground.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\draw_ground.py",
+      "source_sha256": "5919b388059bc5348e391b9ed1a02d985d2867fb7907592a0f7f285168a9d6c6",
+      "bytes": 7529
+    },
+    {
+      "path": "archive/superseded-tools/draw_redesign.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\draw_redesign.py",
+      "source_sha256": "b1c7442cce6a98b05c217fe019b8304a594720fa7edb7ff5f1a1ef2e92e577c7",
+      "bytes": 11794
+    },
+    {
+      "path": "archive/superseded-tools/draw_single_smps.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\draw_single_smps.py",
+      "source_sha256": "82ea59641f8105ba7d5b5f5c8ddad0ff7df294151254fa5a304247e6c2b0a3ad",
+      "bytes": 11610
+    },
+    {
+      "path": "archive/superseded-tools/finalize_product_ui.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\finalize_product_ui.py",
+      "source_sha256": "05ce1b2e3fd01c382859bc020ad7d94da140a4eab2cee38d3cd8288bdddcfb68",
+      "bytes": 4970
+    },
+    {
+      "path": "archive/superseded-tools/install_v3_records.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\install_v3_records.py",
+      "source_sha256": "31119453bc36e718f90d484678801637a0bda8789e79b3fc0415ec222d4f1a0d",
+      "bytes": 4837
+    },
+    {
+      "path": "archive/superseded-tools/refine_ground_trunk.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\refine_ground_trunk.py",
+      "source_sha256": "0a29daa98606af17330fca6c3d6ac3701b6369788dd134278f2a68d5eed3aecd",
+      "bytes": 4582
+    },
+    {
+      "path": "archive/superseded-tools/update_two_bay_ui.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\update_two_bay_ui.py",
+      "source_sha256": "3d48fa51cd01917e4e66a8b39f287ee7e3d49a8c48268e257a7c5349524f09d2",
+      "bytes": 6223
+    },
+    {
+      "path": "archive/superseded-tools/update_v3_ui.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\update_v3_ui.py",
+      "source_sha256": "f6f8c9b1cd12b5b1222c6b0a011a27cfaf773073edd9c0730d6a36bb0876742e",
+      "bytes": 2579
+    },
+    {
+      "path": "archive/superseded-tools/write_current_docs.py",
+      "source": "D:\\RCM\\mongshot\\archive\\superseded-tools\\write_current_docs.py",
+      "source_sha256": "76de9327d1a042e4e43b3d1a2bd3e18a7ad9d57390b2b53c5264cf347a218e2b",
+      "bytes": 32255
+    },
+    {
+      "path": "archive/v4-sources/05-firmware-and-verification.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\05-firmware-and-verification.md",
+      "source_sha256": "be8513ae47b569ceb89df3922f45959c416dff210273a78514d1e27961594e11",
+      "bytes": 3400
+    },
+    {
+      "path": "archive/v4-sources/README.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\README.md",
+      "source_sha256": "271a3e59c9612958e7dc6b2f640b187852a38d7b2e77023cfef5461d8ad9b69a",
+      "bytes": 212
+    },
+    {
+      "path": "archive/v4-sources/browser-verification.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\browser-verification.json",
+      "source_sha256": "bb1e043913deb14f6dc5d6e4293b73ee5ee9434dec5ba07e5a70e3892850ce6f",
+      "bytes": 660
+    },
+    {
+      "path": "archive/v4-sources/commissioning-checklist.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\commissioning-checklist.csv",
+      "source_sha256": "880baa1b8fd889a623bc48ca6a4215fa28ba135cd691c8ac99e41d1bfdb5e9af",
+      "bytes": 2922
+    },
+    {
+      "path": "archive/v4-sources/final-rating-record.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\final-rating-record.csv",
+      "source_sha256": "1cd673a909f0928312e4106e8e13ad3c8327e2cd9daefc95902785c75f48408d",
+      "bytes": 1000
+    },
+    {
+      "path": "archive/v4-sources/product-bom.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\product-bom.json",
+      "source_sha256": "30c90daa05a3a2676b42e00e569b20de4a76302d4b8e63f01491ece10f974417",
+      "bytes": 14351
+    },
+    {
+      "path": "archive/v4-sources/simulation__source__app.js",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\simulation__source__app.js",
+      "source_sha256": "f09a6912c570cb946ebc0f5bf1e7c410cb5095badd89b171951e2082288d532a",
+      "bytes": 36041
+    },
+    {
+      "path": "archive/v4-sources/simulation__source__fit.js",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\simulation__source__fit.js",
+      "source_sha256": "46ef0036a216063780532b5085af7343b9d3c2362f33b359ec4c48d15ef90dfa",
+      "bytes": 1441
+    },
+    {
+      "path": "archive/v4-sources/simulation__source__page.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\simulation__source__page.html",
+      "source_sha256": "0a866e3b76c477ce3b64ac40f5a0b00043f27098e1a3183b40cf670f775784f4",
+      "bytes": 13542
+    },
+    {
+      "path": "archive/v4-sources/tests__check-design.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\tests__check-design.py",
+      "source_sha256": "dff15438683fe28205a9028ca189a4506f5c2e8f3ff580dbadaa2413852f7208",
+      "bytes": 5072
+    },
+    {
+      "path": "archive/v4-sources/tools__build_fit_view.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\tools__build_fit_view.py",
+      "source_sha256": "f3b7a2d66ad213c3e7d0b45c12853349c25fd6d85bb5d724758248617aa8134e",
+      "bytes": 4703
+    },
+    {
+      "path": "archive/v4-sources/tools__build_installation_records.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\tools__build_installation_records.py",
+      "source_sha256": "30935c76259f94276749cc998940a4a720a5f3d17ad1dc29d5745af1ff5fec2c",
+      "bytes": 20531
+    },
+    {
+      "path": "archive/v4-sources/tools__build_mounting_templates_fitz.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\tools__build_mounting_templates_fitz.py",
+      "source_sha256": "3c2827bd648e289476c1f50b44379c416d4059e35b5403d5621aabf232805623",
+      "bytes": 3938
+    },
+    {
+      "path": "archive/v4-sources/tools__build_product_bom.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\tools__build_product_bom.py",
+      "source_sha256": "069492aceaee2caa90b3439f8cc00085292ff6a317141dac5ddd8457144f9292",
+      "bytes": 12011
+    },
+    {
+      "path": "archive/v4-sources/tools__build_workbench.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\tools__build_workbench.py",
+      "source_sha256": "28fe4455dd95053ad29c2f8e4444c30e8a1df071832bfb6ee4cbf7f92bf3fa19",
+      "bytes": 6409
+    },
+    {
+      "path": "archive/v4-sources/tools__draw_ground_single.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\tools__draw_ground_single.py",
+      "source_sha256": "170622f7eeeccd86382f6662bb078af9147315f37590d58153bccdc82f7fbb34",
+      "bytes": 5547
+    },
+    {
+      "path": "archive/v4-sources/tools__draw_two_bay.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v4-sources\\tools__draw_two_bay.py",
+      "source_sha256": "6ce30232082c9534672c8a0afdca3798e1bef79100ccdc98267d8a2ff98abbdc",
+      "bytes": 17891
+    },
+    {
+      "path": "archive/v5.3-preserved/README.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\README.md",
+      "source_sha256": "5f4b0805069df06615070de923a1dd728d1745c7df93448f8cb864c0d891c8d6",
+      "bytes": 1991
+    },
+    {
+      "path": "archive/v5.3-preserved/preservation.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\preservation.json",
+      "source_sha256": "5bf85e6a9791772f276c0721499efcb4d606901be8db7126cb688ed8bb5e2912",
+      "bytes": 8977
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/01-confirmed-hardware.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\01-confirmed-hardware.md",
+      "source_sha256": "7512ea4e6f0ab74c0ebc5e682c9941c5a5fbf5f7d3adf798481bbfbe0c82d7bd",
+      "bytes": 667
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/02-power-and-ground.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\02-power-and-ground.md",
+      "source_sha256": "da8b524451780a2a4683160b235e7808b18c54cc76f7ef2eb458541415a6cc95",
+      "bytes": 1714
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/03-cabinet-and-bom.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\03-cabinet-and-bom.md",
+      "source_sha256": "b74479ce35238c8d785feeb4b252f7997cb64e9f80721a92c4e61c8af52259d0",
+      "bytes": 635
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/04-rebuild-sequence.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\04-rebuild-sequence.md",
+      "source_sha256": "2a5e0b6d7dfa9f6b59003dc68458a96a0e3aedefcd9ec672e459d1b124fcad9a",
+      "bytes": 1147
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/05-firmware-and-verification.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\05-firmware-and-verification.md",
+      "source_sha256": "e366f538036cd9f9b3cc12143613127dd5ea99f769f96fdaa6b476515629c84e",
+      "bytes": 897
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/06-review-summary.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\06-review-summary.md",
+      "source_sha256": "6d031b1399e5032eb24f92dfbaf93037634aa5a93bdab8e3f3682a6be75e4bbb",
+      "bytes": 533
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/07-rfid-and-relay-correction.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\07-rfid-and-relay-correction.md",
+      "source_sha256": "e76ccfe63cc58ff8a0410bbc3dff5b622cdab3747bd0c490579bc9a972624664",
+      "bytes": 466
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/08-product-bom.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\08-product-bom.md",
+      "source_sha256": "613120e914895539bcde185e265ab6412d513778b669ba9806af87811750e091",
+      "bytes": 6013
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/09-ethernet-wire-and-isolation.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\09-ethernet-wire-and-isolation.md",
+      "source_sha256": "d08fd0fcac209c660e998f7be44a19a852093ddf4372c98d22009cb496a487dd",
+      "bytes": 1149
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/10-interface-assembly.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\10-interface-assembly.md",
+      "source_sha256": "db1b1c9a7b9100c179e4f2bcfe196da91395cdda68b3911e942f1b2c036f4bfa",
+      "bytes": 1236
+    },
+    {
+      "path": "archive/v5.3-preserved/docs/11-design-review.md",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\docs\\11-design-review.md",
+      "source_sha256": "0a89b63ae6bf15e6666c122711c75821051c5402391593a906302cb798700e63",
+      "bytes": 1619
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/cabinet-fit-model.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\cabinet-fit-model.json",
+      "source_sha256": "1128caf6d283b52481bcc8f4bf7184af2ec4c975f11ec0ce8e39a3f730603e76",
+      "bytes": 10087
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/cabinet-layout.svg",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\cabinet-layout.svg",
+      "source_sha256": "cfc1bb69b7897e88b1e8262b4ebe47223b22a89437c870d3021ef7d3d3dd704c",
+      "bytes": 81888
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/cabinet-redesign.svg",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\cabinet-redesign.svg",
+      "source_sha256": "92fe970d14610e2d95a23108e45a9a46a822fbf85c007a901da18aac5273cdee",
+      "bytes": 119714
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/cable-design.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\cable-design.json",
+      "source_sha256": "662b278be21a3e0d909619bdb075000000fcc55ee0bad47ee51fd4de0fa9b6b3",
+      "bytes": 779
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/commissioning-checklist.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\commissioning-checklist.csv",
+      "source_sha256": "b8738190e76b80289cdef5a8a83337d3226073e44b27b020f86244446a6d8edb",
+      "bytes": 2881
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/ethernet-cable-register.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\ethernet-cable-register.csv",
+      "source_sha256": "945c0d9b9757ce37ad1126b173c59f47af59010d3d14a99a6a32a17c66914533",
+      "bytes": 2556
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/field-terminal-landing.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\field-terminal-landing.csv",
+      "source_sha256": "bd890abef987d375bb33fa13cb8f341cf0bb4a8a48d07d8877e87d65d504c42e",
+      "bytes": 652
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/final-rating-record.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\final-rating-record.csv",
+      "source_sha256": "3360f8c6fa698ac79724fbfa0f56e4f53768095deec4fc19c95ba43067aa6dad",
+      "bytes": 1078
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/frontpanel-circuit.svg",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\frontpanel-circuit.svg",
+      "source_sha256": "7aa2a1fd0aaf7ce1507bd39a97bf5afc8ef32755b8d96c282cb6ceb7399c5c10",
+      "bytes": 8833
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/full-wiring-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\full-wiring-schedule.csv",
+      "source_sha256": "69be8f7aa1867c6cc78d991abc5ef0c872122ce0b427d316eb97aeeb084f588f",
+      "bytes": 6960
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/ground-connectivity.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\ground-connectivity.json",
+      "source_sha256": "d90d4c258da2f2d6c9e46cec988b58756d038777c8354f604fa0303b84097882",
+      "bytes": 2376
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/ground-terminal-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\ground-terminal-schedule.csv",
+      "source_sha256": "17c28c395bbefed25c45efe14c1978645584e72f800a857998a300b788bb3f1b",
+      "bytes": 995
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/ground-topology.svg",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\ground-topology.svg",
+      "source_sha256": "38550f012b0eb91689ef964469c218f696d5415f39193dc762cf6d499fc9c20e",
+      "bytes": 9971
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/interface-component-netlist.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\interface-component-netlist.csv",
+      "source_sha256": "461cfb4334805c2a4896458e2de37804ae0ccecbdcc8e6476a7149836449b046",
+      "bytes": 720
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/isolation-interfaces.svg",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\isolation-interfaces.svg",
+      "source_sha256": "adb211377c20dd7c4d7202e75325d4fb4d11208637b8cafd5a012d44ab446a30",
+      "bytes": 7266
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/mounting-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\mounting-schedule.csv",
+      "source_sha256": "46ebbb3e4f9e34ecd1476aeab6f4f6950e7da14e6f4f599c0d78aaa2dd0098d6",
+      "bytes": 2977
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/nets.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\nets.json",
+      "source_sha256": "f21bf9bf954f1e07825225d2bd0b9d5926fcdd09007c294bc114b13719464776",
+      "bytes": 9650
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/passage-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\passage-schedule.csv",
+      "source_sha256": "bb030de3d553a537bbcdaeece84d04aeefeab81054660902590193eb0f404096",
+      "bytes": 243
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/pin-and-wire-labels.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\pin-and-wire-labels.csv",
+      "source_sha256": "b617d6e1e4d87a1bfc0c01c03eccdd0d3738cbabe4bb527f7e370575ac03d171",
+      "bytes": 2310
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/positive-terminal-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\positive-terminal-schedule.csv",
+      "source_sha256": "f4ab6d43e6cb18272d03a530295bea617b497845411e79971f2bac17132983c4",
+      "bytes": 441
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/power-budget.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\power-budget.csv",
+      "source_sha256": "3a80138bab1a33c79fec7876d7fa722bda29521c7a0333e9cd61fd578cee71ac",
+      "bytes": 510
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/power-decisions.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\power-decisions.json",
+      "source_sha256": "6df701a0bf604fcf28c74108602a7d5420aa5ac22dd7dbbd868284133e2f123c",
+      "bytes": 1284
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/product-bom.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\product-bom.csv",
+      "source_sha256": "02e66d31a0ac94bac2589637717bbd801af9e75428acfd8f8bf18d2bbe823f6c",
+      "bytes": 6498
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/product-bom.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\product-bom.json",
+      "source_sha256": "a3588533a5094d809ea9e733e83680ee3c7c3ee6edc845d32d9da1a503e51b8a",
+      "bytes": 11851
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/relay-channel-trace.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\relay-channel-trace.csv",
+      "source_sha256": "80bf353d502661701e093c8117612906d4e53045da875a1d8af7a5eb1c7829ac",
+      "bytes": 254
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/sensor-interface-modes.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\sensor-interface-modes.csv",
+      "source_sha256": "8126e4c1d7215539713151a8d626f586b9cdd7e5172f3dc976c7608bd367bda3",
+      "bytes": 449
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/source-register.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\source-register.json",
+      "source_sha256": "97f43f8951ad90f9792c757d07ea0c138c8114d57a9fab4ef91a673a58bc03aa",
+      "bytes": 1241
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/wire-labels.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\wire-labels.html",
+      "source_sha256": "b1283f75581f93d4020a5aed66df7aca18470e61e45bf1a5a7d1e4c2517b04bd",
+      "bytes": 12842
+    },
+    {
+      "path": "archive/v5.3-preserved/hardware/wire-segments.csv",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\hardware\\wire-segments.csv",
+      "source_sha256": "69be8f7aa1867c6cc78d991abc5ef0c872122ce0b427d316eb97aeeb084f588f",
+      "bytes": 6960
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/index.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\index.html",
+      "source_sha256": "f1f1ace4b481bf4937f98ea9ad51b9de18347537dea54af3d3d4de18fccb133e",
+      "bytes": 1449216
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/app.css",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\app.css",
+      "source_sha256": "79f4f5157d759d2eb4c3a734c6fe297b40e6366ceb11534e6e9200393276b358",
+      "bytes": 16437
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/app.js",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\app.js",
+      "source_sha256": "8d897ae23b3aae992e5f45803532e9c0a23db41deb64c398b912397c7946eb9d",
+      "bytes": 21919
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/bom-view.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\bom-view.html",
+      "source_sha256": "c73f9b7ef77314e365ed974b2fdfb64efcdab8d3ab5292257d65bc460e20bc84",
+      "bytes": 10082
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/cabinet3d.js",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\cabinet3d.js",
+      "source_sha256": "9e21d5a43bb7cd7f6a5478c387d08079ccbe7b93581de3b15916d489976f3caf",
+      "bytes": 19803
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/cable-view.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\cable-view.html",
+      "source_sha256": "3c21da5cce45620b671e900e991f62471081afaecb4ffa8e73456597ba41c178",
+      "bytes": 3480
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/current-design.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\current-design.html",
+      "source_sha256": "80861cfc1bbffe32c3d6f8c0cc7186eff1bbb321b6aa580b1395efc2e7013481",
+      "bytes": 3130
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/design-data.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\design-data.json",
+      "source_sha256": "db19974e632ad3534e0f8401a8b503c6982cac3c07585db3cb2f71f686180298",
+      "bytes": 26601
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/firmware-data.js",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\firmware-data.js",
+      "source_sha256": "dd595e9cca4003769f5bbf026fd629a2b74ade427b799152930112510e2196ac",
+      "bytes": 42081
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/fit-view.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\fit-view.html",
+      "source_sha256": "b801b192f221ad414db41cc80ff7aeca19496211373923394d1b6f0a681515be",
+      "bytes": 5402
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/fit.js",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\fit.js",
+      "source_sha256": "36ab1ff13428e72ef4a9a1220a5ee55304e8e2a667acfa5fefc58a6e2278b692",
+      "bytes": 3454
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/ground-table.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\ground-table.html",
+      "source_sha256": "af9414c4ba17096fac867d06fb800f59ddb2d7f1b1c01264f121e24f0555ac24",
+      "bytes": 3901
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/page.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\page.html",
+      "source_sha256": "753c9f2e19b7db5695fc5465378908a5b74bf99c3dfe720c809c62940e58c868",
+      "bytes": 12266
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/review-view.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\review-view.html",
+      "source_sha256": "573a88f523e0538666508dc2e801496007d8df1edbd924c44a627c24d5c12d95",
+      "bytes": 1429
+    },
+    {
+      "path": "archive/v5.3-preserved/simulation/source/runner.js",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\simulation\\source\\runner.js",
+      "source_sha256": "871b6e2e3124ef11762529a3de1d7b5089eb923e1e66654bbfa89e5eed422bbf",
+      "bytes": 3471
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/avr-scenarios.cjs",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\avr-scenarios.cjs",
+      "source_sha256": "a43106b08599f69b259ce44f0058479aa8ac0deb6044473dd6134cd9325c0dea",
+      "bytes": 2474
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/browser-verification.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\browser-verification.json",
+      "source_sha256": "47f18bbf3910386850522e81fc189e163676c4ac6bef60c6c805e1426db863a5",
+      "bytes": 664
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/check-design-v3.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\check-design-v3.py",
+      "source_sha256": "ee5dccf82f384b62d302d3656c74be25df6270437a26b9f54efb9a5fbcf37d22",
+      "bytes": 191
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/check-design-v5.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\check-design-v5.py",
+      "source_sha256": "06142957870324a4ca535e49cb67440f3e219ed6b079a61f4183b58069df8e1f",
+      "bytes": 6540
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/check-design.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\check-design.py",
+      "source_sha256": "b1a7dc4eb42b186f18ddec89ef3c49a395b97379b3479415c4597f21285e765d",
+      "bytes": 127
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/design-verification.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\design-verification.json",
+      "source_sha256": "f0fe6c5e0f39025da33165ba015d60968d0b1cbf658ee1bd8fcdc6d3486cbf42",
+      "bytes": 814
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/firmware-data.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\firmware-data.json",
+      "source_sha256": "1e37c2f027acd85a8a6e78b15892993a5855a181546c551d57dd5609decc0947",
+      "bytes": 42346
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/frontpanel-scenarios.cjs",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\frontpanel-scenarios.cjs",
+      "source_sha256": "9aa81510834f9e7b73fb26aa2be36eca68a6a8e39c22f822e23fda0feb376977",
+      "bytes": 3274
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/frontpanel-verification.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\frontpanel-verification.json",
+      "source_sha256": "2dd7c38fddd2d12e08a66a6e3fb08ea64828e58cc7c3d97362237350fec1f940",
+      "bytes": 764
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/installation-counts.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\installation-counts.json",
+      "source_sha256": "8d58793ad03df0877b16d8ed27fa78c4f10f94e708ae6e57ad3ba304b0b0d5fe",
+      "bytes": 214
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/pdf-verification.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\pdf-verification.json",
+      "source_sha256": "17de9d719e5fc58072651c000b0ef32782fc4d2c1bca296b6eb4f5f1a2993f0a",
+      "bytes": 207
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/run-all.cjs",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\run-all.cjs",
+      "source_sha256": "8841686b6e879e65d48e3a907836fc8469b07bd812642c0eae6f18f221e77478",
+      "bytes": 279
+    },
+    {
+      "path": "archive/v5.3-preserved/tests/verification.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tests\\verification.json",
+      "source_sha256": "63732734bae1a451620553c381f8d773caaece573b1c68a44a78ba0c1d922358",
+      "bytes": 669
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/build_3d.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\build_3d.py",
+      "source_sha256": "ac97011fdf2443b263011eb030e9156695bcb2155586cd3888c35c44b3425c82",
+      "bytes": 830
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/build_fit_view.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\build_fit_view.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/build_installation_records.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\build_installation_records.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/build_mounting_templates.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\build_mounting_templates.py",
+      "source_sha256": "867dd0edd3f26ac5279ddbf87da25ac74c660a40cbb9509a1aa8e861a7c39e6c",
+      "bytes": 195
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/build_mounting_templates_fitz.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\build_mounting_templates_fitz.py",
+      "source_sha256": "28ca2b1fe2d2cd1217031212fc9692ce9dd607cba62f991165e176450a767fca",
+      "bytes": 4115
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/build_product_bom.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\build_product_bom.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/build_project.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\build_project.py",
+      "source_sha256": "22fc924aed9b09ee9b7ba1e938f5dc87e38527757674fdaca49995e552dc0e32",
+      "bytes": 405
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/build_workbench.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\build_workbench.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/direct_control_docs.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\direct_control_docs.py",
+      "source_sha256": "4742da3303f052d683a3842388fb610d71064b913b010296db52f69a91c8a07a",
+      "bytes": 9292
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/draw_cabinet.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\draw_cabinet.py",
+      "source_sha256": "01c2606ea9f39631ae2eb078b0b9b42c63bac89eddd062ce179a0b86d3f929ba",
+      "bytes": 14989
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/draw_frontpanel.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\draw_frontpanel.py",
+      "source_sha256": "1128443aaabcaa1942cea4893615135c4a971955659241a02b5144a0829d69f8",
+      "bytes": 2910
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/draw_ground_single.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\draw_ground_single.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/draw_two_bay.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\draw_two_bay.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/package_project.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\package_project.py",
+      "source_sha256": "81c362ed8c2455c6e2f179de099b8426a5df0aa448cace0615e5ab85670dfb6b",
+      "bytes": 1135
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/redesign_v5.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\redesign_v5.py",
+      "source_sha256": "f74cda8b3ae00abdb68e979efe5b11a9f43769bd53aa84f6b04b11f99837db74",
+      "bytes": 36695
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/refresh-firmware-data.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\refresh-firmware-data.py",
+      "source_sha256": "0f26663d79a2629d49a4d9985a5b63a9729821b77c70bb23b67ac021bfdd28d2",
+      "bytes": 2819
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/render_v5.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\render_v5.py",
+      "source_sha256": "8321d795287ae4958089df9e2389c417f7c92db09c1d2ec241dfb454afeaeeb7",
+      "bytes": 44515
+    },
+    {
+      "path": "archive/v5.3-preserved/tools/serve_local.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v5.3-preserved\\tools\\serve_local.py",
+      "source_sha256": "98dbdac8c7441d92a4a0c372c901045e65b8ebb39dccc0f4a1bcce860b92b272",
+      "bytes": 1258
+    },
+    {
+      "path": "archive/v6-compact-preserved/hardware/v6/design-data.json",
+      "source": "D:\\RCM\\mongshot\\archive\\v6-compact-preserved\\hardware\\v6\\design-data.json",
+      "source_sha256": "2a647a7108f2dfb711792e2509d367f4d19102618357ed38ccf3b1981087e10b",
+      "bytes": 102747
+    },
+    {
+      "path": "archive/v6-compact-preserved/simulation/index.html",
+      "source": "D:\\RCM\\mongshot\\archive\\v6-compact-preserved\\simulation\\index.html",
+      "source_sha256": "040fba541c9e493566309f14d1b4d53a887599460e4606c84f48f720e2ded441",
+      "bytes": 2189900
+    },
+    {
+      "path": "archive/v6-compact-preserved/tools/v6_routing.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v6-compact-preserved\\tools\\v6_routing.py",
+      "source_sha256": "ef3274c47a5954294340be9dfcfac7863fbdcf52d36ebe7cd3309338b8c95479",
+      "bytes": 9029
+    },
+    {
+      "path": "archive/v6-compact-preserved/tools/v6_three_source.py",
+      "source": "D:\\RCM\\mongshot\\archive\\v6-compact-preserved\\tools\\v6_three_source.py",
+      "source_sha256": "4af42d89e5a0be3ae03b81e7b52430461dfa3a7503769674ad562ec1a5e3ae1e",
+      "bytes": 5497
+    },
+    {
+      "path": "archive/v6-precompact-screenshots/2d-lower.png",
+      "source": "D:\\RCM\\mongshot\\archive\\v6-precompact-screenshots\\2d-lower.png",
+      "source_sha256": "29034102c2f07c9055225c99fbaf32267c758a3f9185f6be8c0c8565beb04827",
+      "bytes": 62897
+    },
+    {
+      "path": "archive/v6-precompact-screenshots/2d-overview.png",
+      "source": "D:\\RCM\\mongshot\\archive\\v6-precompact-screenshots\\2d-overview.png",
+      "source_sha256": "fdf6b2c8bd0648e4733cdd2c429967058d58650d195ff6df4c4f276b75d90cd5",
+      "bytes": 52062
+    },
+    {
+      "path": "archive/v6-precompact-screenshots/3d-returns.png",
+      "source": "D:\\RCM\\mongshot\\archive\\v6-precompact-screenshots\\3d-returns.png",
+      "source_sha256": "4fe439dbf3bb88650ec29c8d6afbb9330773b8018a61b0df3b0378dea43c90f4",
+      "bytes": 79139
+    },
+    {
+      "path": "docs/01-confirmed-hardware.md",
+      "source": "D:\\RCM\\mongshot\\docs\\01-confirmed-hardware.md",
+      "source_sha256": "7512ea4e6f0ab74c0ebc5e682c9941c5a5fbf5f7d3adf798481bbfbe0c82d7bd",
+      "bytes": 667
+    },
+    {
+      "path": "docs/02-power-and-ground.md",
+      "source": "D:\\RCM\\mongshot\\docs\\02-power-and-ground.md",
+      "source_sha256": "da8b524451780a2a4683160b235e7808b18c54cc76f7ef2eb458541415a6cc95",
+      "bytes": 1714
+    },
+    {
+      "path": "docs/03-cabinet-and-bom.md",
+      "source": "D:\\RCM\\mongshot\\docs\\03-cabinet-and-bom.md",
+      "source_sha256": "b74479ce35238c8d785feeb4b252f7997cb64e9f80721a92c4e61c8af52259d0",
+      "bytes": 635
+    },
+    {
+      "path": "docs/04-rebuild-sequence.md",
+      "source": "D:\\RCM\\mongshot\\docs\\04-rebuild-sequence.md",
+      "source_sha256": "2a5e0b6d7dfa9f6b59003dc68458a96a0e3aedefcd9ec672e459d1b124fcad9a",
+      "bytes": 1147
+    },
+    {
+      "path": "docs/05-firmware-and-verification.md",
+      "source": "D:\\RCM\\mongshot\\docs\\05-firmware-and-verification.md",
+      "source_sha256": "e366f538036cd9f9b3cc12143613127dd5ea99f769f96fdaa6b476515629c84e",
+      "bytes": 897
+    },
+    {
+      "path": "docs/06-review-summary.md",
+      "source": "D:\\RCM\\mongshot\\docs\\06-review-summary.md",
+      "source_sha256": "6d031b1399e5032eb24f92dfbaf93037634aa5a93bdab8e3f3682a6be75e4bbb",
+      "bytes": 533
+    },
+    {
+      "path": "docs/07-rfid-and-relay-correction.md",
+      "source": "D:\\RCM\\mongshot\\docs\\07-rfid-and-relay-correction.md",
+      "source_sha256": "e76ccfe63cc58ff8a0410bbc3dff5b622cdab3747bd0c490579bc9a972624664",
+      "bytes": 466
+    },
+    {
+      "path": "docs/08-product-bom.md",
+      "source": "D:\\RCM\\mongshot\\docs\\08-product-bom.md",
+      "source_sha256": "613120e914895539bcde185e265ab6412d513778b669ba9806af87811750e091",
+      "bytes": 6013
+    },
+    {
+      "path": "docs/09-ethernet-wire-and-isolation.md",
+      "source": "D:\\RCM\\mongshot\\docs\\09-ethernet-wire-and-isolation.md",
+      "source_sha256": "d08fd0fcac209c660e998f7be44a19a852093ddf4372c98d22009cb496a487dd",
+      "bytes": 1149
+    },
+    {
+      "path": "docs/10-interface-assembly.md",
+      "source": "D:\\RCM\\mongshot\\docs\\10-interface-assembly.md",
+      "source_sha256": "db1b1c9a7b9100c179e4f2bcfe196da91395cdda68b3911e942f1b2c036f4bfa",
+      "bytes": 1236
+    },
+    {
+      "path": "docs/11-design-review.md",
+      "source": "D:\\RCM\\mongshot\\docs\\11-design-review.md",
+      "source_sha256": "0a89b63ae6bf15e6666c122711c75821051c5402391593a906302cb798700e63",
+      "bytes": 1619
+    },
+    {
+      "path": "docs/12-v6-common-star.md",
+      "source": "D:\\RCM\\mongshot\\docs\\12-v6-common-star.md",
+      "source_sha256": "fdaa4c6f90435c4d2ebfbb44f1b0ea64cd107a24b6a36698617f8aae45d69f8e",
+      "bytes": 4852
+    },
+    {
+      "path": "docs/13-harness-assembly.md",
+      "source": "D:\\RCM\\mongshot\\docs\\13-harness-assembly.md",
+      "source_sha256": "2c4dfdc4ba911bb8fa09abdb439e9c2acc1a06d97efe98376dbe16605fd32841",
+      "bytes": 4527
+    },
+    {
+      "path": "evidence/amplifier-rear.png",
+      "source": "D:\\RCM\\mongshot\\evidence\\amplifier-rear.png",
+      "source_sha256": "26ec635758143b9c2905b33e38327562eb884a3bec0f1f0d4971da2924b237d0",
+      "bytes": 907395
+    },
+    {
+      "path": "evidence/cabinet-annotated.png",
+      "source": "D:\\RCM\\mongshot\\evidence\\cabinet-annotated.png",
+      "source_sha256": "7cd07236f53f445f2721326eaa32d973603c6c82a7778138e87b3bcb9ee0a8b7",
+      "bytes": 2040034
+    },
+    {
+      "path": "evidence/cabinet-original.jpg",
+      "source": "D:\\RCM\\mongshot\\evidence\\cabinet-original.jpg",
+      "source_sha256": "558164966ae17f09955636260c234639231435aff9306a26e47ea98f45c53c7a",
+      "bytes": 360209
+    },
+    {
+      "path": "evidence/controller-closeup.png",
+      "source": "D:\\RCM\\mongshot\\evidence\\controller-closeup.png",
+      "source_sha256": "c75333289479237a49a7a5307a892bed4ac79393cfec0d348aa37a1a4f18eedd",
+      "bytes": 1567900
+    },
+    {
+      "path": "evidence/v6-work-instruction.md",
+      "source": "D:\\RCM\\mongshot\\evidence\\v6-work-instruction.md",
+      "source_sha256": "aff31f5d0054fe6d399d564eb9b8fc2a41f4611487c20f408562cf7a72925144",
+      "bytes": 11508
+    },
+    {
+      "path": "firmware/candidate_10ms/candidate_10ms.ino",
+      "source": "D:\\RCM\\mongshot\\firmware\\candidate_10ms\\candidate_10ms.ino",
+      "source_sha256": "c2bc3408bbd260d0e1c0068b629431fbe65d2387c5513c6aa549b73a3dad7656",
+      "bytes": 4826
+    },
+    {
+      "path": "firmware/frontpanel/frontpanel.ino",
+      "source": "D:\\RCM\\mongshot\\firmware\\frontpanel\\frontpanel.ino",
+      "source_sha256": "7af2f27abbb947f62f81c624e4441ba83acabe939cd895817dd0cdd521099b54",
+      "bytes": 6512
+    },
+    {
+      "path": "firmware/original/operating/operating.ino",
+      "source": "D:\\RCM\\mongshot\\firmware\\original\\operating\\operating.ino",
+      "source_sha256": "c8aeac35891b6c8f22331cabb4a3f2c411c927dea789e26395ee1d3875b20a62",
+      "bytes": 4735
+    },
+    {
+      "path": "firmware/original/school/school.ino",
+      "source": "D:\\RCM\\mongshot\\firmware\\original\\school\\school.ino",
+      "source_sha256": "5205920b8c0c465120efb47dfe543e3c82443c96a94101d4cf4a0671f62af78c",
+      "bytes": 6366
+    },
+    {
+      "path": "firmware/original/test/test.ino",
+      "source": "D:\\RCM\\mongshot\\firmware\\original\\test\\test.ino",
+      "source_sha256": "a0cebca154d88df487e42c3d61b211f7b50539c6250c939bd71445780c58ee27",
+      "bytes": 7363
+    },
+    {
+      "path": "hardware/cabinet-fit-model.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\cabinet-fit-model.json",
+      "source_sha256": "1128caf6d283b52481bcc8f4bf7184af2ec4c975f11ec0ce8e39a3f730603e76",
+      "bytes": 10087
+    },
+    {
+      "path": "hardware/cabinet-layout.svg",
+      "source": "D:\\RCM\\mongshot\\hardware\\cabinet-layout.svg",
+      "source_sha256": "cfc1bb69b7897e88b1e8262b4ebe47223b22a89437c870d3021ef7d3d3dd704c",
+      "bytes": 81888
+    },
+    {
+      "path": "hardware/cabinet-redesign.svg",
+      "source": "D:\\RCM\\mongshot\\hardware\\cabinet-redesign.svg",
+      "source_sha256": "92fe970d14610e2d95a23108e45a9a46a822fbf85c007a901da18aac5273cdee",
+      "bytes": 119714
+    },
+    {
+      "path": "hardware/cable-design.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\cable-design.json",
+      "source_sha256": "662b278be21a3e0d909619bdb075000000fcc55ee0bad47ee51fd4de0fa9b6b3",
+      "bytes": 779
+    },
+    {
+      "path": "hardware/commissioning-checklist.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\commissioning-checklist.csv",
+      "source_sha256": "b8738190e76b80289cdef5a8a83337d3226073e44b27b020f86244446a6d8edb",
+      "bytes": 2881
+    },
+    {
+      "path": "hardware/ethernet-cable-register.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\ethernet-cable-register.csv",
+      "source_sha256": "945c0d9b9757ce37ad1126b173c59f47af59010d3d14a99a6a32a17c66914533",
+      "bytes": 2556
+    },
+    {
+      "path": "hardware/field-terminal-landing.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\field-terminal-landing.csv",
+      "source_sha256": "bd890abef987d375bb33fa13cb8f341cf0bb4a8a48d07d8877e87d65d504c42e",
+      "bytes": 652
+    },
+    {
+      "path": "hardware/final-rating-record.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\final-rating-record.csv",
+      "source_sha256": "3360f8c6fa698ac79724fbfa0f56e4f53768095deec4fc19c95ba43067aa6dad",
+      "bytes": 1078
+    },
+    {
+      "path": "hardware/frontpanel-circuit.svg",
+      "source": "D:\\RCM\\mongshot\\hardware\\frontpanel-circuit.svg",
+      "source_sha256": "7aa2a1fd0aaf7ce1507bd39a97bf5afc8ef32755b8d96c282cb6ceb7399c5c10",
+      "bytes": 8833
+    },
+    {
+      "path": "hardware/full-wiring-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\full-wiring-schedule.csv",
+      "source_sha256": "69be8f7aa1867c6cc78d991abc5ef0c872122ce0b427d316eb97aeeb084f588f",
+      "bytes": 6960
+    },
+    {
+      "path": "hardware/ground-connectivity.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\ground-connectivity.json",
+      "source_sha256": "d90d4c258da2f2d6c9e46cec988b58756d038777c8354f604fa0303b84097882",
+      "bytes": 2376
+    },
+    {
+      "path": "hardware/ground-terminal-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\ground-terminal-schedule.csv",
+      "source_sha256": "17c28c395bbefed25c45efe14c1978645584e72f800a857998a300b788bb3f1b",
+      "bytes": 995
+    },
+    {
+      "path": "hardware/ground-topology.svg",
+      "source": "D:\\RCM\\mongshot\\hardware\\ground-topology.svg",
+      "source_sha256": "38550f012b0eb91689ef964469c218f696d5415f39193dc762cf6d499fc9c20e",
+      "bytes": 9971
+    },
+    {
+      "path": "hardware/interface-component-netlist.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\interface-component-netlist.csv",
+      "source_sha256": "461cfb4334805c2a4896458e2de37804ae0ccecbdcc8e6476a7149836449b046",
+      "bytes": 720
+    },
+    {
+      "path": "hardware/isolation-interfaces.svg",
+      "source": "D:\\RCM\\mongshot\\hardware\\isolation-interfaces.svg",
+      "source_sha256": "adb211377c20dd7c4d7202e75325d4fb4d11208637b8cafd5a012d44ab446a30",
+      "bytes": 7266
+    },
+    {
+      "path": "hardware/mounting-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\mounting-schedule.csv",
+      "source_sha256": "46ebbb3e4f9e34ecd1476aeab6f4f6950e7da14e6f4f599c0d78aaa2dd0098d6",
+      "bytes": 2977
+    },
+    {
+      "path": "hardware/nets.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\nets.json",
+      "source_sha256": "f21bf9bf954f1e07825225d2bd0b9d5926fcdd09007c294bc114b13719464776",
+      "bytes": 9650
+    },
+    {
+      "path": "hardware/passage-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\passage-schedule.csv",
+      "source_sha256": "bb030de3d553a537bbcdaeece84d04aeefeab81054660902590193eb0f404096",
+      "bytes": 243
+    },
+    {
+      "path": "hardware/pin-and-wire-labels.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\pin-and-wire-labels.csv",
+      "source_sha256": "b617d6e1e4d87a1bfc0c01c03eccdd0d3738cbabe4bb527f7e370575ac03d171",
+      "bytes": 2310
+    },
+    {
+      "path": "hardware/positive-terminal-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\positive-terminal-schedule.csv",
+      "source_sha256": "f4ab6d43e6cb18272d03a530295bea617b497845411e79971f2bac17132983c4",
+      "bytes": 441
+    },
+    {
+      "path": "hardware/power-budget.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\power-budget.csv",
+      "source_sha256": "3a80138bab1a33c79fec7876d7fa722bda29521c7a0333e9cd61fd578cee71ac",
+      "bytes": 510
+    },
+    {
+      "path": "hardware/power-decisions.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\power-decisions.json",
+      "source_sha256": "6df701a0bf604fcf28c74108602a7d5420aa5ac22dd7dbbd868284133e2f123c",
+      "bytes": 1284
+    },
+    {
+      "path": "hardware/product-bom.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\product-bom.csv",
+      "source_sha256": "02e66d31a0ac94bac2589637717bbd801af9e75428acfd8f8bf18d2bbe823f6c",
+      "bytes": 6498
+    },
+    {
+      "path": "hardware/product-bom.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\product-bom.json",
+      "source_sha256": "a3588533a5094d809ea9e733e83680ee3c7c3ee6edc845d32d9da1a503e51b8a",
+      "bytes": 11851
+    },
+    {
+      "path": "hardware/relay-channel-trace.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\relay-channel-trace.csv",
+      "source_sha256": "80bf353d502661701e093c8117612906d4e53045da875a1d8af7a5eb1c7829ac",
+      "bytes": 254
+    },
+    {
+      "path": "hardware/sensor-interface-modes.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\sensor-interface-modes.csv",
+      "source_sha256": "8126e4c1d7215539713151a8d626f586b9cdd7e5172f3dc976c7608bd367bda3",
+      "bytes": 449
+    },
+    {
+      "path": "hardware/source-register.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\source-register.json",
+      "source_sha256": "97f43f8951ad90f9792c757d07ea0c138c8114d57a9fab4ef91a673a58bc03aa",
+      "bytes": 1241
+    },
+    {
+      "path": "hardware/wire-labels.html",
+      "source": "D:\\RCM\\mongshot\\hardware\\wire-labels.html",
+      "source_sha256": "b1283f75581f93d4020a5aed66df7aca18470e61e45bf1a5a7d1e4c2517b04bd",
+      "bytes": 12842
+    },
+    {
+      "path": "hardware/wire-segments.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\wire-segments.csv",
+      "source_sha256": "69be8f7aa1867c6cc78d991abc5ef0c872122ce0b427d316eb97aeeb084f588f",
+      "bytes": 6960
+    },
+    {
+      "path": "hardware/assets/arduino-uno-wokwi.svg",
+      "source": "D:\\RCM\\mongshot\\hardware\\assets\\arduino-uno-wokwi.svg",
+      "source_sha256": "4d5bb18d2acfbce86eaf9b99ef47c54fdb31bda7c5a0d53c6765f8a4e2bc9606",
+      "bytes": 13621
+    },
+    {
+      "path": "hardware/v6/automatic-checks.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\automatic-checks.json",
+      "source_sha256": "65a59a9167c0ef753ba92c31da79a66e58ff0d035da435da02ba72a9db25908a",
+      "bytes": 3782
+    },
+    {
+      "path": "hardware/v6/cabinet-fit-model.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\cabinet-fit-model.json",
+      "source_sha256": "13df7f2a75b79fbe6b270188b2c81638bb556fcf8193618ee907edc5c8890b11",
+      "bytes": 13786
+    },
+    {
+      "path": "hardware/v6/design-data.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\design-data.json",
+      "source_sha256": "f2ee829170d2658e31c154907463b25f6ae2639f1f6d6d8d0b4e9b847300bde2",
+      "bytes": 281951
+    },
+    {
+      "path": "hardware/v6/duct-cut-list.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\duct-cut-list.csv",
+      "source_sha256": "8e5da29b2d1333045a3697fe474e4c83edb0e61aaffacaae7744c8ceacef6e7c",
+      "bytes": 271
+    },
+    {
+      "path": "hardware/v6/front-wiring-full.svg",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\front-wiring-full.svg",
+      "source_sha256": "b454c9c1ba8255c8496893bb10d5083e7d667d33a415b74c40cf34a87abca780",
+      "bytes": 41009
+    },
+    {
+      "path": "hardware/v6/front-wiring-overview.png",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\front-wiring-overview.png",
+      "source_sha256": "043677aba59759c598b223a1408e9f01b9ed1e84ee936d623bf1b530ab41cd2c",
+      "bytes": 85440
+    },
+    {
+      "path": "hardware/v6/front-wiring.svg",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\front-wiring.svg",
+      "source_sha256": "00e3f0ac96d97ef9c4b82b3b57b0bc40190acb983c7e5a9f6db90ac3eac150e9",
+      "bytes": 67169
+    },
+    {
+      "path": "hardware/v6/ground-connectivity.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\ground-connectivity.json",
+      "source_sha256": "ce105f0dd3cadfb1c07091609519b494f4f146bfdab4b335539e2b55e5d07260",
+      "bytes": 4826
+    },
+    {
+      "path": "hardware/v6/ground-port-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\ground-port-schedule.csv",
+      "source_sha256": "b9be6a254d46cd56fa3d64fc1507d1151f2c1ca34a195c1b788c0ea8c2fcd003",
+      "bytes": 635
+    },
+    {
+      "path": "hardware/v6/harness-checks.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\harness-checks.json",
+      "source_sha256": "a95722244bdafe1e8907a97f0a8471a7d428f83e504626bc062698bf9d2333b9",
+      "bytes": 717
+    },
+    {
+      "path": "hardware/v6/harness-plan.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\harness-plan.json",
+      "source_sha256": "cb6bf5b5a60d1744a3ad2829cf65912b665d1d572120710a62e5ecf65de82391",
+      "bytes": 62077
+    },
+    {
+      "path": "hardware/v6/instruction-audit.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\instruction-audit.json",
+      "source_sha256": "1422b2530eddf7175075b2364c88f09e9bedc6694217db48925e7e786be9763a",
+      "bytes": 2419
+    },
+    {
+      "path": "hardware/v6/mounting-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\mounting-schedule.csv",
+      "source_sha256": "204aebb5196f4d6424d00c261f86948dc5ab6103ae5f920aa7c7eee9e178caf6",
+      "bytes": 3497
+    },
+    {
+      "path": "hardware/v6/positive-port-schedule.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\positive-port-schedule.csv",
+      "source_sha256": "d62bd6b112faa5a8474e5324c49e3a5a82f0ec82b1ca11511b978151d2a6778a",
+      "bytes": 574
+    },
+    {
+      "path": "hardware/v6/power-budget.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\power-budget.csv",
+      "source_sha256": "6e53607ebfaf121098f2339409c99770b60025ba344e5daa9545ecb9a78164c0",
+      "bytes": 356
+    },
+    {
+      "path": "hardware/v6/product-bom.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\product-bom.csv",
+      "source_sha256": "ecbeaf3dbb7e3d0765914d10c57e2b9092b15cc509ca6cc15698b628902de93b",
+      "bytes": 3609
+    },
+    {
+      "path": "hardware/v6/product-bom.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\product-bom.json",
+      "source_sha256": "69a1a1b78a6880305804f8c0985d28d09e13d0cd16c1431ef99aabf162f6c990",
+      "bytes": 11244
+    },
+    {
+      "path": "hardware/v6/route-length-comparison.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\route-length-comparison.json",
+      "source_sha256": "9a232241715ad71e54d3ee4a902288ac0ad64941bfebd524032e0409b07e3f26",
+      "bytes": 246
+    },
+    {
+      "path": "hardware/v6/routing-model.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\routing-model.json",
+      "source_sha256": "250f243168cdafa8209ba675ba3bc75dfdecf26747d4d6ff16bf04a3be88f591",
+      "bytes": 67560
+    },
+    {
+      "path": "hardware/v6/wire-labels.html",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\wire-labels.html",
+      "source_sha256": "48ccb2fd7d229f93057edc9062004b1467751a9f8d8206ccc1a3956592af9657",
+      "bytes": 20381
+    },
+    {
+      "path": "hardware/v6/wire-segments.csv",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\wire-segments.csv",
+      "source_sha256": "7b57093e5c31b0843f4fc62707ced5fb485ab8fb0c235ce34df1fb5bc0b24024",
+      "bytes": 9637
+    },
+    {
+      "path": "hardware/v6/wire-segments.json",
+      "source": "D:\\RCM\\mongshot\\hardware\\v6\\wire-segments.json",
+      "source_sha256": "88627d83cd54783db513240c90e91ea30de59406ee089efdb2bac4a37344c12b",
+      "bytes": 30212
+    },
+    {
+      "path": "review/v61/2d-harness.png",
+      "source": "D:\\RCM\\mongshot\\review\\v61\\2d-harness.png",
+      "source_sha256": "517bbe6cfbcc070fb1a6b0005ab77119fd31b05c5d12fa5c4960d79e4fa8b0c3",
+      "bytes": 67822
+    },
+    {
+      "path": "review/v61/3d-cores.png",
+      "source": "D:\\RCM\\mongshot\\review\\v61\\3d-cores.png",
+      "source_sha256": "f959ee7b6dc16fe799d05205616ccad21badf13223ddf728cc3b8576924f1a47",
+      "bytes": 76698
+    },
+    {
+      "path": "review/v61/3d-harness.png",
+      "source": "D:\\RCM\\mongshot\\review\\v61\\3d-harness.png",
+      "source_sha256": "db24ea01b4ca181ba8c62c5ce1d86622d3f781c98e668fc0c6ddd3b44a217eab",
+      "bytes": 75628
+    },
+    {
+      "path": "review/v61/3d-returns.png",
+      "source": "D:\\RCM\\mongshot\\review\\v61\\3d-returns.png",
+      "source_sha256": "a934d27c388bdd6bdfee96c19e9f26561588e25f87944198beb39e48a963f099",
+      "bytes": 74467
+    },
+    {
+      "path": "review/v61/checks.png",
+      "source": "D:\\RCM\\mongshot\\review\\v61\\checks.png",
+      "source_sha256": "8fe92a598a6ff5dd777a03906d6dea8ecf00ecfd8dc870cfdbacc28651991ce8",
+      "bytes": 215456
+    },
+    {
+      "path": "review/v61/relay-six-wires.png",
+      "source": "D:\\RCM\\mongshot\\review\\v61\\relay-six-wires.png",
+      "source_sha256": "255e0eb61b335be074ede901b62f7facc488c5488319ce07e569fa8f03663ebe",
+      "bytes": 78130
+    },
+    {
+      "path": "simulation/index.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\index.html",
+      "source_sha256": "a7777b1c3eeac0801e4b4d4421bc268dea419381c4f82ef88f03fa3f36c6f10b",
+      "bytes": 2321031
+    },
+    {
+      "path": "simulation/firmware/candidate.hex",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\candidate.hex",
+      "source_sha256": "a1b412a422e6a24cd1b7e9e20a1fa44c496320013aa4bc12d26749f2c4268ebe",
+      "bytes": 13235
+    },
+    {
+      "path": "simulation/firmware/frontpanel.hex",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\frontpanel.hex",
+      "source_sha256": "9d66ece9eab5caa42dcebe3e2ac4a3689a95b20a4975a85991dff4163519a726",
+      "bytes": 14900
+    },
+    {
+      "path": "simulation/firmware/original.hex",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\original.hex",
+      "source_sha256": "5f9feb5f75c7d1de8abf5f84c7e2b6a3fb65b83c560cbd12b058fb82c24d029c",
+      "bytes": 13325
+    },
+    {
+      "path": "simulation/firmware/candidate/MP3Player_KT403A.h",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\candidate\\MP3Player_KT403A.h",
+      "source_sha256": "997d2513a45749755ce59d6dc325d93b735388e3f53b3d238bed3d89e2304e1a",
+      "bytes": 270
+    },
+    {
+      "path": "simulation/firmware/candidate/candidate.ino",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\candidate\\candidate.ino",
+      "source_sha256": "03039511f605b74d29eff203d1349f3e008c7a0132d525ee2dd740a4580fbf0f",
+      "bytes": 44
+    },
+    {
+      "path": "simulation/firmware/candidate/source.cpp",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\candidate\\source.cpp",
+      "source_sha256": "84bbd262301ee2f284949f54721c0027a2e97e615cb6e2ae7e0f23d064f6951d",
+      "bytes": 5080
+    },
+    {
+      "path": "simulation/firmware/frontpanel/MP3Player_KT403A.h",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\frontpanel\\MP3Player_KT403A.h",
+      "source_sha256": "997d2513a45749755ce59d6dc325d93b735388e3f53b3d238bed3d89e2304e1a",
+      "bytes": 270
+    },
+    {
+      "path": "simulation/firmware/frontpanel/frontpanel.ino",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\frontpanel\\frontpanel.ino",
+      "source_sha256": "03039511f605b74d29eff203d1349f3e008c7a0132d525ee2dd740a4580fbf0f",
+      "bytes": 44
+    },
+    {
+      "path": "simulation/firmware/frontpanel/source.cpp",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\frontpanel\\source.cpp",
+      "source_sha256": "7f66b882a2b66305e7f60e13a8537a6f79c8d8735730afc0789d22fd347aab10",
+      "bytes": 6739
+    },
+    {
+      "path": "simulation/firmware/original/MP3Player_KT403A.h",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\original\\MP3Player_KT403A.h",
+      "source_sha256": "997d2513a45749755ce59d6dc325d93b735388e3f53b3d238bed3d89e2304e1a",
+      "bytes": 270
+    },
+    {
+      "path": "simulation/firmware/original/original.ino",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\original\\original.ino",
+      "source_sha256": "03039511f605b74d29eff203d1349f3e008c7a0132d525ee2dd740a4580fbf0f",
+      "bytes": 44
+    },
+    {
+      "path": "simulation/firmware/original/source.cpp",
+      "source": "D:\\RCM\\mongshot\\simulation\\firmware\\original\\source.cpp",
+      "source_sha256": "d0e28d209093b84f8a22400daa1fc7d2d5ca238d20fc44e814a82dc3941463ad",
+      "bytes": 4991
+    },
+    {
+      "path": "simulation/source/app.css",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\app.css",
+      "source_sha256": "79f4f5157d759d2eb4c3a734c6fe297b40e6366ceb11534e6e9200393276b358",
+      "bytes": 16437
+    },
+    {
+      "path": "simulation/source/app.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\app.js",
+      "source_sha256": "8d897ae23b3aae992e5f45803532e9c0a23db41deb64c398b912397c7946eb9d",
+      "bytes": 21919
+    },
+    {
+      "path": "simulation/source/bom-view.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\bom-view.html",
+      "source_sha256": "c73f9b7ef77314e365ed974b2fdfb64efcdab8d3ab5292257d65bc460e20bc84",
+      "bytes": 10082
+    },
+    {
+      "path": "simulation/source/cabinet3d-v6.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\cabinet3d-v6.js",
+      "source_sha256": "3bf961c6e3d465a54f7c3d168e837acd0655fa6c63f50fc03526df0dd4ff1ec9",
+      "bytes": 25278
+    },
+    {
+      "path": "simulation/source/cabinet3d.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\cabinet3d.js",
+      "source_sha256": "9e21d5a43bb7cd7f6a5478c387d08079ccbe7b93581de3b15916d489976f3caf",
+      "bytes": 19803
+    },
+    {
+      "path": "simulation/source/cable-view.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\cable-view.html",
+      "source_sha256": "3c21da5cce45620b671e900e991f62471081afaecb4ffa8e73456597ba41c178",
+      "bytes": 3480
+    },
+    {
+      "path": "simulation/source/current-design.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\current-design.html",
+      "source_sha256": "80861cfc1bbffe32c3d6f8c0cc7186eff1bbb321b6aa580b1395efc2e7013481",
+      "bytes": 3130
+    },
+    {
+      "path": "simulation/source/design-data.json",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\design-data.json",
+      "source_sha256": "db19974e632ad3534e0f8401a8b503c6982cac3c07585db3cb2f71f686180298",
+      "bytes": 26601
+    },
+    {
+      "path": "simulation/source/firmware-data.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\firmware-data.js",
+      "source_sha256": "dd595e9cca4003769f5bbf026fd629a2b74ade427b799152930112510e2196ac",
+      "bytes": 42081
+    },
+    {
+      "path": "simulation/source/fit-view.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\fit-view.html",
+      "source_sha256": "b801b192f221ad414db41cc80ff7aeca19496211373923394d1b6f0a681515be",
+      "bytes": 5402
+    },
+    {
+      "path": "simulation/source/fit.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\fit.js",
+      "source_sha256": "36ab1ff13428e72ef4a9a1220a5ee55304e8e2a667acfa5fefc58a6e2278b692",
+      "bytes": 3454
+    },
+    {
+      "path": "simulation/source/ground-table.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\ground-table.html",
+      "source_sha256": "af9414c4ba17096fac867d06fb800f59ddb2d7f1b1c01264f121e24f0555ac24",
+      "bytes": 3901
+    },
+    {
+      "path": "simulation/source/page.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\page.html",
+      "source_sha256": "753c9f2e19b7db5695fc5465378908a5b74bf99c3dfe720c809c62940e58c868",
+      "bytes": 12266
+    },
+    {
+      "path": "simulation/source/review-view.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\review-view.html",
+      "source_sha256": "573a88f523e0538666508dc2e801496007d8df1edbd924c44a627c24d5c12d95",
+      "bytes": 1429
+    },
+    {
+      "path": "simulation/source/runner.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\runner.js",
+      "source_sha256": "871b6e2e3124ef11762529a3de1d7b5089eb923e1e66654bbfa89e5eed422bbf",
+      "bytes": 3471
+    },
+    {
+      "path": "simulation/source/v6-app.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\v6-app.js",
+      "source_sha256": "f04d75d58e3a69d4968b1e222c94e5daac1020a0ee08eed8dd4a98252e183dc4",
+      "bytes": 26647
+    },
+    {
+      "path": "simulation/source/v6-page.html",
+      "source": "D:\\RCM\\mongshot\\simulation\\source\\v6-page.html",
+      "source_sha256": "59bd8d424c9197751494a066e0c07a5d743d38fe484a42798f21ef2132cec7cc",
+      "bytes": 22488
+    },
+    {
+      "path": "simulation/vendor/LICENSE-avr8js.txt",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\LICENSE-avr8js.txt",
+      "source_sha256": "71d092fa8944eb36ce929756f620ee5bf31f119d5f78a6941dc04d48f504177b",
+      "bytes": 1082
+    },
+    {
+      "path": "simulation/vendor/LICENSE-wokwi-elements.txt",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\LICENSE-wokwi-elements.txt",
+      "source_sha256": "9948dffaaefc5cfebbbcfae4cead4f9ec94d0dfec73b89671d07fb98448defe2",
+      "bytes": 1098
+    },
+    {
+      "path": "simulation/vendor/avr8js-0.21.1.min.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\avr8js-0.21.1.min.js",
+      "source_sha256": "ea91ff72cfaba72f6b7c9f0ecce8bddea2c91d33bf2308bc6963d5a646327cfd",
+      "bytes": 40976
+    },
+    {
+      "path": "simulation/vendor/cabinet3d-v6.bundle.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\cabinet3d-v6.bundle.js",
+      "source_sha256": "61fc2dc53b4c3690282b5fcf3f50497f04841076fb7d373909450a3d497c55be",
+      "bytes": 553452
+    },
+    {
+      "path": "simulation/vendor/cabinet3d.bundle.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\cabinet3d.bundle.js",
+      "source_sha256": "4e2c77c97f13326ee5e75216053780211e7c449f619e93e470976e4c01234326",
+      "bytes": 547256
+    },
+    {
+      "path": "simulation/vendor/wokwi-elements-1.9.2.min.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\wokwi-elements-1.9.2.min.js",
+      "source_sha256": "ed4d37538924828fe78aa3163ee98130ecc1d7bdc533575dbf127383317605b0",
+      "bytes": 446574
+    },
+    {
+      "path": "simulation/vendor/three/LICENSE",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\three\\LICENSE",
+      "source_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "simulation/vendor/three/OrbitControls.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\three\\OrbitControls.js",
+      "source_sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "bytes": 38703
+    },
+    {
+      "path": "simulation/vendor/three/three.core.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\three\\three.core.js",
+      "source_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "bytes": 1403455
+    },
+    {
+      "path": "simulation/vendor/three/three.module.js",
+      "source": "D:\\RCM\\mongshot\\simulation\\vendor\\three\\three.module.js",
+      "source_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "bytes": 603113
+    },
+    {
+      "path": "tests/avr-scenarios.cjs",
+      "source": "D:\\RCM\\mongshot\\tests\\avr-scenarios.cjs",
+      "source_sha256": "a43106b08599f69b259ce44f0058479aa8ac0deb6044473dd6134cd9325c0dea",
+      "bytes": 2474
+    },
+    {
+      "path": "tests/browser-verification.json",
+      "source": "D:\\RCM\\mongshot\\tests\\browser-verification.json",
+      "source_sha256": "47f18bbf3910386850522e81fc189e163676c4ac6bef60c6c805e1426db863a5",
+      "bytes": 664
+    },
+    {
+      "path": "tests/check-design-v3.py",
+      "source": "D:\\RCM\\mongshot\\tests\\check-design-v3.py",
+      "source_sha256": "ee5dccf82f384b62d302d3656c74be25df6270437a26b9f54efb9a5fbcf37d22",
+      "bytes": 191
+    },
+    {
+      "path": "tests/check-design-v5.py",
+      "source": "D:\\RCM\\mongshot\\tests\\check-design-v5.py",
+      "source_sha256": "06142957870324a4ca535e49cb67440f3e219ed6b079a61f4183b58069df8e1f",
+      "bytes": 6540
+    },
+    {
+      "path": "tests/check-design-v6.py",
+      "source": "D:\\RCM\\mongshot\\tests\\check-design-v6.py",
+      "source_sha256": "c5aa85cbdeacf54ebc709e5f881086caeaacbd1c48938b6e52cad9d3f9864dd8",
+      "bytes": 6830
+    },
+    {
+      "path": "tests/check-design.py",
+      "source": "D:\\RCM\\mongshot\\tests\\check-design.py",
+      "source_sha256": "eddea1dc3db60a94d2a09ba4c93858af8d30b9c7990f87d647893a6b7eb4ddc5",
+      "bytes": 413
+    },
+    {
+      "path": "tests/check-harness-v61.py",
+      "source": "D:\\RCM\\mongshot\\tests\\check-harness-v61.py",
+      "source_sha256": "6d8a2b12394c896764df3bbd61ddb0f087f998f48473fc5a7a793534db4b49f9",
+      "bytes": 1131
+    },
+    {
+      "path": "tests/check-route-clearance-v6.py",
+      "source": "D:\\RCM\\mongshot\\tests\\check-route-clearance-v6.py",
+      "source_sha256": "88a9706289553166042f80a7527a66ae07fdd2067e9ce196bfcd867cf21067ef",
+      "bytes": 1084
+    },
+    {
+      "path": "tests/design-verification.json",
+      "source": "D:\\RCM\\mongshot\\tests\\design-verification.json",
+      "source_sha256": "f0fe6c5e0f39025da33165ba015d60968d0b1cbf658ee1bd8fcdc6d3486cbf42",
+      "bytes": 814
+    },
+    {
+      "path": "tests/firmware-data.json",
+      "source": "D:\\RCM\\mongshot\\tests\\firmware-data.json",
+      "source_sha256": "1e37c2f027acd85a8a6e78b15892993a5855a181546c551d57dd5609decc0947",
+      "bytes": 42346
+    },
+    {
+      "path": "tests/frontpanel-scenarios.cjs",
+      "source": "D:\\RCM\\mongshot\\tests\\frontpanel-scenarios.cjs",
+      "source_sha256": "9aa81510834f9e7b73fb26aa2be36eca68a6a8e39c22f822e23fda0feb376977",
+      "bytes": 3274
+    },
+    {
+      "path": "tests/frontpanel-verification.json",
+      "source": "D:\\RCM\\mongshot\\tests\\frontpanel-verification.json",
+      "source_sha256": "2dd7c38fddd2d12e08a66a6e3fb08ea64828e58cc7c3d97362237350fec1f940",
+      "bytes": 764
+    },
+    {
+      "path": "tests/installation-counts.json",
+      "source": "D:\\RCM\\mongshot\\tests\\installation-counts.json",
+      "source_sha256": "8d58793ad03df0877b16d8ed27fa78c4f10f94e708ae6e57ad3ba304b0b0d5fe",
+      "bytes": 214
+    },
+    {
+      "path": "tests/pdf-verification.json",
+      "source": "D:\\RCM\\mongshot\\tests\\pdf-verification.json",
+      "source_sha256": "17de9d719e5fc58072651c000b0ef32782fc4d2c1bca296b6eb4f5f1a2993f0a",
+      "bytes": 207
+    },
+    {
+      "path": "tests/run-all.cjs",
+      "source": "D:\\RCM\\mongshot\\tests\\run-all.cjs",
+      "source_sha256": "8841686b6e879e65d48e3a907836fc8469b07bd812642c0eae6f18f221e77478",
+      "bytes": 279
+    },
+    {
+      "path": "tests/v6-browser-verification.json",
+      "source": "D:\\RCM\\mongshot\\tests\\v6-browser-verification.json",
+      "source_sha256": "426263195db47ff0993b591f1fa7e7ec7f19b51ef6f9407d14f02a57ed25c255",
+      "bytes": 927
+    },
+    {
+      "path": "tests/v6-design-verification.json",
+      "source": "D:\\RCM\\mongshot\\tests\\v6-design-verification.json",
+      "source_sha256": "2861e241b6929d806eca5fc9a8157673b7e120972ebde0a529afdb0ce5a33fef",
+      "bytes": 844
+    },
+    {
+      "path": "tests/v6-final-artifact-checks.json",
+      "source": "D:\\RCM\\mongshot\\tests\\v6-final-artifact-checks.json",
+      "source_sha256": "e468b209e15817d6ef03907c979a777fcbf1a8ea336901c66207289de2a42888",
+      "bytes": 341
+    },
+    {
+      "path": "tests/v61-harness-verification.json",
+      "source": "D:\\RCM\\mongshot\\tests\\v61-harness-verification.json",
+      "source_sha256": "a60bfd54df4241e369f53bb6547204ebbe09ecbc52bee74990572aded8ee5053",
+      "bytes": 810
+    },
+    {
+      "path": "tests/verification.json",
+      "source": "D:\\RCM\\mongshot\\tests\\verification.json",
+      "source_sha256": "63732734bae1a451620553c381f8d773caaece573b1c68a44a78ba0c1d922358",
+      "bytes": 669
+    },
+    {
+      "path": "tools/build-firmware.ps1",
+      "source": "D:\\RCM\\mongshot\\tools\\build-firmware.ps1",
+      "source_sha256": "902a41ee508adff64498df7d1b5a4350f9b10ade0555c74ce747b756f6aa3f54",
+      "bytes": 1459
+    },
+    {
+      "path": "tools/build_3d.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_3d.py",
+      "source_sha256": "ac97011fdf2443b263011eb030e9156695bcb2155586cd3888c35c44b3425c82",
+      "bytes": 830
+    },
+    {
+      "path": "tools/build_fit_view.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_fit_view.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "tools/build_installation_records.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_installation_records.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "tools/build_mounting_templates.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_mounting_templates.py",
+      "source_sha256": "867dd0edd3f26ac5279ddbf87da25ac74c660a40cbb9509a1aa8e861a7c39e6c",
+      "bytes": 195
+    },
+    {
+      "path": "tools/build_mounting_templates_fitz.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_mounting_templates_fitz.py",
+      "source_sha256": "28ca2b1fe2d2cd1217031212fc9692ce9dd607cba62f991165e176450a767fca",
+      "bytes": 4115
+    },
+    {
+      "path": "tools/build_product_bom.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_product_bom.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "tools/build_project.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_project.py",
+      "source_sha256": "21087a80e4a8794718a5a8d4d28c36bf2c776381ac80304a35ed3ebfe3721004",
+      "bytes": 378
+    },
+    {
+      "path": "tools/build_v6.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_v6.py",
+      "source_sha256": "9fb6031a012d087add076eeba2de762db11d50bb82fa6ed1f021c7bac9ef10f2",
+      "bytes": 33247
+    },
+    {
+      "path": "tools/build_workbench.py",
+      "source": "D:\\RCM\\mongshot\\tools\\build_workbench.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "tools/direct_control_docs.py",
+      "source": "D:\\RCM\\mongshot\\tools\\direct_control_docs.py",
+      "source_sha256": "4742da3303f052d683a3842388fb610d71064b913b010296db52f69a91c8a07a",
+      "bytes": 9292
+    },
+    {
+      "path": "tools/draw_cabinet.py",
+      "source": "D:\\RCM\\mongshot\\tools\\draw_cabinet.py",
+      "source_sha256": "01c2606ea9f39631ae2eb078b0b9b42c63bac89eddd062ce179a0b86d3f929ba",
+      "bytes": 14989
+    },
+    {
+      "path": "tools/draw_frontpanel.py",
+      "source": "D:\\RCM\\mongshot\\tools\\draw_frontpanel.py",
+      "source_sha256": "1128443aaabcaa1942cea4893615135c4a971955659241a02b5144a0829d69f8",
+      "bytes": 2910
+    },
+    {
+      "path": "tools/draw_ground_single.py",
+      "source": "D:\\RCM\\mongshot\\tools\\draw_ground_single.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "tools/draw_two_bay.py",
+      "source": "D:\\RCM\\mongshot\\tools\\draw_two_bay.py",
+      "source_sha256": "42d9c3bb9b4ca79e56064582785e64c5f0d0043bb08b99433c1c05be24a3928c",
+      "bytes": 125
+    },
+    {
+      "path": "tools/package_project.py",
+      "source": "D:\\RCM\\mongshot\\tools\\package_project.py",
+      "source_sha256": "81c362ed8c2455c6e2f179de099b8426a5df0aa448cace0615e5ab85670dfb6b",
+      "bytes": 1135
+    },
+    {
+      "path": "tools/redesign_v5.py",
+      "source": "D:\\RCM\\mongshot\\tools\\redesign_v5.py",
+      "source_sha256": "f74cda8b3ae00abdb68e979efe5b11a9f43769bd53aa84f6b04b11f99837db74",
+      "bytes": 36695
+    },
+    {
+      "path": "tools/refresh-firmware-data.py",
+      "source": "D:\\RCM\\mongshot\\tools\\refresh-firmware-data.py",
+      "source_sha256": "0f26663d79a2629d49a4d9985a5b63a9729821b77c70bb23b67ac021bfdd28d2",
+      "bytes": 2819
+    },
+    {
+      "path": "tools/render_v5.py",
+      "source": "D:\\RCM\\mongshot\\tools\\render_v5.py",
+      "source_sha256": "8321d795287ae4958089df9e2389c417f7c92db09c1d2ec241dfb454afeaeeb7",
+      "bytes": 44515
+    },
+    {
+      "path": "tools/serve_local.py",
+      "source": "D:\\RCM\\mongshot\\tools\\serve_local.py",
+      "source_sha256": "98dbdac8c7441d92a4a0c372c901045e65b8ebb39dccc0f4a1bcce860b92b272",
+      "bytes": 1258
+    },
+    {
+      "path": "tools/v61_svg_bundle.py",
+      "source": "D:\\RCM\\mongshot\\tools\\v61_svg_bundle.py",
+      "source_sha256": "40e7fc702b7bd1a1f78d33410b0d2148e55355f537bb7ee288c707e8af036cf3",
+      "bytes": 2685
+    },
+    {
+      "path": "tools/v6_duct_network.py",
+      "source": "D:\\RCM\\mongshot\\tools\\v6_duct_network.py",
+      "source_sha256": "cdba6376a9446152b10c800b117305f08fe0185fa95c24be85d1c58907c76654",
+      "bytes": 12541
+    },
+    {
+      "path": "tools/v6_harness_checks.py",
+      "source": "D:\\RCM\\mongshot\\tools\\v6_harness_checks.py",
+      "source_sha256": "e84309631575d91b162cccb0c16f259c2bd4ca8bbd0f59997986bd3fcb439ae6",
+      "bytes": 2920
+    },
+    {
+      "path": "tools/v6_routing.py",
+      "source": "D:\\RCM\\mongshot\\tools\\v6_routing.py",
+      "source_sha256": "ef3274c47a5954294340be9dfcfac7863fbdcf52d36ebe7cd3309338b8c95479",
+      "bytes": 9029
+    },
+    {
+      "path": "tools/v6_svg.py",
+      "source": "D:\\RCM\\mongshot\\tools\\v6_svg.py",
+      "source_sha256": "567deb1d5183275c6fff6a17ba92da39de2d31e497d9ca044f14880ea8a3dcf2",
+      "bytes": 8203
+    },
+    {
+      "path": "tools/v6_three_source.py",
+      "source": "D:\\RCM\\mongshot\\tools\\v6_three_source.py",
+      "source_sha256": "d680ca2ecd41f5db186fbbaefe2c020ffaeba2c4598c4bc518e13598bd98069c",
+      "bytes": 3001
+    },
+    {
+      "path": "output/pdf/MongShot_TwoBay_Mounting_Templates.pdf",
+      "source": "D:\\RCM\\mongshot\\output\\pdf\\MongShot_TwoBay_Mounting_Templates.pdf",
+      "source_sha256": "aa0b8874fcc5c322d8f4bc285123e67e05e4a9c91221eeca70a6f287c641c805",
+      "bytes": 7538089
+    },
+    {
+      "path": "evidence/original_debug_code.zip",
+      "source": "D:\\RCM\\mongshot\\evidence\\original_debug_code.zip",
+      "source_sha256": "5fd9ec28381833e4adc583acc770d016104e37f83fd1fafcca263cf0ac3d132e",
+      "bytes": 12635
+    }
+  ],
+  "excluded": [],
+  "classification": "SOURCE_BACKUP_NOT_RELEASE_ACCEPTANCE"
+}

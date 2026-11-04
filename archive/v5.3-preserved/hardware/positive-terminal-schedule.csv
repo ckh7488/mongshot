@@ -1,0 +1,18 @@
+﻿분배부,포트,연결 대상
+P12,IN,SMPS V+
+P12,1,RY-A CH1 COM
+P12,2,RY-A CH2 COM
+P12,3,RY-A CH3 COM
+P12,4,L298 Vs
+P12,5,DC-D VIN
+P12,6,DC-L INPUT+
+P12,7,RFID 정격+12V 조건부
+P12,8,기타 정격12V센서
+5L,IN,DC-L OUTPUT+
+5L,1,Arduino 5V
+5L,2,KT403A VCC
+5L,3,예비 / 기존5V센서가 필요할 때 정격 대조
+5L,4,예비
+5L,5,예비
+5L,6,도어PCB VCC
+5D,분기,"RY-A VCC/JD-VCC, RY-B VCC/JD-VCC, L298 Vss"

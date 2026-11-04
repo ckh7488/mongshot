@@ -1,0 +1,31 @@
+{
+  "engine": "avr8js@0.21.1",
+  "target": "ATmega328P / 16MHz",
+  "mp3": "simulation stub",
+  "results": [
+    {
+      "name": "Real 74HC595 latch has one current-stage LED",
+      "pass": true
+    },
+    {
+      "name": "Brief manual press and contact bounce do not advance",
+      "pass": true
+    },
+    {
+      "name": "Two-second hold advances once, continuing hold never repeats",
+      "pass": true
+    },
+    {
+      "name": "Manual advances preserve every normal output and timed delay",
+      "pass": true
+    },
+    {
+      "name": "A hold during timed wait is consumed, not queued for the next stage",
+      "pass": true
+    },
+    {
+      "name": "Original sensor sequence works with front panel and nonblocking waits",
+      "pass": true
+    }
+  ]
+}

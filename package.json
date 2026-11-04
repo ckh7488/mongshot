@@ -1,0 +1,13 @@
+{
+  "name": "mongshot-cabinet-workbench",
+  "version": "5.0.0",
+  "private": true,
+  "description": "MONG SHOT compact isolated cabinet, Three.js viewport and actual AVR workbench",
+  "scripts": {
+    "test": "node tests/run-all.cjs"
+  },
+  "devDependencies": {
+    "avr8js": "0.21.1",
+    "three": "0.180.0"
+  }
+}

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="840" viewBox="0 0 1180 840"><style>text{font-family:"Malgun Gothic",Arial,sans-serif}</style>
+<text x="42" y="48" font-size="24" fill="#557382" text-anchor="start">외부 LED / 진행 버튼 · 실제 접속 핀</text>
+<text x="42" y="81" font-size="13" fill="#91a2ab" text-anchor="start">5mm 저전류 LED 6개 + SN74HC595N + 각 1.5kΩ · 기존 Gun/Hint 배선을 제거한 D11/A3를 새 기능으로 사용</text>
+<rect x="420" y="150" width="258" height="430" rx="9" fill="#334d5b"/>
+<text x="549" y="184" font-size="20" fill="#e9f0f3" text-anchor="middle">SN74HC595N</text>
+<text x="549" y="208" font-size="12" fill="#a8becb" text-anchor="middle">PDIP-16 · 상면 기준</text>
+<text x="52" y="260" font-size="17" fill="#557382" text-anchor="start">D11</text>
+<path d="M170 255L420 255" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="409" y="247" font-size="11" fill="#93aab6" text-anchor="end">14</text>
+<text x="438" y="260" font-size="13" fill="#cadbe4" text-anchor="start">SER</text>
+<text x="52" y="315" font-size="17" fill="#557382" text-anchor="start">D13</text>
+<path d="M170 310L420 310" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="409" y="302" font-size="11" fill="#93aab6" text-anchor="end">11</text>
+<text x="438" y="315" font-size="13" fill="#cadbe4" text-anchor="start">SRCLK</text>
+<text x="52" y="370" font-size="17" fill="#557382" text-anchor="start">D7</text>
+<path d="M170 365L420 365" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="409" y="357" font-size="11" fill="#93aab6" text-anchor="end">12</text>
+<text x="438" y="370" font-size="13" fill="#cadbe4" text-anchor="start">RCLK</text>
+<text x="52" y="425" font-size="17" fill="#557382" text-anchor="start">5V</text>
+<path d="M170 420L420 420" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="409" y="412" font-size="11" fill="#93aab6" text-anchor="end">10</text>
+<text x="438" y="425" font-size="13" fill="#cadbe4" text-anchor="start">/SRCLR</text>
+<text x="52" y="480" font-size="17" fill="#557382" text-anchor="start">G0</text>
+<path d="M170 475L420 475" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="409" y="467" font-size="11" fill="#93aab6" text-anchor="end">13</text>
+<text x="438" y="480" font-size="13" fill="#cadbe4" text-anchor="start">/OE</text>
+<text x="470" y="552" font-size="13" fill="#cadbe4" text-anchor="start">16 VCC → 5V</text>
+<text x="470" y="573" font-size="13" fill="#cadbe4" text-anchor="start">8 GND → G0</text>
+<text x="660" y="254" font-size="13" fill="#cadbe4" text-anchor="end">QA</text>
+<text x="687" y="241" font-size="11" fill="#93aab6" text-anchor="start">15</text>
+<path d="M678 249L760 249" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<rect x="760" y="241" width="64" height="16" rx="2" fill="#dbcaa7"/>
+<text x="792" y="254" font-size="10" fill="#9b875e" text-anchor="middle">1.5k</text>
+<path d="M824 249L880 249" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<circle cx="892" cy="249" r="10" fill="#b5d8c3" stroke="#78a391"/>
+<path d="M902 249L958 249L958 560" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="1000" y="254" font-size="15" fill="#557382" text-anchor="start">액자</text>
+<text x="660" y="305" font-size="13" fill="#cadbe4" text-anchor="end">QB</text>
+<text x="687" y="292" font-size="11" fill="#93aab6" text-anchor="start">1</text>
+<path d="M678 300L760 300" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<rect x="760" y="292" width="64" height="16" rx="2" fill="#dbcaa7"/>
+<text x="792" y="305" font-size="10" fill="#9b875e" text-anchor="middle">1.5k</text>
+<path d="M824 300L880 300" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<circle cx="892" cy="300" r="10" fill="#b5d8c3" stroke="#78a391"/>
+<path d="M902 300L958 300L958 560" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="1000" y="305" font-size="15" fill="#557382" text-anchor="start">조명</text>
+<text x="660" y="356" font-size="13" fill="#cadbe4" text-anchor="end">QC</text>
+<text x="687" y="343" font-size="11" fill="#93aab6" text-anchor="start">2</text>
+<path d="M678 351L760 351" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<rect x="760" y="343" width="64" height="16" rx="2" fill="#dbcaa7"/>
+<text x="792" y="356" font-size="10" fill="#9b875e" text-anchor="middle">1.5k</text>
+<path d="M824 351L880 351" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<circle cx="892" cy="351" r="10" fill="#b5d8c3" stroke="#78a391"/>
+<path d="M902 351L958 351L958 560" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="1000" y="356" font-size="15" fill="#557382" text-anchor="start">열쇠</text>
+<text x="660" y="407" font-size="13" fill="#cadbe4" text-anchor="end">QD</text>
+<text x="687" y="394" font-size="11" fill="#93aab6" text-anchor="start">3</text>
+<path d="M678 402L760 402" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<rect x="760" y="394" width="64" height="16" rx="2" fill="#dbcaa7"/>
+<text x="792" y="407" font-size="10" fill="#9b875e" text-anchor="middle">1.5k</text>
+<path d="M824 402L880 402" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<circle cx="892" cy="402" r="10" fill="#b5d8c3" stroke="#78a391"/>
+<path d="M902 402L958 402L958 560" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="1000" y="407" font-size="15" fill="#557382" text-anchor="start">RFID</text>
+<text x="660" y="458" font-size="13" fill="#cadbe4" text-anchor="end">QE</text>
+<text x="687" y="445" font-size="11" fill="#93aab6" text-anchor="start">4</text>
+<path d="M678 453L760 453" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<rect x="760" y="445" width="64" height="16" rx="2" fill="#dbcaa7"/>
+<text x="792" y="458" font-size="10" fill="#9b875e" text-anchor="middle">1.5k</text>
+<path d="M824 453L880 453" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<circle cx="892" cy="453" r="10" fill="#b5d8c3" stroke="#78a391"/>
+<path d="M902 453L958 453L958 560" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="1000" y="458" font-size="15" fill="#557382" text-anchor="start">책</text>
+<text x="660" y="509" font-size="13" fill="#cadbe4" text-anchor="end">QF</text>
+<text x="687" y="496" font-size="11" fill="#93aab6" text-anchor="start">5</text>
+<path d="M678 504L760 504" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<rect x="760" y="496" width="64" height="16" rx="2" fill="#dbcaa7"/>
+<text x="792" y="509" font-size="10" fill="#9b875e" text-anchor="middle">1.5k</text>
+<path d="M824 504L880 504" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<circle cx="892" cy="504" r="10" fill="#b5d8c3" stroke="#78a391"/>
+<path d="M902 504L958 504L958 560" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="1000" y="509" font-size="15" fill="#557382" text-anchor="start">완료</text>
+<path d="M958 560L958 597L680 597" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="790" y="621" font-size="13" fill="#87a1af" text-anchor="start">LED 음극 공통 → G0</text>
+<text x="421" y="619" font-size="12" fill="#8da4b1" text-anchor="start">QG(6), QH(7), QH′(9): 미접속</text>
+<text x="47" y="663" font-size="18" fill="#557382" text-anchor="start">진행 버튼: A3 / INPUT_PULLUP</text>
+<path d="M190 723L480 723L570 723" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="58" y="730" font-size="17" fill="#557382" text-anchor="start">A3</text>
+<rect x="270" y="715" width="66" height="16" rx="2" fill="#dbcaa7"/>
+<text x="303" y="727" font-size="10" fill="#9b875e" text-anchor="middle">1k</text>
+<path d="M400 723L400 687" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="400" y="681" font-size="12" fill="#91a4b0" text-anchor="middle">4.7k → 5V</text>
+<path d="M480 723L480 770" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="480" y="795" font-size="12" fill="#91a4b0" text-anchor="middle">100nF → G0</text>
+<path d="M570 723L590 708" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<path d="M610 723L720 723L720 763" stroke="#6b9d9d" stroke-width="2" fill="none"/>
+<text x="625" y="700" font-size="13" fill="#91a4b0" text-anchor="middle">NO 순간 버튼</text>
+<text x="720" y="789" font-size="12" fill="#91a4b0" text-anchor="middle">G0</text>
+<text x="790" y="691" font-size="14" fill="#557382" text-anchor="start">2초 누르면 현재 입력 단계 1회 완료</text>
+<text x="790" y="723" font-size="14" fill="#557382" text-anchor="start">누른 채 유지: 반복 넘김 없음</text>
+<text x="790" y="755" font-size="14" fill="#557382" text-anchor="start">기존 대기시간: 유지 / LED 점멸</text>
+<text x="42" y="826" font-size="12" fill="#91a2ab" text-anchor="start">595 VCC/GND 바로 옆 100nF 필수 · 12V 패널 램프를 이 회로에 직접 연결하지 않음 · SPI.begin()은 사용하지 않음</text>
+</svg>

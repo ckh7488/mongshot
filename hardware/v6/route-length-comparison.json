@@ -1,0 +1,17 @@
+[
+  {
+    "id": "CAB-MOT",
+    "beforeMm": 118.0,
+    "afterMm": 165.0
+  },
+  {
+    "id": "CAB-RLY",
+    "beforeMm": 163.0,
+    "afterMm": 305.0
+  },
+  {
+    "id": "CAB-MP3-SIG",
+    "beforeMm": 244.0,
+    "afterMm": 415.0
+  }
+]

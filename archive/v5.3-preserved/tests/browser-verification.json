@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "revision": "v5.3-direct-control",
+  "method": "CUA live DOM + electrical graph/port tests",
+  "checks": [
+    "WebGL ready",
+    "18 physical mounting entries",
+    "isogpio label and geometry absent",
+    "current common P0/G0 ground shown in GND tab",
+    "no captured console errors",
+    "motor/relay GPIO direct; separate motor power return and common reference wire",
+    "BOM has no ISO-M/ISO-R/carrier/dedicated resistor assembly"
+  ],
+  "notClaimed": [
+    "galvanic isolation of magnet/motor/controller",
+    "measured hardware noise or real dimensions",
+    "real MP3 module communication or firmware upload"
+  ]
+}

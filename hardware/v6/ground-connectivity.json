@@ -1,0 +1,267 @@
+{
+  "revision": "v6.1-harness-first",
+  "systemGalvanicIsolation": false,
+  "edges": [
+    {
+      "a": "P0",
+      "b": "SMPS−",
+      "label": "TRK-0"
+    },
+    {
+      "a": "P0",
+      "b": "MAG1−",
+      "label": "M1-FIELD−"
+    },
+    {
+      "a": "P0",
+      "b": "MAG2−",
+      "label": "M2-FIELD−"
+    },
+    {
+      "a": "P0",
+      "b": "MAG3−",
+      "label": "M3-FIELD−"
+    },
+    {
+      "a": "P0",
+      "b": "L298_GND",
+      "label": "P0-MOTOR"
+    },
+    {
+      "a": "P0",
+      "b": "BUCK_IN_GND",
+      "label": "BUCK-IN−"
+    },
+    {
+      "a": "BUCK_IN_GND",
+      "b": "BUCK_OUT_GND",
+      "label": "BUCK-INTERNAL-GND"
+    },
+    {
+      "a": "BUCK_OUT_GND",
+      "b": "G",
+      "label": "BUCK-G"
+    },
+    {
+      "a": "P0",
+      "b": "RFID 전원−",
+      "label": "RFID-0"
+    },
+    {
+      "a": "P0",
+      "b": "기타12V센서 전원−",
+      "label": "기타12V센서-0"
+    },
+    {
+      "a": "G",
+      "b": "Arduino GND",
+      "label": "UNO-PWR-G"
+    },
+    {
+      "a": "G",
+      "b": "RY-A GND",
+      "label": "CAB-RLY-G"
+    },
+    {
+      "a": "G",
+      "b": "RY-B GND",
+      "label": "CAB-RLY-B-G"
+    },
+    {
+      "a": "G",
+      "b": "J7.2 도어GND",
+      "label": "PANEL-G"
+    },
+    {
+      "a": "G",
+      "b": "KT403A GND",
+      "label": "CAB-MP3-G"
+    },
+    {
+      "a": "G",
+      "b": "REED_D8_G",
+      "label": "REED-D8-G"
+    },
+    {
+      "a": "G",
+      "b": "REED_D6_G",
+      "label": "REED-D6-G"
+    },
+    {
+      "a": "KT403A GND",
+      "b": "AMP_LINE_GND",
+      "label": "AUD-GND"
+    },
+    {
+      "a": "AMP_LINE_GND",
+      "b": "AMP_DC_NEG",
+      "label": "AMP-INTERNAL-GND"
+    },
+    {
+      "a": "AMP_DC_NEG",
+      "b": "ADAPTER_NEG",
+      "label": "AMP−"
+    },
+    {
+      "a": "PE",
+      "b": "SMPS_FG",
+      "label": "PE-87"
+    },
+    {
+      "a": "PE",
+      "b": "CABINET",
+      "label": "PE-88"
+    },
+    {
+      "a": "PE",
+      "b": "DOOR",
+      "label": "PE-89"
+    }
+  ],
+  "originalInstructionEdges": [
+    {
+      "a": "P0",
+      "b": "SMPS−",
+      "label": "TRK-0"
+    },
+    {
+      "a": "P0",
+      "b": "MAG1−",
+      "label": "M1-FIELD−"
+    },
+    {
+      "a": "P0",
+      "b": "MAG2−",
+      "label": "M2-FIELD−"
+    },
+    {
+      "a": "P0",
+      "b": "MAG3−",
+      "label": "M3-FIELD−"
+    },
+    {
+      "a": "P0",
+      "b": "L298_GND",
+      "label": "P0-MOTOR"
+    },
+    {
+      "a": "P0",
+      "b": "BUCK_IN_GND",
+      "label": "BUCK-IN−"
+    },
+    {
+      "a": "BUCK_IN_GND",
+      "b": "BUCK_OUT_GND",
+      "label": "BUCK-INTERNAL-GND"
+    },
+    {
+      "a": "BUCK_OUT_GND",
+      "b": "G",
+      "label": "BUCK-G"
+    },
+    {
+      "a": "P0",
+      "b": "RFID 전원−",
+      "label": "RFID-0"
+    },
+    {
+      "a": "P0",
+      "b": "기타12V센서 전원−",
+      "label": "기타12V센서-0"
+    },
+    {
+      "a": "G",
+      "b": "Arduino GND",
+      "label": "UNO-PWR-G"
+    },
+    {
+      "a": "G",
+      "b": "RY-A GND",
+      "label": "CAB-RLY-G"
+    },
+    {
+      "a": "G",
+      "b": "RY-B GND",
+      "label": "CAB-RLY-B-G"
+    },
+    {
+      "a": "G",
+      "b": "J7.2 도어GND",
+      "label": "PANEL-G"
+    },
+    {
+      "a": "G",
+      "b": "KT403A GND",
+      "label": "CAB-MP3-G"
+    },
+    {
+      "a": "G",
+      "b": "REED_D8_G",
+      "label": "REED-D8-G"
+    },
+    {
+      "a": "G",
+      "b": "REED_D6_G",
+      "label": "REED-D6-G"
+    },
+    {
+      "a": "KT403A GND",
+      "b": "AMP_LINE_GND",
+      "label": "AUD-GND"
+    },
+    {
+      "a": "AMP_LINE_GND",
+      "b": "AMP_DC_NEG",
+      "label": "AMP-INTERNAL-GND"
+    },
+    {
+      "a": "AMP_DC_NEG",
+      "b": "ADAPTER_NEG",
+      "label": "AMP−"
+    },
+    {
+      "a": "PE",
+      "b": "SMPS_FG",
+      "label": "PE-87"
+    },
+    {
+      "a": "PE",
+      "b": "CABINET",
+      "label": "PE-88"
+    },
+    {
+      "a": "PE",
+      "b": "DOOR",
+      "label": "PE-89"
+    },
+    {
+      "a": "G",
+      "b": "L298_GND",
+      "label": "원 지시서 CAB-MOT G.8→L298 GND"
+    }
+  ],
+  "originalInstructionPaths": [
+    [
+      "P0-MOTOR",
+      "원 지시서 CAB-MOT G.8→L298 GND"
+    ],
+    [
+      "BUCK-IN−",
+      "BUCK-INTERNAL-GND",
+      "BUCK-G"
+    ]
+  ],
+  "correctedPaths": [
+    [
+      "BUCK-IN−",
+      "BUCK-INTERNAL-GND",
+      "BUCK-G"
+    ]
+  ],
+  "unknownBonds": [
+    "U2: A0/A1/A5 센서 전원−와 신호 기준",
+    "U4: L298 탭/방열판·홍싱 외함과 PE",
+    "U6: USB/계측기 접지",
+    "U5: 릴레이 보드 실제 GND/JD-VCC"
+  ]
+}

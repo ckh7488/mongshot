@@ -1,0 +1,15 @@
+"""Build the inspectable mounting specification table and dimensional check UI."""
+from pathlib import Path
+from html import escape
+import json
+ROOT=Path(__file__).resolve().parents[1]
+m=json.loads((ROOT/'hardware/cabinet-fit-model.json').read_text(encoding='utf-8'))
+o=['<section class="fit-sheet" aria-label="실장 치수와 적합 조건"><h2>사진 속 상하 함체에 맞추는 실장 계획</h2><p class="fit-lead">외폭은 약 <b>450~550mm</b>, 하부 개구 높이는 약 <b>600~750mm</b>, 상부는 약 <b>250~350mm</b>로 넓게 추정했습니다. 사진 속 SMPS를 특정 모델로 식별한 값이 아닙니다. <b>깊이는 사진으로 추정하지 않습니다.</b></p><div class="fit-warning">아래 초기값은 설계 검토값입니다. 외함 테두리가 아닌 <b>실제로 부품을 고정할 수 있는 유효 공간</b>을 넣어야 합니다. 사진만으로 설치 적합을 확정할 수는 없습니다.</div><h3>1 · 실측값으로 배치 조건 확인</h3><div class="fit-inputs">']
+inputs=[('fit-width','상·하 중 더 좁은 유효 폭',400),('fit-upper','상부 유효 높이',260),('fit-lower','하부 유효 높이',650),('fit-depth','닫힌 문까지 유효 깊이',120),('fit-rfid-w','RFID 몸체 폭',260),('fit-rfid-h','RFID 몸체 높이',180),('fit-rfid-d','RFID 몸체 깊이',90),('fit-amp-w','앰프 몸체 폭',180),('fit-amp-h','앰프 몸체 높이',90),('fit-amp-d','앰프 몸체 깊이',50)]
+for ident,name,value in inputs:o.append(f'<label>{name}<span><input id="{ident}" aria-label="{name}" type="number" min="1" max="2000" step="1" value="{value}"> mm</span></label>')
+o+=['</div><div id="fit-result" class="fit-result" role="status"></div><p class="fit-small">본 판정은 확보 사각형과 입력 치수의 비교입니다. 관통구 위치·커넥터 방향·문 잠금장치·방열 간격·나사홀·케이블 굽힘은 아래 설치 확인표로 별도 검증합니다. 초기값은 측정 완료를 뜻하지 않습니다.</p><h3>2 · 부품별 자리와 확보 영역</h3><p>좌표 원점은 <b>각 구역 유효 백플레이트 좌상단</b>입니다. 확보 영역에는 몸체와 배선 여유가 포함됩니다. 체결 구멍은 실제 부품에서 전사합니다.</p><div class="table-scroll"><table><thead><tr><th>부품</th><th>구역</th><th>X / Y</th><th>확보 폭 × 높이</th><th>몸체 검토 W×H×D</th><th>근거 / 조건</th></tr></thead><tbody>']
+for p in m['parts']:
+ o.append('<tr>'+''.join('<td>'+escape(str(v))+'</td>' for v in [p['name'],'상부' if p['bay']=='upper' else '하부',f"{p['x']} / {p['y']}",f"{p['reserveW']} × {p['reserveH']}",f"{p['bodyW']} × {p['bodyH']} × {p['bodyD']}",p['basis']])+'</tr>')
+o+=['</tbody></table></div><h3>3 · 상하 관통구를 지나는 선</h3><table><thead><tr><th>묶음</th><th>선</th><th>경로</th></tr></thead><tbody><tr><td>P1 · 6선</td><td>자석 3개 각 +/−</td><td>상부 F1/F2/F3 → 하부 릴레이 → 부하 / 각 음극 → 상부 0V-PWR</td></tr><tr><td>P2 · 4선</td><td>모터 +/−, 앰프 +/−</td><td>F4/F5 → 하부 모듈 / 귀환 → 상부 0V-PWR</td></tr><tr><td>L1 · 2선</td><td>DC-DC VIN / 0V-LINK</td><td>상부 F6 → DC-DC VIN / 0V-PWR.7 → 0V-L.IN</td></tr><tr><td>RFID · 조건부 2선</td><td>기존 정격 전원 +/−</td><td>12V 정격일 때만 F7 사용. 다른 정격은 해당 전원 보존</td></tr></tbody></table><p><b>최소 12선, RFID 전원까지 공용화하면 14선.</b> AC는 상부 안에서 끝냅니다. 기존 관통구는 모서리 부싱, 상하 고정 클립, 분리한 묶음과 라벨을 적용합니다. 구멍 위치를 사진에서 단정해 새 타공을 지시하지 않습니다.</p><h3>4 · 설치 전 실물 대조</h3><ol><li>폭·상부 높이·하부 높이·깊이와 RFID/앰프 외곽을 잽니다.</li><li>확보 영역을 종이/골판지로 실제 크기로 표시해 백플레이트에 먼저 놓습니다.</li><li>SMPS 제조사 장착 방향·환기 간격, 문/커넥터 간섭을 확인합니다.</li><li>관통구 모서리와 실제 선 외경·굽힘·기존 잔여 회로를 확인합니다.</li><li>전선 라벨을 붙인 뒤 탈거하고, 아래→위 순서가 아닌 부품→단자→하네스 순서로 고정합니다.</li></ol><p class="fit-small">상부 SMPS 확보 영역은 몸체 215×115×50급을 검토한 것입니다. MEAN WELL LRS-350의 공식 외형은 215×115×30mm이며, 이 모델 구매/전력용량 추천이나 사진 속 제품 식별을 뜻하지 않습니다.</p></section>']
+(ROOT/'simulation/source/fit-view.html').write_text('\n'.join(o),encoding='utf-8')
+print('Mounting specification and fit UI generated')

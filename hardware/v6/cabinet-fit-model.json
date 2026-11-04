@@ -1,0 +1,529 @@
+{
+  "revision": "v6.1-harness-first",
+  "units": "mm",
+  "basis": "사진 기반 400×260 / 400×560 / 깊이120mm 가정. 실측·타공도 아님. v5.3 원본은 별도 보존.",
+  "planning": {
+    "usableWidth": 400,
+    "upperHeight": 260,
+    "lowerHeight": 560,
+    "usableDepth": 120
+  },
+  "photoEstimate": {
+    "outerWidth": [
+      450,
+      550
+    ],
+    "upperOpeningHeight": [
+      250,
+      350
+    ],
+    "lowerOpeningHeight": [
+      600,
+      750
+    ],
+    "depth": "사진으로 추정하지 않음"
+  },
+  "parts": [
+    {
+      "id": "ac",
+      "bay": "upper",
+      "x": 10,
+      "y": 10,
+      "reserveW": 45,
+      "reserveH": 110,
+      "bodyW": 36,
+      "bodyH": 80,
+      "bodyD": 70,
+      "name": "기존 차단기",
+      "basis": "기존 회로 보존; 정격/실물 대조",
+      "domain": "PE",
+      "bodyX": 14.5,
+      "bodyY": 14,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "smps",
+      "bay": "upper",
+      "x": 70,
+      "y": 10,
+      "reserveW": 240,
+      "reserveH": 145,
+      "bodyW": 215,
+      "bodyH": 115,
+      "bodyD": 30,
+      "name": "12V 메인 SMPS",
+      "basis": "LRS-200-12 후보; 17A 필요 확정 아님. 부하/가는 선에 맞춰 용량 재선정",
+      "domain": "P0",
+      "bodyX": 82.5,
+      "bodyY": 14,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "pe",
+      "bay": "upper",
+      "x": 325,
+      "y": 15,
+      "reserveW": 55,
+      "reserveH": 100,
+      "bodyW": 30,
+      "bodyH": 80,
+      "bodyD": 35,
+      "name": "기존 PE 접지부",
+      "basis": "금속 함체/도어/SMPS FG; DC 귀환에 사용하지 않음",
+      "domain": "PE",
+      "bodyX": 337.5,
+      "bodyY": 19,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "power-ground",
+      "bay": "lower",
+      "x": 105,
+      "y": 470,
+      "reserveW": 75,
+      "reserveH": 50,
+      "bodyW": 58.1,
+      "bodyH": 28.6,
+      "bodyD": 32.4,
+      "name": "★ P0 · 전력 0V",
+      "basis": "SMPS V−→P0.IN. 자석1~3·L298·강압기·조건부12V장치 귀환을 각각 별도 포트로. G 직접 연결 금지. 이상적인0Ω 점이 아니라 유한 임피던스가 있는 분배점.",
+      "domain": "P0",
+      "bodyX": 113.45,
+      "bodyY": 474,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "mag-power",
+      "bay": "lower",
+      "x": 25,
+      "y": 470,
+      "reserveW": 75,
+      "reserveH": 50,
+      "bodyW": 58.1,
+      "bodyH": 28.6,
+      "bodyD": 32.4,
+      "name": "P12 · 조건부 12V",
+      "basis": "상부SMPS에서 TRK-12P/TRK-0 페어만 하부로. P12.1~3 자석, .4 모터(U1), .5 강압기, .6/.7 조건부RFID/센서.",
+      "domain": "P0",
+      "bodyX": 33.45,
+      "bodyY": 474,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "amp-adapter",
+      "bay": "upper",
+      "x": 200,
+      "y": 175,
+      "reserveW": 110,
+      "reserveH": 65,
+      "bodyW": 90,
+      "bodyH": 45,
+      "bodyD": 35,
+      "name": "홍싱 기존 어댑터",
+      "basis": "기존 DC 어댑터 재사용; 90×45×35는 배치 가정",
+      "domain": "G0",
+      "bodyX": 210.0,
+      "bodyY": 179,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "rfidbox",
+      "bay": "lower",
+      "x": 25,
+      "y": 25,
+      "reserveW": 170,
+      "reserveH": 120,
+      "bodyW": 160,
+      "bodyH": 100,
+      "bodyD": 65,
+      "name": "RFID 제어함",
+      "basis": "소형화한 배치 가정 160×100×65; 확정 실측 아님",
+      "domain": "P0",
+      "bodyX": 30.0,
+      "bodyY": 29,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "amp",
+      "bay": "lower",
+      "x": 215,
+      "y": 25,
+      "reserveW": 160,
+      "reserveH": 100,
+      "bodyW": 140,
+      "bodyH": 90,
+      "bodyD": 45,
+      "name": "HONGXING",
+      "basis": "몸체140×90×45 배치가정. MP3를 바로 아래로 이동. 기존 라인출력/GND 직결",
+      "domain": "G0",
+      "bodyX": 225.0,
+      "bodyY": 29,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "mp3",
+      "bay": "lower",
+      "x": 235,
+      "y": 130,
+      "reserveW": 70,
+      "reserveH": 35,
+      "bodyW": 45,
+      "bodyH": 30,
+      "bodyD": 20,
+      "name": "KT403A MP3",
+      "basis": "홍싱 바로 아래. UART/라인 출력은G0, SPK±는 앰프 입력으로 쓰지 않음 / 배치 방향: 오디오 상부 / UART·전원 하부 · 실물 핀열 대조",
+      "domain": "G0",
+      "bodyX": 247.5,
+      "bodyY": 134,
+      "orientation": "오디오 상부 / UART·전원 하부 · 실물 핀열 대조"
+    },
+    {
+      "id": "relayA",
+      "bay": "lower",
+      "x": 35,
+      "y": 230,
+      "reserveW": 90,
+      "reserveH": 75,
+      "bodyW": 80,
+      "bodyH": 60,
+      "bodyD": 30,
+      "name": "4CH 릴레이 A",
+      "basis": "기존 보드; 3자석+창문을 조건부 재배치 / 배치 방향: 접점 상부 / 제어헤더 하부",
+      "domain": "P0",
+      "bodyX": 40.0,
+      "bodyY": 234,
+      "orientation": "접점 상부 / 제어헤더 하부"
+    },
+    {
+      "id": "relayB",
+      "bay": "lower",
+      "x": 145,
+      "y": 230,
+      "reserveW": 90,
+      "reserveH": 75,
+      "bodyW": 80,
+      "bodyH": 60,
+      "bodyD": 30,
+      "name": "4CH 릴레이 B",
+      "basis": "8채널 추적 전 철거/예비 단정 금지 / 배치 방향: 접점 상부 / 제어헤더 하부",
+      "domain": "P0",
+      "bodyX": 150.0,
+      "bodyY": 234,
+      "orientation": "접점 상부 / 제어헤더 하부"
+    },
+    {
+      "id": "magdiodes",
+      "bay": "lower",
+      "x": 130,
+      "y": 230,
+      "reserveW": 10,
+      "reserveH": 65,
+      "bodyW": 6,
+      "bodyH": 50,
+      "bodyD": 6,
+      "name": "자석 다이오드 ×3 · 릴레이 옆",
+      "basis": "별도 PCB 없음. 3개와 절연 리드 고정공간6×50mm는 배치값. 자석선 +/−에 병렬, 접점 COM/NO 사이 아님",
+      "domain": "P0",
+      "bodyX": 132.0,
+      "bodyY": 234,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "l298",
+      "bay": "lower",
+      "x": 160,
+      "y": 350,
+      "reserveW": 90,
+      "reserveH": 75,
+      "bodyW": 60,
+      "bodyH": 60,
+      "bodyD": 55,
+      "name": "L298N E6",
+      "basis": "D4/D5/A2 직결 유지. GND는 P0.4 독립 귀환 한 가닥만. G→L298 추가선은 삭제. VMS는 모터 정격 미확인으로 공급 미확정. 5V-EN과 ENA는 별개 점퍼이며 실물 단자 방향 확인 전 변경 금지. / 배치 방향: 제어헤더 상부 / 전원·출력 하부 · 실물 모듈 대조",
+      "domain": "P0",
+      "bodyX": 175.0,
+      "bodyY": 354,
+      "orientation": "제어헤더 상부 / 전원·출력 하부 · 실물 모듈 대조"
+    },
+    {
+      "id": "buck",
+      "bay": "lower",
+      "x": 190,
+      "y": 470,
+      "reserveW": 45,
+      "reserveH": 65,
+      "bodyW": 25.4,
+      "bodyH": 25.4,
+      "bodyD": 9.5,
+      "name": "단일 5V 강압기",
+      "basis": "기존 후보 Pololu D36V50F5 #4091 한 대. VIN=P12.5, 입력 GND=P0.5, 출력5V/G. 입력−와 출력−는 내부 공통. 5.5A는36Vin 조건 표기이며12Vin·밀폐함 실측이 아님. / 배치 방향: 입·출력 배선이 상부 DC 덕트로 · 실물 핀열 대조",
+      "domain": "P0",
+      "bodyX": 199.8,
+      "bodyY": 474,
+      "orientation": "입·출력 배선이 상부 DC 덕트로 · 실물 핀열 대조"
+    },
+    {
+      "id": "gnd",
+      "bay": "lower",
+      "x": 245,
+      "y": 470,
+      "reserveW": 65,
+      "reserveH": 40,
+      "bodyW": 58.1,
+      "bodyH": 28.6,
+      "bodyD": 32.4,
+      "name": "G · 로직 0V",
+      "basis": "5V 강압기 출력 GND에서만 공급. P0와 전기적으로 공통이나 직접 점퍼·G→L298 선 없음. Arduino와 가장 가까운 몸체 간격 약47mm(도면상).",
+      "domain": "G0",
+      "bodyX": 248.45,
+      "bodyY": 474,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "logic-positive",
+      "bay": "lower",
+      "x": 315,
+      "y": 470,
+      "reserveW": 65,
+      "reserveH": 40,
+      "bodyW": 58.1,
+      "bodyH": 28.6,
+      "bodyD": 32.4,
+      "name": "5V · 통합 분배",
+      "basis": "5D/5L를 단일5V로 통합. Uno·릴레이A/B·KT403A·도어에 분기. 모터 VMS를5V로 선택하려면 별도 부하예산 확인. 다른5V 출력과 병렬 연결 금지.",
+      "domain": "G0",
+      "bodyX": 318.45,
+      "bodyY": 474,
+      "orientation": "도면 앵커는 실물 단자 위치 대조 전"
+    },
+    {
+      "id": "uno",
+      "bay": "lower",
+      "x": 260,
+      "y": 370,
+      "reserveW": 90,
+      "reserveH": 65,
+      "bodyW": 68.6,
+      "bodyH": 53.4,
+      "bodyD": 25,
+      "name": "Arduino Uno",
+      "basis": "5V.1/G.1에서 공급. G·5V 블록 몸체와50mm 이내 배치. L298 기준은 G→강압기GND→P0→L298의 짧은 공통 경로. A2=16은 Uno PWM 핀이 아니며 기존255는 HIGH와 동일. / 배치 방향: 디지털 헤더 상부 / 전원헤더 하부",
+      "domain": "G0",
+      "bodyX": 270.7,
+      "bodyY": 374,
+      "orientation": "디지털 헤더 상부 / 전원헤더 하부"
+    }
+  ],
+  "ducts": {
+    "upperVertical": [
+      [
+        25,
+        155,
+        350,
+        20
+      ],
+      [
+        100,
+        175,
+        20,
+        85
+      ]
+    ],
+    "lowerVertical": [
+      [
+        0,
+        0,
+        25,
+        550
+      ],
+      [
+        380,
+        20,
+        20,
+        440
+      ],
+      [
+        195,
+        20,
+        20,
+        150
+      ]
+    ],
+    "lowerHorizontal": [
+      [
+        25,
+        0,
+        350,
+        20
+      ],
+      [
+        195,
+        170,
+        185,
+        20
+      ],
+      [
+        25,
+        200,
+        350,
+        20
+      ],
+      [
+        25,
+        315,
+        355,
+        25
+      ],
+      [
+        25,
+        435,
+        355,
+        25
+      ]
+    ],
+    "groups": [
+      {
+        "id": "U-DC",
+        "bay": "upper",
+        "rect": [
+          25,
+          155,
+          350,
+          20
+        ],
+        "group": "power"
+      },
+      {
+        "id": "U-PASS",
+        "bay": "upper",
+        "rect": [
+          100,
+          175,
+          20,
+          85
+        ],
+        "group": "power"
+      },
+      {
+        "id": "L-ROOF",
+        "bay": "lower",
+        "rect": [
+          25,
+          0,
+          350,
+          20
+        ],
+        "group": "power"
+      },
+      {
+        "id": "L-PWR",
+        "bay": "lower",
+        "rect": [
+          0,
+          0,
+          25,
+          550
+        ],
+        "group": "power"
+      },
+      {
+        "id": "L-SIG",
+        "bay": "lower",
+        "rect": [
+          380,
+          20,
+          20,
+          440
+        ],
+        "group": "signal"
+      },
+      {
+        "id": "RFID-SIG",
+        "bay": "lower",
+        "rect": [
+          195,
+          20,
+          20,
+          150
+        ],
+        "group": "signal"
+      },
+      {
+        "id": "H0-SIG",
+        "bay": "lower",
+        "rect": [
+          195,
+          170,
+          185,
+          20
+        ],
+        "group": "signal"
+      },
+      {
+        "id": "H1-PWR",
+        "bay": "lower",
+        "rect": [
+          25,
+          200,
+          350,
+          20
+        ],
+        "group": "power"
+      },
+      {
+        "id": "H2-SIG",
+        "bay": "lower",
+        "rect": [
+          25,
+          315,
+          355,
+          25
+        ],
+        "group": "signal"
+      },
+      {
+        "id": "H3-DC",
+        "bay": "lower",
+        "rect": [
+          25,
+          435,
+          355,
+          25
+        ],
+        "group": "power"
+      }
+    ],
+    "actualWidthMm": 17.5,
+    "actualHeightMm": 26.9
+  },
+  "doorPanel": {
+    "x": 25,
+    "y": 200,
+    "width": 180,
+    "height": 75,
+    "rearReserve": 45,
+    "oppositeBackplateDepth": 45,
+    "requiredGap": 15,
+    "depthNeed": 105,
+    "button": "OMRON A16-TAM-1"
+  },
+  "passage": {
+    "newHoleRequired": false,
+    "mainsCrossing": false,
+    "bundles": [
+      "TRK-12P/TRK-0: SMPS에서 P12/P0로 · 전원 한 쌍",
+      "홍싱 기존 어댑터 +/− 한 쌍",
+      "기존 현장 케이블: 신호/전력 그룹별 정리"
+    ],
+    "minimumConductors": 4,
+    "conditionalConductors": "센서 전원/공유선의 실제 수에 따라 추가"
+  },
+  "fitConditions": [
+    "유효 폭400/상부260/하부560/깊이120mm 이상",
+    "RFID160×100×65 및 앰프140×90×45는 임시 몸체값; 커넥터 포함 실측 대조",
+    "SMPS/DDR 제조사 방열 방향과 주변 열원 간격 별도 충족",
+    "관통구 위치/직경/기존 선 외경/굽힘을 실측",
+    "DIN 레일과 부품 고정부 설치높이 포함; 타공은 실물 홀 전사"
+  ],
+  "mounting": "각 유효 백플레이트 좌상단 원점. 예약 외곽은 케이블 여유를 포함. 몸체 치수와 나사홀은 별도 실측."
+}

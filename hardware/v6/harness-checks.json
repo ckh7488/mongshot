@@ -1,0 +1,38 @@
+{
+  "pass_": true,
+  "maxTailMm": 46.5,
+  "commonCableRunMm": {
+    "CAB-RLY": 223.0,
+    "CAB-MP3": 265.5,
+    "REED-D8": 57.5,
+    "REED-D6": 45.5
+  },
+  "ductMm": 3170,
+  "cutBars": [
+    {
+      "bar": 1,
+      "stockMm": 1828.8,
+      "with3mmKerfMm": 1605,
+      "segments": [
+        "L-PWR",
+        "H3-DC",
+        "L-ROOF",
+        "H0-SIG",
+        "RFID-SIG"
+      ]
+    },
+    {
+      "bar": 2,
+      "stockMm": 1828.8,
+      "with3mmKerfMm": 1595,
+      "segments": [
+        "L-SIG",
+        "H2-SIG",
+        "U-DC",
+        "H1-PWR",
+        "U-PASS"
+      ]
+    }
+  ],
+  "scope": "planned geometry; actual OD, fill, bending, noise and dimensions unmeasured"
+}

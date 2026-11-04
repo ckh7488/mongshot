@@ -1,0 +1,969 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="cabinet-svg" width="1180" height="940" viewBox="0 0 1180 940" role="img" aria-label="몽샷 배전함 정리 배치안과 실제 코드 핀 연결">
+<defs>
+<linearGradient id="metal" x2="0" y2="1"><stop stop-color="#e4e9ec"/><stop offset=".5" stop-color="#bfcbd0"/><stop offset="1" stop-color="#e1e7ea"/></linearGradient>
+<linearGradient id="backplate" x2="1" y2="1"><stop stop-color="#f0f3f4"/><stop offset="1" stop-color="#e4eaec"/></linearGradient>
+<linearGradient id="ampbody" x2="0" y2="1"><stop stop-color="#5a517e"/><stop offset="1" stop-color="#343451"/></linearGradient>
+<filter id="boardshadow" x="-15%" y="-15%" width="140%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#283740" flood-opacity=".16"/></filter>
+<pattern id="duct-slots" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#d7dfe2"/><path d="M3 0v8M9 0v8" stroke="#becbd0" stroke-width="3"/></pattern>
+</defs>
+<style>text{font-family:'Malgun Gothic','Noto Sans KR',Arial,sans-serif} .device{cursor:pointer;outline:none}.device:focus{filter:drop-shadow(0 0 3px #13a6a0)} .net{stroke-linecap:round;stroke-linejoin:round}.net-hit{stroke:transparent;stroke-width:16;fill:none;cursor:pointer}.wire-tag{paint-order:stroke;stroke:#eef2f3;stroke-width:5;stroke-linejoin:round}.power-net{display:none}.show-power .power-net{display:initial}.selected-net{stroke-width:5!important;opacity:1!important}.dim-net{opacity:.14!important}.selected-device{filter:drop-shadow(0 0 4px #18a7a0)}</style>
+<rect x="202" y="28" width="738" height="849" rx="14" fill="#d1dade" stroke="#aab7be" />
+<rect x="214" y="40" width="714" height="825" rx="8" fill="#f9fbfc" stroke="#b4c1c8" />
+<rect x="236" y="81" width="670" height="745" rx="3" fill="url(#backplate)" stroke="#c3ced3" />
+<circle cx="225" cy="53" r="5" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M221.75 55.25L228.25 50.75" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<circle cx="225" cy="853" r="5" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M221.75 855.25L228.25 850.75" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<circle cx="917" cy="53" r="5" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M913.75 55.25L920.25 50.75" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<circle cx="917" cy="853" r="5" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M913.75 855.25L920.25 850.75" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<text x="254" y="65" font-size="14" fill="#526571" font-weight="500" >MONG SHOT  /  CONTROL CABINET</text>
+<text x="889" y="65" font-size="12" fill="#526571" font-weight="500" text-anchor="end" >정리 배치안</text>
+<rect x="240" y="253" width="660" height="26" rx="2" fill="url(#duct-slots)" />
+<rect x="240" y="454" width="660" height="24" rx="2" fill="url(#duct-slots)" />
+<rect x="240" y="752" width="660" height="22" rx="2" fill="url(#duct-slots)" />
+<rect x="250" y="387" width="637" height="23" rx="2" fill="url(#metal)" stroke="#b6c0c4" />
+<path d="M253 391L884 391" fill="none" stroke="#a8b3b9" stroke-width="1" />
+<path d="M253 406L884 406" fill="none" stroke="#a8b3b9" stroke-width="1" />
+<rect x="270" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="325" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="380" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="435" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="490" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="545" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="600" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="655" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="710" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="765" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="820" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="875" y="395" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="250" y="658" width="637" height="23" rx="2" fill="url(#metal)" stroke="#b6c0c4" />
+<path d="M253 662L884 662" fill="none" stroke="#a8b3b9" stroke-width="1" />
+<path d="M253 677L884 677" fill="none" stroke="#a8b3b9" stroke-width="1" />
+<rect x="270" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="325" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="380" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="435" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="490" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="545" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="600" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="655" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="710" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="765" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="820" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="875" y="666" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="250" y="803" width="637" height="23" rx="2" fill="url(#metal)" stroke="#b6c0c4" />
+<path d="M253 807L884 807" fill="none" stroke="#a8b3b9" stroke-width="1" />
+<path d="M253 822L884 822" fill="none" stroke="#a8b3b9" stroke-width="1" />
+<rect x="270" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="325" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="380" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="435" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="490" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="545" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="600" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="655" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="710" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="765" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="820" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<rect x="875" y="811" width="22" height="6" rx="3" fill="#8d9ba2" />
+<g class="device" data-part="amp" role="button" aria-label="HONGXING 12V 앰프" tabindex="0"><title>HONGXING 12V 앰프</title>
+<rect x="262" y="105" width="287" height="124" rx="3" fill="#656078" filter="url(#boardshadow)"/>
+<rect x="274" y="110" width="263" height="113" rx="3" fill="url(#ampbody)" />
+<rect x="282" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M286 114L286 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="293" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M297 114L297 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="304" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M308 114L308 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="315" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M319 114L319 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="326" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M330 114L330 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="337" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M341 114L341 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="348" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M352 114L352 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="359" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M363 114L363 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="370" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M374 114L374 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="381" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M385 114L385 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="392" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M396 114L396 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="403" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M407 114L407 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="414" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M418 114L418 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="425" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M429 114L429 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="436" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M440 114L440 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="447" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M451 114L451 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="458" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M462 114L462 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="469" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M473 114L473 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="480" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M484 114L484 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="491" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M495 114L495 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="502" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M506 114L506 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="513" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M517 114L517 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="524" y="114" width="4" height="78" rx="1" fill="#76708c" />
+<path d="M528 114L528 192" fill="none" stroke="#35364e" stroke-width="1" />
+<rect x="274" y="192" width="263" height="35" rx="2" fill="#494565" />
+<text x="405" y="144" font-size="19" fill="#eeedf6" font-weight="600" text-anchor="middle" >HONGXING</text>
+<text x="405" y="164" font-size="9" fill="#d0cce1" font-weight="500" text-anchor="middle" >12V AUDIO AMPLIFIER</text>
+<circle cx="285" cy="202" r="3" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M283.05 203.35L286.95 200.65" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<circle cx="524" cy="202" r="3" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M522.05 203.35L525.95 200.65" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="293" y="199" width="22" height="21" rx="2" fill="#22252d" />
+<circle cx="304" cy="210" r="5" fill="#4b4c55" />
+<circle cx="342" cy="210" r="7" fill="#cdcbd6" stroke="#91939c" />
+<circle cx="367" cy="210" r="7" fill="#cdcbd6" stroke="#91939c" />
+<rect x="407" y="199" width="16" height="21" rx="2" fill="#ba5353" />
+<rect x="428" y="199" width="16" height="21" rx="2" fill="#333944" />
+<rect x="449" y="199" width="16" height="21" rx="2" fill="#333944" />
+<rect x="470" y="199" width="16" height="21" rx="2" fill="#ba5353" />
+<text x="406" y="244" font-size="12" fill="#485b66" font-weight="500" text-anchor="middle" >MP3 IN → 앰프 → 스피커</text>
+</g>
+<g class="device" data-part="mp3" role="button" aria-label="KT403A MP3 모듈 · D2 RX / D3 TX" tabindex="0"><title>KT403A MP3 모듈 · D2 RX / D3 TX</title>
+<rect x="669" y="118" width="174" height="104" rx="5" fill="#2b866b" stroke="#236652" filter="url(#boardshadow)"/>
+<circle cx="677" cy="126" r="3.5" fill="#d9c48d" />
+<circle cx="677" cy="126" r="1.5" fill="#4a5d5d" />
+<circle cx="677" cy="214" r="3.5" fill="#d9c48d" />
+<circle cx="677" cy="214" r="1.5" fill="#4a5d5d" />
+<circle cx="835" cy="126" r="3.5" fill="#d9c48d" />
+<circle cx="835" cy="126" r="1.5" fill="#4a5d5d" />
+<circle cx="835" cy="214" r="3.5" fill="#d9c48d" />
+<circle cx="835" cy="214" r="1.5" fill="#4a5d5d" />
+<rect x="718" y="130" width="70" height="61" rx="2" fill="url(#metal)" stroke="#98a6aa" />
+<rect x="726" y="132" width="54" height="22" rx="2" fill="#3c4247" />
+<text x="753" y="170" font-size="10" fill="#576871" font-weight="500" text-anchor="middle" >micro SD</text>
+<rect x="690" y="156" width="18" height="27" rx="1" fill="#29353a" />
+<path d="M686 160L690 160" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M708 160L712 160" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M686 165L690 165" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M708 165L712 165" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M686 170L690 170" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M708 170L712 170" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M686 175L690 175" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M708 175L712 175" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M686 180L690 180" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<path d="M708 180L712 180" fill="none" stroke="#b5b9ae" stroke-width="2" />
+<rect x="811" y="151" width="27" height="31" rx="2" fill="#28323b" />
+<circle cx="824" cy="164" r="8" fill="#b7bdc1" stroke="#697980" />
+<circle cx="824" cy="164" r="4" fill="#1e2933" />
+<rect x="686" y="201" width="90" height="10" rx="1" fill="#303940" />
+<rect x="693" y="203" width="4" height="6" rx="0" fill="#cfb86c" />
+<rect x="713" y="203" width="4" height="6" rx="0" fill="#cfb86c" />
+<rect x="733" y="203" width="4" height="6" rx="0" fill="#cfb86c" />
+<rect x="753" y="203" width="4" height="6" rx="0" fill="#cfb86c" />
+<text x="759" y="114" font-size="13" fill="#485b66" font-weight="500" text-anchor="middle" >KT403A</text>
+<text x="759" y="242" font-size="12" fill="#485b66" font-weight="500" text-anchor="middle" >UART 9600 baud</text>
+</g>
+<g class="device" data-part="relayA" role="button" aria-label="4CH RELAY A" tabindex="0"><title>4CH RELAY A</title>
+<rect x="258" y="307" width="276" height="136" rx="4" fill="#1f5a75" stroke="#143f57" filter="url(#boardshadow)"/>
+<circle cx="267" cy="316" r="4.5" fill="#d4c58e" />
+<circle cx="267" cy="316" r="2" fill="#4b5b65" />
+<circle cx="267" cy="434" r="4.5" fill="#d4c58e" />
+<circle cx="267" cy="434" r="2" fill="#4b5b65" />
+<circle cx="525" cy="316" r="4.5" fill="#d4c58e" />
+<circle cx="525" cy="316" r="2" fill="#4b5b65" />
+<circle cx="525" cy="434" r="4.5" fill="#d4c58e" />
+<circle cx="525" cy="434" r="2" fill="#4b5b65" />
+<text x="273" y="333" font-size="13" fill="#e9f2f4" font-weight="500" >4CH RELAY A</text>
+<rect x="274" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="281" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M278.66 312.62L283.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="277" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="281" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NC</text>
+<rect x="289" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="296" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M293.66 312.62L298.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="292" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="296" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >C</text>
+<rect x="304" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="311" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M308.66 312.62L313.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="307" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="311" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NO</text>
+<rect x="274" y="349" width="51" height="47" rx="3" fill="#247fbb" stroke="#145e91" />
+<path d="M278 353L321 353" fill="none" stroke="#53a0cf" stroke-width="1" />
+<text x="299" y="368" font-size="9" fill="#d1e8f7" font-weight="500" text-anchor="middle" >SONGLE</text>
+<text x="299" y="381" font-size="7" fill="#d1e8f7" font-weight="400" text-anchor="middle" >SRD-05VDC</text>
+<rect x="280" y="410" width="9" height="5" rx="1" fill="#28363b" />
+<circle cx="305" cy="413" r="3.2" fill="#697f89" id="relay-led-12"/>
+<text x="299" y="433" font-size="10" fill="#e3f1f5" font-weight="500" text-anchor="middle" >D12</text>
+<rect x="338" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="345" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M342.66 312.62L347.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="341" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="345" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NC</text>
+<rect x="353" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="360" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M357.66 312.62L362.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="356" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="360" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >C</text>
+<rect x="368" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="375" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M372.66 312.62L377.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="371" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="375" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NO</text>
+<rect x="338" y="349" width="51" height="47" rx="3" fill="#247fbb" stroke="#145e91" />
+<path d="M342 353L385 353" fill="none" stroke="#53a0cf" stroke-width="1" />
+<text x="363" y="368" font-size="9" fill="#d1e8f7" font-weight="500" text-anchor="middle" >SONGLE</text>
+<text x="363" y="381" font-size="7" fill="#d1e8f7" font-weight="400" text-anchor="middle" >SRD-05VDC</text>
+<rect x="344" y="410" width="9" height="5" rx="1" fill="#28363b" />
+<circle cx="369" cy="413" r="3.2" fill="#697f89" id="relay-led-10"/>
+<text x="363" y="433" font-size="10" fill="#e3f1f5" font-weight="500" text-anchor="middle" >D10</text>
+<rect x="402" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="409" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M406.66 312.62L411.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="405" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="409" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NC</text>
+<rect x="417" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="424" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M421.66 312.62L426.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="420" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="424" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >C</text>
+<rect x="432" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="439" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M436.66 312.62L441.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="435" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="439" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NO</text>
+<rect x="402" y="349" width="51" height="47" rx="3" fill="#247fbb" stroke="#145e91" />
+<path d="M406 353L449 353" fill="none" stroke="#53a0cf" stroke-width="1" />
+<text x="427" y="368" font-size="9" fill="#d1e8f7" font-weight="500" text-anchor="middle" >SONGLE</text>
+<text x="427" y="381" font-size="7" fill="#d1e8f7" font-weight="400" text-anchor="middle" >SRD-05VDC</text>
+<rect x="408" y="410" width="9" height="5" rx="1" fill="#28363b" />
+<circle cx="433" cy="413" r="3.2" fill="#697f89" id="relay-led-9"/>
+<text x="427" y="433" font-size="10" fill="#e3f1f5" font-weight="500" text-anchor="middle" >D9</text>
+<rect x="466" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="473" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M470.66 312.62L475.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="469" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="473" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NC</text>
+<rect x="481" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="488" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M485.66 312.62L490.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="484" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="488" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >C</text>
+<rect x="496" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="503" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M500.66 312.62L505.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="499" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="503" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NO</text>
+<rect x="466" y="349" width="51" height="47" rx="3" fill="#247fbb" stroke="#145e91" />
+<path d="M470 353L513 353" fill="none" stroke="#53a0cf" stroke-width="1" />
+<text x="491" y="368" font-size="9" fill="#d1e8f7" font-weight="500" text-anchor="middle" >SONGLE</text>
+<text x="491" y="381" font-size="7" fill="#d1e8f7" font-weight="400" text-anchor="middle" >SRD-05VDC</text>
+<rect x="472" y="410" width="9" height="5" rx="1" fill="#28363b" />
+<circle cx="497" cy="413" r="3.2" fill="#697f89" id="relay-led-18"/>
+<text x="491" y="433" font-size="10" fill="#e3f1f5" font-weight="500" text-anchor="middle" >A4</text>
+<rect x="268" y="440" width="119" height="10" rx="1" fill="#263039" />
+<rect x="273" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="292" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="311" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="330" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="349" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="368" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+</g>
+<g class="device" data-part="relayB" role="button" aria-label="4CH RELAY B" tabindex="0"><title>4CH RELAY B</title>
+<rect x="609" y="307" width="276" height="136" rx="4" fill="#1f5a75" stroke="#143f57" filter="url(#boardshadow)"/>
+<circle cx="618" cy="316" r="4.5" fill="#d4c58e" />
+<circle cx="618" cy="316" r="2" fill="#4b5b65" />
+<circle cx="618" cy="434" r="4.5" fill="#d4c58e" />
+<circle cx="618" cy="434" r="2" fill="#4b5b65" />
+<circle cx="876" cy="316" r="4.5" fill="#d4c58e" />
+<circle cx="876" cy="316" r="2" fill="#4b5b65" />
+<circle cx="876" cy="434" r="4.5" fill="#d4c58e" />
+<circle cx="876" cy="434" r="2" fill="#4b5b65" />
+<text x="624" y="333" font-size="13" fill="#e9f2f4" font-weight="500" >4CH RELAY B</text>
+<rect x="625" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="632" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M629.66 312.62L634.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="628" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="632" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NC</text>
+<rect x="640" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="647" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M644.66 312.62L649.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="643" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="647" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >C</text>
+<rect x="655" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="662" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M659.66 312.62L664.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="658" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="662" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NO</text>
+<rect x="625" y="349" width="51" height="47" rx="3" fill="#247fbb" stroke="#145e91" />
+<path d="M629 353L672 353" fill="none" stroke="#53a0cf" stroke-width="1" />
+<text x="650" y="368" font-size="9" fill="#d1e8f7" font-weight="500" text-anchor="middle" >SONGLE</text>
+<text x="650" y="381" font-size="7" fill="#d1e8f7" font-weight="400" text-anchor="middle" >SRD-05VDC</text>
+<rect x="631" y="410" width="9" height="5" rx="1" fill="#28363b" />
+<circle cx="656" cy="413" r="3.2" fill="#697f89" id="relay-led-relayB0"/>
+<text x="650" y="433" font-size="10" fill="#e3f1f5" font-weight="500" text-anchor="middle" >CH1</text>
+<rect x="689" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="696" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M693.66 312.62L698.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="692" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="696" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NC</text>
+<rect x="704" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="711" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M708.66 312.62L713.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="707" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="711" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >C</text>
+<rect x="719" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="726" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M723.66 312.62L728.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="722" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="726" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NO</text>
+<rect x="689" y="349" width="51" height="47" rx="3" fill="#247fbb" stroke="#145e91" />
+<path d="M693 353L736 353" fill="none" stroke="#53a0cf" stroke-width="1" />
+<text x="714" y="368" font-size="9" fill="#d1e8f7" font-weight="500" text-anchor="middle" >SONGLE</text>
+<text x="714" y="381" font-size="7" fill="#d1e8f7" font-weight="400" text-anchor="middle" >SRD-05VDC</text>
+<rect x="695" y="410" width="9" height="5" rx="1" fill="#28363b" />
+<circle cx="720" cy="413" r="3.2" fill="#697f89" id="relay-led-relayB1"/>
+<text x="714" y="433" font-size="10" fill="#e3f1f5" font-weight="500" text-anchor="middle" >CH2</text>
+<rect x="753" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="760" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M757.66 312.62L762.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="756" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="760" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NC</text>
+<rect x="768" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="775" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M772.66 312.62L777.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="771" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="775" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >C</text>
+<rect x="783" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="790" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M787.66 312.62L792.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="786" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="790" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NO</text>
+<rect x="753" y="349" width="51" height="47" rx="3" fill="#247fbb" stroke="#145e91" />
+<path d="M757 353L800 353" fill="none" stroke="#53a0cf" stroke-width="1" />
+<text x="778" y="368" font-size="9" fill="#d1e8f7" font-weight="500" text-anchor="middle" >SONGLE</text>
+<text x="778" y="381" font-size="7" fill="#d1e8f7" font-weight="400" text-anchor="middle" >SRD-05VDC</text>
+<rect x="759" y="410" width="9" height="5" rx="1" fill="#28363b" />
+<circle cx="784" cy="413" r="3.2" fill="#697f89" id="relay-led-relayB2"/>
+<text x="778" y="433" font-size="10" fill="#e3f1f5" font-weight="500" text-anchor="middle" >CH3</text>
+<rect x="817" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="824" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M821.66 312.62L826.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="820" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="824" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NC</text>
+<rect x="832" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="839" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M836.66 312.62L841.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="835" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="839" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >C</text>
+<rect x="847" y="303" width="14" height="25" rx="1" fill="#70a8bd" stroke="#547661" />
+<circle cx="854" cy="311" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M851.66 312.62L856.34 309.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="850" y="321" width="8" height="5" rx="1" fill="#30423a" />
+<text x="854" y="298" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >NO</text>
+<rect x="817" y="349" width="51" height="47" rx="3" fill="#247fbb" stroke="#145e91" />
+<path d="M821 353L864 353" fill="none" stroke="#53a0cf" stroke-width="1" />
+<text x="842" y="368" font-size="9" fill="#d1e8f7" font-weight="500" text-anchor="middle" >SONGLE</text>
+<text x="842" y="381" font-size="7" fill="#d1e8f7" font-weight="400" text-anchor="middle" >SRD-05VDC</text>
+<rect x="823" y="410" width="9" height="5" rx="1" fill="#28363b" />
+<circle cx="848" cy="413" r="3.2" fill="#697f89" id="relay-led-relayB3"/>
+<text x="842" y="433" font-size="10" fill="#e3f1f5" font-weight="500" text-anchor="middle" >CH4</text>
+<rect x="619" y="440" width="119" height="10" rx="1" fill="#263039" />
+<rect x="624" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="643" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="662" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="681" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="700" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+<rect x="719" y="442" width="3" height="5" rx="0" fill="#cfb86c" />
+</g>
+<text x="396" y="294" font-size="12" fill="#59707c" font-weight="500" text-anchor="middle" >기능별 채널 배치안</text>
+<text x="746" y="294" font-size="12" fill="#59707c" font-weight="500" text-anchor="middle" >기존 2번째 보드 보존</text>
+<g class="device" data-part="uno" role="button" aria-label="Arduino · 실제 AVR 코드 실행" tabindex="0"><title>Arduino · 실제 AVR 코드 실행</title>
+<svg class="arduino-native" x="332" y="501" width="307.2" height="225.8" version="1.1" viewBox="-4 0 72.58 53.34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>.arduino-native text{font-size:2px;font-family:monospace;font-weight:400}</style>
+        <defs>
+          <g id="led-body" fill="#eee">
+            <rect x="0" y="0" height="1.2" width="2.6" fill="#c6c6c6"></rect>
+            <rect x="0.6" y="-0.1" width="1.35" height="1.4" stroke="#aaa" stroke-width="0.05"></rect>
+          </g>
+        </defs>
+
+        <filter id="ledFilter" x="-0.8" y="-0.8" height="2.2" width="2.8">
+          <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+        </filter>
+
+        <!--?lit$999952136$-->
+  <pattern id="pins-female" width="2.54" height="2.54" patternUnits="userSpaceOnUse">
+    <rect x="0" y="0" width="2.54" height="2.54" fill="#333"></rect>
+    <rect x="1.079" y="0.896" width="0.762" height="0.762" style="fill: #191919"></rect>
+    <path transform="translate(1.079, 1.658) rotate(180 0 0)" d="m 0 0 v 0.762 l 0.433,0.433 c 0.046,-0.046 0.074,-0.109 0.074,-0.179 v -1.27 c 0,-0.070 -0.028,-0.133 -0.074,-0.179 z" style="opacity: 0.25"></path>
+    <path transform="translate(1.841, 1.658) rotate(90 0 0)" d="m 0 0 v 0.762 l 0.433,0.433 c 0.046,-0.046 0.074,-0.109 0.074,-0.179 v -1.27 c 0,-0.070 -0.028,-0.133 -0.074,-0.179 z" style="opacity: 0.3; fill: #fff"></path>
+    <path transform="translate(1.841, 0.896)" d="m 0 0 v 0.762 l 0.433,0.433 c 0.046,-0.046 0.074,-0.109 0.074,-0.179 v -1.27 c 0,-0.070 -0.028,-0.133 -0.074,-0.179 z" style="opacity: 0.15; fill: #fff"></path>
+    <path transform="translate(1.079, 0.896) rotate(270 0 0)" d="m 0 0 v 0.762 l 0.433,0.433 c 0.046,-0.046 0.074,-0.109 0.074,-0.179 v -1.27 c 0,-0.070 -0.028,-0.133 -0.074,-0.179 z" style="opacity: 0.35"></path>
+  </pattern>
+
+
+        <pattern id="pin-male" width="2.54" height="4.80" patternUnits="userSpaceOnUse">
+          <rect ry="0.3" rx="0.3" width="2.12" height="4.80" fill="#565656"></rect>
+          <ellipse cx="1" cy="1.13" rx="0.5" ry="0.5" fill="#aaa"></ellipse>
+          <ellipse cx="1" cy="3.67" rx="0.5" ry="0.5" fill="#aaa"></ellipse>
+        </pattern>
+
+        <pattern id="mcu-leads" width="2.54" height="0.508" patternUnits="userSpaceOnUse">
+          <path d="M 0.254,0 C 0.114,0 0,0.114 0,0.254 v 0 c 0,0.139 0,0.253 0,0.253 h 1.523 c 0,0 0,-0.114 0,-0.253 v 0 C 1.523,0.114 1.409,0 1.269,0 Z" fill="#ddd"></path>
+        </pattern>
+
+        <!-- PCB -->
+        <path d="m0.999 0a1 1 0 0 0-0.999 0.999v51.34a1 1 0 0 0 0.999 0.999h64.04a1 1 0 0 0 0.999-0.999v-1.54l2.539-2.539v-32.766l-2.539-2.539v-11.43l-1.524-1.523zm14.078 0.835h0.325l0.212 0.041h0l0.105 0.021 0.300 0.124 0.270 0.180 0.229 0.229 0.180 0.270 0.017 0.042 0.097 0.234 0.01 0.023 0.050 0.252 0.013 0.066v0.325l-0.063 0.318-0.040 0.097-0.083 0.202-0 0.001-0.180 0.270-0.229 0.229-0.270 0.180-0.300 0.124-0.106 0.020-0.212 0.042h-0.325l-0.212-0.042-0.106-0.020-0.300-0.124-0.270-0.180-0.229-0.229-0.180-0.270-0 -0.001-0.083-0.202-0.040-0.097-0.063-0.318v-0.325l0.013-0.066 0.050-0.252 0.01-0.023 0.097-0.234 0.017-0.042 0.180-0.270 0.229-0.229 0.270-0.180 0.300-0.124 0.105-0.021zm50.799 15.239h0.325l0.212 0.042 0.105 0.021 0.300 0.124 0.270 0.180 0.229 0.229 0.180 0.270 0.014 0.035 0.110 0.264 0.01 0.051 0.053 0.267v0.325l-0.03 0.152-0.033 0.166-0.037 0.089-0.079 0.191-0 0.020-0.180 0.270-0.229 0.229-0.270 0.180-0.071 0.029-0.228 0.094-0.106 0.021-0.212 0.042h-0.325l-0.212-0.042-0.106-0.021-0.228-0.094-0.071-0.029-0.270-0.180-0.229-0.229-0.180-0.270-0 -0.020-0.079-0.191-0.036-0.089-0.033-0.166-0.030-0.152v-0.325l0.053-0.267 0.010-0.051 0.109-0.264 0.014-0.035 0.180-0.270 0.229-0.229 0.270-0.180 0.300-0.124 0.105-0.021zm0 27.94h0.325l0.180 0.036 0.138 0.027 0.212 0.087 0.058 0.024 0.029 0.012 0.270 0.180 0.229 0.229 0.180 0.270 0.124 0.300 0.063 0.319v0.325l-0.063 0.318-0.124 0.300-0.180 0.270-0.229 0.229-0.270 0.180-0.300 0.124-0.106 0.021-0.212 0.042h-0.325l-0.212-0.042-0.105-0.021-0.300-0.124-0.270-0.180-0.229-0.229-0.180-0.270-0.124-0.300-0.063-0.318v-0.325l0.063-0.319 0.124-0.300 0.180-0.270 0.229-0.229 0.270-0.180 0.029-0.012 0.058-0.024 0.212-0.087 0.137-0.027zm-52.07 5.080h0.325l0.212 0.041 0.106 0.021 0.300 0.124 0.270 0.180 0.229 0.229 0.121 0.182 0.058 0.087h0l0.114 0.275 0.01 0.023 0.063 0.318v0.325l-0.035 0.179-0.027 0.139-0.01 0.023-0.114 0.275h-0l-0.180 0.270-0.229 0.229-0.270 0.180-0.300 0.124-0.106 0.020-0.212 0.042h-0.325l-0.212-0.042-0.105-0.020-0.300-0.124-0.270-0.180-0.229-0.229-0.180-0.270-0.114-0.275-0.01-0.023-0.027-0.139-0.036-0.179v-0.325l0.063-0.318 0.01-0.023 0.114-0.275 0.058-0.087 0.121-0.182 0.229-0.229 0.270-0.180 0.300-0.124 0.105-0.021z" fill="#2b6b99"></path>
+
+        <!-- reset button -->
+        <rect x="3.816" y="1.4125" width="6.2151" height="6.0268" fill="#9b9b9b"></rect>
+        <g fill="#e6e6e6">
+          <rect x="2.1368" y="1.954" width="1.695" height=".84994"></rect>
+          <rect x="2.121" y="3.8362" width="1.695" height=".84994"></rect>
+          <rect x="2.0974" y="5.8608" width="1.695" height=".84994"></rect>
+          <rect x="10.031" y="6.0256" width="1.695" height=".84994"></rect>
+          <rect x="10.008" y="1.9528" width="1.695" height=".84994"></rect>
+        </g>
+        <circle id="reset-button" cx="6.9619" cy="4.5279" r="1.5405" fill="#960000" stroke="#777" stroke-width="0.15" tabindex="0"></circle>
+
+        <!-- USB Connector -->
+        <g style="fill:#b3b2b2;stroke:#b3b2b2;stroke-width:0.010">
+          <ellipse cx="3.84" cy="9.56" rx="1.12" ry="1.03"></ellipse>
+          <ellipse cx="3.84" cy="21.04" rx="1.12" ry="1.03"></ellipse>
+          <g fill="#000">
+            <rect width="11" height="11.93" x="-0.05" y="9.72" rx="0.2" ry="0.2" opacity="0.24"></rect>
+          </g>
+          <rect x="-4" y="9.37" height="11.85" width="14.46"></rect>
+          <rect x="-4" y="9.61" height="11.37" width="14.05" fill="#706f6f"></rect>
+          <rect x="-4" y="9.71" height="11.17" width="13.95" fill="#9d9d9c"></rect>
+        </g>
+
+        <!-- Power jack -->
+        <g stroke-width=".254" fill="black">
+          <path d="m-2.58 48.53v2.289c0 0.279 0.228 0.508 0.508 0.508h1.722c0.279 0 0.508-0.228 0.508-0.508v-2.289z" fill="#252728" opacity=".3"></path>
+          <path d="m11.334 42.946c0-0.558-0.509-1.016-1.132-1.016h-10.043v9.652h10.043c0.622 0 1.132-0.457 1.132-1.016z" opacity=".3"></path>
+          <path d="m-2.072 40.914c-0.279 0-0.507 0.204-0.507 0.454v8.435c0 0.279 0.228 0.507 0.507 0.507h1.722c0.279 0 0.507-0.228 0.507-0.507v-8.435c0-0.249-0.228-0.454-0.507-0.454z"></path>
+          <path d="m-2.58 48.784v1.019c0 0.279 0.228 0.508 0.508 0.508h1.722c0.279 0 0.508-0.228 0.508-0.508v-1.019z" opacity=".3"></path>
+          <path d="m11.334 43.327c0.139 0 0.254 0.114 0.254 0.254v4.064c0 0.139-0.114 0.254-0.254 0.254"></path>
+          <path d="m11.334 42.438c0-0.558-0.457-1.016-1.016-1.016h-10.16v8.382h10.16c0.558 0 1.016-0.457 1.016-1.016z"></path>
+          <path d="m10.064 49.804h-9.906v-8.382h1.880c-1.107 0-1.363 1.825-1.363 3.826 0 1.765 1.147 3.496 3.014 3.496h6.374z" opacity=".3"></path>
+          <rect x="10.064" y="41.422" width=".254" height="8.382" fill="#ffffff" opacity=".2"></rect>
+          <path d="m10.318 48.744v1.059c0.558 0 1.016-0.457 1.016-1.016v-0.364c0 0.313-1.016 0.320-1.016 0.320z" opacity=".3"></path>
+        </g>
+
+        <!-- Pin Headers -->
+        <g transform="translate(17.497 1.27)">
+          <rect height="2.54" fill="url(#pins-female)" width="25.779999999999998"></rect>
+        </g>
+        <g transform="translate(44.421 1.27)">
+          <rect height="2.54" fill="url(#pins-female)" width="20.7"></rect>
+        </g>
+        <g transform="translate(26.641 49.53)">
+          <rect height="2.54" fill="url(#pins-female)" width="20.7"></rect>
+        </g>
+        <g transform="translate(49.501 49.53)">
+          <rect height="2.54" fill="url(#pins-female)" width="15.620000000000001"></rect>
+        </g>
+
+        <!-- MCU -->
+        <g>
+          <path d="m64.932 41.627h-36.72c-0.209 0-0.379-0.170-0.379-0.379v-8.545c0-0.209 0.170-0.379 0.379-0.379h36.72c0.209 0 0.379 0.170 0.379 0.379v8.545c0 0.209-0.169 0.379-0.379 0.379z" fill="#292c2d"></path>
+          <path d="m65.019 40.397c0 0.279-0.228 0.508-0.508 0.508h-35.879c-0.279 0-0.507 0.025-0.507-0.254v-6.338c0-0.279 0.228-0.508 0.507-0.508h35.879c0.279 0 0.508 0.228 0.508 0.508z" opacity=".3"></path>
+          <path d="m65.019 40.016c0 0.279-0.228 0.508-0.508 0.508h-35.879c-0.279 0-0.507 0.448-0.507-0.508v-6.084c0-0.279 0.228-0.508 0.507-0.508h35.879c0.279 0 0.508 0.228 0.508 0.508z" fill="#3c4042"></path>
+          <rect transform="translate(29.205, 32.778)" fill="url(#mcu-leads)" height="0.508" width="35.56"></rect>
+          <rect transform="translate(29.205, 41.159) scale(1 -1)" fill="url(#mcu-leads)" height="0.508" width="35.56"></rect>
+          <g fill="#252728">
+            <circle cx="33.269" cy="36.847" r="1"></circle>
+            <circle cx="59.939" cy="36.847" r="1"></circle>
+            <path d="M65 38.05a1.13 1.13 0 010-2.26v2.27z"></path>
+          </g>
+        </g>
+
+        <!-- Programming Headers -->
+        <g transform="translate(14.1 4.4)">
+          <rect width="7" height="4.80" fill="url(#pin-male)"></rect>
+        </g>
+
+        <g transform="translate(63 27.2) rotate(270 0 0)">
+          <rect width="7" height="4.80" fill="url(#pin-male)"></rect>
+        </g>
+
+        <!-- LEDs -->
+        <g transform="translate(57.3, 16.21)">
+          <use xlink:href="#led-body"></use>
+          <!--?lit$999952136$--><circle cx="1.3" cy="0.55" r="1.3" fill="#80ff80" filter="url(#ledFilter)"></circle>
+        </g>
+
+        <text fill="#fff">
+          <tspan x="60.88" y="17.5">ON</tspan>
+        </text>
+
+        <g transform="translate(26.87,11.69)">
+          <use xlink:href="#led-body"></use>
+          <!--?lit$999952136$-->false
+        </g>
+
+        <g transform="translate(26.9, 16.2)">
+          <use xlink:href="#led-body"></use>
+          <!--?lit$999952136$-->false
+        </g>
+
+        <g transform="translate(26.9, 18.5)">
+          <use xlink:href="#led-body"></use>
+          <!--?lit$999952136$-->false
+        </g>
+
+        <text fill="#fff" style="text-anchor: end">
+          <tspan x="26.5" y="13">L</tspan>
+          <tspan x="26.5" y="17.5">TX</tspan>
+          <tspan x="26.5" y="19.8">RX</tspan>
+          <tspan x="26.5" y="20">&#160;</tspan>
+        </text>
+
+        <!-- Pin Labels -->
+        <rect x="28.27" y="10.34" width="36.5" height="0.16" fill="#fff"></rect>
+        <text fill="#fff" style="font-weight: 900">
+          <tspan x="40.84" y="9.48">DIGITAL (PWM ~)</tspan>
+        </text>
+        <text transform="translate(22.6 4) rotate(270 0 0)" fill="#fff" style="font-size: 2px; text-anchor: end; font-family: monospace">
+          <tspan x="0" dy="2.54">AREF</tspan>
+          <tspan x="0" dy="2.54">GND</tspan>
+          <tspan x="0" dy="2.54">13</tspan>
+          <tspan x="0" dy="2.54">12</tspan>
+          <tspan x="0" dy="2.54">~11</tspan>
+          <tspan x="0" dy="2.54">~10</tspan>
+          <tspan x="0" dy="2.54">~9</tspan>
+          <tspan x="0" dy="2.54">8</tspan>
+          <tspan x="0" dy="4.08">7</tspan>
+          <tspan x="0" dy="2.54">~6</tspan>
+          <tspan x="0" dy="2.54">~5</tspan>
+          <tspan x="0" dy="2.54">4</tspan>
+          <tspan x="0" dy="2.54">~3</tspan>
+          <tspan x="0" dy="2.54">2</tspan>
+          <tspan x="0" dy="2.54">TX→1</tspan>
+          <tspan x="0" dy="2.54">RX←0</tspan>
+          <tspan x="0" dy="2.54">&#160;</tspan>
+        </text>
+
+        <rect x="33.90" y="42.76" width="12.84" height="0.16" fill="#fff"></rect>
+        <rect x="49.48" y="42.76" width="14.37" height="0.16" fill="#fff"></rect>
+        <text fill="#fff" style="font-weight: 900">
+          <tspan x="41" y="44.96">POWER</tspan>
+          <tspan x="53.5" y="44.96">ANALOG IN</tspan>
+        </text>
+        <text transform="translate(29.19 49) rotate(270 0 0)" fill="#fff" style="font-weight: 700">
+          <tspan x="0" dy="2.54">IOREF</tspan>
+          <tspan x="0" dy="2.54">RESET</tspan>
+          <tspan x="0" dy="2.54">3.3V</tspan>
+          <tspan x="0" dy="2.54">5V</tspan>
+          <tspan x="0" dy="2.54">GND</tspan>
+          <tspan x="0" dy="2.54">GND</tspan>
+          <tspan x="0" dy="2.54">Vin</tspan>
+          <tspan x="0" dy="4.54">A0</tspan>
+          <tspan x="0" dy="2.54">A1</tspan>
+          <tspan x="0" dy="2.54">A2</tspan>
+          <tspan x="0" dy="2.54">A3</tspan>
+          <tspan x="0" dy="2.54">A4</tspan>
+          <tspan x="0" dy="2.54">A5</tspan>
+        </text>
+
+        <!-- Logo -->
+        <path style="fill:none;stroke:#fff;stroke-width:1.03" d="m 34.21393,12.01079 c -1.66494,-0.13263 -3.06393,1.83547 -2.37559,3.36182 0.66469,1.65332 3.16984,2.10396 4.36378,0.77797 1.15382,-1.13053 1.59956,-2.86476 3.00399,-3.75901 1.43669,-0.9801 3.75169,-0.0547 4.02384,1.68886 0.27358,1.66961 -1.52477,3.29596 -3.15725,2.80101 -1.20337,-0.27199 -2.06928,-1.29866 -2.56193,-2.37788 -0.6046,-1.0328 -1.39499,-2.13327 -2.62797,-2.42367 -0.2191,-0.0497 -0.44434,-0.0693 -0.66887,-0.0691 z"></path>
+        <path style="fill:none;stroke:#fff;stroke-width:0.56" d="m 39.67829,14.37519 h 1.75141 m -0.89321,-0.8757 v 1.7514 m -7.30334,-0.8757 h 2.10166"></path>
+        <text x="31" y="20.2" style="font-size:2.8px;font-weight:bold;line-height:1.25;fill:#fff">
+          ARDUINO
+        </text>
+
+        <rect style="fill:none;stroke:#fff;stroke-width:0.1;stroke-dasharray:0.1, 0.1" width="11" height="5.45" x="45.19" y="11.83" rx="1" ry="1"></rect>
+
+        <text x="46.5" y="16" style="font-size:5px; line-height:1.25" fill="#fff">UNO</text>
+      </svg>
+<text x="485" y="744" font-size="12" fill="#485b66" font-weight="500" text-anchor="middle" >ARDUINO · UNO 시뮬레이션 모델</text>
+</g>
+<g class="device" data-part="l298" role="button" aria-label="L298N E6 · 액추에이터 구동" tabindex="0"><title>L298N E6 · 액추에이터 구동</title>
+<rect x="709" y="532" width="175" height="162" rx="4" fill="#b53c3e" stroke="#853537" filter="url(#boardshadow)"/>
+<circle cx="718" cy="541" r="4" fill="#cfb97c" />
+<circle cx="718" cy="541" r="2" fill="#6f4e47" />
+<circle cx="718" cy="684" r="4" fill="#cfb97c" />
+<circle cx="718" cy="684" r="2" fill="#6f4e47" />
+<circle cx="875" cy="541" r="4" fill="#cfb97c" />
+<circle cx="875" cy="541" r="2" fill="#6f4e47" />
+<circle cx="875" cy="684" r="4" fill="#cfb97c" />
+<circle cx="875" cy="684" r="2" fill="#6f4e47" />
+<rect x="755" y="541" width="78" height="72" rx="2" fill="#262d31" />
+<rect x="760" y="544" width="3" height="66" rx="1" fill="#546067" />
+<rect x="768" y="544" width="3" height="66" rx="1" fill="#546067" />
+<rect x="776" y="544" width="3" height="66" rx="1" fill="#546067" />
+<rect x="784" y="544" width="3" height="66" rx="1" fill="#546067" />
+<rect x="792" y="544" width="3" height="66" rx="1" fill="#546067" />
+<rect x="800" y="544" width="3" height="66" rx="1" fill="#546067" />
+<rect x="808" y="544" width="3" height="66" rx="1" fill="#546067" />
+<rect x="816" y="544" width="3" height="66" rx="1" fill="#546067" />
+<rect x="824" y="544" width="3" height="66" rx="1" fill="#546067" />
+<circle cx="730" cy="632" r="12" fill="#26333c" stroke="#bbc0c4" />
+<circle cx="730" cy="632" r="8" fill="#a6b1b6" />
+<path d="M726 632L734 632" fill="none" stroke="#68777e" stroke-width="1" />
+<path d="M730 628L730 636" fill="none" stroke="#68777e" stroke-width="1" />
+<circle cx="850" cy="632" r="12" fill="#26333c" stroke="#bbc0c4" />
+<circle cx="850" cy="632" r="8" fill="#a6b1b6" />
+<path d="M846 632L854 632" fill="none" stroke="#68777e" stroke-width="1" />
+<path d="M850 628L850 636" fill="none" stroke="#68777e" stroke-width="1" />
+<rect x="719" y="656" width="14" height="25" rx="1" fill="#6f9fc0" stroke="#547661" />
+<circle cx="726" cy="664" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M723.66 665.62L728.34 662.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="722" y="674" width="8" height="5" rx="1" fill="#30423a" />
+<text x="726" y="651" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >+Vs</text>
+<rect x="734" y="656" width="14" height="25" rx="1" fill="#6f9fc0" stroke="#547661" />
+<circle cx="741" cy="664" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M738.66 665.62L743.34 662.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="737" y="674" width="8" height="5" rx="1" fill="#30423a" />
+<text x="741" y="651" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >0V</text>
+<rect x="749" y="656" width="14" height="25" rx="1" fill="#6f9fc0" stroke="#547661" />
+<circle cx="756" cy="664" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M753.66 665.62L758.34 662.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="752" y="674" width="8" height="5" rx="1" fill="#30423a" />
+<text x="756" y="651" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >5V</text>
+<rect x="841" y="570" width="14" height="25" rx="1" fill="#6f9fc0" stroke="#547661" />
+<circle cx="848" cy="578" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M845.66 579.62L850.34 576.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="844" y="588" width="8" height="5" rx="1" fill="#30423a" />
+<text x="848" y="565" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >M+</text>
+<rect x="856" y="570" width="14" height="25" rx="1" fill="#6f9fc0" stroke="#547661" />
+<circle cx="863" cy="578" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M860.66 579.62L865.34 576.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="859" y="588" width="8" height="5" rx="1" fill="#30423a" />
+<text x="863" y="565" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >M−</text>
+<rect x="783" y="676" width="73" height="10" rx="1" fill="#27333a" />
+<rect x="788" y="678" width="3" height="6" rx="0" fill="#cfb86c" />
+<rect x="799" y="678" width="3" height="6" rx="0" fill="#cfb86c" />
+<rect x="810" y="678" width="3" height="6" rx="0" fill="#cfb86c" />
+<rect x="821" y="678" width="3" height="6" rx="0" fill="#cfb86c" />
+<rect x="832" y="678" width="3" height="6" rx="0" fill="#cfb86c" />
+<rect x="843" y="678" width="3" height="6" rx="0" fill="#cfb86c" />
+<text x="797" y="526" font-size="14" fill="#485b66" font-weight="500" text-anchor="middle" >L298N E6</text>
+<text x="797" y="713" font-size="12" fill="#485b66" font-weight="500" text-anchor="middle" >D4 / D5 / A2(16)</text>
+<text x="797" y="732" font-size="10" fill="#59707c" font-weight="500" text-anchor="middle" >ENABLE = HIGH (PWM 아님)</text>
+</g>
+<g class="device" data-part="frame" role="button" aria-label="액자 리드 입력 D8" tabindex="0"><title>액자 리드 입력 D8</title>
+<rect x="15" y="308" width="158" height="62" rx="7" fill="#ffffff" stroke="#ced9de" />
+<rect x="26" y="321" width="27" height="34" rx="3" fill="#d9e2e5" stroke="#a9b8c0" />
+<rect x="31" y="327" width="7" height="22" rx="3" fill="#eee9db" stroke="#a8a592" />
+<rect x="42" y="327" width="6" height="22" rx="2" fill="#899697" />
+<text x="64" y="333" font-size="15" fill="#34434d" font-weight="500" >액자 리드</text>
+<text x="64" y="352" font-size="12" fill="#70818b" font-weight="500" >D8</text>
+<circle cx="174" cy="332" r="4" fill="#1c9b95" />
+<circle cx="174" cy="346" r="4" fill="#80939e" />
+</g>
+<rect x="246" y="322" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="253" cy="330" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M250.66 331.62L255.34 328.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="249" y="340" width="8" height="5" rx="1" fill="#30423a" />
+<text x="253" y="317" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >S</text>
+<rect x="261" y="322" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="268" cy="330" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M265.66 331.62L270.34 328.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="264" y="340" width="8" height="5" rx="1" fill="#30423a" />
+<text x="268" y="317" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >G</text>
+<path d="M177 332L246 332" fill="none" stroke="#2b9d97" stroke-width="2.6" class="net" data-net="frame"/>
+<path d="M177 346L246 346" fill="none" stroke="#82949e" stroke-width="1.5" class="net" data-net="gnd-frame"/>
+<g class="device" data-part="light" role="button" aria-label="조명 입력 A0" tabindex="0"><title>조명 입력 A0</title>
+<rect x="15" y="398" width="158" height="62" rx="7" fill="#ffffff" stroke="#ced9de" />
+<rect x="26" y="411" width="27" height="34" rx="3" fill="#d9e2e5" stroke="#a9b8c0" />
+<circle cx="39" cy="428" r="9" fill="#303f49" stroke="#91a2aa" />
+<circle cx="39" cy="428" r="4" fill="#78978d" />
+<text x="64" y="423" font-size="15" fill="#34434d" font-weight="500" >조명</text>
+<text x="64" y="442" font-size="12" fill="#70818b" font-weight="500" >A0</text>
+<circle cx="174" cy="422" r="4" fill="#1c9b95" />
+<circle cx="174" cy="436" r="4" fill="#80939e" />
+</g>
+<rect x="246" y="412" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="253" cy="420" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M250.66 421.62L255.34 418.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="249" y="430" width="8" height="5" rx="1" fill="#30423a" />
+<text x="253" y="407" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >S</text>
+<rect x="261" y="412" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="268" cy="420" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M265.66 421.62L270.34 418.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="264" y="430" width="8" height="5" rx="1" fill="#30423a" />
+<text x="268" y="407" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >G</text>
+<path d="M177 422L246 422" fill="none" stroke="#2b9d97" stroke-width="2.6" class="net" data-net="light"/>
+<path d="M177 436L246 436" fill="none" stroke="#82949e" stroke-width="1.5" class="net" data-net="gnd-light"/>
+<g class="device" data-part="key" role="button" aria-label="열쇠 입력 A1" tabindex="0"><title>열쇠 입력 A1</title>
+<rect x="15" y="488" width="158" height="62" rx="7" fill="#ffffff" stroke="#ced9de" />
+<rect x="26" y="501" width="27" height="34" rx="3" fill="#d9e2e5" stroke="#a9b8c0" />
+<circle cx="39" cy="518" r="9" fill="#303f49" stroke="#91a2aa" />
+<circle cx="39" cy="518" r="4" fill="#78978d" />
+<text x="64" y="513" font-size="15" fill="#34434d" font-weight="500" >열쇠</text>
+<text x="64" y="532" font-size="12" fill="#70818b" font-weight="500" >A1</text>
+<circle cx="174" cy="512" r="4" fill="#1c9b95" />
+<circle cx="174" cy="526" r="4" fill="#80939e" />
+</g>
+<rect x="246" y="502" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="253" cy="510" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M250.66 511.62L255.34 508.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="249" y="520" width="8" height="5" rx="1" fill="#30423a" />
+<text x="253" y="497" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >S</text>
+<rect x="261" y="502" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="268" cy="510" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M265.66 511.62L270.34 508.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="264" y="520" width="8" height="5" rx="1" fill="#30423a" />
+<text x="268" y="497" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >G</text>
+<path d="M177 512L246 512" fill="none" stroke="#2b9d97" stroke-width="2.6" class="net" data-net="key"/>
+<path d="M177 526L246 526" fill="none" stroke="#82949e" stroke-width="1.5" class="net" data-net="gnd-key"/>
+<g class="device" data-part="rfid" role="button" aria-label="RFID 감지 입력 A5" tabindex="0"><title>RFID 감지 입력 A5</title>
+<rect x="15" y="578" width="158" height="62" rx="7" fill="#ffffff" stroke="#ced9de" />
+<rect x="26" y="591" width="27" height="34" rx="3" fill="#d9e2e5" stroke="#a9b8c0" />
+<circle cx="39" cy="608" r="9" fill="#303f49" stroke="#91a2aa" />
+<circle cx="39" cy="608" r="4" fill="#78978d" />
+<text x="64" y="603" font-size="15" fill="#34434d" font-weight="500" >RFID 감지</text>
+<text x="64" y="622" font-size="12" fill="#70818b" font-weight="500" >A5</text>
+<circle cx="174" cy="602" r="4" fill="#1c9b95" />
+<circle cx="174" cy="616" r="4" fill="#80939e" />
+</g>
+<rect x="246" y="592" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="253" cy="600" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M250.66 601.62L255.34 598.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="249" y="610" width="8" height="5" rx="1" fill="#30423a" />
+<text x="253" y="587" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >S</text>
+<rect x="261" y="592" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="268" cy="600" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M265.66 601.62L270.34 598.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="264" y="610" width="8" height="5" rx="1" fill="#30423a" />
+<text x="268" y="587" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >G</text>
+<path d="M177 602L246 602" fill="none" stroke="#2b9d97" stroke-width="2.6" class="net" data-net="rfid"/>
+<path d="M177 616L246 616" fill="none" stroke="#82949e" stroke-width="1.5" class="net" data-net="gnd-rfid"/>
+<g class="device" data-part="book" role="button" aria-label="책 리드 입력 D6 · 100Ω" tabindex="0"><title>책 리드 입력 D6 · 100Ω</title>
+<rect x="15" y="668" width="158" height="62" rx="7" fill="#ffffff" stroke="#ced9de" />
+<rect x="26" y="681" width="27" height="34" rx="3" fill="#d9e2e5" stroke="#a9b8c0" />
+<rect x="31" y="687" width="7" height="22" rx="3" fill="#eee9db" stroke="#a8a592" />
+<rect x="42" y="687" width="6" height="22" rx="2" fill="#899697" />
+<text x="64" y="693" font-size="15" fill="#34434d" font-weight="500" >책 리드</text>
+<text x="64" y="712" font-size="12" fill="#70818b" font-weight="500" >D6 · 100Ω</text>
+<circle cx="174" cy="692" r="4" fill="#1c9b95" />
+<circle cx="174" cy="706" r="4" fill="#80939e" />
+</g>
+<rect x="246" y="682" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="253" cy="690" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M250.66 691.62L255.34 688.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="249" y="700" width="8" height="5" rx="1" fill="#30423a" />
+<text x="253" y="677" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >S</text>
+<rect x="261" y="682" width="14" height="25" rx="1" fill="#739c84" stroke="#547661" />
+<circle cx="268" cy="690" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M265.66 691.62L270.34 688.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="264" y="700" width="8" height="5" rx="1" fill="#30423a" />
+<text x="268" y="677" font-size="9" fill="#34434d" font-weight="500" text-anchor="middle" >G</text>
+<path d="M177 692L246 692" fill="none" stroke="#2b9d97" stroke-width="2.6" class="net" data-net="book"/>
+<path d="M177 706L246 706" fill="none" stroke="#82949e" stroke-width="1.5" class="net" data-net="gnd-book"/>
+<g class="device" data-part="mold" role="button" aria-label="몰딩 전자석" tabindex="0"><title>몰딩 전자석</title>
+<rect x="980" y="308" width="181" height="69" rx="7" fill="#fff" stroke="#ced9de" />
+<rect x="991" y="321" width="40" height="29" rx="3" fill="url(#metal)" stroke="#a1afb5" />
+<circle cx="998" cy="335" r="3" fill="#7e9199" />
+<circle cx="1024" cy="335" r="3" fill="#7e9199" />
+<text x="1040" y="331" font-size="13" fill="#34434d" font-weight="500" >몰딩 전자석</text>
+<text x="1040" y="352" font-size="11" fill="#70818b" font-weight="500" >D12</text>
+<circle cx="972" cy="338" r="5" fill="#8b9ca5" id="load-led-12"/>
+</g>
+<g class="device" data-part="slide" role="button" aria-label="슬라이드 전자석" tabindex="0"><title>슬라이드 전자석</title>
+<rect x="980" y="402" width="181" height="69" rx="7" fill="#fff" stroke="#ced9de" />
+<rect x="991" y="415" width="40" height="29" rx="3" fill="url(#metal)" stroke="#a1afb5" />
+<circle cx="998" cy="429" r="3" fill="#7e9199" />
+<circle cx="1024" cy="429" r="3" fill="#7e9199" />
+<text x="1040" y="425" font-size="13" fill="#34434d" font-weight="500" >슬라이드 전자석</text>
+<text x="1040" y="446" font-size="11" fill="#70818b" font-weight="500" >D10</text>
+<circle cx="972" cy="432" r="5" fill="#8b9ca5" id="load-led-10"/>
+</g>
+<g class="device" data-part="window" role="button" aria-label="창문 출력" tabindex="0"><title>창문 출력</title>
+<rect x="980" y="496" width="181" height="69" rx="7" fill="#fff" stroke="#ced9de" />
+<rect x="992" y="508" width="36" height="34" rx="1" fill="#e3e9ec" stroke="#7a919d" />
+<path d="M1010 508L1010 542" fill="none" stroke="#7a919d" stroke-width="1" />
+<path d="M992 524L1028 524" fill="none" stroke="#7a919d" stroke-width="1" />
+<text x="1040" y="519" font-size="13" fill="#34434d" font-weight="500" >창문 출력</text>
+<text x="1040" y="540" font-size="11" fill="#70818b" font-weight="500" >A4 / D18</text>
+<circle cx="972" cy="526" r="5" fill="#8b9ca5" id="load-led-18"/>
+</g>
+<g class="device" data-part="bookload" role="button" aria-label="책 전자석" tabindex="0"><title>책 전자석</title>
+<rect x="980" y="590" width="181" height="69" rx="7" fill="#fff" stroke="#ced9de" />
+<rect x="991" y="603" width="40" height="29" rx="3" fill="url(#metal)" stroke="#a1afb5" />
+<circle cx="998" cy="617" r="3" fill="#7e9199" />
+<circle cx="1024" cy="617" r="3" fill="#7e9199" />
+<text x="1040" y="613" font-size="13" fill="#34434d" font-weight="500" >책 전자석</text>
+<text x="1040" y="634" font-size="11" fill="#70818b" font-weight="500" >D9</text>
+<circle cx="972" cy="620" r="5" fill="#8b9ca5" id="load-led-9"/>
+</g>
+<g class="device" data-part="motor" role="button" aria-label="리니어 액추에이터" tabindex="0"><title>리니어 액추에이터</title>
+<rect x="979" y="714" width="184" height="73" rx="7" fill="#fff" stroke="#ced9de" />
+<rect x="998" y="738" width="64" height="19" rx="5" fill="#939fa8" stroke="#677982" />
+<rect x="1047" y="734" width="72" height="27" rx="4" fill="url(#metal)" stroke="#9caaaf" />
+<rect x="1109" y="743" width="35" height="9" rx="1" fill="#a6b1b7" />
+<circle cx="1147" cy="747.5" r="6" fill="#b9c3c9" stroke="#748991" />
+<text x="1071" y="733" font-size="12" fill="#34434d" font-weight="500" text-anchor="middle" >리니어 액추에이터</text>
+</g>
+<g class="device" data-part="power" role="button" aria-label="기존 DC 어댑터군과 전원 분배 배치안" tabindex="0"><title>기존 DC 어댑터군과 전원 분배 배치안</title>
+<text x="265" y="791" font-size="12" fill="#59707c" font-weight="500" >5V 제어 분기</text>
+<text x="580" y="791" font-size="12" fill="#59707c" font-weight="500" >12V 부하 분기</text>
+<rect x="266" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="273" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M270.66 809.62L275.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="269" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="281" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="288" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M285.66 809.62L290.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="284" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="296" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="303" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M300.66 809.62L305.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="299" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="311" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="318" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M315.66 809.62L320.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="314" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="326" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="333" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M330.66 809.62L335.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="329" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="341" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="348" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M345.66 809.62L350.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="344" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="356" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="363" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M360.66 809.62L365.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="359" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="371" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="378" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M375.66 809.62L380.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="374" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="386" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="393" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M390.66 809.62L395.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="389" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="401" y="800" width="14" height="25" rx="1" fill="#819da8" stroke="#547661" />
+<circle cx="408" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M405.66 809.62L410.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="404" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="582" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="589" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M586.66 809.62L591.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="585" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="597" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="604" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M601.66 809.62L606.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="600" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="612" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="619" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M616.66 809.62L621.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="615" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="627" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="634" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M631.66 809.62L636.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="630" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="642" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="649" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M646.66 809.62L651.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="645" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="657" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="664" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M661.66 809.62L666.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="660" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="672" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="679" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M676.66 809.62L681.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="675" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="687" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="694" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M691.66 809.62L696.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="690" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="702" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="709" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M706.66 809.62L711.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="705" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<rect x="717" y="800" width="14" height="25" rx="1" fill="#b39b7a" stroke="#547661" />
+<circle cx="724" cy="808" r="3.6" fill="#b9c2c4" stroke="#7a868b" />
+<path d="M721.66 809.62L726.34 806.38" fill="none" stroke="#5d676c" stroke-width="1.3" />
+<rect x="720" y="818" width="8" height="5" rx="1" fill="#30423a" />
+<text x="576" y="856" font-size="11" fill="#5f747e" font-weight="500" text-anchor="middle" >기존 어댑터군 유지 · 정격·급전 경로는 현장값 적용</text>
+</g>
+<path d="M482.64 511.08L482.64 486L273 486L273 445" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="out12"/>
+<path d="M482.64 511.08L482.64 486L273 486L273 445" fill="none" stroke="#597ac5" stroke-width="2.5" class="net " data-net="out12"><title>D12 → 릴레이 기능 채널</title></path>
+<path d="M482.64 511.08L482.64 486L273 486L273 445" class="net-hit " data-net="out12"><title>D12 → 릴레이 기능 채널</title></path>
+<path d="M503.92 511.08L503.92 492L292 492L292 445" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="out10"/>
+<path d="M503.92 511.08L503.92 492L292 492L292 445" fill="none" stroke="#597ac5" stroke-width="2.5" class="net " data-net="out10"><title>D10 → 릴레이 기능 채널</title></path>
+<path d="M503.92 511.08L503.92 492L292 492L292 445" class="net-hit " data-net="out10"><title>D10 → 릴레이 기능 채널</title></path>
+<path d="M514.56 511.08L514.56 498L311 498L311 445" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="out9"/>
+<path d="M514.56 511.08L514.56 498L311 498L311 445" fill="none" stroke="#597ac5" stroke-width="2.5" class="net " data-net="out9"><title>D9 → 릴레이 기능 채널</title></path>
+<path d="M514.56 511.08L514.56 498L311 498L311 445" class="net-hit " data-net="out9"><title>D9 → 릴레이 기능 채널</title></path>
+<path d="M607.52 715.48L607.52 736L676 736L676 485L330 485L330 445" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="out18"/>
+<path d="M607.52 715.48L607.52 736L676 736L676 485L330 485L330 445" fill="none" stroke="#597ac5" stroke-width="2.5" class="net " data-net="out18"><title>A4 → 릴레이 기능 채널</title></path>
+<path d="M607.52 715.48L607.52 736L676 736L676 485L330 485L330 445" class="net-hit " data-net="out18"><title>A4 → 릴레이 기능 채널</title></path>
+<path d="M276 332L292 332L292 483L525.76 483L525.76 511.08" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="frame"/>
+<path d="M276 332L292 332L292 483L525.76 483L525.76 511.08" fill="none" stroke="#2b9d97" stroke-width="2.5" class="net " data-net="frame"><title>frame sensor → Arduino</title></path>
+<path d="M276 332L292 332L292 483L525.76 483L525.76 511.08" class="net-hit " data-net="frame"><title>frame sensor → Arduino</title></path>
+<path d="M276 422L287 422L287 734L564.96 734L564.96 715.48" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="light"/>
+<path d="M276 422L287 422L287 734L564.96 734L564.96 715.48" fill="none" stroke="#2b9d97" stroke-width="2.5" class="net " data-net="light"><title>light sensor → Arduino</title></path>
+<path d="M276 422L287 422L287 734L564.96 734L564.96 715.48" class="net-hit " data-net="light"><title>light sensor → Arduino</title></path>
+<path d="M276 512L282 512L282 740L575.6 740L575.6 715.48" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="key"/>
+<path d="M276 512L282 512L282 740L575.6 740L575.6 715.48" fill="none" stroke="#2b9d97" stroke-width="2.5" class="net " data-net="key"><title>key sensor → Arduino</title></path>
+<path d="M276 512L282 512L282 740L575.6 740L575.6 715.48" class="net-hit " data-net="key"><title>key sensor → Arduino</title></path>
+<path d="M276 602L277 602L277 746L618.16 746L618.16 715.48" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="rfid"/>
+<path d="M276 602L277 602L277 746L618.16 746L618.16 715.48" fill="none" stroke="#2b9d97" stroke-width="2.5" class="net " data-net="rfid"><title>rfid sensor → Arduino</title></path>
+<path d="M276 602L277 602L277 746L618.16 746L618.16 715.48" class="net-hit " data-net="rfid"><title>rfid sensor → Arduino</title></path>
+<path d="M276 692L302 692L302 491L554.32 491L554.32 511.08" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="book"/>
+<path d="M276 692L302 692L302 491L554.32 491L554.32 511.08" fill="none" stroke="#2b9d97" stroke-width="2.5" class="net " data-net="book"><title>book sensor → Arduino</title></path>
+<path d="M276 692L302 692L302 491L554.32 491L554.32 511.08" class="net-hit " data-net="book"><title>book sensor → Arduino</title></path>
+<path d="M575.6 511.08L575.6 480L691 480L691 705L790 705L790 680" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="motor4"/>
+<path d="M575.6 511.08L575.6 480L691 480L691 705L790 705L790 680" fill="none" stroke="#8f72b8" stroke-width="2.5" class="net " data-net="motor4"><title>D4 → L298N</title></path>
+<path d="M575.6 511.08L575.6 480L691 480L691 705L790 705L790 680" class="net-hit " data-net="motor4"><title>D4 → L298N</title></path>
+<path d="M564.96 511.08L564.96 486L696 486L696 711L801 711L801 680" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="motor5"/>
+<path d="M564.96 511.08L564.96 486L696 486L696 711L801 711L801 680" fill="none" stroke="#8f72b8" stroke-width="2.5" class="net " data-net="motor5"><title>D5 → L298N</title></path>
+<path d="M564.96 511.08L564.96 486L696 486L696 711L801 711L801 680" class="net-hit " data-net="motor5"><title>D5 → L298N</title></path>
+<path d="M586.24 715.48L586.24 728L812 728L812 680" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="motor16"/>
+<path d="M586.24 715.48L586.24 728L812 728L812 680" fill="none" stroke="#8f72b8" stroke-width="2.5" class="net " data-net="motor16"><title>A2 → L298N</title></path>
+<path d="M586.24 715.48L586.24 728L812 728L812 680" class="net-hit " data-net="motor16"><title>A2 → L298N</title></path>
+<path d="M596.88 511.08L596.88 474L909 474L909 233L733 233L733 209" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="uart2"/>
+<path d="M596.88 511.08L596.88 474L909 474L909 233L733 233L733 209" fill="none" stroke="#b99445" stroke-width="2.5" class="net " data-net="uart2"><title>D2 ↔ KT403A UART</title></path>
+<path d="M596.88 511.08L596.88 474L909 474L909 233L733 233L733 209" class="net-hit " data-net="uart2"><title>D2 ↔ KT403A UART</title></path>
+<path d="M586.24 511.08L586.24 467L915 467L915 241L753 241L753 209" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="uart3"/>
+<path d="M586.24 511.08L586.24 467L915 467L915 241L753 241L753 209" fill="none" stroke="#b99445" stroke-width="2.5" class="net " data-net="uart3"><title>D3 ↔ KT403A UART</title></path>
+<path d="M586.24 511.08L586.24 467L915 467L915 241L753 241L753 209" class="net-hit " data-net="uart3"><title>D3 ↔ KT403A UART</title></path>
+<path d="M833 166L864 166L864 94L568 94L568 210L367 210" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="audio"/>
+<path d="M833 166L864 166L864 94L568 94L568 210L367 210" fill="none" stroke="#9a80ae" stroke-width="2.5" class="net " data-net="audio"><title>KT403A LINE OUT → HONGXING MP3 IN</title></path>
+<path d="M833 166L864 166L864 94L568 94L568 210L367 210" class="net-hit " data-net="audio"><title>KT403A LINE OUT → HONGXING MP3 IN</title></path>
+<path d="M296 303L296 282L949 282L949 338L977 338" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="load12"/>
+<path d="M296 303L296 282L949 282L949 338L977 338" fill="none" stroke="#ab7558" stroke-width="2.5" class="net " data-net="load12" stroke-dasharray="6 4"><title>릴레이 기능 접점 → mold</title></path>
+<path d="M296 303L296 282L949 282L949 338L977 338" class="net-hit " data-net="load12"><title>릴레이 기능 접점 → mold</title></path>
+<path d="M360 303L360 274L955 274L955 432L977 432" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="load10"/>
+<path d="M360 303L360 274L955 274L955 432L977 432" fill="none" stroke="#ab7558" stroke-width="2.5" class="net " data-net="load10" stroke-dasharray="6 4"><title>릴레이 기능 접점 → slide</title></path>
+<path d="M360 303L360 274L955 274L955 432L977 432" class="net-hit " data-net="load10"><title>릴레이 기능 접점 → slide</title></path>
+<path d="M488 303L488 266L961 266L961 526L977 526" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="load18"/>
+<path d="M488 303L488 266L961 266L961 526L977 526" fill="none" stroke="#ab7558" stroke-width="2.5" class="net " data-net="load18" stroke-dasharray="6 4"><title>릴레이 기능 접점 → window</title></path>
+<path d="M488 303L488 266L961 266L961 526L977 526" class="net-hit " data-net="load18"><title>릴레이 기능 접점 → window</title></path>
+<path d="M424 303L424 258L967 258L967 620L977 620" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="load9"/>
+<path d="M424 303L424 258L967 258L967 620L977 620" fill="none" stroke="#ab7558" stroke-width="2.5" class="net " data-net="load9" stroke-dasharray="6 4"><title>릴레이 기능 접점 → bookload</title></path>
+<path d="M424 303L424 258L967 258L967 620L977 620" class="net-hit " data-net="load9"><title>릴레이 기능 접점 → bookload</title></path>
+<path d="M871 586L926 586L926 747L980 747" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net " data-net="actuator"/>
+<path d="M871 586L926 586L926 747L980 747" fill="none" stroke="#a86c5a" stroke-width="2.5" class="net " data-net="actuator"><title>L298N → 리니어 액추에이터</title></path>
+<path d="M871 586L926 586L926 747L980 747" class="net-hit " data-net="actuator"><title>L298N → 리니어 액추에이터</title></path>
+<path d="M279 800L279 778L518 778L511.2 715.48" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net power-net" data-net="power5"/>
+<path d="M279 800L279 778L518 778L511.2 715.48" fill="none" stroke="#c26c66" stroke-width="2.5" class="net power-net" data-net="power5" stroke-dasharray="5 4"><title>전원 분기 배치안</title></path>
+<path d="M279 800L279 778L518 778L511.2 715.48" class="net-hit power-net" data-net="power5"><title>전원 분기 배치안</title></path>
+<path d="M414 800L414 785L521.84 785L521.84 715.48" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net power-net" data-net="powergnd"/>
+<path d="M414 800L414 785L521.84 785L521.84 715.48" fill="none" stroke="#7b8a94" stroke-width="2.5" class="net power-net" data-net="powergnd" stroke-dasharray="5 4"><title>전원 분기 배치안</title></path>
+<path d="M414 800L414 785L521.84 785L521.84 715.48" class="net-hit power-net" data-net="powergnd"><title>전원 분기 배치안</title></path>
+<path d="M597 800L597 785L729 785L729 682" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net power-net" data-net="power12"/>
+<path d="M597 800L597 785L729 785L729 682" fill="none" stroke="#c26c66" stroke-width="2.5" class="net power-net" data-net="power12" stroke-dasharray="5 4"><title>전원 분기 배치안</title></path>
+<path d="M597 800L597 785L729 785L729 682" class="net-hit power-net" data-net="power12"><title>전원 분기 배치안</title></path>
+<path d="M627 800L627 835L923 835L923 103L551 103L551 210" fill="none" stroke="#f0f3f4" stroke-width="5.3" class="net power-net" data-net="poweramp"/>
+<path d="M627 800L627 835L923 835L923 103L551 103L551 210" fill="none" stroke="#c26c66" stroke-width="2.5" class="net power-net" data-net="poweramp" stroke-dasharray="5 4"><title>전원 분기 배치안</title></path>
+<path d="M627 800L627 835L923 835L923 103L551 103L551 210" class="net-hit power-net" data-net="poweramp"><title>전원 분기 배치안</title></path>
+<text x="26" y="296" font-size="14" fill="#526c79" font-weight="500" >현장 입력 5개</text>
+<text x="983" y="296" font-size="14" fill="#526c79" font-weight="500" >기능별 출력</text>
+<text x="254" y="898" font-size="12" fill="#5d737e" font-weight="500" >실선: 확정 기능·코드 핀    점선: 부하 접점의 기능 연결 / 채널 배치는 정리안</text>
+<text x="254" y="921" font-size="11" fill="#6f818b" font-weight="500" >릴레이 표시등은 Arduino GPIO 레벨을 표시합니다. 실제 코일 극성·접점 동작과 구별합니다.</text>
+</svg>

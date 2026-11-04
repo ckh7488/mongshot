@@ -1,0 +1,21 @@
+﻿양쪽 선 라벨,시작,끝,전원 영역,시공 조건
+OUT-D12,Arduino D12,RY-A IN1,공통0V,몰딩 / 기존 입력회로와 active LOW/리셋 상태 유지. 외부 절연모듈 없음
+OUT-D10,Arduino D10,RY-A IN2,공통0V,슬라이드 / 기존 입력회로와 active LOW/리셋 상태 유지. 외부 절연모듈 없음
+OUT-D9,Arduino D9,RY-A IN3,공통0V,책 / 기존 입력회로와 active LOW/리셋 상태 유지. 외부 절연모듈 없음
+OUT-A4,Arduino A4,RY-A IN4,공통0V,창문 / 기존 입력회로와 active LOW/리셋 상태 유지. 외부 절연모듈 없음
+MOT-D4,Arduino D4,L298 IN1,공통0V,기존 제어선 직결. ENA 점퍼/리셋상태는 기존 동작에 대조
+MOT-D5,Arduino D5,L298 IN2,공통0V,기존 제어선 직결. ENA 점퍼/리셋상태는 기존 동작에 대조
+MOT-A2,Arduino A2,L298 ENA,공통0V,기존 제어선 직결. ENA 점퍼/리셋상태는 기존 동작에 대조
+IN-D8,기존 액자 리드 S,Arduino D8,G0,새 센서판/RC 일괄 추가 없음. D6 기존100Ω 보존
+IN-D6,기존 책 리드 S,Arduino D6,G0,새 센서판/RC 일괄 추가 없음. D6 기존100Ω 보존
+IN-A0,기존 조명 신호선,Arduino A0,기존입력/실물대조,기존 접속/ADC 동작 보존. 0~5V 입력범위와 실제 출력형식 대조;12V 신호 직결 금지. 새 센서PCB 없음
+IN-A1,기존 열쇠 신호선,Arduino A1,기존입력/실물대조,기존 접속/ADC 동작 보존. 0~5V 입력범위와 실제 출력형식 대조;12V 신호 직결 금지. 새 센서PCB 없음
+IN-A5,기존 RFID 신호선,Arduino A5,기존입력/실물대조,기존 접속/ADC 동작 보존. 0~5V 입력범위와 실제 출력형식 대조;12V 신호 직결 금지. 새 센서PCB 없음
+MP3-RX,KT403A TX,Arduino D2,G0,
+MP3-TX,Arduino D3,KT403A RX,G0,
+PANEL-5V,5L.6,J7.1 → 도어 VCC,G0,기존 Gun/Hint 선 철거 후 재사용
+PANEL-0V,G0.6,J7.2 → 도어 GND,G0,기존 Gun/Hint 선 철거 후 재사용
+PANEL-DATA,Arduino D11,J7.3 → 595 SER pin14,G0,기존 Gun/Hint 선 철거 후 재사용
+PANEL-CLK,Arduino D13,J7.4 → 595 SRCLK pin11,G0,기존 Gun/Hint 선 철거 후 재사용
+PANEL-LATCH,Arduino D7,J7.5 → 595 RCLK pin12,G0,기존 Gun/Hint 선 철거 후 재사용
+BTN-NEXT,Arduino A3,J7.6 → 도어 버튼 COM/NO,G0,기존 Gun/Hint 선 철거 후 재사용

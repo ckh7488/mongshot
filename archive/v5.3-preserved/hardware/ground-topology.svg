@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1050" viewBox="0 0 1240 1050" id="ground-topology-svg" role="img" aria-label="P0 부하 / G0 로직·MP3·홍싱 / PE 보호접지"><style>text{font-family:"Malgun Gothic",Arial,sans-serif}.device{cursor:pointer;outline:none}.selected-device{filter:drop-shadow(0 0 4px #16a798)}.selected-net{stroke-width:5!important;opacity:1!important}.dim-net{opacity:.18}.power-net{display:none}.show-power .power-net{display:initial}</style>
+<rect x="0" y="0" width="1240" height="1050" rx="0" fill="#f8fafc" stroke="none" />
+<text x="35" y="48" font-size="28" font-weight="650" fill="#405e70" text-anchor="start">GND · 직접 이어지는 선과 절연 경계를 구별</text>
+<text x="35" y="82" font-size="17" font-weight="500" fill="#8296a2" text-anchor="start">P0/G0 공통 기준선 있음 · 귀환 분배는 절연이 아닙니다 · 자석−도 공통입니다.</text>
+<rect x="30" y="120" width="360" height="700" rx="10" fill="#fff" stroke="#b87e49" />
+<text x="52" y="157" font-size="24" font-weight="650" fill="#b87e49" text-anchor="start">P0 · 12V 부하측</text>
+<rect x="850" y="120" width="360" height="700" rx="10" fill="#fff" stroke="#238b86" />
+<text x="872" y="157" font-size="24" font-weight="650" fill="#238b86" text-anchor="start">G0 · 로직 귀환 분기</text>
+<path d="M55,190 L55,760" fill="none" stroke="#b87e49" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="net" data-net="P0" />
+<path d="M55,215 L80,215" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="55" cy="215" r="4" fill="#b87e49" stroke="none" />
+<text x="89" y="221" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">SMPS V− → P0.IN</text>
+<path d="M55,290 L80,290" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="55" cy="290" r="4" fill="#b87e49" stroke="none" />
+<text x="89" y="296" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">자석1 / 자석2 / 자석3 −</text>
+<path d="M55,365 L80,365" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="55" cy="365" r="4" fill="#b87e49" stroke="none" />
+<text x="89" y="371" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">L298 GND / Vs·Vss 기준</text>
+<path d="M55,440 L80,440" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="55" cy="440" r="4" fill="#b87e49" stroke="none" />
+<text x="89" y="446" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">DC-D GND → 릴레이 코일</text>
+<path d="M55,515 L80,515" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="55" cy="515" r="4" fill="#b87e49" stroke="none" />
+<text x="89" y="521" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">RFID·12V센서 전원 −</text>
+<path d="M55,590 L80,590" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="55" cy="590" r="4" fill="#b87e49" stroke="none" />
+<text x="89" y="596" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">DC-L 입력 −</text>
+<path d="M55,665 L80,665" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="55" cy="665" r="4" fill="#b87e49" stroke="none" />
+<text x="89" y="671" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">릴레이 코일 귀환</text>
+<path d="M875,190 L875,760" fill="none" stroke="#238b86" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="net" data-net="G0" />
+<path d="M875,215 L900,215" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="875" cy="215" r="4" fill="#238b86" stroke="none" />
+<text x="909" y="221" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">DC-L 출력 − → G0.IN</text>
+<path d="M875,290 L900,290" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="875" cy="290" r="4" fill="#238b86" stroke="none" />
+<text x="909" y="296" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">Arduino GND</text>
+<path d="M875,365 L900,365" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="875" cy="365" r="4" fill="#238b86" stroke="none" />
+<text x="909" y="371" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">액자·책 리드 귀환</text>
+<path d="M875,440 L900,440" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="875" cy="440" r="4" fill="#238b86" stroke="none" />
+<text x="909" y="446" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">센서 A0/A1/A5: 기존선 대조</text>
+<path d="M875,515 L900,515" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="875" cy="515" r="4" fill="#238b86" stroke="none" />
+<text x="909" y="521" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">KT403A GND</text>
+<path d="M875,590 L900,590" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="875" cy="590" r="4" fill="#238b86" stroke="none" />
+<text x="909" y="596" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">LED·버튼 GND</text>
+<path d="M875,665 L900,665" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="875" cy="665" r="4" fill="#238b86" stroke="none" />
+<text x="909" y="671" font-size="16" font-weight="500" fill="#405e70" text-anchor="start">L298 공통 신호기준</text>
+<rect x="425" y="190" width="390" height="105" rx="8" fill="#fff" stroke="#c4d3dd" />
+<text x="620" y="224" font-size="19" font-weight="500" fill="#405e70" text-anchor="middle">DC-L · 전원 분기 후보</text>
+<text x="620" y="260" font-size="16" font-weight="500" fill="#8298a5" text-anchor="middle">소자 절연 ≠ 현재 시스템 절연</text>
+<path d="M610,275 L610,287" fill="none" stroke="#94a9b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M626,275 L626,287" fill="none" stroke="#94a9b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="425" y="335" width="390" height="105" rx="8" fill="#fff" stroke="#c4d3dd" />
+<text x="620" y="369" font-size="19" font-weight="500" fill="#405e70" text-anchor="middle">기존 제어선 직결</text>
+<text x="620" y="405" font-size="16" font-weight="500" fill="#8298a5" text-anchor="middle">모터3선·릴레이4선 / 추가모듈 없음</text>
+<path d="M610,420 L610,432" fill="none" stroke="#94a9b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M626,420 L626,432" fill="none" stroke="#94a9b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="425" y="480" width="390" height="105" rx="8" fill="#fff" stroke="#c4d3dd" />
+<text x="620" y="514" font-size="19" font-weight="500" fill="#405e70" text-anchor="middle">별도 센서 PCB 없음</text>
+<text x="620" y="550" font-size="16" font-weight="500" fill="#8298a5" text-anchor="middle">기존 신호/귀환 실물 대조</text>
+<path d="M610,565 L610,577" fill="none" stroke="#94a9b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M626,565 L626,577" fill="none" stroke="#94a9b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="425" y="625" width="390" height="105" rx="8" fill="#fff" stroke="#c4d3dd" />
+<text x="620" y="659" font-size="19" font-weight="500" fill="#405e70" text-anchor="middle">공통 신호 기준 필요</text>
+<text x="620" y="695" font-size="16" font-weight="500" fill="#8298a5" text-anchor="middle">G0.4 → L298 GND</text>
+<path d="M610,710 L610,722" fill="none" stroke="#94a9b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M626,710 L626,722" fill="none" stroke="#94a9b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M55,760 L55,790 L875,790 L875,760" fill="none" stroke="#927d4b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="620" y="818" font-size="17" font-weight="500" fill="#927d4b" text-anchor="middle">P0 = G0 · 공통 기준선 / 갈바닉 절연 아님</text>
+<rect x="30" y="850" width="535" height="145" rx="8" fill="#eef7f6" stroke="#238b86" />
+<text x="50" y="885" font-size="23" font-weight="500" fill="#238b86" text-anchor="start">홍싱 · 기존 어댑터 사용</text>
+<text x="50" y="920" font-size="18" font-weight="500" fill="#405e70" text-anchor="start">MP3 L/R와 GND를 홍싱 MP3 IN에 직결</text>
+<text x="50" y="953" font-size="17" font-weight="500" fill="#405e70" text-anchor="start">홍싱 전원−는 G0와 공통. 전원+는5L과 합치지 않음</text>
+<rect x="600" y="850" width="610" height="145" rx="8" fill="#f3f7ee" stroke="#79984a" />
+<text x="620" y="885" font-size="23" font-weight="500" fill="#79984a" text-anchor="start">PE · 콘센트 보호접지</text>
+<text x="620" y="920" font-size="18" font-weight="500" fill="#405e70" text-anchor="start">기존 PE → SMPS FG / 금속 외함 / 도어</text>
+<text x="620" y="953" font-size="17" font-weight="500" fill="#405e70" text-anchor="start">P0·G0 귀환 대용 금지 · 보호접지를 끊어 절연하지 않음</text>
+<text x="35" y="1030" font-size="17" font-weight="500" fill="#879ba7" text-anchor="start">이 모델은 공통0V의 귀환 분기를 표시합니다. 기생용량·전자파·공유 AC 전원 변동까지 0이 되는 것은 아닙니다.</text>
+</svg>

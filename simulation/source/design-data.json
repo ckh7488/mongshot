@@ -1,0 +1,1033 @@
+{
+  "model": {
+    "revision": "v5.3-direct-control",
+    "units": "mm",
+    "basis": "사진 기반 계획. 작은 외형도 실측값으로 주장하지 않음.",
+    "planning": {
+      "usableWidth": 400,
+      "upperHeight": 260,
+      "lowerHeight": 560,
+      "usableDepth": 120
+    },
+    "photoEstimate": {
+      "outerWidth": [
+        450,
+        550
+      ],
+      "upperOpeningHeight": [
+        250,
+        350
+      ],
+      "lowerOpeningHeight": [
+        600,
+        750
+      ],
+      "depth": "사진으로 추정하지 않음"
+    },
+    "parts": [
+      {
+        "id": "ac",
+        "bay": "upper",
+        "x": 10,
+        "y": 10,
+        "reserveW": 45,
+        "reserveH": 110,
+        "bodyW": 36,
+        "bodyH": 80,
+        "bodyD": 70,
+        "name": "기존 차단기",
+        "basis": "기존 회로 보존; 정격/실물 대조",
+        "domain": "PE",
+        "bodyX": 14.5,
+        "bodyY": 14
+      },
+      {
+        "id": "smps",
+        "bay": "upper",
+        "x": 70,
+        "y": 10,
+        "reserveW": 240,
+        "reserveH": 145,
+        "bodyW": 215,
+        "bodyH": 115,
+        "bodyD": 30,
+        "name": "12V 메인 SMPS",
+        "basis": "LRS-200-12 후보; 17A 필요 확정 아님. 부하/가는 선에 맞춰 용량 재선정",
+        "domain": "P0",
+        "bodyX": 82.5,
+        "bodyY": 14
+      },
+      {
+        "id": "pe",
+        "bay": "upper",
+        "x": 325,
+        "y": 15,
+        "reserveW": 55,
+        "reserveH": 100,
+        "bodyW": 30,
+        "bodyH": 80,
+        "bodyD": 35,
+        "name": "기존 PE 접지부",
+        "basis": "금속 함체/도어/SMPS FG; DC 귀환에 사용하지 않음",
+        "domain": "PE",
+        "bodyX": 337.5,
+        "bodyY": 19
+      },
+      {
+        "id": "power-ground",
+        "bay": "upper",
+        "x": 15,
+        "y": 175,
+        "reserveW": 75,
+        "reserveH": 65,
+        "bodyW": 58.1,
+        "bodyH": 28.6,
+        "bodyD": 32.4,
+        "name": "부하 12V − (P0)",
+        "basis": "SMPS V− 1가닥을 여러 부하 귀환으로 분배. 내부13접속점 공통. 변환/절연 기능 없음",
+        "domain": "P0",
+        "bodyX": 23.45,
+        "bodyY": 179
+      },
+      {
+        "id": "mag-power",
+        "bay": "upper",
+        "x": 105,
+        "y": 175,
+        "reserveW": 75,
+        "reserveH": 65,
+        "bodyW": 58.1,
+        "bodyH": 28.6,
+        "bodyD": 32.4,
+        "name": "부하 12V + (P12)",
+        "basis": "SMPS V+를 여러 회로로 분기. 전압변환기가 아닌 수동 분배블록",
+        "domain": "P0",
+        "bodyX": 113.45,
+        "bodyY": 179
+      },
+      {
+        "id": "amp-adapter",
+        "bay": "upper",
+        "x": 200,
+        "y": 175,
+        "reserveW": 110,
+        "reserveH": 65,
+        "bodyW": 90,
+        "bodyH": 45,
+        "bodyD": 35,
+        "name": "홍싱 기존 어댑터",
+        "basis": "기존 DC 어댑터 재사용; 90×45×35는 배치 가정",
+        "domain": "G0",
+        "bodyX": 210.0,
+        "bodyY": 179
+      },
+      {
+        "id": "rfidbox",
+        "bay": "lower",
+        "x": 25,
+        "y": 10,
+        "reserveW": 170,
+        "reserveH": 130,
+        "bodyW": 160,
+        "bodyH": 100,
+        "bodyD": 65,
+        "name": "RFID 제어함",
+        "basis": "소형화한 배치 가정 160×100×65; 확정 실측 아님",
+        "domain": "P0",
+        "bodyX": 30.0,
+        "bodyY": 14
+      },
+      {
+        "id": "amp",
+        "bay": "lower",
+        "x": 215,
+        "y": 10,
+        "reserveW": 170,
+        "reserveH": 110,
+        "bodyW": 140,
+        "bodyH": 90,
+        "bodyD": 45,
+        "name": "HONGXING",
+        "basis": "몸체140×90×45 배치가정. MP3를 바로 아래로 이동. 기존 라인출력/GND 직결",
+        "domain": "G0",
+        "bodyX": 230.0,
+        "bodyY": 14
+      },
+      {
+        "id": "mp3",
+        "bay": "lower",
+        "x": 235,
+        "y": 125,
+        "reserveW": 70,
+        "reserveH": 40,
+        "bodyW": 45,
+        "bodyH": 30,
+        "bodyD": 20,
+        "name": "KT403A MP3",
+        "basis": "홍싱 바로 아래. UART/라인 출력은G0, SPK±는 앰프 입력으로 쓰지 않음",
+        "domain": "G0",
+        "bodyX": 247.5,
+        "bodyY": 129
+      },
+      {
+        "id": "relayA",
+        "bay": "lower",
+        "x": 25,
+        "y": 200,
+        "reserveW": 90,
+        "reserveH": 75,
+        "bodyW": 80,
+        "bodyH": 60,
+        "bodyD": 30,
+        "name": "4CH 릴레이 A",
+        "basis": "기존 보드; 3자석+창문을 조건부 재배치",
+        "domain": "P0",
+        "bodyX": 30.0,
+        "bodyY": 204
+      },
+      {
+        "id": "relayB",
+        "bay": "lower",
+        "x": 125,
+        "y": 200,
+        "reserveW": 90,
+        "reserveH": 75,
+        "bodyW": 80,
+        "bodyH": 60,
+        "bodyD": 30,
+        "name": "4CH 릴레이 B",
+        "basis": "8채널 추적 전 철거/예비 단정 금지",
+        "domain": "P0",
+        "bodyX": 130.0,
+        "bodyY": 204
+      },
+      {
+        "id": "magdiodes",
+        "bay": "lower",
+        "x": 115,
+        "y": 200,
+        "reserveW": 10,
+        "reserveH": 65,
+        "bodyW": 6,
+        "bodyH": 50,
+        "bodyD": 6,
+        "name": "자석 다이오드 ×3 · 릴레이 옆",
+        "basis": "별도 PCB 없음. 3개와 절연 리드 고정공간6×50mm는 배치값. 자석선 +/−에 병렬, 접점 COM/NO 사이 아님",
+        "domain": "P0",
+        "bodyX": 117.0,
+        "bodyY": 204
+      },
+      {
+        "id": "l298",
+        "bay": "lower",
+        "x": 25,
+        "y": 315,
+        "reserveW": 90,
+        "reserveH": 75,
+        "bodyW": 60,
+        "bodyH": 60,
+        "bodyD": 55,
+        "name": "L298N E6",
+        "basis": "기존 제어선 D4/D5/A2 직결. Vs=P12/Vss=5D, GND는 G0와 공통. 모듈 점퍼/리셋상태 대조",
+        "domain": "P0",
+        "bodyX": 40.0,
+        "bodyY": 319
+      },
+      {
+        "id": "buck",
+        "bay": "lower",
+        "x": 25,
+        "y": 430,
+        "reserveW": 60,
+        "reserveH": 65,
+        "bodyW": 25.4,
+        "bodyH": 25.4,
+        "bodyD": 9.5,
+        "name": "부하측 5V 변환기 (5D)",
+        "basis": "P12/P0에서5D/P0를 만듦. 릴레이 코일/L298 제어전원용. 12V→5V 강압, 입력/출력−는 P0 공통. 실물 기판25.4×25.4mm",
+        "domain": "P0",
+        "bodyX": 42.3,
+        "bodyY": 434
+      },
+      {
+        "id": "isolated5",
+        "bay": "lower",
+        "x": 100,
+        "y": 405,
+        "reserveW": 45,
+        "reserveH": 150,
+        "bodyW": 17.5,
+        "bodyH": 90,
+        "bodyD": 54.5,
+        "name": "로직용 5V 변환기 · 현재 GND 공통",
+        "basis": "DDR-15G-5 전원분기 후보 유지. G0↔P0가 공통이므로 전체 시스템 절연용으로 보지 않음. 몸체 위40/아래20/좌우5mm 이상 비움. 낮은 입력전압에서는2.7A 제한",
+        "domain": "BOUNDARY",
+        "bodyOffsetY": 40,
+        "airClearance": {
+          "top": 40,
+          "bottom": 20,
+          "left": 5,
+          "right": 5
+        },
+        "bodyX": 113.75,
+        "bodyY": 445
+      },
+      {
+        "id": "gnd",
+        "bay": "lower",
+        "x": 160,
+        "y": 430,
+        "reserveW": 75,
+        "reserveH": 40,
+        "bodyW": 58.1,
+        "bodyH": 28.6,
+        "bodyD": 32.4,
+        "name": "로직 5V − (G0)",
+        "basis": "DDR OUT−를 Uno/MP3/센서기준/패널로 분배. P0 블록과 동일 제품/동일 크기",
+        "domain": "G0",
+        "bodyX": 168.45,
+        "bodyY": 434
+      },
+      {
+        "id": "logic-positive",
+        "bay": "lower",
+        "x": 160,
+        "y": 480,
+        "reserveW": 75,
+        "reserveH": 40,
+        "bodyW": 58.1,
+        "bodyH": 28.6,
+        "bodyD": 32.4,
+        "name": "로직 5V + (5L)",
+        "basis": "DDR OUT+를 로직 장치로 분배. G0와 한 쌍이며 5D와 연결하지 않음",
+        "domain": "G0",
+        "bodyX": 168.45,
+        "bodyY": 484
+      },
+      {
+        "id": "uno",
+        "bay": "lower",
+        "x": 265,
+        "y": 430,
+        "reserveW": 95,
+        "reserveH": 80,
+        "bodyW": 68.6,
+        "bodyH": 53.4,
+        "bodyD": 25,
+        "name": "Arduino Uno",
+        "basis": "USB/핀 삽입 여유 포함; 로직 G0",
+        "domain": "G0",
+        "bodyX": 278.2,
+        "bodyY": 434
+      }
+    ],
+    "ducts": {
+      "lowerVertical": [
+        [
+          0,
+          0,
+          20,
+          550
+        ]
+      ],
+      "lowerHorizontal": [
+        [
+          25,
+          170,
+          360,
+          20
+        ],
+        [
+          25,
+          280,
+          360,
+          20
+        ],
+        [
+          25,
+          395,
+          60,
+          20
+        ],
+        [
+          155,
+          395,
+          230,
+          20
+        ]
+      ],
+      "upperVertical": [
+        [
+          380,
+          10,
+          20,
+          230
+        ]
+      ],
+      "actualProduct": "Panduit G.5X1LG6/C.5LG6; 외폭17.5 높이26.9. 하단 가로덕트는 DDR 상부 통풍기둥을 피해 분할"
+    },
+    "doorPanel": {
+      "x": 25,
+      "y": 200,
+      "width": 180,
+      "height": 75,
+      "rearReserve": 45,
+      "oppositeBackplateDepth": 45,
+      "requiredGap": 15,
+      "depthNeed": 105,
+      "button": "OMRON A16-TAM-1"
+    },
+    "passage": {
+      "newHoleRequired": false,
+      "mainsCrossing": false,
+      "bundles": [
+        "P: P12/P0 두 쌍 (DDR/5D용 각각 독립)",
+        "M: 자석 음극3 + 릴레이 접점 급전1 (1쌍씩 권장)",
+        "S: RFID/12V센서 급전 쌍; 실제 필요한 수만",
+        "A: 홍싱 기존 어댑터 +/− 한 쌍"
+      ],
+      "minimumConductors": 10,
+      "conditionalConductors": "센서 전원/공유선의 실제 수에 따라 추가"
+    },
+    "fitConditions": [
+      "유효 폭400/상부260/하부560/깊이120mm 이상",
+      "RFID160×100×65 및 앰프140×90×45는 임시 몸체값; 커넥터 포함 실측 대조",
+      "SMPS/DDR 제조사 방열 방향과 주변 열원 간격 별도 충족",
+      "관통구 위치/직경/기존 선 외경/굽힘을 실측",
+      "DIN 레일과 부품 고정부 설치높이 포함; 타공은 실물 홀 전사"
+    ],
+    "mounting": "각 유효 백플레이트 좌상단 원점. 예약 외곽은 케이블 여유를 포함. 몸체 치수와 나사홀은 별도 실측."
+  },
+  "details": {
+    "ac": {
+      "title": "기존 차단기",
+      "desc": "기존 회로 보존; 정격/실물 대조",
+      "rows": [
+        [
+          "영역",
+          "PE"
+        ],
+        [
+          "좌표",
+          "upper (10,10) mm"
+        ],
+        [
+          "확보",
+          "45×110 mm"
+        ],
+        [
+          "몸체 검토",
+          "36×80×70 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "PE"
+      ]
+    },
+    "smps": {
+      "title": "12V 메인 SMPS",
+      "desc": "LRS-200-12 후보; 17A 필요 확정 아님. 부하/가는 선에 맞춰 용량 재선정",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "upper (70,10) mm"
+        ],
+        [
+          "확보",
+          "240×145 mm"
+        ],
+        [
+          "몸체 검토",
+          "215×115×30 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "pe": {
+      "title": "기존 PE 접지부",
+      "desc": "금속 함체/도어/SMPS FG; DC 귀환에 사용하지 않음",
+      "rows": [
+        [
+          "영역",
+          "PE"
+        ],
+        [
+          "좌표",
+          "upper (325,15) mm"
+        ],
+        [
+          "확보",
+          "55×100 mm"
+        ],
+        [
+          "몸체 검토",
+          "30×80×35 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "PE"
+      ]
+    },
+    "power-ground": {
+      "title": "부하 12V − (P0)",
+      "desc": "SMPS V− 1가닥을 여러 부하 귀환으로 분배. 내부13접속점 공통. 변환/절연 기능 없음",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "upper (15,175) mm"
+        ],
+        [
+          "확보",
+          "75×65 mm"
+        ],
+        [
+          "몸체 검토",
+          "58.1×28.6×32.4 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "mag-power": {
+      "title": "부하 12V + (P12)",
+      "desc": "SMPS V+를 여러 회로로 분기. 전압변환기가 아닌 수동 분배블록",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "upper (105,175) mm"
+        ],
+        [
+          "확보",
+          "75×65 mm"
+        ],
+        [
+          "몸체 검토",
+          "58.1×28.6×32.4 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "amp-adapter": {
+      "title": "홍싱 기존 어댑터",
+      "desc": "기존 DC 어댑터 재사용; 90×45×35는 배치 가정",
+      "rows": [
+        [
+          "영역",
+          "G0"
+        ],
+        [
+          "좌표",
+          "upper (200,175) mm"
+        ],
+        [
+          "확보",
+          "110×65 mm"
+        ],
+        [
+          "몸체 검토",
+          "90×45×35 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "G0"
+      ]
+    },
+    "rfidbox": {
+      "title": "RFID 제어함",
+      "desc": "기존 제어함을 보존하되 160×100×65mm 가정으로 줄였습니다. 정격12V일 때 전원은 P0. 무전압 접점은G0 입력으로,12V 비절연 스위칭 출력만 옵토로 전달합니다. 실제 출력형식 대조.",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "lower (25,10) mm"
+        ],
+        [
+          "확보",
+          "170×130 mm"
+        ],
+        [
+          "몸체 검토",
+          "160×100×65 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "amp": {
+      "title": "HONGXING",
+      "desc": "몸체140×90×45 배치가정. MP3를 바로 아래로 이동. 기존 라인출력/GND 직결",
+      "rows": [
+        [
+          "영역",
+          "G0"
+        ],
+        [
+          "좌표",
+          "lower (215,10) mm"
+        ],
+        [
+          "확보",
+          "170×110 mm"
+        ],
+        [
+          "몸체 검토",
+          "140×90×45 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "G0"
+      ]
+    },
+    "mp3": {
+      "title": "KT403A MP3",
+      "desc": "홍싱 바로 아래. UART/라인 출력은G0, SPK±는 앰프 입력으로 쓰지 않음",
+      "rows": [
+        [
+          "영역",
+          "G0"
+        ],
+        [
+          "좌표",
+          "lower (235,125) mm"
+        ],
+        [
+          "확보",
+          "70×40 mm"
+        ],
+        [
+          "몸체 검토",
+          "45×30×20 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "G0"
+      ]
+    },
+    "relayA": {
+      "title": "4CH 릴레이 A",
+      "desc": "기존 보드; 3자석+창문을 조건부 재배치",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "lower (25,200) mm"
+        ],
+        [
+          "확보",
+          "90×75 mm"
+        ],
+        [
+          "몸체 검토",
+          "80×60×30 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "relayB": {
+      "title": "4CH 릴레이 B",
+      "desc": "8채널 추적 전 철거/예비 단정 금지",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "lower (125,200) mm"
+        ],
+        [
+          "확보",
+          "90×75 mm"
+        ],
+        [
+          "몸체 검토",
+          "80×60×30 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "magdiodes": {
+      "title": "자석 다이오드 ×3 · 릴레이 옆",
+      "desc": "별도 PCB 없음. 3개와 절연 리드 고정공간6×50mm는 배치값. 자석선 +/−에 병렬, 접점 COM/NO 사이 아님",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "lower (115,200) mm"
+        ],
+        [
+          "확보",
+          "10×65 mm"
+        ],
+        [
+          "몸체 검토",
+          "6×50×6 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "l298": {
+      "title": "L298N E6",
+      "desc": "D4/D5/A2를 기존처럼 직결합니다. G0.4에서 L298 GND로 기준선을 연결하므로 P0/G0는 공통입니다. 모터 전력 귀환은 별도 P0-MOTOR로 유지합니다.",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "lower (25,315) mm"
+        ],
+        [
+          "확보",
+          "90×75 mm"
+        ],
+        [
+          "몸체 검토",
+          "60×60×55 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "buck": {
+      "title": "부하측 5V 변환기 (5D)",
+      "desc": "P12/P0에서5D/P0를 만듦. 릴레이 코일/L298 제어전원용. 12V→5V 강압, 입력/출력−는 P0 공통. 실물 기판25.4×25.4mm",
+      "rows": [
+        [
+          "영역",
+          "P0"
+        ],
+        [
+          "좌표",
+          "lower (25,430) mm"
+        ],
+        [
+          "확보",
+          "60×65 mm"
+        ],
+        [
+          "몸체 검토",
+          "25.4×25.4×9.5 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "P0"
+      ]
+    },
+    "isolated5": {
+      "title": "로직용 5V 변환기 · 현재 GND 공통",
+      "desc": "DDR-15G-5 전원분기 후보 유지. G0↔P0가 공통이므로 전체 시스템 절연용으로 보지 않음. 몸체 위40/아래20/좌우5mm 이상 비움. 낮은 입력전압에서는2.7A 제한",
+      "rows": [
+        [
+          "영역",
+          "BOUNDARY"
+        ],
+        [
+          "좌표",
+          "lower (100,405) mm"
+        ],
+        [
+          "확보",
+          "45×150 mm"
+        ],
+        [
+          "몸체 검토",
+          "17.5×90×54.5 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "BOUNDARY"
+      ]
+    },
+    "gnd": {
+      "title": "로직 5V − (G0)",
+      "desc": "G0는 전압변환기가 아니라 DDR의 출력−를 나누는 분배블록입니다. 짝은5L(+5V)입니다. P0와 제품/크기가 같고 제어 기준선으로 공통입니다. 귀환 분기이며 절연이 아닙니다.",
+      "rows": [
+        [
+          "영역",
+          "G0"
+        ],
+        [
+          "좌표",
+          "lower (160,430) mm"
+        ],
+        [
+          "확보",
+          "75×40 mm"
+        ],
+        [
+          "몸체 검토",
+          "58.1×28.6×32.4 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "G0"
+      ]
+    },
+    "logic-positive": {
+      "title": "로직 5V + (5L)",
+      "desc": "DDR의 출력+를 나누는 로직5V 분배블록입니다. G0와 한 쌍입니다. 부하측5V인5D와 연결하지 않습니다.",
+      "rows": [
+        [
+          "영역",
+          "G0"
+        ],
+        [
+          "좌표",
+          "lower (160,480) mm"
+        ],
+        [
+          "확보",
+          "75×40 mm"
+        ],
+        [
+          "몸체 검토",
+          "58.1×28.6×32.4 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "G0"
+      ]
+    },
+    "uno": {
+      "title": "Arduino Uno",
+      "desc": "USB/핀 삽입 여유 포함; 로직 G0",
+      "rows": [
+        [
+          "영역",
+          "G0"
+        ],
+        [
+          "좌표",
+          "lower (265,430) mm"
+        ],
+        [
+          "확보",
+          "95×80 mm"
+        ],
+        [
+          "몸체 검토",
+          "68.6×53.4×25 mm"
+        ]
+      ],
+      "note": "실측 전 설치 확정 아님. 현재 v5.3은 GND-MOTOR-REF로 P0/G0 공통이며 시스템 갈바닉 절연이 아닙니다.",
+      "nets": [
+        "G0"
+      ]
+    },
+    "frontpanel": {
+      "title": "외부 진행 LED·버튼",
+      "desc": "6개 LED + 2초 진행 버튼. 기존 AVR 동작과 595 래치를 유지합니다.",
+      "rows": [
+        [
+          "DATA / CLK / LATCH",
+          "D11 / D13 / D7"
+        ],
+        [
+          "진행 버튼",
+          "A3 / J7.6"
+        ],
+        [
+          "귀환",
+          "G0 / J7.2"
+        ]
+      ],
+      "note": "Gun/Hint 배선을 제거한 뒤 재사용. 실물 하드웨어 업로드 전 MP3 라이브러리 호환 문제 해결.",
+      "nets": [
+        "G0"
+      ]
+    }
+  },
+  "graph": {
+    "revision": "v5.3-direct-control",
+    "nodes": [
+      "AMP_LINE_GND",
+      "AMP_NEG",
+      "ARD_GND",
+      "BUCK_D_NEG",
+      "CABINET",
+      "DDR_INPUT_NEG",
+      "DDR_OUTPUT_NEG",
+      "DOOR",
+      "G0",
+      "L298_GND",
+      "MAG1_NEG",
+      "MAG2_NEG",
+      "MAG3_NEG",
+      "MP3_GND",
+      "P0",
+      "PANEL_GND",
+      "PE",
+      "RELAY_A_GND",
+      "RELAY_B_GND",
+      "RFID_POWER_NEG",
+      "SENSOR_12V_NEG",
+      "SENSOR_CONTACT_RETURN",
+      "SMPS_FG",
+      "SMPS_NEG"
+    ],
+    "dc_connections": [
+      [
+        "P0",
+        "SMPS_NEG"
+      ],
+      [
+        "P0",
+        "MAG1_NEG"
+      ],
+      [
+        "P0",
+        "MAG2_NEG"
+      ],
+      [
+        "P0",
+        "MAG3_NEG"
+      ],
+      [
+        "P0",
+        "L298_GND"
+      ],
+      [
+        "P0",
+        "BUCK_D_NEG"
+      ],
+      [
+        "P0",
+        "DDR_INPUT_NEG"
+      ],
+      [
+        "P0",
+        "RFID_POWER_NEG"
+      ],
+      [
+        "P0",
+        "SENSOR_12V_NEG"
+      ],
+      [
+        "P0",
+        "RELAY_A_GND"
+      ],
+      [
+        "P0",
+        "RELAY_B_GND"
+      ],
+      [
+        "G0",
+        "L298_GND"
+      ],
+      [
+        "G0",
+        "DDR_OUTPUT_NEG"
+      ],
+      [
+        "G0",
+        "ARD_GND"
+      ],
+      [
+        "G0",
+        "SENSOR_CONTACT_RETURN"
+      ],
+      [
+        "G0",
+        "MP3_GND"
+      ],
+      [
+        "G0",
+        "PANEL_GND"
+      ],
+      [
+        "G0",
+        "AMP_NEG"
+      ],
+      [
+        "G0",
+        "AMP_LINE_GND"
+      ],
+      [
+        "PE",
+        "SMPS_FG"
+      ],
+      [
+        "PE",
+        "CABINET"
+      ],
+      [
+        "PE",
+        "DOOR"
+      ]
+    ],
+    "barriers": [
+      {
+        "name": "DC-L",
+        "a": "DDR_INPUT_NEG",
+        "b": "DDR_OUTPUT_NEG",
+        "type": "converter internal isolation; system bypassed by common reference"
+      }
+    ],
+    "groundPolicy": "common-reference",
+    "systemGalvanicIsolation": false,
+    "referenceBond": {
+      "label": "GND-MOTOR-REF",
+      "start": "G0.4",
+      "end": "L298 GND"
+    },
+    "unresolvedSignalInterfaces": [
+      "A0",
+      "A1",
+      "A5"
+    ],
+    "note": "기존 제어선 직결을 위해 P0/G0는 공통이다. 자석−도 같은 전위이며 갈바닉 절연이 아니다. 부하 전류는 독립 귀환배선으로 분기한다. DDR 소자 자체의 절연을 시스템 절연으로 표시하지 않는다. 실제 센서/USB/PE 우회 연결과 노이즈는 현장에서 별도 대조."
+  }
+}

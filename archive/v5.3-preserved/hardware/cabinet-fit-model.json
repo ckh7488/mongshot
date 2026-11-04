@@ -1,0 +1,399 @@
+{
+  "revision": "v5.3-direct-control",
+  "units": "mm",
+  "basis": "사진 기반 계획. 작은 외형도 실측값으로 주장하지 않음.",
+  "planning": {
+    "usableWidth": 400,
+    "upperHeight": 260,
+    "lowerHeight": 560,
+    "usableDepth": 120
+  },
+  "photoEstimate": {
+    "outerWidth": [
+      450,
+      550
+    ],
+    "upperOpeningHeight": [
+      250,
+      350
+    ],
+    "lowerOpeningHeight": [
+      600,
+      750
+    ],
+    "depth": "사진으로 추정하지 않음"
+  },
+  "parts": [
+    {
+      "id": "ac",
+      "bay": "upper",
+      "x": 10,
+      "y": 10,
+      "reserveW": 45,
+      "reserveH": 110,
+      "bodyW": 36,
+      "bodyH": 80,
+      "bodyD": 70,
+      "name": "기존 차단기",
+      "basis": "기존 회로 보존; 정격/실물 대조",
+      "domain": "PE",
+      "bodyX": 14.5,
+      "bodyY": 14
+    },
+    {
+      "id": "smps",
+      "bay": "upper",
+      "x": 70,
+      "y": 10,
+      "reserveW": 240,
+      "reserveH": 145,
+      "bodyW": 215,
+      "bodyH": 115,
+      "bodyD": 30,
+      "name": "12V 메인 SMPS",
+      "basis": "LRS-200-12 후보; 17A 필요 확정 아님. 부하/가는 선에 맞춰 용량 재선정",
+      "domain": "P0",
+      "bodyX": 82.5,
+      "bodyY": 14
+    },
+    {
+      "id": "pe",
+      "bay": "upper",
+      "x": 325,
+      "y": 15,
+      "reserveW": 55,
+      "reserveH": 100,
+      "bodyW": 30,
+      "bodyH": 80,
+      "bodyD": 35,
+      "name": "기존 PE 접지부",
+      "basis": "금속 함체/도어/SMPS FG; DC 귀환에 사용하지 않음",
+      "domain": "PE",
+      "bodyX": 337.5,
+      "bodyY": 19
+    },
+    {
+      "id": "power-ground",
+      "bay": "upper",
+      "x": 15,
+      "y": 175,
+      "reserveW": 75,
+      "reserveH": 65,
+      "bodyW": 58.1,
+      "bodyH": 28.6,
+      "bodyD": 32.4,
+      "name": "부하 12V − (P0)",
+      "basis": "SMPS V− 1가닥을 여러 부하 귀환으로 분배. 내부13접속점 공통. 변환/절연 기능 없음",
+      "domain": "P0",
+      "bodyX": 23.45,
+      "bodyY": 179
+    },
+    {
+      "id": "mag-power",
+      "bay": "upper",
+      "x": 105,
+      "y": 175,
+      "reserveW": 75,
+      "reserveH": 65,
+      "bodyW": 58.1,
+      "bodyH": 28.6,
+      "bodyD": 32.4,
+      "name": "부하 12V + (P12)",
+      "basis": "SMPS V+를 여러 회로로 분기. 전압변환기가 아닌 수동 분배블록",
+      "domain": "P0",
+      "bodyX": 113.45,
+      "bodyY": 179
+    },
+    {
+      "id": "amp-adapter",
+      "bay": "upper",
+      "x": 200,
+      "y": 175,
+      "reserveW": 110,
+      "reserveH": 65,
+      "bodyW": 90,
+      "bodyH": 45,
+      "bodyD": 35,
+      "name": "홍싱 기존 어댑터",
+      "basis": "기존 DC 어댑터 재사용; 90×45×35는 배치 가정",
+      "domain": "G0",
+      "bodyX": 210.0,
+      "bodyY": 179
+    },
+    {
+      "id": "rfidbox",
+      "bay": "lower",
+      "x": 25,
+      "y": 10,
+      "reserveW": 170,
+      "reserveH": 130,
+      "bodyW": 160,
+      "bodyH": 100,
+      "bodyD": 65,
+      "name": "RFID 제어함",
+      "basis": "소형화한 배치 가정 160×100×65; 확정 실측 아님",
+      "domain": "P0",
+      "bodyX": 30.0,
+      "bodyY": 14
+    },
+    {
+      "id": "amp",
+      "bay": "lower",
+      "x": 215,
+      "y": 10,
+      "reserveW": 170,
+      "reserveH": 110,
+      "bodyW": 140,
+      "bodyH": 90,
+      "bodyD": 45,
+      "name": "HONGXING",
+      "basis": "몸체140×90×45 배치가정. MP3를 바로 아래로 이동. 기존 라인출력/GND 직결",
+      "domain": "G0",
+      "bodyX": 230.0,
+      "bodyY": 14
+    },
+    {
+      "id": "mp3",
+      "bay": "lower",
+      "x": 235,
+      "y": 125,
+      "reserveW": 70,
+      "reserveH": 40,
+      "bodyW": 45,
+      "bodyH": 30,
+      "bodyD": 20,
+      "name": "KT403A MP3",
+      "basis": "홍싱 바로 아래. UART/라인 출력은G0, SPK±는 앰프 입력으로 쓰지 않음",
+      "domain": "G0",
+      "bodyX": 247.5,
+      "bodyY": 129
+    },
+    {
+      "id": "relayA",
+      "bay": "lower",
+      "x": 25,
+      "y": 200,
+      "reserveW": 90,
+      "reserveH": 75,
+      "bodyW": 80,
+      "bodyH": 60,
+      "bodyD": 30,
+      "name": "4CH 릴레이 A",
+      "basis": "기존 보드; 3자석+창문을 조건부 재배치",
+      "domain": "P0",
+      "bodyX": 30.0,
+      "bodyY": 204
+    },
+    {
+      "id": "relayB",
+      "bay": "lower",
+      "x": 125,
+      "y": 200,
+      "reserveW": 90,
+      "reserveH": 75,
+      "bodyW": 80,
+      "bodyH": 60,
+      "bodyD": 30,
+      "name": "4CH 릴레이 B",
+      "basis": "8채널 추적 전 철거/예비 단정 금지",
+      "domain": "P0",
+      "bodyX": 130.0,
+      "bodyY": 204
+    },
+    {
+      "id": "magdiodes",
+      "bay": "lower",
+      "x": 115,
+      "y": 200,
+      "reserveW": 10,
+      "reserveH": 65,
+      "bodyW": 6,
+      "bodyH": 50,
+      "bodyD": 6,
+      "name": "자석 다이오드 ×3 · 릴레이 옆",
+      "basis": "별도 PCB 없음. 3개와 절연 리드 고정공간6×50mm는 배치값. 자석선 +/−에 병렬, 접점 COM/NO 사이 아님",
+      "domain": "P0",
+      "bodyX": 117.0,
+      "bodyY": 204
+    },
+    {
+      "id": "l298",
+      "bay": "lower",
+      "x": 25,
+      "y": 315,
+      "reserveW": 90,
+      "reserveH": 75,
+      "bodyW": 60,
+      "bodyH": 60,
+      "bodyD": 55,
+      "name": "L298N E6",
+      "basis": "기존 제어선 D4/D5/A2 직결. Vs=P12/Vss=5D, GND는 G0와 공통. 모듈 점퍼/리셋상태 대조",
+      "domain": "P0",
+      "bodyX": 40.0,
+      "bodyY": 319
+    },
+    {
+      "id": "buck",
+      "bay": "lower",
+      "x": 25,
+      "y": 430,
+      "reserveW": 60,
+      "reserveH": 65,
+      "bodyW": 25.4,
+      "bodyH": 25.4,
+      "bodyD": 9.5,
+      "name": "부하측 5V 변환기 (5D)",
+      "basis": "P12/P0에서5D/P0를 만듦. 릴레이 코일/L298 제어전원용. 12V→5V 강압, 입력/출력−는 P0 공통. 실물 기판25.4×25.4mm",
+      "domain": "P0",
+      "bodyX": 42.3,
+      "bodyY": 434
+    },
+    {
+      "id": "isolated5",
+      "bay": "lower",
+      "x": 100,
+      "y": 405,
+      "reserveW": 45,
+      "reserveH": 150,
+      "bodyW": 17.5,
+      "bodyH": 90,
+      "bodyD": 54.5,
+      "name": "로직용 5V 변환기 · 현재 GND 공통",
+      "basis": "DDR-15G-5 전원분기 후보 유지. G0↔P0가 공통이므로 전체 시스템 절연용으로 보지 않음. 몸체 위40/아래20/좌우5mm 이상 비움. 낮은 입력전압에서는2.7A 제한",
+      "domain": "BOUNDARY",
+      "bodyOffsetY": 40,
+      "airClearance": {
+        "top": 40,
+        "bottom": 20,
+        "left": 5,
+        "right": 5
+      },
+      "bodyX": 113.75,
+      "bodyY": 445
+    },
+    {
+      "id": "gnd",
+      "bay": "lower",
+      "x": 160,
+      "y": 430,
+      "reserveW": 75,
+      "reserveH": 40,
+      "bodyW": 58.1,
+      "bodyH": 28.6,
+      "bodyD": 32.4,
+      "name": "로직 5V − (G0)",
+      "basis": "DDR OUT−를 Uno/MP3/센서기준/패널로 분배. P0 블록과 동일 제품/동일 크기",
+      "domain": "G0",
+      "bodyX": 168.45,
+      "bodyY": 434
+    },
+    {
+      "id": "logic-positive",
+      "bay": "lower",
+      "x": 160,
+      "y": 480,
+      "reserveW": 75,
+      "reserveH": 40,
+      "bodyW": 58.1,
+      "bodyH": 28.6,
+      "bodyD": 32.4,
+      "name": "로직 5V + (5L)",
+      "basis": "DDR OUT+를 로직 장치로 분배. G0와 한 쌍이며 5D와 연결하지 않음",
+      "domain": "G0",
+      "bodyX": 168.45,
+      "bodyY": 484
+    },
+    {
+      "id": "uno",
+      "bay": "lower",
+      "x": 265,
+      "y": 430,
+      "reserveW": 95,
+      "reserveH": 80,
+      "bodyW": 68.6,
+      "bodyH": 53.4,
+      "bodyD": 25,
+      "name": "Arduino Uno",
+      "basis": "USB/핀 삽입 여유 포함; 로직 G0",
+      "domain": "G0",
+      "bodyX": 278.2,
+      "bodyY": 434
+    }
+  ],
+  "ducts": {
+    "lowerVertical": [
+      [
+        0,
+        0,
+        20,
+        550
+      ]
+    ],
+    "lowerHorizontal": [
+      [
+        25,
+        170,
+        360,
+        20
+      ],
+      [
+        25,
+        280,
+        360,
+        20
+      ],
+      [
+        25,
+        395,
+        60,
+        20
+      ],
+      [
+        155,
+        395,
+        230,
+        20
+      ]
+    ],
+    "upperVertical": [
+      [
+        380,
+        10,
+        20,
+        230
+      ]
+    ],
+    "actualProduct": "Panduit G.5X1LG6/C.5LG6; 외폭17.5 높이26.9. 하단 가로덕트는 DDR 상부 통풍기둥을 피해 분할"
+  },
+  "doorPanel": {
+    "x": 25,
+    "y": 200,
+    "width": 180,
+    "height": 75,
+    "rearReserve": 45,
+    "oppositeBackplateDepth": 45,
+    "requiredGap": 15,
+    "depthNeed": 105,
+    "button": "OMRON A16-TAM-1"
+  },
+  "passage": {
+    "newHoleRequired": false,
+    "mainsCrossing": false,
+    "bundles": [
+      "P: P12/P0 두 쌍 (DDR/5D용 각각 독립)",
+      "M: 자석 음극3 + 릴레이 접점 급전1 (1쌍씩 권장)",
+      "S: RFID/12V센서 급전 쌍; 실제 필요한 수만",
+      "A: 홍싱 기존 어댑터 +/− 한 쌍"
+    ],
+    "minimumConductors": 10,
+    "conditionalConductors": "센서 전원/공유선의 실제 수에 따라 추가"
+  },
+  "fitConditions": [
+    "유효 폭400/상부260/하부560/깊이120mm 이상",
+    "RFID160×100×65 및 앰프140×90×45는 임시 몸체값; 커넥터 포함 실측 대조",
+    "SMPS/DDR 제조사 방열 방향과 주변 열원 간격 별도 충족",
+    "관통구 위치/직경/기존 선 외경/굽힘을 실측",
+    "DIN 레일과 부품 고정부 설치높이 포함; 타공은 실물 홀 전사"
+  ],
+  "mounting": "각 유효 백플레이트 좌상단 원점. 예약 외곽은 케이블 여유를 포함. 몸체 치수와 나사홀은 별도 실측."
+}

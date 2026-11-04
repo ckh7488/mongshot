@@ -1,0 +1,21 @@
+{
+  "pass": true,
+  "desktop": [
+    1800,
+    1200
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    "all five views",
+    "GND selection",
+    "label row selection",
+    "live sensor input drives AVR GPIO",
+    "automatic demo starts",
+    "pause",
+    "no page errors",
+    "no mobile document overflow"
+  ]
+}

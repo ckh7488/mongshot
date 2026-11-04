@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="1640" viewBox="0 0 1260 1640" id="interface-svg" role="img" aria-label="기존 모터/릴레이 직결, 공통GND와 자석 다이오드"><style>text{font-family:"Malgun Gothic",Arial,sans-serif}.device{cursor:pointer;outline:none}.selected-device{filter:drop-shadow(0 0 4px #16a798)}.selected-net{stroke-width:5!important;opacity:1!important}.dim-net{opacity:.18}.power-net{display:none}.show-power .power-net{display:initial}</style>
+<rect x="0" y="0" width="1260" height="1640" rx="0" fill="#f8fafc" stroke="none" />
+<text x="35" y="45" font-size="29" font-weight="650" fill="#405e70" text-anchor="start">기존 GPIO 직결 · 실제 핀과 전원</text>
+<text x="35" y="82" font-size="17" font-weight="500" fill="#8397a3" text-anchor="start">기존 GPIO와 공통GND로 연결합니다. 아래는 저전압 DC 회로이며 추가 절연모듈은 없습니다.</text>
+<rect x="35" y="115" width="1185" height="305" rx="8" fill="#fff" stroke="#b87e49" />
+<text x="55" y="149" font-size="21" font-weight="650" fill="#b87e49" text-anchor="start">모터 · 기존 제어선 직결</text>
+<text x="65" y="200" font-size="20" font-weight="500" fill="#405e70" text-anchor="start">Arduino D4</text>
+<path d="M280,194 L820,194" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<text x="860" y="200" font-size="20" font-weight="500" fill="#405e70" text-anchor="start">L298 IN1</text>
+<text x="65" y="260" font-size="20" font-weight="500" fill="#405e70" text-anchor="start">Arduino D5</text>
+<path d="M280,254 L820,254" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<text x="860" y="260" font-size="20" font-weight="500" fill="#405e70" text-anchor="start">L298 IN2</text>
+<text x="65" y="320" font-size="20" font-weight="500" fill="#405e70" text-anchor="start">Arduino A2</text>
+<path d="M280,314 L820,314" fill="none" stroke="#238b86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<text x="860" y="320" font-size="20" font-weight="500" fill="#405e70" text-anchor="start">L298 ENA</text>
+<text x="55" y="390" font-size="19" font-weight="500" fill="#405e70" text-anchor="start">GND-MOTOR-REF: G0.4 → L298 GND. P0-MOTOR 전력 귀환은 별도 유지.</text>
+<text x="40" y="454" font-size="17" font-weight="500" fill="#405e70" text-anchor="start">L298 Vs=P12 / Vss=5D. 전원5V-EN과 ENA 점퍼, 리셋 기본상태는 기존 모듈에 대조.</text>
+<rect x="35" y="490" width="1185" height="185" rx="8" fill="#fff" stroke="#b87e49" />
+<text x="55" y="524" font-size="21" font-weight="650" fill="#b87e49" text-anchor="start">릴레이 · 기존 모듈 입력 직결</text>
+<text x="55" y="565" font-size="21" font-weight="500" fill="#405e70" text-anchor="start">Arduino D12 / D10 / D9 / A4 → RY-A IN1 / IN2 / IN3 / IN4</text>
+<text x="55" y="604" font-size="18" font-weight="500" fill="#405e70" text-anchor="start">추가 ISO-M / ISO-R 없음. 기존 VCC/JD-VCC/GND와 입력 바이어스·active LOW 확인.</text>
+<text x="55" y="643" font-size="17" font-weight="500" fill="#8498a4" text-anchor="start">P0/G0 공통 기준. 릴레이 접점/다이오드가 전체 시스템 GND 절연을 뜻하지는 않습니다.</text>
+<rect x="35" y="710" width="1185" height="335" rx="8" fill="#fff" stroke="#238b86" />
+<text x="55" y="744" font-size="21" font-weight="650" fill="#238b86" text-anchor="start">기존 센서 배선 보존 · 새 센서판 없음</text>
+<text x="60" y="790" font-size="20" font-weight="500" fill="#405e70" text-anchor="start">D8 액자 / D6 책: 기존 리드 신호와 G0 귀환. D6 기존100Ω 보존.</text>
+<text x="60" y="850" font-size="20" font-weight="500" fill="#405e70" text-anchor="start">A0 조명 / A1 열쇠 / A5 RFID: 기존 접속을 기록하고 실제 신호/귀환을 대조.</text>
+<text x="60" y="910" font-size="18" font-weight="500" fill="#405e70" text-anchor="start">12V 전원 장치라고 신호도12V인 것은 아닙니다. Arduino에12V 신호를 직결하지 않습니다.</text>
+<text x="60" y="970" font-size="18" font-weight="500" fill="#a17d52" text-anchor="start">이 세 신호의 실제 출력/귀환 확인 전 전체 GND 절연이 완성됐다고 표시하지 않습니다.</text>
+<rect x="35" y="1080" width="1185" height="330" rx="8" fill="#fff" stroke="#b87e49" />
+<text x="55" y="1114" font-size="21" font-weight="650" fill="#b87e49" text-anchor="start">자석 다이오드 · 별도 PCB 없이 릴레이 근처에서 병렬 연결</text>
+<text x="65" y="1158" font-size="19" font-weight="500" fill="#b87e49" text-anchor="start">RY 선택접점 뒤 → 자석 +</text>
+<text x="65" y="1355" font-size="19" font-weight="500" fill="#b87e49" text-anchor="start">P0 귀환 → 자석 −</text>
+<path d="M350,1150 L870,1150 L870,1190" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M350,1345 L870,1345 L870,1305" fill="none" stroke="#b87e49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="825" y="1190" width="90" height="115" rx="5" fill="#d8e3e8" stroke="#8a9fac" />
+<text x="870" y="1254" font-size="20" font-weight="500" fill="#405e70" text-anchor="middle">자석</text>
+<path d="M565,1150 L565,1220" fill="none" stroke="#506a7c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M565,1270 L565,1345" fill="none" stroke="#506a7c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M545 1270 L585 1270 L565 1230 Z" fill="none" stroke="#506a7c" stroke-width="3"/>
+<path d="M543,1225 L587,1225" fill="none" stroke="#506a7c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="615" y="1215" font-size="19" font-weight="500" fill="#405e70" text-anchor="start">K · 줄 표시 → +</text>
+<text x="615" y="1300" font-size="19" font-weight="500" fill="#405e70" text-anchor="start">A → −</text>
+<text x="960" y="1195" font-size="19" font-weight="500" fill="#405e70" text-anchor="start">자석별1개</text>
+<text x="960" y="1233" font-size="17" font-weight="500" fill="#405e70" text-anchor="start">D-M1 / D-M2 / D-M3</text>
+<text x="960" y="1270" font-size="17" font-weight="500" fill="#b16e61" text-anchor="start">극성 반대면 단락</text>
+<text x="60" y="1385" font-size="18" font-weight="500" fill="#8396a3" text-anchor="start">각 리드 절연·고정. COM–NO 사이 아님. 긴 선 서지/해제시간은 실측. 필요 시 억제방식 조정.</text>
+<rect x="35" y="1445" width="1185" height="150" rx="8" fill="#fff" stroke="#238b86" />
+<text x="55" y="1479" font-size="21" font-weight="650" fill="#238b86" text-anchor="start">기존 오디오 · 절연 트랜스 없음</text>
+<text x="60" y="1514" font-size="18" font-weight="500" fill="#405e70" text-anchor="start">KT403A DAC_L/R 및 GND → HONGXING MP3 IN L/R 및 GND. 기존 라인오디오 결선 보존.</text>
+<text x="60" y="1558" font-size="17" font-weight="500" fill="#8396a3" text-anchor="start">홍싱은 기존 어댑터 사용. 전원−는 오디오GND와 공통, 전원+는 로직5V에 합치지 않음. P0 연결 금지.</text>
+</svg>

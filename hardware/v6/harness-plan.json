@@ -1,0 +1,3478 @@
+{
+  "trunks": [
+    {
+      "a": [
+        12.5,
+        340
+      ],
+      "b": [
+        12.5,
+        407.0
+      ],
+      "routeIds": [
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "TRK-0",
+        "TRK-12P"
+      ],
+      "cables": [
+        "TRK"
+      ],
+      "id": "TRUNK-1"
+    },
+    {
+      "a": [
+        12.5,
+        340
+      ],
+      "b": [
+        110,
+        340
+      ],
+      "routeIds": [
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "TRK-0",
+        "TRK-12P"
+      ],
+      "cables": [
+        "TRK"
+      ],
+      "id": "TRUNK-2"
+    },
+    {
+      "a": [
+        12.5,
+        407.0
+      ],
+      "b": [
+        12.5,
+        411.0
+      ],
+      "routeIds": [
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P"
+      ],
+      "cables": [
+        "RFID-PWR",
+        "TRK"
+      ],
+      "id": "TRUNK-3"
+    },
+    {
+      "a": [
+        12.5,
+        411.0
+      ],
+      "b": [
+        12.5,
+        540
+      ],
+      "routeIds": [
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P"
+      ],
+      "cables": [
+        "RFID-PWR",
+        "TRK"
+      ],
+      "id": "TRUNK-4"
+    },
+    {
+      "a": [
+        12.5,
+        540
+      ],
+      "b": [
+        12.5,
+        550
+      ],
+      "routeIds": [
+        "MAG1-FEED",
+        "MAG1-POS",
+        "MAG2-FEED",
+        "MAG2-POS",
+        "MAG3-FEED",
+        "MAG3-POS",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P",
+        "WINDOW"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD+",
+        "M2-FEED",
+        "M2-FIELD+",
+        "M3-FEED",
+        "M3-FIELD+",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "RFID-PWR",
+        "TRK",
+        "WINDOW"
+      ],
+      "id": "TRUNK-5"
+    },
+    {
+      "a": [
+        12.5,
+        540
+      ],
+      "b": [
+        54.0,
+        540
+      ],
+      "routeIds": [
+        "MAG1-FEED",
+        "MAG1-POS",
+        "MAG2-FEED",
+        "MAG2-POS",
+        "MAG3-FEED",
+        "MAG3-POS",
+        "WINDOW"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD+",
+        "M2-FEED",
+        "M2-FIELD+",
+        "M3-FEED",
+        "M3-FIELD+",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "WINDOW"
+      ],
+      "id": "TRUNK-6"
+    },
+    {
+      "a": [
+        12.5,
+        550
+      ],
+      "b": [
+        12.5,
+        564
+      ],
+      "routeIds": [
+        "MAG1-FEED",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-POS",
+        "MAG3-FEED",
+        "MAG3-POS",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P",
+        "WINDOW"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD−",
+        "M2-FEED",
+        "M2-FIELD+",
+        "M3-FEED",
+        "M3-FIELD+",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "RFID-PWR",
+        "TRK",
+        "WINDOW"
+      ],
+      "id": "TRUNK-7"
+    },
+    {
+      "a": [
+        12.5,
+        564
+      ],
+      "b": [
+        12.5,
+        578
+      ],
+      "routeIds": [
+        "MAG1-FEED",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-POS",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P",
+        "WINDOW"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD−",
+        "M2-FEED",
+        "M2-FIELD−",
+        "M3-FEED",
+        "M3-FIELD+",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "RFID-PWR",
+        "TRK",
+        "WINDOW"
+      ],
+      "id": "TRUNK-8"
+    },
+    {
+      "a": [
+        12.5,
+        578
+      ],
+      "b": [
+        12.5,
+        600
+      ],
+      "routeIds": [
+        "MAG1-FEED",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-NEG",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P",
+        "WINDOW"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD−",
+        "M2-FEED",
+        "M2-FIELD−",
+        "M3-FEED",
+        "M3-FIELD−",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "RFID-PWR",
+        "TRK",
+        "WINDOW"
+      ],
+      "id": "TRUNK-9"
+    },
+    {
+      "a": [
+        12.5,
+        600
+      ],
+      "b": [
+        12.5,
+        750
+      ],
+      "routeIds": [
+        "MAG1-FEED",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-NEG",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD−",
+        "M2-FEED",
+        "M2-FIELD−",
+        "M3-FEED",
+        "M3-FIELD−",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "RFID-PWR",
+        "TRK"
+      ],
+      "id": "TRUNK-10"
+    },
+    {
+      "a": [
+        12.5,
+        750
+      ],
+      "b": [
+        12.5,
+        765
+      ],
+      "routeIds": [
+        "MAG1-FEED",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD−",
+        "M2-FEED",
+        "M2-FIELD−",
+        "M3-FEED",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK"
+      ],
+      "id": "TRUNK-11"
+    },
+    {
+      "a": [
+        12.5,
+        765
+      ],
+      "b": [
+        12.5,
+        777.5
+      ],
+      "routeIds": [
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-FEED",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD−",
+        "M2-FEED",
+        "M2-FIELD−",
+        "M3-FEED",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-12"
+    },
+    {
+      "a": [
+        12.5,
+        777.5
+      ],
+      "b": [
+        50.5,
+        777.5
+      ],
+      "routeIds": [
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-FEED",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "M1-FEED",
+        "M1-FIELD−",
+        "M2-FEED",
+        "M2-FIELD−",
+        "M3-FEED",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-13"
+    },
+    {
+      "a": [
+        50.5,
+        777.5
+      ],
+      "b": [
+        54.5,
+        777.5
+      ],
+      "routeIds": [
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "M1-FIELD−",
+        "M2-FEED",
+        "M2-FIELD−",
+        "M3-FEED",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-14"
+    },
+    {
+      "a": [
+        54.0,
+        540
+      ],
+      "b": [
+        59.0,
+        540
+      ],
+      "routeIds": [
+        "MAG1-POS",
+        "MAG2-FEED",
+        "MAG2-POS",
+        "MAG3-FEED",
+        "MAG3-POS",
+        "WINDOW"
+      ],
+      "labels": [
+        "M1-FIELD+",
+        "M2-FEED",
+        "M2-FIELD+",
+        "M3-FEED",
+        "M3-FIELD+",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "WINDOW"
+      ],
+      "id": "TRUNK-15"
+    },
+    {
+      "a": [
+        54.5,
+        777.5
+      ],
+      "b": [
+        58.5,
+        777.5
+      ],
+      "routeIds": [
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-NEG",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "M1-FIELD−",
+        "M2-FIELD−",
+        "M3-FEED",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-16"
+    },
+    {
+      "a": [
+        58.5,
+        777.5
+      ],
+      "b": [
+        62.5,
+        777.5
+      ],
+      "routeIds": [
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-NEG",
+        "MAG2-NEG",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "M1-FIELD−",
+        "M2-FIELD−",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "TRK-12P",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-17"
+    },
+    {
+      "a": [
+        59.0,
+        540
+      ],
+      "b": [
+        72.0,
+        540
+      ],
+      "routeIds": [
+        "MAG2-FEED",
+        "MAG2-POS",
+        "MAG3-FEED",
+        "MAG3-POS",
+        "WINDOW"
+      ],
+      "labels": [
+        "M2-FEED",
+        "M2-FIELD+",
+        "M3-FEED",
+        "M3-FIELD+",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG2",
+        "MAG3",
+        "WINDOW"
+      ],
+      "id": "TRUNK-18"
+    },
+    {
+      "a": [
+        62.5,
+        777.5
+      ],
+      "b": [
+        66.5,
+        777.5
+      ],
+      "routeIds": [
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-NEG",
+        "MAG2-NEG",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N"
+      ],
+      "labels": [
+        "M1-FIELD−",
+        "M2-FIELD−",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-19"
+    },
+    {
+      "a": [
+        66.5,
+        777.5
+      ],
+      "b": [
+        70.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-NEG",
+        "MAG2-NEG",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "M1-FIELD−",
+        "M2-FIELD−",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-20"
+    },
+    {
+      "a": [
+        70.5,
+        777.5
+      ],
+      "b": [
+        78.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-NEG",
+        "MAG2-NEG",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "M1-FIELD−",
+        "M2-FIELD−",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-0",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-21"
+    },
+    {
+      "a": [
+        72.0,
+        540
+      ],
+      "b": [
+        77.0,
+        540
+      ],
+      "routeIds": [
+        "MAG2-POS",
+        "MAG3-FEED",
+        "MAG3-POS",
+        "WINDOW"
+      ],
+      "labels": [
+        "M2-FIELD+",
+        "M3-FEED",
+        "M3-FIELD+",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG2",
+        "MAG3",
+        "WINDOW"
+      ],
+      "id": "TRUNK-22"
+    },
+    {
+      "a": [
+        77.0,
+        540
+      ],
+      "b": [
+        90.0,
+        540
+      ],
+      "routeIds": [
+        "MAG3-FEED",
+        "MAG3-POS",
+        "WINDOW"
+      ],
+      "labels": [
+        "M3-FEED",
+        "M3-FIELD+",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG3",
+        "WINDOW"
+      ],
+      "id": "TRUNK-23"
+    },
+    {
+      "a": [
+        78.0,
+        657.5
+      ],
+      "b": [
+        80.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-RLY-G"
+      ],
+      "labels": [
+        "CAB-RLY-G"
+      ],
+      "cables": [
+        "CAB-RLY"
+      ],
+      "id": "TRUNK-24"
+    },
+    {
+      "a": [
+        78.5,
+        777.5
+      ],
+      "b": [
+        82.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-NEG",
+        "MAG2-NEG",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0",
+        "TRK-N"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "M1-FIELD−",
+        "M2-FIELD−",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "RFID-0",
+        "TRK-0",
+        "기타12V센서-0",
+        "기타12V센서-V+"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-25"
+    },
+    {
+      "a": [
+        80.0,
+        657.5
+      ],
+      "b": [
+        82.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-RLY",
+        "CAB-RLY-G"
+      ],
+      "labels": [
+        "CAB-RLY-G",
+        "OUT-A4",
+        "OUT-D10",
+        "OUT-D12",
+        "OUT-D9"
+      ],
+      "cables": [
+        "CAB-RLY"
+      ],
+      "id": "TRUNK-26"
+    },
+    {
+      "a": [
+        82.0,
+        657.5
+      ],
+      "b": [
+        188.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-RLY",
+        "CAB-RLY-G",
+        "CAB-RLY-P"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-G",
+        "OUT-A4",
+        "OUT-D10",
+        "OUT-D12",
+        "OUT-D9"
+      ],
+      "cables": [
+        "CAB-RLY"
+      ],
+      "id": "TRUNK-27"
+    },
+    {
+      "a": [
+        82.5,
+        777.5
+      ],
+      "b": [
+        130.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "MAG1-NEG",
+        "MAG2-NEG",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0",
+        "TRK-N"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "M1-FIELD−",
+        "M2-FIELD−",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "RFID-0",
+        "TRK-0",
+        "기타12V센서-0"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MAG1",
+        "MAG2",
+        "MAG3",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-28"
+    },
+    {
+      "a": [
+        90.0,
+        540
+      ],
+      "b": [
+        95.0,
+        540
+      ],
+      "routeIds": [
+        "MAG3-POS",
+        "WINDOW"
+      ],
+      "labels": [
+        "M3-FIELD+",
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "MAG3",
+        "WINDOW"
+      ],
+      "id": "TRUNK-29"
+    },
+    {
+      "a": [
+        95.0,
+        540
+      ],
+      "b": [
+        108.0,
+        540
+      ],
+      "routeIds": [
+        "WINDOW"
+      ],
+      "labels": [
+        "WIN-COM",
+        "WIN-선택접점"
+      ],
+      "cables": [
+        "WINDOW"
+      ],
+      "id": "TRUNK-30"
+    },
+    {
+      "a": [
+        110,
+        165
+      ],
+      "b": [
+        110,
+        340
+      ],
+      "routeIds": [
+        "AMP-N",
+        "AMP-P",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "AMP+",
+        "AMP−",
+        "TRK-0",
+        "TRK-12P"
+      ],
+      "cables": [
+        "AMP-PWR",
+        "TRK"
+      ],
+      "id": "TRUNK-31"
+    },
+    {
+      "a": [
+        110,
+        165
+      ],
+      "b": [
+        188.0,
+        165
+      ],
+      "routeIds": [
+        "AMP-N",
+        "AMP-P",
+        "TRK-N",
+        "TRK-P"
+      ],
+      "labels": [
+        "AMP+",
+        "AMP−",
+        "TRK-0",
+        "TRK-12P"
+      ],
+      "cables": [
+        "AMP-PWR",
+        "TRK"
+      ],
+      "id": "TRUNK-32"
+    },
+    {
+      "a": [
+        110,
+        340
+      ],
+      "b": [
+        293.0,
+        340
+      ],
+      "routeIds": [
+        "AMP-N",
+        "AMP-P"
+      ],
+      "labels": [
+        "AMP+",
+        "AMP−"
+      ],
+      "cables": [
+        "AMP-PWR"
+      ],
+      "id": "TRUNK-33"
+    },
+    {
+      "a": [
+        130.5,
+        777.5
+      ],
+      "b": [
+        134.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "MAG2-NEG",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0",
+        "TRK-N"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "M2-FIELD−",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "RFID-0",
+        "TRK-0",
+        "기타12V센서-0"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MAG2",
+        "MAG3",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-34"
+    },
+    {
+      "a": [
+        134.5,
+        777.5
+      ],
+      "b": [
+        138.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "MAG3-NEG",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0",
+        "TRK-N"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "M3-FIELD−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "RFID-0",
+        "TRK-0",
+        "기타12V센서-0"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MAG3",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-35"
+    },
+    {
+      "a": [
+        138.5,
+        777.5
+      ],
+      "b": [
+        142.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0",
+        "TRK-N"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "RFID-0",
+        "TRK-0",
+        "기타12V센서-0"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "TRK",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-36"
+    },
+    {
+      "a": [
+        142.5,
+        777.5
+      ],
+      "b": [
+        146.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "RFID-0",
+        "기타12V센서-0"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-37"
+    },
+    {
+      "a": [
+        146.5,
+        777.5
+      ],
+      "b": [
+        150.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-N",
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "BUCK-IN−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "RFID-0",
+        "기타12V센서-0"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-38"
+    },
+    {
+      "a": [
+        150.5,
+        777.5
+      ],
+      "b": [
+        158.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-N",
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "MOTOR-N",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "RFID-0"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "BUCK-IN−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "P0-MOTOR",
+        "RFID-0",
+        "기타12V센서-0"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "RFID-PWR",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-39"
+    },
+    {
+      "a": [
+        158.5,
+        777.5
+      ],
+      "b": [
+        162.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-N",
+        "BUCK-IN-P",
+        "FIELD-12N",
+        "MOTOR-N",
+        "MOTOR-OUT",
+        "MOTOR-P"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "BUCK-IN−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "P0-MOTOR",
+        "기타12V센서-0"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-PWR",
+        "MOTOR-OUT",
+        "기타12V센서-PWR"
+      ],
+      "id": "TRUNK-40"
+    },
+    {
+      "a": [
+        162.5,
+        777.5
+      ],
+      "b": [
+        193.0,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-N",
+        "BUCK-IN-P",
+        "MOTOR-N",
+        "MOTOR-OUT",
+        "MOTOR-P"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "BUCK-IN−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-12",
+        "P0-MOTOR"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-PWR",
+        "MOTOR-OUT"
+      ],
+      "id": "TRUNK-41"
+    },
+    {
+      "a": [
+        188.0,
+        165
+      ],
+      "b": [
+        192.0,
+        165
+      ],
+      "routeIds": [
+        "AMP-N",
+        "AMP-P",
+        "TRK-P"
+      ],
+      "labels": [
+        "AMP+",
+        "AMP−",
+        "TRK-12P"
+      ],
+      "cables": [
+        "AMP-PWR",
+        "TRK"
+      ],
+      "id": "TRUNK-42"
+    },
+    {
+      "a": [
+        188.0,
+        657.5
+      ],
+      "b": [
+        192.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-RLY",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "CAB-RLY-P"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "OUT-A4",
+        "OUT-D10",
+        "OUT-D12",
+        "OUT-D9"
+      ],
+      "cables": [
+        "CAB-RLY",
+        "CAB-RLY-B"
+      ],
+      "id": "TRUNK-43"
+    },
+    {
+      "a": [
+        192.0,
+        165
+      ],
+      "b": [
+        253.0,
+        165
+      ],
+      "routeIds": [
+        "AMP-N",
+        "AMP-P"
+      ],
+      "labels": [
+        "AMP+",
+        "AMP−"
+      ],
+      "cables": [
+        "AMP-PWR"
+      ],
+      "id": "TRUNK-44"
+    },
+    {
+      "a": [
+        192.0,
+        657.5
+      ],
+      "b": [
+        205.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-RLY",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "OUT-A4",
+        "OUT-D10",
+        "OUT-D12",
+        "OUT-D9"
+      ],
+      "cables": [
+        "CAB-RLY",
+        "CAB-RLY-B"
+      ],
+      "id": "TRUNK-45"
+    },
+    {
+      "a": [
+        193.0,
+        777.5
+      ],
+      "b": [
+        199.0,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-N",
+        "BUCK-IN-P",
+        "MOTOR-5ALT",
+        "MOTOR-N",
+        "MOTOR-OUT"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "BUCK-IN−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-5",
+        "P0-MOTOR"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-PWR",
+        "MOT-PWR-ALT",
+        "MOTOR-OUT"
+      ],
+      "id": "TRUNK-46"
+    },
+    {
+      "a": [
+        199.0,
+        777.5
+      ],
+      "b": [
+        205.0,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-N",
+        "BUCK-IN-P",
+        "MOTOR-5ALT",
+        "MOTOR-OUT"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "BUCK-IN−",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-5"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-PWR-ALT",
+        "MOTOR-OUT"
+      ],
+      "id": "TRUNK-47"
+    },
+    {
+      "a": [
+        205,
+        409.0
+      ],
+      "b": [
+        205,
+        510
+      ],
+      "routeIds": [
+        "RFID-SIG"
+      ],
+      "labels": [
+        "IN-A5"
+      ],
+      "cables": [
+        "FIELD-A5"
+      ],
+      "id": "TRUNK-48"
+    },
+    {
+      "a": [
+        205,
+        510
+      ],
+      "b": [
+        264.0,
+        510
+      ],
+      "routeIds": [
+        "RFID-SIG"
+      ],
+      "labels": [
+        "IN-A5"
+      ],
+      "cables": [
+        "FIELD-A5"
+      ],
+      "id": "TRUNK-49"
+    },
+    {
+      "a": [
+        205.0,
+        657.5
+      ],
+      "b": [
+        289.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MOT",
+        "CAB-RLY",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOT-A2",
+        "MOT-D4",
+        "MOT-D5",
+        "OUT-A4",
+        "OUT-D10",
+        "OUT-D12",
+        "OUT-D9"
+      ],
+      "cables": [
+        "CAB-MOT",
+        "CAB-RLY",
+        "CAB-RLY-B"
+      ],
+      "id": "TRUNK-50"
+    },
+    {
+      "a": [
+        205.0,
+        777.5
+      ],
+      "b": [
+        206.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-N",
+        "BUCK-IN-P",
+        "MOTOR-5ALT",
+        "MOTOR-OUT",
+        "MOTOR-VSS"
+      ],
+      "labels": [
+        "BUCK-IN+",
+        "BUCK-IN−",
+        "L298-VSS-5",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-5"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "MOTOR-OUT"
+      ],
+      "id": "TRUNK-51"
+    },
+    {
+      "a": [
+        206.5,
+        777.5
+      ],
+      "b": [
+        210.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-IN-N",
+        "MOTOR-5ALT",
+        "MOTOR-OUT",
+        "MOTOR-VSS"
+      ],
+      "labels": [
+        "BUCK-IN−",
+        "L298-VSS-5",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-5"
+      ],
+      "cables": [
+        "BUCK-IN",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "MOTOR-OUT"
+      ],
+      "id": "TRUNK-52"
+    },
+    {
+      "a": [
+        210.5,
+        777.5
+      ],
+      "b": [
+        214.5,
+        777.5
+      ],
+      "routeIds": [
+        "MOTOR-5ALT",
+        "MOTOR-OUT",
+        "MOTOR-VSS"
+      ],
+      "labels": [
+        "L298-VSS-5",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-5"
+      ],
+      "cables": [
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "MOTOR-OUT"
+      ],
+      "id": "TRUNK-53"
+    },
+    {
+      "a": [
+        214.5,
+        777.5
+      ],
+      "b": [
+        218.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-N",
+        "MOTOR-5ALT",
+        "MOTOR-OUT",
+        "MOTOR-VSS"
+      ],
+      "labels": [
+        "BUCK-G",
+        "L298-VSS-5",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-5"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "MOTOR-OUT"
+      ],
+      "id": "TRUNK-54"
+    },
+    {
+      "a": [
+        218.5,
+        777.5
+      ],
+      "b": [
+        221.0,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-N",
+        "BUCK-OUT-P",
+        "MOTOR-5ALT",
+        "MOTOR-OUT",
+        "MOTOR-VSS"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "BUCK-G",
+        "L298-VSS-5",
+        "MOTOR-OUT-A",
+        "MOTOR-OUT-B",
+        "MOTOR-VMS-5"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "MOTOR-OUT"
+      ],
+      "id": "TRUNK-55"
+    },
+    {
+      "a": [
+        221.0,
+        777.5
+      ],
+      "b": [
+        273.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-N",
+        "BUCK-OUT-P",
+        "MOTOR-5ALT",
+        "MOTOR-VSS"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "BUCK-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT"
+      ],
+      "id": "TRUNK-56"
+    },
+    {
+      "a": [
+        253.0,
+        165
+      ],
+      "b": [
+        257.0,
+        165
+      ],
+      "routeIds": [
+        "AMP-N"
+      ],
+      "labels": [
+        "AMP−"
+      ],
+      "cables": [
+        "AMP-PWR"
+      ],
+      "id": "TRUNK-57"
+    },
+    {
+      "a": [
+        264.0,
+        510
+      ],
+      "b": [
+        268.0,
+        510
+      ],
+      "routeIds": [
+        "CAB-MP3-SIG",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "IN-A5",
+        "MP3-D2",
+        "MP3-D3"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "FIELD-A5"
+      ],
+      "id": "TRUNK-58"
+    },
+    {
+      "a": [
+        268.0,
+        510
+      ],
+      "b": [
+        272.0,
+        510
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-SIG",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "CAB-MP3-G",
+        "IN-A5",
+        "MP3-D2",
+        "MP3-D3"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "FIELD-A5"
+      ],
+      "id": "TRUNK-59"
+    },
+    {
+      "a": [
+        272.0,
+        510
+      ],
+      "b": [
+        390,
+        510
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-MP3-SIG",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "IN-A5",
+        "MP3-D2",
+        "MP3-D3"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "FIELD-A5"
+      ],
+      "id": "TRUNK-60"
+    },
+    {
+      "a": [
+        273.5,
+        777.5
+      ],
+      "b": [
+        275.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-N",
+        "BUCK-OUT-P",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "UNO-N"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "BUCK-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "UNO-PWR-G"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "UNO-PWR"
+      ],
+      "id": "TRUNK-61"
+    },
+    {
+      "a": [
+        275.5,
+        777.5
+      ],
+      "b": [
+        277.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-N",
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "UNO-N"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "BUCK-G",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "UNO-PWR-G"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "UNO-PWR"
+      ],
+      "id": "TRUNK-62"
+    },
+    {
+      "a": [
+        277.5,
+        777.5
+      ],
+      "b": [
+        281.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "UNO-N"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "UNO-PWR-G"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "UNO-PWR"
+      ],
+      "id": "TRUNK-63"
+    },
+    {
+      "a": [
+        281.5,
+        777.5
+      ],
+      "b": [
+        285.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "UNO-N"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-G",
+        "UNO-PWR-G"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "UNO-PWR"
+      ],
+      "id": "TRUNK-64"
+    },
+    {
+      "a": [
+        285.5,
+        777.5
+      ],
+      "b": [
+        289.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "REED-D8-G",
+        "UNO-N"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-G",
+        "REED-D8-G",
+        "UNO-PWR-G"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "REED-D8",
+        "UNO-PWR"
+      ],
+      "id": "TRUNK-65"
+    },
+    {
+      "a": [
+        289.0,
+        657.5
+      ],
+      "b": [
+        293.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MOT",
+        "CAB-RLY",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "REED-D8"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-D8",
+        "MOT-A2",
+        "MOT-D4",
+        "MOT-D5",
+        "OUT-A4",
+        "OUT-D10",
+        "OUT-D12",
+        "OUT-D9"
+      ],
+      "cables": [
+        "CAB-MOT",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "REED-D8"
+      ],
+      "id": "TRUNK-66"
+    },
+    {
+      "a": [
+        289.5,
+        777.5
+      ],
+      "b": [
+        301.0,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G",
+        "UNO-N"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G",
+        "UNO-PWR-G"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "REED-D6",
+        "REED-D8",
+        "UNO-PWR"
+      ],
+      "id": "TRUNK-67"
+    },
+    {
+      "a": [
+        293.0,
+        340
+      ],
+      "b": [
+        297.0,
+        340
+      ],
+      "routeIds": [
+        "AMP-N"
+      ],
+      "labels": [
+        "AMP−"
+      ],
+      "cables": [
+        "AMP-PWR"
+      ],
+      "id": "TRUNK-68"
+    },
+    {
+      "a": [
+        293.0,
+        657.5
+      ],
+      "b": [
+        297.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MOT",
+        "CAB-RLY",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-D6",
+        "IN-D8",
+        "MOT-A2",
+        "MOT-D4",
+        "MOT-D5",
+        "OUT-A4",
+        "OUT-D10",
+        "OUT-D12",
+        "OUT-D9"
+      ],
+      "cables": [
+        "CAB-MOT",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-69"
+    },
+    {
+      "a": [
+        297.0,
+        657.5
+      ],
+      "b": [
+        305.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-RLY",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-D6",
+        "IN-D8",
+        "OUT-A4",
+        "OUT-D10",
+        "OUT-D12",
+        "OUT-D9"
+      ],
+      "cables": [
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-70"
+    },
+    {
+      "a": [
+        301.0,
+        777.5
+      ],
+      "b": [
+        309.0,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-71"
+    },
+    {
+      "a": [
+        305.0,
+        657.5
+      ],
+      "b": [
+        311.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-D6",
+        "IN-D8"
+      ],
+      "cables": [
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-72"
+    },
+    {
+      "a": [
+        309.0,
+        777.5
+      ],
+      "b": [
+        343.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G",
+        "UNO-P"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G",
+        "UNO-PWR-5V"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "REED-D6",
+        "REED-D8",
+        "UNO-PWR"
+      ],
+      "id": "TRUNK-73"
+    },
+    {
+      "a": [
+        311.0,
+        657.5
+      ],
+      "b": [
+        317.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MP3-SIG",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-D6",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-74"
+    },
+    {
+      "a": [
+        317.0,
+        657.5
+      ],
+      "b": [
+        321.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MP3-SIG",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "PANEL-SIG",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-D6",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3",
+        "PANEL-A3",
+        "PANEL-D11",
+        "PANEL-D13",
+        "PANEL-D7"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-75"
+    },
+    {
+      "a": [
+        321.0,
+        657.5
+      ],
+      "b": [
+        325.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MP3-SIG",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "FIELD-A0",
+        "PANEL-SIG",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-A0",
+        "IN-D6",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3",
+        "PANEL-A3",
+        "PANEL-D11",
+        "PANEL-D13",
+        "PANEL-D7"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "FIELD-A0",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-76"
+    },
+    {
+      "a": [
+        325.0,
+        657.5
+      ],
+      "b": [
+        329.0,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MP3-SIG",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "FIELD-A0",
+        "FIELD-A1",
+        "PANEL-SIG",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-A0",
+        "IN-A1",
+        "IN-D6",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3",
+        "PANEL-A3",
+        "PANEL-D11",
+        "PANEL-D13",
+        "PANEL-D7"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "FIELD-A0",
+        "FIELD-A1",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-77"
+    },
+    {
+      "a": [
+        329.0,
+        657.5
+      ],
+      "b": [
+        390,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MP3-SIG",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "FIELD-A0",
+        "FIELD-A1",
+        "PANEL-SIG",
+        "REED-D6",
+        "REED-D8",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "IN-A0",
+        "IN-A1",
+        "IN-A5",
+        "IN-D6",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3",
+        "PANEL-A3",
+        "PANEL-D11",
+        "PANEL-D13",
+        "PANEL-D7"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "FIELD-A0",
+        "FIELD-A1",
+        "FIELD-A5",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-78"
+    },
+    {
+      "a": [
+        343.5,
+        777.5
+      ],
+      "b": [
+        347.5,
+        777.5
+      ],
+      "routeIds": [
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "BUCK-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "BUCK-OUT",
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-79"
+    },
+    {
+      "a": [
+        347.5,
+        777.5
+      ],
+      "b": [
+        349.5,
+        777.5
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "CAB-MP3-G",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-80"
+    },
+    {
+      "a": [
+        349.5,
+        777.5
+      ],
+      "b": [
+        351.5,
+        777.5
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-81"
+    },
+    {
+      "a": [
+        351.5,
+        777.5
+      ],
+      "b": [
+        355.5,
+        777.5
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "MOTOR-5ALT",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "PANEL-P",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "MOTOR-VMS-5",
+        "PANEL-5V",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "MOT-PWR-ALT",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-82"
+    },
+    {
+      "a": [
+        355.5,
+        777.5
+      ],
+      "b": [
+        359.5,
+        777.5
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "PANEL-P",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "L298-VSS-5",
+        "PANEL-5V",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "MOT-LOGIC",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-83"
+    },
+    {
+      "a": [
+        359.5,
+        777.5
+      ],
+      "b": [
+        390,
+        777.5
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "PANEL-G",
+        "PANEL-P",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "PANEL-5V",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-84"
+    },
+    {
+      "a": [
+        390,
+        510
+      ],
+      "b": [
+        390,
+        600
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-MP3-SIG",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "IN-A5",
+        "MP3-D2",
+        "MP3-D3"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "FIELD-A5"
+      ],
+      "id": "TRUNK-85"
+    },
+    {
+      "a": [
+        390,
+        600
+      ],
+      "b": [
+        390,
+        612
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-MP3-SIG",
+        "REED-D8",
+        "REED-D8-G",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "IN-A5",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "FIELD-A5",
+        "REED-D8"
+      ],
+      "id": "TRUNK-86"
+    },
+    {
+      "a": [
+        390,
+        612
+      ],
+      "b": [
+        390,
+        624
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-MP3-SIG",
+        "REED-D6",
+        "REED-D6-G",
+        "REED-D8",
+        "REED-D8-G",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "IN-A5",
+        "IN-D6",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "FIELD-A5",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-87"
+    },
+    {
+      "a": [
+        390,
+        624
+      ],
+      "b": [
+        390,
+        636
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-MP3-SIG",
+        "FIELD-A0",
+        "REED-D6",
+        "REED-D6-G",
+        "REED-D8",
+        "REED-D8-G",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "IN-A0",
+        "IN-A5",
+        "IN-D6",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "FIELD-A0",
+        "FIELD-A5",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-88"
+    },
+    {
+      "a": [
+        390,
+        636
+      ],
+      "b": [
+        390,
+        657.5
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-MP3-SIG",
+        "FIELD-A0",
+        "FIELD-A1",
+        "REED-D6",
+        "REED-D6-G",
+        "REED-D8",
+        "REED-D8-G",
+        "RFID-SIG"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "IN-A0",
+        "IN-A1",
+        "IN-A5",
+        "IN-D6",
+        "IN-D8",
+        "MP3-D2",
+        "MP3-D3",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "FIELD-A0",
+        "FIELD-A1",
+        "FIELD-A5",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-89"
+    },
+    {
+      "a": [
+        390,
+        657.5
+      ],
+      "b": [
+        390,
+        690
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "PANEL-SIG",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "PANEL-A3",
+        "PANEL-D11",
+        "PANEL-D13",
+        "PANEL-D7",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-90"
+    },
+    {
+      "a": [
+        390,
+        690
+      ],
+      "b": [
+        390,
+        777.5
+      ],
+      "routeIds": [
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "PANEL-G",
+        "PANEL-P",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "labels": [
+        "CAB-MP3-5V",
+        "CAB-MP3-G",
+        "CAB-RLY-5V",
+        "CAB-RLY-B-5V",
+        "CAB-RLY-B-G",
+        "CAB-RLY-G",
+        "PANEL-5V",
+        "PANEL-G",
+        "REED-D6-G",
+        "REED-D8-G"
+      ],
+      "cables": [
+        "CAB-MP3",
+        "CAB-RLY",
+        "CAB-RLY-B",
+        "PANEL",
+        "REED-D6",
+        "REED-D8"
+      ],
+      "id": "TRUNK-91"
+    }
+  ],
+  "zones": [
+    {
+      "id": "ZONE-H1",
+      "routeIds": [
+        "MAG1-FEED",
+        "MAG1-POS",
+        "MAG2-FEED",
+        "MAG2-POS",
+        "MAG3-FEED",
+        "MAG3-POS",
+        "WINDOW"
+      ]
+    },
+    {
+      "id": "ZONE-H2",
+      "routeIds": [
+        "CAB-MOT",
+        "CAB-MP3-SIG",
+        "CAB-RLY",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "FIELD-A0",
+        "FIELD-A1",
+        "PANEL-SIG",
+        "REED-D6",
+        "REED-D8",
+        "RFID-SIG"
+      ]
+    },
+    {
+      "id": "ZONE-H3",
+      "routeIds": [
+        "BUCK-IN-N",
+        "BUCK-IN-P",
+        "BUCK-OUT-N",
+        "BUCK-OUT-P",
+        "CAB-MP3-G",
+        "CAB-MP3-P",
+        "CAB-RLY-B-G",
+        "CAB-RLY-B-P",
+        "CAB-RLY-G",
+        "CAB-RLY-P",
+        "FIELD-12N",
+        "FIELD-12P",
+        "MAG1-FEED",
+        "MAG1-NEG",
+        "MAG2-FEED",
+        "MAG2-NEG",
+        "MAG3-FEED",
+        "MAG3-NEG",
+        "MOTOR-5ALT",
+        "MOTOR-N",
+        "MOTOR-OUT",
+        "MOTOR-P",
+        "MOTOR-VSS",
+        "PANEL-G",
+        "PANEL-P",
+        "REED-D6-G",
+        "REED-D8-G",
+        "RFID-0",
+        "RFID-V+",
+        "TRK-N",
+        "TRK-P",
+        "UNO-N",
+        "UNO-P"
+      ]
+    },
+    {
+      "id": "ZONE-FIELD",
+      "routeIds": [
+        "REED-D8",
+        "REED-D8-G",
+        "REED-D6",
+        "REED-D6-G",
+        "FIELD-A0",
+        "FIELD-A1",
+        "RFID-SIG"
+      ]
+    },
+    {
+      "id": "ZONE-MP3",
+      "routeIds": [
+        "CAB-MP3-P",
+        "CAB-MP3-G",
+        "CAB-MP3-SIG"
+      ]
+    }
+  ],
+  "scope": "하네스는 기계적 묶음이며 전기적 연결점이 아닙니다. 표시 외경/가닥 간격은 도면 표현값입니다.",
+  "maxExposedLeadMm": 46.5,
+  "wireRouteCount": 48,
+  "cutList": [
+    {
+      "id": "U-DC",
+      "bay": "upper",
+      "group": "power",
+      "lengthMm": 350,
+      "widthReserveMm": 20
+    },
+    {
+      "id": "U-PASS",
+      "bay": "upper",
+      "group": "power",
+      "lengthMm": 85,
+      "widthReserveMm": 20
+    },
+    {
+      "id": "L-ROOF",
+      "bay": "lower",
+      "group": "power",
+      "lengthMm": 350,
+      "widthReserveMm": 20
+    },
+    {
+      "id": "L-PWR",
+      "bay": "lower",
+      "group": "power",
+      "lengthMm": 550,
+      "widthReserveMm": 25
+    },
+    {
+      "id": "L-SIG",
+      "bay": "lower",
+      "group": "signal",
+      "lengthMm": 440,
+      "widthReserveMm": 20
+    },
+    {
+      "id": "RFID-SIG",
+      "bay": "lower",
+      "group": "signal",
+      "lengthMm": 150,
+      "widthReserveMm": 20
+    },
+    {
+      "id": "H0-SIG",
+      "bay": "lower",
+      "group": "signal",
+      "lengthMm": 185,
+      "widthReserveMm": 20
+    },
+    {
+      "id": "H1-PWR",
+      "bay": "lower",
+      "group": "power",
+      "lengthMm": 350,
+      "widthReserveMm": 20
+    },
+    {
+      "id": "H2-SIG",
+      "bay": "lower",
+      "group": "signal",
+      "lengthMm": 355,
+      "widthReserveMm": 25
+    },
+    {
+      "id": "H3-DC",
+      "bay": "lower",
+      "group": "power",
+      "lengthMm": 355,
+      "widthReserveMm": 25
+    }
+  ],
+  "cutBars": [
+    {
+      "bar": 1,
+      "stockMm": 1828.8,
+      "with3mmKerfMm": 1605,
+      "segments": [
+        "L-PWR",
+        "H3-DC",
+        "L-ROOF",
+        "H0-SIG",
+        "RFID-SIG"
+      ]
+    },
+    {
+      "bar": 2,
+      "stockMm": 1828.8,
+      "with3mmKerfMm": 1595,
+      "segments": [
+        "L-SIG",
+        "H2-SIG",
+        "U-DC",
+        "H1-PWR",
+        "U-PASS"
+      ]
+    }
+  ],
+  "ductLengthMm": 3170,
+  "routePolicy": "shared-duct-graph",
+  "assumptions": [
+    "단자 앵커·회전방향은 실물 핀열 대조 전 계획",
+    "실제 케이블 외경·덕트 유효 내경·충진율·굽힘반경 미확인",
+    "기존 랜케이블은 외피 고정 후 원래 꼬임쌍을 유지해 내부 덕트로",
+    "모터5V 대안은 기본 뷰 제외; 결선표에 유지"
+  ]
+}

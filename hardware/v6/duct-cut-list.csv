@@ -1,0 +1,11 @@
+﻿덕트,함,그룹,길이mm
+U-DC,upper,power,350
+U-PASS,upper,power,85
+L-ROOF,lower,power,350
+L-PWR,lower,power,550
+L-SIG,lower,signal,440
+RFID-SIG,lower,signal,150
+H0-SIG,lower,signal,185
+H1-PWR,lower,power,350
+H2-SIG,lower,signal,355
+H3-DC,lower,power,355

@@ -1,0 +1,670 @@
+[
+  {
+    "id": "out12",
+    "label": "D12 → 릴레이 기능 채널",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        482.64,
+        511.08
+      ],
+      [
+        482.64,
+        486
+      ],
+      [
+        273,
+        486
+      ],
+      [
+        273,
+        445
+      ]
+    ]
+  },
+  {
+    "id": "out10",
+    "label": "D10 → 릴레이 기능 채널",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        503.92,
+        511.08
+      ],
+      [
+        503.92,
+        492
+      ],
+      [
+        292,
+        492
+      ],
+      [
+        292,
+        445
+      ]
+    ]
+  },
+  {
+    "id": "out9",
+    "label": "D9 → 릴레이 기능 채널",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        514.56,
+        511.08
+      ],
+      [
+        514.56,
+        498
+      ],
+      [
+        311,
+        498
+      ],
+      [
+        311,
+        445
+      ]
+    ]
+  },
+  {
+    "id": "out18",
+    "label": "A4 → 릴레이 기능 채널",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        607.52,
+        715.48
+      ],
+      [
+        607.52,
+        736
+      ],
+      [
+        676,
+        736
+      ],
+      [
+        676,
+        485
+      ],
+      [
+        330,
+        485
+      ],
+      [
+        330,
+        445
+      ]
+    ]
+  },
+  {
+    "id": "frame",
+    "label": "frame sensor → Arduino",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        276,
+        332
+      ],
+      [
+        292,
+        332
+      ],
+      [
+        292,
+        483
+      ],
+      [
+        525.76,
+        483
+      ],
+      [
+        525.76,
+        511.08
+      ]
+    ]
+  },
+  {
+    "id": "light",
+    "label": "light sensor → Arduino",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        276,
+        422
+      ],
+      [
+        287,
+        422
+      ],
+      [
+        287,
+        734
+      ],
+      [
+        564.96,
+        734
+      ],
+      [
+        564.96,
+        715.48
+      ]
+    ]
+  },
+  {
+    "id": "key",
+    "label": "key sensor → Arduino",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        276,
+        512
+      ],
+      [
+        282,
+        512
+      ],
+      [
+        282,
+        740
+      ],
+      [
+        575.6,
+        740
+      ],
+      [
+        575.6,
+        715.48
+      ]
+    ]
+  },
+  {
+    "id": "rfid",
+    "label": "rfid sensor → Arduino",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        276,
+        602
+      ],
+      [
+        277,
+        602
+      ],
+      [
+        277,
+        746
+      ],
+      [
+        618.16,
+        746
+      ],
+      [
+        618.16,
+        715.48
+      ]
+    ]
+  },
+  {
+    "id": "book",
+    "label": "book sensor → Arduino",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        276,
+        692
+      ],
+      [
+        302,
+        692
+      ],
+      [
+        302,
+        491
+      ],
+      [
+        554.32,
+        491
+      ],
+      [
+        554.32,
+        511.08
+      ]
+    ]
+  },
+  {
+    "id": "motor4",
+    "label": "D4 → L298N",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        575.6,
+        511.08
+      ],
+      [
+        575.6,
+        480
+      ],
+      [
+        691,
+        480
+      ],
+      [
+        691,
+        705
+      ],
+      [
+        790,
+        705
+      ],
+      [
+        790,
+        680
+      ]
+    ]
+  },
+  {
+    "id": "motor5",
+    "label": "D5 → L298N",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        564.96,
+        511.08
+      ],
+      [
+        564.96,
+        486
+      ],
+      [
+        696,
+        486
+      ],
+      [
+        696,
+        711
+      ],
+      [
+        801,
+        711
+      ],
+      [
+        801,
+        680
+      ]
+    ]
+  },
+  {
+    "id": "motor16",
+    "label": "A2 → L298N",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        586.24,
+        715.48
+      ],
+      [
+        586.24,
+        728
+      ],
+      [
+        812,
+        728
+      ],
+      [
+        812,
+        680
+      ]
+    ]
+  },
+  {
+    "id": "uart2",
+    "label": "D2 ↔ KT403A UART",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        596.88,
+        511.08
+      ],
+      [
+        596.88,
+        474
+      ],
+      [
+        909,
+        474
+      ],
+      [
+        909,
+        233
+      ],
+      [
+        733,
+        233
+      ],
+      [
+        733,
+        209
+      ]
+    ]
+  },
+  {
+    "id": "uart3",
+    "label": "D3 ↔ KT403A UART",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        586.24,
+        511.08
+      ],
+      [
+        586.24,
+        467
+      ],
+      [
+        915,
+        467
+      ],
+      [
+        915,
+        241
+      ],
+      [
+        753,
+        241
+      ],
+      [
+        753,
+        209
+      ]
+    ]
+  },
+  {
+    "id": "audio",
+    "label": "KT403A LINE OUT → HONGXING MP3 IN",
+    "layer": "signal",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        833,
+        166
+      ],
+      [
+        864,
+        166
+      ],
+      [
+        864,
+        94
+      ],
+      [
+        568,
+        94
+      ],
+      [
+        568,
+        210
+      ],
+      [
+        367,
+        210
+      ]
+    ]
+  },
+  {
+    "id": "load12",
+    "label": "릴레이 기능 접점 → mold",
+    "layer": "load",
+    "basis": "functional-only / terminal arrangement proposed",
+    "points": [
+      [
+        296,
+        303
+      ],
+      [
+        296,
+        282
+      ],
+      [
+        949,
+        282
+      ],
+      [
+        949,
+        338
+      ],
+      [
+        977,
+        338
+      ]
+    ]
+  },
+  {
+    "id": "load10",
+    "label": "릴레이 기능 접점 → slide",
+    "layer": "load",
+    "basis": "functional-only / terminal arrangement proposed",
+    "points": [
+      [
+        360,
+        303
+      ],
+      [
+        360,
+        274
+      ],
+      [
+        955,
+        274
+      ],
+      [
+        955,
+        432
+      ],
+      [
+        977,
+        432
+      ]
+    ]
+  },
+  {
+    "id": "load18",
+    "label": "릴레이 기능 접점 → window",
+    "layer": "load",
+    "basis": "functional-only / terminal arrangement proposed",
+    "points": [
+      [
+        488,
+        303
+      ],
+      [
+        488,
+        266
+      ],
+      [
+        961,
+        266
+      ],
+      [
+        961,
+        526
+      ],
+      [
+        977,
+        526
+      ]
+    ]
+  },
+  {
+    "id": "load9",
+    "label": "릴레이 기능 접점 → bookload",
+    "layer": "load",
+    "basis": "functional-only / terminal arrangement proposed",
+    "points": [
+      [
+        424,
+        303
+      ],
+      [
+        424,
+        258
+      ],
+      [
+        967,
+        258
+      ],
+      [
+        967,
+        620
+      ],
+      [
+        977,
+        620
+      ]
+    ]
+  },
+  {
+    "id": "actuator",
+    "label": "L298N → 리니어 액추에이터",
+    "layer": "load",
+    "basis": "functional-confirmed",
+    "points": [
+      [
+        871,
+        586
+      ],
+      [
+        926,
+        586
+      ],
+      [
+        926,
+        747
+      ],
+      [
+        980,
+        747
+      ]
+    ]
+  },
+  {
+    "id": "power5",
+    "label": "전원 분기 배치안",
+    "layer": "power",
+    "basis": "proposed / preserve actual supply specification",
+    "points": [
+      [
+        279,
+        800
+      ],
+      [
+        279,
+        778
+      ],
+      [
+        518,
+        778
+      ],
+      [
+        511.2,
+        715.48
+      ]
+    ]
+  },
+  {
+    "id": "powergnd",
+    "label": "전원 분기 배치안",
+    "layer": "power",
+    "basis": "proposed / preserve actual supply specification",
+    "points": [
+      [
+        414,
+        800
+      ],
+      [
+        414,
+        785
+      ],
+      [
+        521.84,
+        785
+      ],
+      [
+        521.84,
+        715.48
+      ]
+    ]
+  },
+  {
+    "id": "power12",
+    "label": "전원 분기 배치안",
+    "layer": "power",
+    "basis": "proposed / preserve actual supply specification",
+    "points": [
+      [
+        597,
+        800
+      ],
+      [
+        597,
+        785
+      ],
+      [
+        729,
+        785
+      ],
+      [
+        729,
+        682
+      ]
+    ]
+  },
+  {
+    "id": "poweramp",
+    "label": "전원 분기 배치안",
+    "layer": "power",
+    "basis": "proposed / preserve actual supply specification",
+    "points": [
+      [
+        627,
+        800
+      ],
+      [
+        627,
+        835
+      ],
+      [
+        923,
+        835
+      ],
+      [
+        923,
+        103
+      ],
+      [
+        551,
+        103
+      ],
+      [
+        551,
+        210
+      ]
+    ]
+  }
+]

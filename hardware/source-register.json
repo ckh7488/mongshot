@@ -1,0 +1,20 @@
+{
+  "checkedOn": "2026-11-04",
+  "sources": {
+    "DDR-MANUAL": "https://www.meanwell.com/Upload/PDF/DDR%20DIN%20rail%20power%20supply.pdf",
+    "HDR-ALT": "https://www.meanwell.com/Upload/PDF/HDR-30/HDR-30-SPEC.PDF",
+    "DDR": "https://www.meanwell.com/Upload/PDF/DDR-15/DDR-15-spec.pdf",
+    "PS1": "https://www.meanwell.com/Upload/PDF/LRS-200/LRS-200-SPEC.PDF",
+    "ISO-M": "https://www.pololu.com/product/5741",
+    "ISO-R": "https://www.pololu.com/product/5740",
+    "BUCK": "https://www.pololu.com/product/4091",
+    "DIODE": "https://www.vishay.com/docs/88516/1n5400.pdf",
+    "BU": "https://www.phoenixcontact.com/en-nl/products/distribution-block-ptfix-6-12x25-ns35-bu-3273090",
+    "RD": "https://www.phoenixcontact.com/en-fr/products/distribution-block-ptfix-6-12x25-ns35-rd-3273092",
+    "XT": "https://www.phoenixcontact.com/ko-kr/products/mpt-05-2-254-1725656",
+    "CABLE": "https://www.belden.com/products/cable/ethernet-cable/category-5e-cable/1583a",
+    "SUPPRESSION": "https://www.ia.omron.com/product/cautions/36/safety_precautions.html",
+    "POSITION": "https://industry.panasonic.com/ap/en/products/control/relay/cautions_use",
+    "BUCK-SIZE": "https://www.pololu.com/product/4091/specs"
+  }
+}
