@@ -20,9 +20,11 @@ A3는 INPUT_PULLUP이며 외부4.7k 풀업·직렬1k·100nF를 추가한 NO 순�
 
 ## 검증
 
-- [기존4개 AVR 시험](../tests/verification.json): 2ms/10ms 필터 차이, 최소안 기존 기능 제거, 전체 순서와 지연.
-- [외부 조작부6개 AVR 시험](../tests/frontpanel-verification.json): 595 래치, 짧은/바운스 입력 무시,2초1회, 유지 반복 방지, 기존 출력/대기, 대기 중 입력 소비, 정상 센서 순서.
-- [설계 검사](../tests/design-verification.json): 공통 GND 연결, 전력 귀환 경로, 라벨 유일성, 문서 링크, 원본 보존, 계획 점유영역 경계/겹침.
+AVR 시험 결과는 같은 펌웨어를 사용한 v5.3 보존본에서 확인할 수 있습니다.
+
+- [기존4개 AVR 시험](../v5.3-preserved/tests/verification.json): 2ms/10ms 필터 차이, 최소안 기존 기능 제거, 전체 순서와 지연.
+- [외부 조작부6개 AVR 시험](../v5.3-preserved/tests/frontpanel-verification.json): 595 래치, 짧은/바운스 입력 무시,2초1회, 유지 반복 방지, 기존 출력/대기, 대기 중 입력 소비, 정상 센서 순서.
+- [v4 설계 검사 스크립트](tests__check-design.py): 공통 GND 연결, 전력 귀환 경로, 라벨 유일성, 문서 링크, 원본 보존, 계획 점유영역 경계/겹침.
 - 브라우저에서 상/하 확대, 치수 부족 표시, GND/결선표, LED회로, 실제 수동 진행을 확인합니다. 과거 v2 브라우저 결과를 최신 결과로 표시하지 않습니다.
 
 ## 남아 있는 실물 코드 조건
